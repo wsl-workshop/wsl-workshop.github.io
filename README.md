@@ -6,8 +6,6 @@ UC terminates subscriptions with world’s largest scientific publisher in push 
 
 # Topics of Interest
 
-Interested topics include, but are not limited to:
-
 - Theory and applications of **incomplete supervision**, e.g., semi-supervised learning, active learning and positive-unlabeled learning;
 
 - Theory and applications of **inexact supervision**, e.g., multi-instance learning and complementary learning;
@@ -16,7 +14,16 @@ Interested topics include, but are not limited to:
 
 - Theory and applications of **cross-domain supervision**, e.g., zero-/one-/few-shot learning, domain adaptation and multi-task leaning;
 
-- Theory and applications of **imperfect demonstration**, e.g., inverse reinforcement learning and imitation learning with non-expert demonstrations.
+- Theory and applications of **imperfect demonstration**, e.g., inverse reinforcement learning and imitation learning with non-expert demonstrations;
+
+- Weakly-supervised object detection;
+
+- Weakly-supervised sequence modeling;
+
+- Weakly-supervised cross-media retrieval;
+
+- Weakly-supervised medical image segmentation.
+
 
 # Topic Description
 
