@@ -107,7 +107,7 @@ Camera-ready: Oct 10th, 2019
 
 Bo Han, RIKEN-AIP, Japan.
 
-[https://cmt3.research.microsoft.com/IJCAIMOL2019](https://cmt3.research.microsoft.com/IJCAIMOL2019) 
+[Bo Han](https://bhanml.github.io/) 
 
 Gang Niu, RIKEN-AIP, Japan.
 
@@ -120,3 +120,8 @@ Aditya Krishna Menon, Google AI, USA.
 Clayton Scott, University of Michigan, USA.
 
 Masashi Sugiyama, RIKEN / University of Tokyo, Japan.
+
+
+# Sponsors
+
+4Paradigm Inc.
