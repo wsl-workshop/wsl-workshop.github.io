@@ -63,30 +63,29 @@ Prof. **Zhi-Hua Zhou**, Nanjing University
 
 | Time          | Event             |
 | ------------- | -------------     |
-| 08:30-08:45   | **Opening Ceremony**  |
-| 08:45-09:20   | **Keynote Talk 1**  |  
+| 13:30-13:35   | **Opening Ceremony**  |
+| 13:35-14:05   | **Keynote Talk 1**  |  
 |               | **Title**: TBD        |
 |               | **Speaker**: Hsuan-Tien Lin (National Taiwan University) |
-| 09:20-09:40   | **Paper Talk 1**    |
+| 14:05-14:15   | **Contributed Talk 1**    |
 |               | **Title**: TBD       |
 |               | **Authors**: TBD |
-| 09:40-10:15   | **Keynote Talk 2**  |  
+| 14:15-14:45   | **Keynote Talk 2**  |  
 |               | **Title**:  TBD       |
 |               | **Speaker**: Zhi-Hua Zhou, (Nanjing University) |
-| 10:15-10:35   | Coffee Break      |
-| 10:35-10:55   | **Paper Talk 2**    |
+| 14:45-14:55   | **Contributed Talk 2**    |
 |               | **Title**: TBD        |
 |               | **Authors**: TBD |
-| 10:55-11:30   | **Keynote Talk 3**  |  
+| 14:55-15:25   | **Keynote Talk 3**  |  
 |               | **Title**: TBD        |
 |               | **Speaker**: Ivor W. Tsang  (University of Technology Sydney) |
-| 11:30-11:50   | **Paper Talk 3**    |
+| 15:25-15:35   | **Contributed Talk 3**    |
 |               | **Title**: TBD        |
 |               | **Authors**: TBD |
-| 10:55-11:30   | **Keynote Talk 4**  |  
+| 15:35-16:05   | **Keynote Talk 4**  |  
 |               | **Title**: TBD        |
 |               | **Speaker**: Jun Zhu (University of Technology Sydney) |
-| 11:50-12:30   | **Panel Discussion & Concluding Remark**    |
+| 16:05-16:30   | **Panel Discussion & Concluding Remark**    |
 |               | **Host**: Bo Han        |
 |               | **Guests**: Hsuan-Tien Lin, Zhi-Hua Zhou, Ivor W. Tsang |
 
