@@ -2,9 +2,7 @@
 
 # Topic Summary
 
-UC terminates subscriptions with world’s largest scientific publisher in push for open access to publicly funded research, since “Knowledge should not be accessible only to those who can pay,” said Robert May, chair of UC’s faculty Academic Senate. Similarly, machine learning should not be accessible only to those who can pay. Specifically, modern machine learning is migrating to the era of complex models (e.g., deep neural networks), which require a plethora of well-annotated data. Giant companies have enough money to collect well-annotated data. However, for startups or non-profit organizations, such data is barely acquirable due to the cost of labeling data or the intrinsic scarcity in the given domain. These practical issues motivate us to research and pay attention to weakly-supervised learning (WSL), since WSL does not require such a huge amount of annotated data. We define WSL as the collection of machine learning problem settings and algorithms that share the same goals as supervised learning but can only access to **less supervised information** than supervised learning.
-
-In this workshop, we discuss both theoretical and applied aspects of WSL, which includes but not limited to the following topics:
+UC terminates subscriptions with world’s largest scientific publisher in push for open access to publicly funded research, since “Knowledge should not be accessible only to those who can pay,” said Robert May, chair of UC’s faculty Academic Senate. Similarly, machine learning should not be accessible only to those who can pay. Specifically, modern machine learning is migrating to the era of complex models (e.g., deep neural networks), which require a plethora of well-annotated data. Giant companies have enough money to collect well-annotated data. However, for startups or non-profit organizations, such data is barely acquirable due to the cost of labeling data or the intrinsic scarcity in the given domain. These practical issues motivate us to research and pay attention to weakly-supervised learning (WSL), since WSL does not require such a huge amount of annotated data. We define WSL as the collection of machine learning problem settings and algorithms that share the same goals as supervised learning but can only access to **less supervised information** than supervised learning. In this workshop, we discuss both theoretical and applied aspects of WSL, which includes but not limited to the following topics:
 
 # Topics of Interest
 
@@ -33,7 +31,7 @@ and weakly-supervised medical image segmentation (healthcare analysis).
 
 # Submission Guidelines
 
-Workshop submissions and camera ready versions will be handled by Microsoft CMT. Click [https://cmt3.research.microsoft.com/IJCAIMOL2019](https://cmt3.research.microsoft.com/IJCAIMOL2019) for submission. 
+Workshop submissions and camera ready versions will be handled by Gmail. Click [https://cmt3.research.microsoft.com/IJCAIMOL2019](https://cmt3.research.microsoft.com/IJCAIMOL2019) for submission. 
 
 Papers should be formatted according to the ACML formatting instructions for the Conference Track. The submissions with 2 pages will be considered for the poster, while the submissions with at least 4 pages will be considered for the oral presentation. 
 
