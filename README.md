@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Welcome to ACML19 Weakly-supervised Learning Workshop
 
 You can use the [editor on GitHub](https://github.com/wsl-workshop/wsl-workshop.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
