@@ -28,7 +28,7 @@ Cross-domain supervision considers the situation where the supervision informati
 
 This workshop will discuss the fundamental theory of weakly-supervised learning. Although theories of statistical weakly-supervised learning already exist, extending these results for deep weakly-supervised learning is still a challenge. Besides, this workshop also discusses on broad applications of weakly-supervised learning, such as weakly-supervised object detection (computer vision),
 weakly-supervised sequence modeling (natural language processing), weakly-supervised cross-media retrieval (information retrieval),
-and weakly-supervised medical image segmentation (healthcare analysis). 
+and weakly-supervised medical image segmentation (healthcare). 
 
 # Submission Guidelines
 
