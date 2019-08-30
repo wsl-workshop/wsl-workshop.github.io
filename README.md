@@ -44,11 +44,11 @@ At least one author from each accepted paper must register for the workshop. Ple
 # Preliminary list of invited speakers
 
 
-The ACML-WSL workshop will feature on a **2.5 hours** event. We plan to invite **4 keynote speakers** who are leading experts from both academia and industry. A list of keynote speakers includes:
+The ACML-WSL workshop will feature on a **3 hours** event. We plan to invite **4 keynote speakers** who are leading experts from both academia and industry. A list of keynote speakers includes:
 
 Prof. **Hsuan-Tien Lin**, National Taiwan University
 
-Prof. **Ivor W. Tsang**, University of Technology Sydney
+Prof. **James T. Kwok**, Hong Kong University of Science and Technology
 
 Prof. **Jun Zhu**, Tsinghua University
 
