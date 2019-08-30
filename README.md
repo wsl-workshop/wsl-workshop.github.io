@@ -2,7 +2,7 @@
 
 # Topic Description
 
-UC terminates subscriptions with world’s largest scientific publisher in push for open access to publicly funded research, since “Knowledge should not be accessible only to those who can pay,” said Robert May, chair of UC’s faculty Academic Senate. Similarly, machine learning should not be accessible only to those who can pay. Specifically, modern machine learning is migrating to the era of complex models (e.g., deep neural networks), which require a plethora of well-annotated data. Giant companies have enough money to collect well-annotated data. However, for startups or non-profit organizations, such data is barely acquirable due to the cost of labeling data or the intrinsic scarcity in the given domain. These practical issues motivate us to research and pay attention to weakly-supervised learning (WSL), since WSL does not require such a huge amount of annotated data. We define WSL as the collection of machine learning problem settings and algorithms that share the same goals as supervised learning but can only access to \emph{less supervised information} than supervised learning.
+UC terminates subscriptions with world’s largest scientific publisher in push for open access to publicly funded research, since “Knowledge should not be accessible only to those who can pay,” said Robert May, chair of UC’s faculty Academic Senate. Similarly, machine learning should not be accessible only to those who can pay. Specifically, modern machine learning is migrating to the era of complex models (e.g., deep neural networks), which require a plethora of well-annotated data. Giant companies have enough money to collect well-annotated data. However, for startups or non-profit organizations, such data is barely acquirable due to the cost of labeling data or the intrinsic scarcity in the given domain. These practical issues motivate us to research and pay attention to weakly-supervised learning (WSL), since WSL does not require such a huge amount of annotated data. We define WSL as the collection of machine learning problem settings and algorithms that share the same goals as supervised learning but can only access to **less supervised information** than supervised learning.
 
 The focus of this workshop is three classical types of weak supervision: incomplete supervision, inexact supervision and inaccurate supervision. Specifically, incomplete supervision considers a subset of training data given with ground-truth labels while the other data remain unlabeled, such as semi-supervised learning and positive-unlabeled learning. Inexact supervision considers the situation where some supervision information is given but not as exacted as desired, i.e., only coarse-grained labels are available. For example, if we are considering to classify every pixel of an image, rather than the image itself, then ImageNet becomes a benchmark with inexact supervision. Besides, multi-instance learning belongs to inexact supervision, where we do not exactly know which instance in the bag corresponds to the given ground-truth label. Inaccurate supervision considers the situation where the supervision information is not always the ground-truth, such as learning with noisy labels. 
 
@@ -18,15 +18,15 @@ and weakly-supervised medical image segmentation (healthcare analysis). In this 
 
 Interested topics include, but are not limited to:
 
-- Theory and applications of \emph{incomplete supervision}, e.g., semi-supervised learning, active learning and positive-unlabeled learning;
+- Theory and applications of **incomplete supervision**, e.g., semi-supervised learning, active learning and positive-unlabeled learning;
 
-- Theory and applications of \emph{inexact supervision}, e.g., multi-instance learning and complementary learning;
+- Theory and applications of **inexact supervision**, e.g., multi-instance learning and complementary learning;
 
-- Theory and applications of \emph{inaccurate supervision}, e.g., crowdsourcing and learning with noisy labels;
+- Theory and applications of **inaccurate supervision**, e.g., crowdsourcing and learning with noisy labels;
 
-- Theory and applications of \emph{cross-domain supervision}, e.g., zero-/one-/few-shot learning, domain adaptation and multi-task leaning;
+- Theory and applications of **cross-domain supervision**, e.g., zero-/one-/few-shot learning, domain adaptation and multi-task leaning;
 
-- Theory and applications of \emph{imperfect demonstration}, e.g., inverse reinforcement learning and imitation learning with non-expert demonstrations.
+- Theory and applications of **imperfect demonstration**, e.g., inverse reinforcement learning and imitation learning with non-expert demonstrations.
 
 
 # Submission Guidelines
@@ -70,7 +70,7 @@ Prof. **Jun Zhu**, Tsinghua University
 
 Prof. **Zhi-Hua Zhou**, Nanjing University
 
--->
+
 
 # Tentative Schedule
 
