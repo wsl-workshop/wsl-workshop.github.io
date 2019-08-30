@@ -78,8 +78,7 @@ Prof. **Zhi-Hua Zhou**, Nanjing University
 
 **Date**: date Nov 17, 2019
 
-
-**Venue**: Room Sicily 2406 at The Venetian Macao Resort Hotel
+**Venue**: Room 1103 (11th floor) at WINC AICHI venue
 
 | Time          | Event             |
 | ------------- | -------------     |
@@ -150,17 +149,6 @@ Acceptance Notifications: Oct 5th, 2019
 Camera-ready: Oct 10th, 2019
 
 
-<!--To be announced
-
-
-
-Submission: 20 Sep, 2018.
-
-Notification: 01 Oct, 2018.
-
-Workshop: 14 Nov, 2018.
-
--->
 
 # Organizers
 
