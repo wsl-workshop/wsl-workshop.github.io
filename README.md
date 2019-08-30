@@ -16,13 +16,7 @@ UC terminates subscriptions with world’s largest scientific publisher in push 
 
 - Theory and applications of **imperfect demonstration**, e.g., inverse reinforcement learning and imitation learning with non-expert demonstrations;
 
-- Weakly-supervised object detection;
-
-- Weakly-supervised sequence modeling;
-
-- Weakly-supervised cross-media retrieval;
-
-- Weakly-supervised medical image segmentation.
+- Broad applications of weakly-supervised learning, such as weakly-supervised object detection, weakly-supervised sequence modeling, weakly-supervised cross-media retrieval, and weakly-supervised medical image segmentation.
 
 
 # Topic Description
