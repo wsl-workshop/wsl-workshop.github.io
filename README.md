@@ -49,11 +49,11 @@ The ACML-WSL workshop will feature on a **3 hours** event. We plan to invite **4
 
 Prof. **[James T. Kwok](http://www.cse.ust.hk/~jamesk/)**, Hong Kong University of Science and Technology
 
-Prof. **Hsuan-Tien Lin**, National Taiwan University
+Prof. **[Hsuan-Tien Lin](https://www.csie.ntu.edu.tw/~htlin/)**, National Taiwan University
 
-Prof. **Jun Zhu**, Tsinghua University
+Prof. **[Jun Zhu](http://ml.cs.tsinghua.edu.cn/~jun/index.shtml)**, Tsinghua University
 
-Prof. **Zhi-Hua Zhou**, Nanjing University
+Prof. **[Zhi-Hua Zhou](https://cs.nju.edu.cn/zhouzh/)**, Nanjing University
 
 
 # Tentative Schedule
