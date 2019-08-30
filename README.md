@@ -105,23 +105,24 @@ Camera-ready: Oct 10th, 2019
 
 # Organizers
 
-Bo Han, RIKEN-AIP, Japan.
+[Bo Han](https://bhanml.github.io/), RIKEN-AIP, Japan.
 
-[Bo Han](https://bhanml.github.io/) 
+[Gang Niu](https://niug1984.github.io/), RIKEN-AIP, Japan.
 
-Gang Niu, RIKEN-AIP, Japan.
+[Quanming Yao](http://www.cse.ust.hk/~qyaoaa/), 4Paradigm Inc., Hong Kong.
 
-Quanming Yao, 4Paradigm Inc., Hong Kong.
+[Giorgio Patrini](https://giorgiop.github.io/), DeepTrace Inc., Netherlands.
 
-Giorgio Patrini, DeepTrace Inc., Netherlands.
+[Aditya Krishna Menon](https://akmenon.github.io/), Google AI, USA.
 
-Aditya Krishna Menon, Google AI, USA.
+[Clayton Scott](http://web.eecs.umich.edu/~cscott/), University of Michigan, USA.
 
-Clayton Scott, University of Michigan, USA.
-
-Masashi Sugiyama, RIKEN / University of Tokyo, Japan.
+[Masashi Sugiyama](http://www.ms.k.u-tokyo.ac.jp/sugi/), RIKEN / University of Tokyo, Japan.
 
 
 # Sponsors
 
+RIKEN-AIP
+
 4Paradigm Inc.
+
