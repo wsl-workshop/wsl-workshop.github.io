@@ -1,18 +1,10 @@
 ## Welcome to ACML19 Weakly-supervised Learning Workshop
 
-# Topic Description
+# Topic Summary
 
 UC terminates subscriptions with world’s largest scientific publisher in push for open access to publicly funded research, since “Knowledge should not be accessible only to those who can pay,” said Robert May, chair of UC’s faculty Academic Senate. Similarly, machine learning should not be accessible only to those who can pay. Specifically, modern machine learning is migrating to the era of complex models (e.g., deep neural networks), which require a plethora of well-annotated data. Giant companies have enough money to collect well-annotated data. However, for startups or non-profit organizations, such data is barely acquirable due to the cost of labeling data or the intrinsic scarcity in the given domain. These practical issues motivate us to research and pay attention to weakly-supervised learning (WSL), since WSL does not require such a huge amount of annotated data. We define WSL as the collection of machine learning problem settings and algorithms that share the same goals as supervised learning but can only access to **less supervised information** than supervised learning.
 
-The focus of this workshop is three classical types of weak supervision: incomplete supervision, inexact supervision and inaccurate supervision. Specifically, incomplete supervision considers a subset of training data given with ground-truth labels while the other data remain unlabeled, such as semi-supervised learning and positive-unlabeled learning. Inexact supervision considers the situation where some supervision information is given but not as exacted as desired, i.e., only coarse-grained labels are available. For example, if we are considering to classify every pixel of an image, rather than the image itself, then ImageNet becomes a benchmark with inexact supervision. Besides, multi-instance learning belongs to inexact supervision, where we do not exactly know which instance in the bag corresponds to the given ground-truth label. Inaccurate supervision considers the situation where the supervision information is not always the ground-truth, such as learning with noisy labels. 
-
-Moreover, this workshop covers two emerging types of weak supervision: cross-domain supervision and imperfect demonstration.
-Cross-domain supervision considers the situation where the supervision information is scarce or even non-existent in the current domain but can be possibly derived from other domains. Examples of cross-domain supervision appear in zero-/one-/few-shot learning, where external knowledge from other domains is usually used to overcome the problem of too few or even no supervision in the original domain. Imperfect demonstration considers the situation for inverse reinforcement learning and imitation learning, where the agent learns with imperfect or non-expert demonstrations. For example, AlphaGo learns a policy from a sequence of states and actions (expert demonstration). Even if an expert player (human or agent) wins a game, it is not guaranteed that every action in the sequence is optimal.
-
-This workshop will discuss the fundamental theory of weakly-supervised learning. Although theories of statistical weakly-supervised learning already exist, extending these results for deep weakly-supervised learning is still a challenge. Besides, this workshop also discusses on broad applications of weakly-supervised learning, such as weakly-supervised object detection (computer vision),
-weakly-supervised sequence modeling (natural language processing), weakly-supervised cross-media retrieval (information retrieval),
-and weakly-supervised medical image segmentation (healthcare analysis). In this workshop, we discuss both theoretical and applied aspects of WSL, which includes but not limited to the following topics:
-
+In this workshop, we discuss both theoretical and applied aspects of WSL, which includes but not limited to the following topics:
 
 # Topics of Interest
 
@@ -28,6 +20,16 @@ Interested topics include, but are not limited to:
 
 - Theory and applications of **imperfect demonstration**, e.g., inverse reinforcement learning and imitation learning with non-expert demonstrations.
 
+# Topic Description
+
+The focus of this workshop is three classical types of weak supervision: incomplete supervision, inexact supervision and inaccurate supervision. Specifically, incomplete supervision considers a subset of training data given with ground-truth labels while the other data remain unlabeled, such as semi-supervised learning and positive-unlabeled learning. Inexact supervision considers the situation where some supervision information is given but not as exacted as desired, i.e., only coarse-grained labels are available. For example, if we are considering to classify every pixel of an image, rather than the image itself, then ImageNet becomes a benchmark with inexact supervision. Besides, multi-instance learning belongs to inexact supervision, where we do not exactly know which instance in the bag corresponds to the given ground-truth label. Inaccurate supervision considers the situation where the supervision information is not always the ground-truth, such as learning with noisy labels. 
+
+Moreover, this workshop covers two emerging types of weak supervision: cross-domain supervision and imperfect demonstration.
+Cross-domain supervision considers the situation where the supervision information is scarce or even non-existent in the current domain but can be possibly derived from other domains. Examples of cross-domain supervision appear in zero-/one-/few-shot learning, where external knowledge from other domains is usually used to overcome the problem of too few or even no supervision in the original domain. Imperfect demonstration considers the situation for inverse reinforcement learning and imitation learning, where the agent learns with imperfect or non-expert demonstrations. For example, AlphaGo learns a policy from a sequence of states and actions (expert demonstration). Even if an expert player (human or agent) wins a game, it is not guaranteed that every action in the sequence is optimal.
+
+This workshop will discuss the fundamental theory of weakly-supervised learning. Although theories of statistical weakly-supervised learning already exist, extending these results for deep weakly-supervised learning is still a challenge. Besides, this workshop also discusses on broad applications of weakly-supervised learning, such as weakly-supervised object detection (computer vision),
+weakly-supervised sequence modeling (natural language processing), weakly-supervised cross-media retrieval (information retrieval),
+and weakly-supervised medical image segmentation (healthcare analysis). 
 
 # Submission Guidelines
 
