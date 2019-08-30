@@ -33,11 +33,11 @@ Interested topics include, but are not limited to:
 
 Workshop submissions and camera ready versions will be handled by Microsoft CMT. Click [https://cmt3.research.microsoft.com/IJCAIMOL2019](https://cmt3.research.microsoft.com/IJCAIMOL2019) for submission. 
 
-Papers should be formatted according to the IJCAI formatting instructions for the Conference Track. The submissions with 2 pages will be considered for the poster, while the submissions with at least 4 pages will be considered for the oral presentation. 
+Papers should be formatted according to the ACML formatting instructions for the Conference Track. The submissions with 2 pages will be considered for the poster, while the submissions with at least 4 pages will be considered for the oral presentation. 
 
-IJCAI-MoL is a non-archival venue and there will be no published proceedings. The papers will be posted on the workshop website. It will be possible to submit to other conferences and journals both in parallel to and after IJCAI-MoL'19. Besides, we also welcome submissions to IJCAI-MoL that are under review at other conferences and workshops. 
+ACML-WSL is a non-archival venue and there will be no published proceedings. The papers will be posted on the workshop website. It will be possible to submit to other conferences and journals both in parallel to and after ACML-WSL'19. Besides, we also welcome submissions to ACML-WSL that are under review at other conferences and workshops. 
 
-At least one author from each accepted paper must register for the workshop. Please see the IJCAI 2019 Website for information about accommodation and registration. 
+At least one author from each accepted paper must register for the workshop. Please see the ACML 2019 Website for information about accommodation and registration. 
 
 
 <!-- To be announced
@@ -51,7 +51,7 @@ Papers should be formatted according to the ACML formatting instructions for the
 
 ACML-MoL is a non-archival venue and there will be no published proceedings. The papers will be posted on the workshop website. It will be possible to submit to other conferences and journals both in parallel to and after ACML-MoL'18. Besides, we also welcome submissions to ACML-MoL that are under review at other conferences and workshops.
 
-At least one author from each accepted paper must register for the workshop. Please see the ACML 2018 Website for information about accommodation and registration.
+At least one author from each accepted paper must register for the workshop. Please see the ACML 2019 Website for information about accommodation and registration.
 
 -->
 
@@ -60,13 +60,15 @@ At least one author from each accepted paper must register for the workshop. Ple
 # Preliminary list of invited speakers
 
 
-The MoL workshop will feature on a **half-day** event. We plan to invite **6 to 7 keynote speakers** who are leading experts from both academia and industry. A list of keynote speakers includes:
+The MoL workshop will feature on a **2.5 hours** event. We plan to invite **3 to 4 keynote speakers** who are leading experts from both academia and industry. A list of keynote speakers includes:
 
-Prof. **Sinno Jialin Pan**, Nanyang Technological University, Singapore (Confirmed)
+Prof. **Hsuan-Tien Lin**, National Taiwan University
 
-Prof. **Manik Varma**, Microsoft Research India, and Adjunct Professor of computer science at the Indian Institute of Technology (IIT) Delhi  (Confirmed)
+Prof. **Ivor W. Tsang**, University of Technology Sydney
 
-Prof. **Vladimir Pavlovic**, Rutgers University, USA, and Samsung Electronics, UK (Confirmed)
+Prof. **Jun Zhu**, Tsinghua University
+
+Prof. **Zhi-Hua Zhou**, Nanjing University
 
 -->
 
@@ -135,11 +137,11 @@ To be announced
 
 # Important Dates
 
-Submission Deadline: 05:00 PM (Pacific Time), May 16th, 2019
+Submission Deadline: 05:00 PM (Pacific Time), Oct 1st, 2019
 
-Acceptance Notifications: June 5th, 2019
+Acceptance Notifications: Oct 5th, 2019
 
-Camera-ready: August 1st, 2019
+Camera-ready: Oct 10th, 2019
 
 
 <!--To be announced
