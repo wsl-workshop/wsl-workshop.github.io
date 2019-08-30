@@ -74,7 +74,8 @@ Prof. **Zhi-Hua Zhou**, Nanjing University
 
 # Tentative Schedule
 
-**Date**: date Aug 12, 2019
+**Date**: date Nov 17, 2019
+
 
 **Venue**: Room Sicily 2406 at The Venetian Macao Resort Hotel
 
@@ -82,27 +83,27 @@ Prof. **Zhi-Hua Zhou**, Nanjing University
 | ------------- | -------------     |
 | 08:30-08:45   | **Opening Ceremony**  |
 | 08:45-09:20   | **Keynote Talk 1**  |  
-|               | **Title**: Syntactically-Meaningful and Transferable Recursive Neural Networks for Fine-grained Sentiment Analysis        |
-|               | **Speaker**: Sinno Jialin Pan (Nanyang Technological University) |
+|               | **Title**: TBD        |
+|               | **Speaker**: Hsuan-Tien Lin (National Taiwan University) |
 | 09:20-09:40   | **Paper Talk 1**    |
-|               | **Title**: Using Evolutionary Multi-label Classification to Predict Malfunctions in Virtual Storage Systems Monitoring        |
-|               | **Authors**: Yu Bai, Michael Bain |
+|               | **Title**: TBD       |
+|               | **Authors**: TBD |
 | 09:40-10:15   | **Keynote Talk 2**  |  
 |               | **Title**:  TBD       |
-|               | **Speaker**: Vladimir Pavlovic  (Rutgers University) |
+|               | **Speaker**: Zhi-Hua Zhou, (Nanjing University) |
 | 10:15-10:35   | Coffee Break      |
 | 10:35-10:55   | **Paper Talk 2**    |
-|               | **Title**: Which Ones Are Speaking? Integrating Speaker Information for Multi-talker Speech Separation        |
-|               | **Authors**: Jing Shi |
+|               | **Title**: TBD        |
+|               | **Authors**: TBD |
 | 10:55-11:30   | **Keynote Talk 3**  |  
-|               | **Title**: Extreme Classification        |
-|               | **Speaker**: Manik Varma  (Microsoft Research India) |
+|               | **Title**: TBD        |
+|               | **Speaker**: Ivor W. Tsang  (University of Technology Sydney) |
 | 11:30-11:50   | **Paper Talk 3**    |
-|               | **Title**: Sequence Learning to Estimate time of Travel and Stop        |
-|               | **Authors**: Jessie Sun, Shujuan Sun |
+|               | **Title**: TBD        |
+|               | **Authors**: TBD |
 | 11:50-12:30   | **Panel Discussion & Concluding Remark**    |
-|               | **Host**: Chen Gong        |
-|               | **Guests**: Manik Varma, Vladimir Pavlovic, Ivor W. Tsang |
+|               | **Host**: Bo Han        |
+|               | **Guests**: Hsuan-Tien Lin, Zhi-Hua Zhou, Ivor W. Tsang |
 
 
 <!--
@@ -163,3 +164,11 @@ Bo Han, RIKEN-AIP, Japan.
 Gang Niu, RIKEN-AIP, Japan.
 
 Quanming Yao, 4Paradigm Inc., Hong Kong.
+
+Giorgio Patrini, DeepTrace Inc., Netherlands.
+
+Aditya Krishna Menon, Google AI, USA.
+
+Clayton Scott, University of Michigan, USA.
+
+Masashi Sugiyama, RIKEN / University of Tokyo, Japan.
