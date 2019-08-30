@@ -13,27 +13,15 @@ In this workshop, we discuss both theoretical and applied aspects of WSL, which 
 
 Interested topics include, but are not limited to:
 
-- Novel deep learning methods for multi-output learning tasks.
+- Theory and applications of \emph{incomplete supervision}, e.g., semi-supervised learning, active learning and positive-unlabeled learning;
 
-- Novel modellings for multi-output learning from new perspectives.
+- Theory and applications of \emph{inexact supervision}, e.g., multi-instance learning and complementary learning;
 
-- Statistical theory analysis for multiple output learning.
+- Theory and applications of \emph{inaccurate supervision}, e.g., crowdsourcing and learning with noisy labels;
 
-- Large-scale optimization algorithms for multiple output learning.
+- Theory and applications of \emph{cross-domain supervision}, e.g., zero-/one-/few-shot learning, domain adaptation and multi-task leaning;
 
-- Sparse representation learning for large-scale multiple output learning.
-
-- Active learning for multi-output data.
-
-- Online learning for multi-output data.
-
-- Metric learning for multi-output data.
-
-- Multi-output learning with noisy data.  
-
-- Multi-output learning with imbalanced data. 
-
-- New applications.
+- Theory and applications of \emph{imperfect demonstration}, e.g., inverse reinforcement learning and imitation learning with non-expert demonstrations.
 
 
 # Submission Guidelines
