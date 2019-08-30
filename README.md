@@ -88,7 +88,7 @@ Prof. **Zhi-Hua Zhou**, Nanjing University
 |               | **Speaker**: Jun Zhu (University of Technology Sydney) |
 | 16:05-16:30   | **Panel Discussion & Concluding Remark**    |
 |               | **Host**: Bo Han        |
-|               | **Guests**: Hsuan-Tien Lin, Zhi-Hua Zhou, Ivor W. Tsang |
+|               | **Guests**: Hsuan-Tien Lin, Zhi-Hua Zhou, James T. Kwok, Jun Zhu|
 
 
 
