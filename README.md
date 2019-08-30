@@ -31,30 +31,13 @@ and weakly-supervised medical image segmentation (healthcare analysis).
 
 # Submission Guidelines
 
-Workshop submissions and camera ready versions will be handled by Gmail. Click [https://cmt3.research.microsoft.com/IJCAIMOL2019](https://cmt3.research.microsoft.com/IJCAIMOL2019) for submission. 
+Workshop submissions and camera ready versions will be handled by Gmail. Please E-mail your paper to wsl.workshop@gmail.com with subject line ACML-WSL-{paper name}.
 
 Papers should be formatted according to the ACML formatting instructions for the Conference Track. The submissions with 2 pages will be considered for the poster, while the submissions with at least 4 pages will be considered for the oral presentation. 
 
 ACML-WSL is a non-archival venue and there will be no published proceedings. The papers will be posted on the workshop website. It will be possible to submit to other conferences and journals both in parallel to and after ACML-WSL'19. Besides, we also welcome submissions to ACML-WSL that are under review at other conferences and workshops. 
 
 At least one author from each accepted paper must register for the workshop. Please see the ACML 2019 Website for information about accommodation and registration. 
-
-
-<!-- To be announced
--->
-
-<!--
-
-Workshop submissions and camera ready versions will be handled by Microsoft CMT. Click [https://cmt3.research.microsoft.com/ACMLMoL2018](https://cmt3.research.microsoft.com/ACMLMoL2018) for submission.
-
-Papers should be formatted according to the ACML formatting instructions for the Conference Track. The submissions with 2 pages will be considered for the poster, while submissions with at least 6 pages will be considered for the oral presentation. The selective oral papers will be invited for IEEE TNNLS Special Issue on "Structured Multi-output Learning: Modelling, Algorithm, Theory and Applications" ([https://cis.ieee.org/images/files/Documents/Transactions/TNNLS/TNNLS_SMLMATA-CFP.pdf](https://cis.ieee.org/images/files/Documents/Transactions/TNNLS/TNNLS_SMLMATA-CFP.pdf)).
-
-ACML-MoL is a non-archival venue and there will be no published proceedings. The papers will be posted on the workshop website. It will be possible to submit to other conferences and journals both in parallel to and after ACML-MoL'18. Besides, we also welcome submissions to ACML-MoL that are under review at other conferences and workshops.
-
-At least one author from each accepted paper must register for the workshop. Please see the ACML 2019 Website for information about accommodation and registration.
-
--->
-
 
 
 # Preliminary list of invited speakers
@@ -69,7 +52,6 @@ Prof. **Ivor W. Tsang**, University of Technology Sydney
 Prof. **Jun Zhu**, Tsinghua University
 
 Prof. **Zhi-Hua Zhou**, Nanjing University
-
 
 
 # Tentative Schedule
@@ -108,35 +90,7 @@ Prof. **Zhi-Hua Zhou**, Nanjing University
 |               | **Guests**: Hsuan-Tien Lin, Zhi-Hua Zhou, Ivor W. Tsang |
 
 
-<!--
-To be announced
--->
 
-<!--
-
-8:50 - 9:00 Introduction
-
-9:00 - 10:00 Invited Keynote Talk
-
-===10:00-10:30 Morning tea===
-
-10:30 - 10:55 Paper presentation
-
-10:55 - 11:20 Paper presentation
-
-11:20 - 11:35 Paper presentation
-
-===11:35 - 11:50 Panel discussion===
-
-11:50 - 12:05 Paper presentation
-
-12:05 - 12:20 Paper presentation
-
-12:20 - 12:35 Paper presentation
-
-===12:35 - 12:50 Panel discussion===
-
--->
 
 # Important Dates
 
@@ -151,6 +105,8 @@ Camera-ready: Oct 10th, 2019
 # Organizers
 
 Bo Han, RIKEN-AIP, Japan.
+
+[https://cmt3.research.microsoft.com/IJCAIMOL2019](https://cmt3.research.microsoft.com/IJCAIMOL2019) 
 
 Gang Niu, RIKEN-AIP, Japan.
 
