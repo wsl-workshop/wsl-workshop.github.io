@@ -47,7 +47,7 @@ At least one author from each accepted paper must register for the workshop. Ple
 The ACML-WSL workshop will feature on a **3 hours** event. We plan to invite **4 keynote speakers** who are leading experts in weakly-supervised learning area. A list of keynote speakers (alphabetic ordering) includes:
 
 
-Prof. **James T. Kwok**, Hong Kong University of Science and Technology
+Prof. **[James T. Kwok](http://www.cse.ust.hk/~jamesk/)**, Hong Kong University of Science and Technology
 
 Prof. **Hsuan-Tien Lin**, National Taiwan University
 
@@ -100,7 +100,6 @@ Submission Deadline: 05:00 PM (Pacific Time), Oct 1st, 2019
 Acceptance Notifications: Oct 5th, 2019
 
 Camera-ready: Oct 10th, 2019
-
 
 
 # Organizers
