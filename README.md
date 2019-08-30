@@ -34,7 +34,7 @@ and weakly-supervised medical image segmentation (healthcare analysis).
 
 Workshop submissions and camera ready versions will be handled by Gmail. Please E-mail your paper to wsl.workshop@gmail.com with subject line ACML-WSL-{paper name}.
 
-Papers should be formatted according to the ACML formatting instructions for the Conference Track. The submissions with 2 pages will be considered for the poster, while the submissions with at least 4 pages will be considered for the oral presentation. 
+Papers should be formatted according to the ACML19 formatting instructions for the Conference Track. The submissions with 2 pages will be considered for the poster, while the submissions with at least 4 pages will be considered for the oral presentation. 
 
 ACML-WSL is a non-archival venue and there will be no published proceedings. The papers will be posted on the workshop website. It will be possible to submit to other conferences and journals both in parallel to and after ACML-WSL'19. Besides, we also welcome submissions to ACML-WSL that are under review at other conferences and workshops. 
 
@@ -44,7 +44,7 @@ At least one author from each accepted paper must register for the workshop. Ple
 # Preliminary list of invited speakers
 
 
-The MoL workshop will feature on a **2.5 hours** event. We plan to invite **4 keynote speakers** who are leading experts from both academia and industry. A list of keynote speakers includes:
+The ACML-WSL workshop will feature on a **2.5 hours** event. We plan to invite **4 keynote speakers** who are leading experts from both academia and industry. A list of keynote speakers includes:
 
 Prof. **Hsuan-Tien Lin**, National Taiwan University
 
