@@ -85,7 +85,7 @@ Prof. **Zhi-Hua Zhou**, Nanjing University
 |               | **Authors**: TBD |
 | 15:35-16:05   | **Keynote Talk 4**  |  
 |               | **Title**: TBD        |
-|               | **Speaker**: Jun Zhu (University of Technology Sydney) |
+|               | **Speaker**: Jun Zhu (Tsinghua University) |
 | 16:05-16:30   | **Panel Discussion & Concluding Remark**    |
 |               | **Host**: Bo Han        |
 |               | **Guests**: Hsuan-Tien Lin, Zhi-Hua Zhou, James T. Kwok, Jun Zhu|
