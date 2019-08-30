@@ -79,7 +79,7 @@ Prof. **Zhi-Hua Zhou**, Nanjing University
 |               | **Authors**: TBD |
 | 14:55-15:25   | **Keynote Talk 3**  |  
 |               | **Title**: TBD        |
-|               | **Speaker**: Ivor W. Tsang  (University of Technology Sydney) |
+|               | **Speaker**: James T. Kwok, (Hong Kong University of Science and Technology) |
 | 15:25-15:35   | **Contributed Talk 3**    |
 |               | **Title**: TBD        |
 |               | **Authors**: TBD |
