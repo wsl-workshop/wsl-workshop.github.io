@@ -62,7 +62,7 @@ At least one author from each accepted paper must register for the workshop. Ple
 # Preliminary list of invited speakers
 
 
-The MoL workshop will feature on a **2.5 hours** event. We plan to invite **3 to 4 keynote speakers** who are leading experts from both academia and industry. A list of keynote speakers includes:
+The MoL workshop will feature on a **2.5 hours** event. We plan to invite **4 keynote speakers** who are leading experts from both academia and industry. A list of keynote speakers includes:
 
 Prof. **Hsuan-Tien Lin**, National Taiwan University
 
@@ -103,6 +103,9 @@ Prof. **Zhi-Hua Zhou**, Nanjing University
 | 11:30-11:50   | **Paper Talk 3**    |
 |               | **Title**: TBD        |
 |               | **Authors**: TBD |
+| 10:55-11:30   | **Keynote Talk 4**  |  
+|               | **Title**: TBD        |
+|               | **Speaker**: Jun Zhu (University of Technology Sydney) |
 | 11:50-12:30   | **Panel Discussion & Concluding Remark**    |
 |               | **Host**: Bo Han        |
 |               | **Guests**: Hsuan-Tien Lin, Zhi-Hua Zhou, Ivor W. Tsang |
