@@ -121,4 +121,4 @@ Camera-ready: Oct 10th, 2019
 
 # Sponsors
 
-Several awards are kindly sponsored by RIKEN-AIP and 4Paradigm. We hope to receive more sponsorships to support young students.
+Several awards are kindly sponsored by RIKEN-AIP and 4Paradigm. We hope to receive more sponsorships to support young students. Please contact to bo.han@riken.jp for sponsorships.
