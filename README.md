@@ -51,9 +51,9 @@ Prof. **[James T. Kwok](http://www.cse.ust.hk/~jamesk/)**, Hong Kong University 
 
 Prof. **[Hsuan-Tien Lin](https://www.csie.ntu.edu.tw/~htlin/)**, National Taiwan University
 
-Prof. **[Jun Zhu](http://ml.cs.tsinghua.edu.cn/~jun/index.shtml)**, Tsinghua University
+Prof. **[Yu-Feng Li](http://lamda.nju.edu.cn/liyf/)**, Nanjing University
 
-Prof. **[Zhi-Hua Zhou](https://cs.nju.edu.cn/zhouzh/)**, Nanjing University
+Prof. **[Jun Zhu](http://ml.cs.tsinghua.edu.cn/~jun/index.shtml)**, Tsinghua University
 
 
 # Tentative Schedule
@@ -73,7 +73,7 @@ Prof. **[Zhi-Hua Zhou](https://cs.nju.edu.cn/zhouzh/)**, Nanjing University
 |               | **Authors**: TBD |
 | 14:15-14:45   | **Keynote Talk 2**  |  
 |               | **Title**:  TBD       |
-|               | **Speaker**: Zhi-Hua Zhou, (Nanjing University) |
+|               | **Speaker**: Yu-Feng Li, (Nanjing University) |
 | 14:45-14:55   | **Contributed Talk 2**    |
 |               | **Title**: TBD        |
 |               | **Authors**: TBD |
@@ -88,7 +88,7 @@ Prof. **[Zhi-Hua Zhou](https://cs.nju.edu.cn/zhouzh/)**, Nanjing University
 |               | **Speaker**: Jun Zhu (Tsinghua University) |
 | 16:05-16:30   | **Panel Discussion & Concluding Remark**    |
 |               | **Host**: Bo Han        |
-|               | **Guests**: Hsuan-Tien Lin, Zhi-Hua Zhou, James T. Kwok, Jun Zhu|
+|               | **Guests**: Hsuan-Tien Lin, Yu-Feng Li, James T. Kwok, Jun Zhu|
 
 
 
