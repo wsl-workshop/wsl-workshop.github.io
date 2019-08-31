@@ -51,7 +51,7 @@ Prof. **[James T. Kwok](http://www.cse.ust.hk/~jamesk/)**, Hong Kong University 
 
 Prof. **[Hsuan-Tien Lin](https://www.csie.ntu.edu.tw/~htlin/)**, National Taiwan University
 
-Prof. **[Yu-Feng Li](http://lamda.nju.edu.cn/liyf/)**, Nanjing University
+Prof. **[Yu-Feng Li](http://lamda.nju.edu.cn/liyf/)**, Nanjing University (confirmed)
 
 Prof. **[Jun Zhu](http://ml.cs.tsinghua.edu.cn/~jun/index.shtml)**, Tsinghua University
 
