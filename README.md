@@ -32,11 +32,11 @@ and weakly-supervised medical image segmentation (healthcare).
 
 # Submission Guidelines
 
-Workshop submissions and camera ready versions will be handled by Gmail. Please E-mail your paper to wsl.workshop@gmail.com with subject line ACML-WSL-{paper name}.
+Workshop submissions and camera ready versions will be handled by Gmail. Please E-mail your paper to wsl.workshop@gmail.com with subject line ACML19-WSL-{paper name}.
 
 Papers should be formatted according to the ACML19 formatting instructions for the Conference Track. The submissions with 2 pages will be considered for the poster, while the submissions with at least 4 pages will be considered for the oral presentation. 
 
-ACML-WSL is a non-archival venue and there will be no published proceedings. The papers will be posted on the workshop website. It will be possible to submit to other conferences and journals both in parallel to and after ACML-WSL'19. Besides, we also welcome submissions to ACML-WSL that are under review at other conferences and workshops. 
+ACML19-WSL is a non-archival venue and there will be no published proceedings. The papers will be posted on the workshop website. It will be possible to submit to other conferences and journals both in parallel to and after ACML19-WSL. Besides, we also welcome submissions to ACML19-WSL that are under review at other conferences and workshops. 
 
 At least one author from each accepted paper must register for the workshop. Please see the ACML 2019 Website for information about accommodation and registration. 
 
