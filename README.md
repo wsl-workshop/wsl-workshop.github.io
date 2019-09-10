@@ -44,7 +44,7 @@ At least one author from each accepted paper must register for the workshop. Ple
 # Preliminary list of invited speakers
 
 
-The ACML-WSL workshop will feature on a **3 hours** event. We plan to invite **4 keynote speakers** who are leading experts in weakly-supervised learning area. A list of keynote speakers (alphabetic ordering) includes:
+The ACML-WSL workshop will feature on a **3 hours** event. We plan to invite **3 keynote speakers** who are leading experts in weakly-supervised learning area. A list of keynote speakers (alphabetic ordering) includes:
 
 
 Prof. **[James T. Kwok](http://www.cse.ust.hk/~jamesk/)**, Hong Kong University of Science and Technology (confirmed)
@@ -52,8 +52,6 @@ Prof. **[James T. Kwok](http://www.cse.ust.hk/~jamesk/)**, Hong Kong University 
 Prof. **[Hsuan-Tien Lin](https://www.csie.ntu.edu.tw/~htlin/)**, National Taiwan University (confirmed)
 
 Prof. **[Yu-Feng Li](http://lamda.nju.edu.cn/liyf/)**, Nanjing University (confirmed)
-
-Prof. **[Jun Zhu](http://ml.cs.tsinghua.edu.cn/~jun/index.shtml)**, Tsinghua University
 
 
 # Tentative Schedule
@@ -83,12 +81,12 @@ Prof. **[Jun Zhu](http://ml.cs.tsinghua.edu.cn/~jun/index.shtml)**, Tsinghua Uni
 | 15:25-15:35   | **Contributed Talk 3**    |
 |               | **Title**: TBD        |
 |               | **Authors**: TBD |
-| 15:35-16:05   | **Keynote Talk 4**  |  
+| 15:35-16:05   | **AutoWSL Challenge Talk**  |  
 |               | **Title**: TBD        |
-|               | **Speaker**: Jun Zhu, (Tsinghua University) |
+|               | **Speaker**: TBD |
 | 16:05-16:30   | **Panel Discussion & Concluding Remark**    |
 |               | **Host**: Bo Han        |
-|               | **Guests**: Hsuan-Tien Lin, Yu-Feng Li, James T. Kwok, Jun Zhu|
+|               | **Guests**: Hsuan-Tien Lin, Yu-Feng Li, James T. Kwok|
 
 
 
