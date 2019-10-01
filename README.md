@@ -100,11 +100,9 @@ Prof. **[Yu-Feng Li](http://lamda.nju.edu.cn/liyf/)**, Nanjing University (confi
 
 # Important Dates
 
-Submission Deadline: 05:00 PM (Pacific Time), Oct 1st, 2019
+Submission Deadline: 05:00 PM (Pacific Time), Oct 5th, 2019 (2nd Round)
 
-Acceptance Notifications: Oct 5th, 2019
-
-Camera-ready: Oct 10th, 2019
+Acceptance Notifications: Oct 10th, 2019
 
 
 # Organizers
