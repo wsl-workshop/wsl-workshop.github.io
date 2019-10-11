@@ -86,8 +86,7 @@ Prof. **[Yu-Feng Li](http://lamda.nju.edu.cn/liyf/)**, Nanjing University (confi
 |               | **Title**: TBD        |
 |               | **Speaker**:  Hsuan-Tien Lin, (National Taiwan University) |
 | 15:25-15:35   | **Contributed Talk 3**    |
-|               | **Title**: Mitigating Overfitting in Supervised Classification from Two
-Unlabeled Datasets: A Consistent Risk Correction Approach |
+|               | **Title**: Mitigating Overfitting in Supervised Classification from Two Unlabeled Datasets: A Consistent Risk Correction Approach |
 |               | **Authors**: Nan Lu (The University of Tokyo) |
 | 15:35-16:05   | **AutoWSL Challenge Talk**  |  
 |               | **Title**: TBD        |
