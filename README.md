@@ -131,4 +131,4 @@ Acceptance Notifications: Oct 10th, 2019
 
 # Sponsors
 
-Several awards are kindly sponsored by RIKEN-AIP and 4Paradigm. We hope to receive more sponsorships to support young students. Please contact to bo.han@riken.jp for sponsorships.
+Several awards are kindly sponsored by [4Paradigm](https://www.4paradigm.com/). We have supported best paper awards and travel awards.
