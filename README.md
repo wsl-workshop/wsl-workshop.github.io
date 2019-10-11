@@ -96,6 +96,13 @@ Prof. **[Yu-Feng Li](http://lamda.nju.edu.cn/liyf/)**, Nanjing University (confi
 |               | **Guests**: Hsuan-Tien Lin, Yu-Feng Li, James T. Kwok|
 
 
+# Best Paper Awards (alphabetic ordering)
+
+Nan Lu, The University of Tokyo, Japan.
+
+Melanie F. Pradier, Harvard University, USA.
+
+Hansi Yang, Tsinghua University, China.
 
 
 # Important Dates
