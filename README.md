@@ -74,20 +74,21 @@ Prof. **[Yu-Feng Li](http://lamda.nju.edu.cn/liyf/)**, Nanjing University (confi
 |               | **Title**: TBD        |
 |               | **Speaker**: James T. Kwok, (Hong Kong University of Science and Technology)|
 | 14:05-14:15   | **Contributed Talk 1**    |
-|               | **Title**: Projected BNNs: Avoiding weight-space pathologies by learning latent representations of neural network weights|
+|               | **Title**: Projected BNNs: Avoiding Weight-space Pathologies by Learning Latent Representations of Neural Network Weights |
 |               | **Authors**: Melanie F. Pradier (Harvard University) |
 | 14:15-14:45   | **Keynote Talk 2**  |  
 |               | **Title**:  TBD       |
 |               | **Speaker**: Yu-Feng Li, (Nanjing University) |
 | 14:45-14:55   | **Contributed Talk 2**    |
-|               | **Title**: TBD        |
-|               | **Authors**: TBD |
+|               | **Title**: Towards Automated Learning from Noisy Labels |
+|               | **Authors**: Hansi Yang (Tsinghua University) |
 | 14:55-15:25   | **Keynote Talk 3**  |  
 |               | **Title**: TBD        |
 |               | **Speaker**:  Hsuan-Tien Lin, (National Taiwan University) |
 | 15:25-15:35   | **Contributed Talk 3**    |
-|               | **Title**: TBD        |
-|               | **Authors**: TBD |
+|               | **Title**: Mitigating Overfitting in Supervised Classification from Two
+Unlabeled Datasets: A Consistent Risk Correction Approach |
+|               | **Authors**: Nan Lu (The University of Tokyo) |
 | 15:35-16:05   | **AutoWSL Challenge Talk**  |  
 |               | **Title**: TBD        |
 |               | **Speaker**: TBD |
