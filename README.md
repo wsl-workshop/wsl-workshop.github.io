@@ -74,7 +74,7 @@ Prof. **[Yu-Feng Li](http://lamda.nju.edu.cn/liyf/)**, Nanjing University (confi
 |               | **Title**: TBD        |
 |               | **Speaker**: James T. Kwok, (Hong Kong University of Science and Technology)|
 | 14:05-14:15   | **Contributed Talk 1**    |
-|               | **Title**: Projected BNNs: Avoiding weight-space pathologies by|
+|               | **Title**: Projected BNNs: Avoiding weight-space pathologies by learning latent representations of neural network weights|
 |               | **Authors**: Melanie F. Pradier (Harvard University) |
 | 14:15-14:45   | **Keynote Talk 2**  |  
 |               | **Title**:  TBD       |
