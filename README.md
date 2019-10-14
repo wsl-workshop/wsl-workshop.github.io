@@ -69,7 +69,7 @@ Prof. **[Yu-Feng Li](http://lamda.nju.edu.cn/liyf/)**, Nanjing University (confi
 
 | Time          | Event             |
 | ------------- | -------------     |
-| 13:30-13:35   | **Opening Ceremony**  |
+| 13:30-13:35   | **Opening Ceremony**: Masashi Sugiyama |
 | 13:35-14:05   | **Keynote Talk 1**  |  
 |               | **Title**: TBD        |
 |               | **Speaker**: James T. Kwok, (Hong Kong University of Science and Technology)|
@@ -92,7 +92,7 @@ Prof. **[Yu-Feng Li](http://lamda.nju.edu.cn/liyf/)**, Nanjing University (confi
 |               | **Title**: TBD        |
 |               | **Speaker**: TBD |
 | 16:05-16:30   | **Panel Discussion & Concluding Remark**    |
-|               | **Host**: Bo Han        |
+|               | **Host**: Bo Han |
 |               | **Guests**: Hsuan-Tien Lin, Yu-Feng Li, James T. Kwok|
 
 
