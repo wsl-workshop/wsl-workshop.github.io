@@ -114,9 +114,9 @@ Acceptance Notifications: Oct 10th, 2019
 
 # Organizers
 
-[Bo Han](https://bhanml.github.io/), RIKEN-AIP, Japan.
+[Bo Han](https://bhanml.github.io/), RIKEN AIP, Japan.
 
-[Gang Niu](https://niug1984.github.io/), RIKEN-AIP, Japan.
+[Gang Niu](https://niug1984.github.io/), RIKEN AIP, Japan.
 
 [Quanming Yao](http://www.cse.ust.hk/~qyaoaa/), 4Paradigm Inc., Hong Kong.
 
