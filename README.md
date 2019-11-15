@@ -98,11 +98,11 @@ Prof. **[Yu-Feng Li](http://lamda.nju.edu.cn/liyf/)**, Nanjing University (confi
 
 # Best Paper Awards (alphabetic ordering)
 
-Nan Lu, The University of Tokyo, Japan.
+Nan Lu, Tianyi Zhang, Gang Niu, and Masashi Sugiyama. RIKEN AIP & The University of Tokyo, Japan.
 
-Melanie F. Pradier, Harvard University, USA.
+Melanie F. Pradier, Weiwei Pan, Jiayu Yao, Soumya Ghosh, and Finale Doshi-Velez. Harvard University, USA.
 
-Hansi Yang, Tsinghua University, China.
+Hansi Yang, and Quanming Yao. Tsinghua University & 4Paradigm, China.
 
 
 # Important Dates
