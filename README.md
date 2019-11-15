@@ -71,7 +71,7 @@ Prof. **[Yu-Feng Li](http://lamda.nju.edu.cn/liyf/)**, Nanjing University (confi
 | ------------- | -------------     |
 | 13:30-13:35   | **Opening Ceremony**: Masashi Sugiyama |
 | 13:35-14:05   | **Keynote Talk 1**  |  
-|               | **Title**: TBD        |
+|               | **Title**: Multilabel Learning with Global and Local Label Correlation |
 |               | **Speaker**: James T. Kwok, (Hong Kong University of Science and Technology)|
 | 14:05-14:15   | **Contributed Talk 1**    |
 |               | **Title**: Projected BNNs: Avoiding Weight-space Pathologies by Learning Latent Representations of Neural Network Weights |
