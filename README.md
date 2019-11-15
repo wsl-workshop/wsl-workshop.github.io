@@ -83,7 +83,7 @@ Prof. **[Yu-Feng Li](http://lamda.nju.edu.cn/liyf/)**, Nanjing University (confi
 |               | **Title**: Towards Automated Learning from Noisy Labels |
 |               | **Authors**: Hansi Yang (Tsinghua University) |
 | 14:55-15:25   | **Keynote Talk 3**  |  
-|               | **Title**: TBD        |
+|               | **Title**: Making Active Learning More Realistic |
 |               | **Speaker**:  Hsuan-Tien Lin, (National Taiwan University) |
 | 15:25-15:35   | **Contributed Talk 3**    |
 |               | **Title**: Mitigating Overfitting in Supervised Classification from Two Unlabeled Datasets: A Consistent Risk Correction Approach |
