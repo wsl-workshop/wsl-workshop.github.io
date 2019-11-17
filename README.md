@@ -89,8 +89,8 @@ Prof. **[Yu-Feng Li](http://lamda.nju.edu.cn/liyf/)**, Nanjing University (confi
 |               | **Title**: Mitigating Overfitting in Supervised Classification from Two Unlabeled Datasets: A Consistent Risk Correction Approach |
 |               | **Authors**: Nan Lu (The University of Tokyo) |
 | 15:35-16:05   | **AutoWSL Challenge Talk**  |  
-|               | **Title**: TBD        |
-|               | **Speaker**: TBD |
+|               | **Title**: AutoWSL Challenge & Results|
+|               | **Speaker**: Xiawei Guo |
 | 16:05-16:30   | **Panel Discussion & Concluding Remark**    |
 |               | **Host**: Bo Han |
 |               | **Guests**: Masashi Sugiyama, James T. Kwok, Hsuan-Tien Lin, Gang Niu and Quanming Yao|
