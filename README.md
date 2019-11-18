@@ -93,7 +93,7 @@ Prof. **[Yu-Feng Li](http://lamda.nju.edu.cn/liyf/)**, Nanjing University (confi
 |               | **Speaker**: Xiawei Guo |
 | 16:05-16:30   | **Panel Discussion & Concluding Remark**    |
 |               | **Host**: Bo Han |
-|               | **Guests**: Masashi Sugiyama, James T. Kwok, Hsuan-Tien Lin, Gang Niu and Quanming Yao|
+|               | **Guests**: Masashi Sugiyama, James T. Kwok, Hsuan-Tien Lin, Yu-Feng Li, Gang Niu and Quanming Yao|
 
 
 # Best Paper Awards (alphabetic ordering)
