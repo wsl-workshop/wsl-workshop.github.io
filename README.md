@@ -77,7 +77,7 @@ Prof. **[Yu-Feng Li](http://lamda.nju.edu.cn/liyf/)**, Nanjing University (confi
 |               | **Title**: Projected BNNs: Avoiding Weight-space Pathologies by Learning Latent Representations of Neural Network Weights |
 |               | **Authors**: Melanie F. Pradier (Harvard University) |
 | 14:15-14:45   | **Keynote Talk 2**  |  
-|               | **Title**:  TBD       |
+|               | **Title**:  Safe Semi-supervised Learning |
 |               | **Speaker**: Yu-Feng Li, (Nanjing University) |
 | 14:45-14:55   | **Contributed Talk 2**    |
 |               | **Title**: Towards Automated Learning from Noisy Labels |
