@@ -30,113 +30,47 @@ Workshop submissions and camera ready versions will be handled by the CTM system
 
 # Tentative Schedule
 
-# Format (Tentative Schedule)
+The workshop will be combined with invited talks, accepted presentations, and informal discussions. 
 
-The workshop will be combined with invited talks, accepted presentations, and informal discussions. We prefer a one-day long workshop.
-
-Time
-
-Event
-
-09:00-09:15
-
-**Opening Ceremony**
-
-Session 1: Incomplete supervision, inexact supervision and inaccurate supervision
-
-09:15-10:15
-
-**Keynote Talk 1**
-
-**Title**: TBD
-
-**Speaker**: Lingfei Wu, (IBM T. J. Watson Research Center; confirmed)
-
-10:15-11:15
-
-**Keynote Talk 2**
-
-**Title**: TBD
-
-**Speaker**: Jiayu Zhou, (Michgan State University; confirmed)
-
-11:15-11:25
-
-**Contributed Talk 1**
-
-**Title**: TBD
-
-**Authors**: TBD
-
-11:25-11:35
-
-**Contributed Talk 2**
-
-**Title**: TBD
-
-**Authors**: TBD
-
-11:35-11:45
-
-**Contributed Talk 3**
-
-**Title**: TBD
-
-**Authors**: TBD
-
-11:45-12:45
-
-**Poster session 1 / Coffee break**
-
-11:45-12:45
-
-**12:45-14:30 / Lunch break**
-
-Session 2: No supervision and Cross-domain supervision
-
-14:30-15:30
-
-**Keynote Talk 3**
-
-**Title**: TBD
-
-**Speaker**: Kayhan Batmanghelich, (University of Pittsburgh; confirmed)
-
-15:30-16:30
-
-**Keynote Talk 4**
-
-**Title**: TBD
-
-**Speaker**: Zhangyang Wang, (Texas A&M University; confirmed)
-
-16:30-16:40
-
-**Keynote Talk 5**
-
-**Title**: TBD
-
-**Authors**: Wei-Lun Chao, (Ohio State University; confirmed)
-
-16:40-16:50
-
-**Contributed Talk 4**
-
-**Title**: TBD
-
-**Authors**: TBD
-
-16:50-17:00
-
-**Contributed Talk 5**
-
-**Title**: TBD
-
-**Authors**: TBD
-
-17:00-18:00
-
-**Poster session 2 / Coffee break**
+| Time | Event |  
+| ------------- | ------------- |  
+| 09:00-09:15 | **Opening Ceremony** |  
+||Session 1: Incomplete supervision, inexact supervision and inaccurate supervision
+| 09:15-10:15 | **Keynote Talk 1** |  
+| | **Title**: TBD |  
+| | **Speaker**: Lingfei Wu, (IBM T. J. Watson Research Center; confirmed)|  
+| 10:15-11:15 | **Keynote Talk 2** |  
+| | **Title**: TBD |  
+| | **Speaker**: Jiayu Zhou, (Michgan State University; confirmed)|  
+| 11:15-11:25 | **Contributed Talk 1** |  
+| | **Title**: TBD |  
+| | **Authors**: TBD |  
+| 11:25-11:35 | **Contributed Talk 2** |  
+| | **Title**: TBD |  
+| | **Authors**: TBD |  
+| 11:35-11:45 | **Contributed Talk 3** |  
+| | **Title**: TBD |  
+| | **Authors**: TBD |  
+| 11:45-12:45 | **Poster session 1 / Coffee break** |  
+ | 11:45-12:45 | **12:45-14:30 / Lunch break** | 
+ |
+ ||Session 2: No supervision and Cross-domain supervision
+| 14:30-15:30 | **Keynote Talk 3** |  
+| | **Title**: TBD |  
+| | **Speaker**: Kayhan Batmanghelich, (University of Pittsburgh; confirmed)|  
+| 15:30-16:30 | **Keynote Talk 4** |  
+| | **Title**: TBD |  
+| | **Speaker**: Zhangyang Wang, (Texas A&M University; confirmed)|  
+| 16:30-16:40 | **Keynote Talk 5** |  
+| | **Title**: TBD |  
+| | **Authors**: Wei-Lun Chao, (Ohio State University; confirmed)|  
+| 16:40-16:50 | **Contributed Talk 4** |  
+| | **Title**: TBD |  
+| | **Authors**: TBD |  
+| 16:50-17:00 | **Contributed Talk 5** |  
+| | **Title**: TBD |  
+| | **Authors**: TBD |  
+  | 17:00-18:00 | **Poster session 2 / Coffee break** | 
 
 
 # Important Dates
