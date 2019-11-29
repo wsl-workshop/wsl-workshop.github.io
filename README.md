@@ -1,134 +1,166 @@
-## Welcome to ACML19 Weakly-supervised Learning Workshop
+## Welcome to SDM2020 Weakly-supervised and Unsupervised Learning Workshop
 
 # Topic Summary
 
-UC terminates subscriptions with world’s largest scientific publisher in push for open access to publicly funded research, since “Knowledge should not be accessible only to those who can pay,” said Robert May, chair of UC’s faculty Academic Senate. Similarly, machine learning should not be accessible only to those who can pay. Specifically, modern machine learning is migrating to the era of complex models (e.g., deep neural networks), which require a plethora of well-annotated data. Giant companies have enough money to collect well-annotated data. However, for startups or non-profit organizations, such data is barely acquirable due to the cost of labeling data or the intrinsic scarcity in the given domain. These practical issues motivate us to research and pay attention to **weakly-supervised learning (WSL)**, since WSL does not require such a huge amount of annotated data. We define WSL as the collection of machine learning problem settings and algorithms that share the same goals as supervised learning but can only access to **less supervised information** than supervised learning. In this workshop, we discuss both theoretical and applied aspects of WSL. 
-
-- Meanwhile, we co-organize [**AutoWSL Challenge**](https://www.4paradigm.com/competition/autowsl2019) with 4Paradigm, ChaLearn and Microsoft. Winners in the competition and recived papers in WSL (related with AutoML) will be invited to [**TPAMI special issue**](http://www.cse.ust.hk/~qyaoaa/papers/TPAMI-SI-AutoML.pdf).
-
-
+Modern data mining is migrating to the era of complex models (e.g., deep neural networks), which require a plethora of data to train. However, most existing data mining algorithms rely heavily on supervisory label information. As dataset sizes grow bigger, obtaining labels is becoming more and more laborious and expensive. Giant companies have enough money to collect well-annotated data. However, for startups or non-profit organizations, such data is barely acquirable due to the cost of labeling data or the intrinsic scarcity in the given domain. These practical issues motivate us to research and pay attention to weakly-supervised and unsupervised learning (WSUL), since that it does not require such a huge amount of annotated data and that it is relatively easy to collect a large amount of unannotated data. We therefore propose a workshop for researchers from different fields of data mining that face this problem to discuss this issue and foster further research advances in this direction.
 
 
 # Topics of Interest
 
-WSL workshop includes but not limited to the following topics:
+We define WSUL as the collection of learning problem settings and algorithms that share the similar goals as supervised learning but can only access to **less or even no supervised information** than supervised learning.  
+In this workshop, we discuss both theoretical and applied aspects of WSUL, which includes but not limited to the following topics:
 
-- Theory and applications of **incomplete supervision**, e.g., semi-supervised learning, active learning and positive-unlabeled learning;
-
-- Theory and applications of **inexact supervision**, e.g., multi-instance learning and complementary learning;
-
-- Theory and applications of **inaccurate supervision**, e.g., crowdsourcing and learning with noisy labels;
-
-- Theory and applications of **cross-domain supervision**, e.g., zero-/one-/few-shot learning, domain adaptation and multi-task leaning;
-
-- Theory and applications of **imperfect demonstration**, e.g., inverse reinforcement learning and imitation learning with non-expert demonstrations;
-
-- Broad applications of weakly-supervised learning, such as weakly-supervised **object detection**, weakly-supervised **sequence modeling**, weakly-supervised **cross-media retrieval**, and weakly-supervised **medical image segmentation**.
+-   Theories, algorithms, and applications of **no supervision**, e.g., clustering, generative adversarial nets, variational autoencoders;
+-   Theories, algorithms, and applications of **incomplete supervision**, e.g., dealing with semi-supervised data or positive-unlabeled data;
+-   Theories, algorithms, and applications of **inexact supervision**, e.g., dealing with similarity/dissimilarity data and complementary information;
+-   Theories, algorithms, and applications of **inaccurate supervision**, e.g., crowdsourcing and dealing with noisy labels;
+-   Theories, algorithms, and applications of **cross-domain supervision**, e.g., domain adaptation and zero-/one-/few-shot learning.
 
 
 # Topic Description
 
-The focus of this workshop is three classical types of weak supervision: incomplete supervision, inexact supervision and inaccurate supervision. Specifically, incomplete supervision considers a subset of training data given with ground-truth labels while the other data remain unlabeled, such as semi-supervised learning and positive-unlabeled learning. Inexact supervision considers the situation where some supervision information is given but not as exacted as desired, i.e., only coarse-grained labels are available. For example, if we are considering to classify every pixel of an image, rather than the image itself, then ImageNet becomes a benchmark with inexact supervision. Besides, multi-instance learning belongs to inexact supervision, where we do not exactly know which instance in the bag corresponds to the given ground-truth label. Inaccurate supervision considers the situation where the supervision information is not always the ground-truth, such as learning with noisy labels. 
+The focus of this workshop is five types of supervision: no supervision, incomplete supervision, inexact supervision, inaccurate supervision, and cross-domain supervision. Specifically, no supervision considers problems in which no data have ground-truth labels. Incomplete supervision considers a subset of training data given with ground-truth labels while the other data remain unlabeled, such as semi-supervised data and positive-unlabeled data. Inexact supervision considers the situation where some supervision information is given but not as exacted as desired, i.e., only coarse-grained labels are available. For example, if we are considering to classify every pixel of an image, rather than the image itself, then ImageNet becomes a benchmark with inexact supervision. Besides, the multi-instance learning setting belongs to inexact supervision, where we do not exactly know which instance in the bag corresponds to the given ground-truth label. Inaccurate supervision considers the situation where the supervision information is not always the ground-truth, such as learning with noisy labels. Cross-domain supervision considers the situation where the supervision information is scarce or even non-existent in the current domain but can be possibly derived from other domains. Examples of cross-domain supervision appear in zero-/one-/few-shot learning, where external knowledge from other domains is usually used to overcome the problem of too few or even no supervision in the original domain.
 
-Moreover, this workshop covers two emerging types of weak supervision: cross-domain supervision and imperfect demonstration.
-Cross-domain supervision considers the situation where the supervision information is scarce or even non-existent in the current domain but can be possibly derived from other domains. Examples of cross-domain supervision appear in zero-/one-/few-shot learning, where external knowledge from other domains is usually used to overcome the problem of too few or even no supervision in the original domain. Imperfect demonstration considers the situation for inverse reinforcement learning and imitation learning, where the agent learns with imperfect or non-expert demonstrations. For example, AlphaGo learns a policy from a sequence of states and actions (expert demonstration). Even if an expert player (human or agent) wins a game, it is not guaranteed that every action in the sequence is optimal.
+This workshop will discuss the fundamental theories of weakly-supervised and unsupervised learning. Although theories of statistical weakly-supervised and unsupervised learning already exist, extending these results for deep weakly-supervised and unsupervised learning is still a challenge. Besides, this workshop also discusses on broad applications of weakly-supervised and unsupervised learning, such as mining text, web & social media, analyzing finance data, genomics & bioinformatics, and recommendation.
 
-This workshop will discuss the fundamental theory of weakly-supervised learning. Although theories of statistical weakly-supervised learning already exist, extending these results for deep weakly-supervised learning is still a challenge. Besides, this workshop also discusses on broad applications of weakly-supervised learning, such as weakly-supervised object detection (computer vision),
-weakly-supervised sequence modeling (natural language processing), weakly-supervised cross-media retrieval (information retrieval),
-and weakly-supervised medical image segmentation (healthcare). 
 
 # Submission Guidelines
 
-Workshop submissions and camera ready versions will be handled by Gmail. Please E-mail your paper to wsl.workshop@gmail.com with subject line ACML19-WSL-{paper name}.
-
-Papers should be formatted according to the ACML19 formatting instructions for the Conference Track. The submissions with 2 pages will be considered for the poster, while the submissions with at least 4 pages will be considered for the oral presentation. 
-
-ACML19-WSL is a non-archival venue and there will be no published proceedings. The papers will be posted on the workshop website. It will be possible to submit to other conferences and journals both in parallel to and after ACML19-WSL. Besides, we also welcome submissions to ACML19-WSL that are under review at other conferences and workshops. 
-
-At least one author from each accepted paper must register for the workshop. Please see the ACML 2019 Website for information about accommodation and registration. 
-
-
-# Preliminary list of invited speakers
-
-
-The ACML-WSL workshop will feature on a **3 hours** event. We plan to invite **3 keynote speakers** who are leading experts in weakly-supervised learning area. A list of keynote speakers (alphabetic ordering) includes:
-
-
-Prof. **[James T. Kwok](http://www.cse.ust.hk/~jamesk/)**, Hong Kong University of Science and Technology (confirmed)
-
-Prof. **[Hsuan-Tien Lin](https://www.csie.ntu.edu.tw/~htlin/)**, National Taiwan University (confirmed)
-
-Prof. **[Yu-Feng Li](http://lamda.nju.edu.cn/liyf/)**, Nanjing University (confirmed)
-
+Workshop submissions and camera ready versions will be handled by the CTM system. [Link to be updated]. We welcome extended-abstract submissions to introduce preliminary works and ideas, as well as recently-published research at the top conferences. The workshop accepts both full papers (4 to 8 pages) and extended abstracts (1 to 2 pages) for published or ongoing work.  Papers should be submitted as PDF, using the SIAM conference proceedings style.
 
 # Tentative Schedule
 
-**Date**: date Nov 17, 2019
+# Format (Tentative Schedule)
 
-**Venue**: Room 1103 (11th floor) at WINC AICHI venue
+The workshop will be combined with invited talks, accepted presentations, and informal discussions. We prefer a one-day long workshop.
 
-| Time          | Event             |
-| ------------- | -------------     |
-| 13:30-13:35   | **Opening Ceremony**: Masashi Sugiyama |
-| 13:35-14:05   | **Keynote Talk 1**  |  
-|               | **Title**: Multilabel Learning with Global and Local Label Correlation |
-|               | **Speaker**: James T. Kwok, (Hong Kong University of Science and Technology)|
-| 14:05-14:15   | **Contributed Talk 1**    |
-|               | **Title**: Projected BNNs: Avoiding Weight-space Pathologies by Learning Latent Representations of Neural Network Weights |
-|               | **Authors**: Melanie F. Pradier (Harvard University) |
-| 14:15-14:45   | **Keynote Talk 2**  |  
-|               | **Title**:  Safe Semi-supervised Learning |
-|               | **Speaker**: Yu-Feng Li, (Nanjing University) |
-| 14:45-14:55   | **Contributed Talk 2**    |
-|               | **Title**: Towards Automated Learning from Noisy Labels |
-|               | **Authors**: Hansi Yang (Tsinghua University) |
-| 14:55-15:25   | **Keynote Talk 3**  |  
-|               | **Title**: Making Active Learning More Realistic |
-|               | **Speaker**:  Hsuan-Tien Lin, (National Taiwan University) |
-| 15:25-15:35   | **Contributed Talk 3**    |
-|               | **Title**: Mitigating Overfitting in Supervised Classification from Two Unlabeled Datasets: A Consistent Risk Correction Approach |
-|               | **Authors**: Nan Lu (The University of Tokyo) |
-| 15:35-16:05   | **AutoWSL Challenge Talk**  |  
-|               | **Title**: AutoWSL Challenge & Results|
-|               | **Speaker**: Xiawei Guo |
-| 16:05-16:30   | **Panel Discussion & Concluding Remark**    |
-|               | **Host**: Bo Han |
-|               | **Guests**: Masashi Sugiyama, James T. Kwok, Hsuan-Tien Lin, Yu-Feng Li, Gang Niu and Quanming Yao|
+Time
 
+Event
 
-# Best Paper Awards (alphabetic ordering)
+09:00-09:15
 
-Nan Lu, Tianyi Zhang, Gang Niu, and Masashi Sugiyama. RIKEN AIP & The University of Tokyo, Japan.
+**Opening Ceremony**
 
-Melanie F. Pradier, Weiwei Pan, Jiayu Yao, Soumya Ghosh, and Finale Doshi-Velez. Harvard University, USA.
+Session 1: Incomplete supervision, inexact supervision and inaccurate supervision
 
-Hansi Yang, and Quanming Yao. Tsinghua University & 4Paradigm, China.
+09:15-10:15
+
+**Keynote Talk 1**
+
+**Title**: TBD
+
+**Speaker**: Lingfei Wu, (IBM T. J. Watson Research Center; confirmed)
+
+10:15-11:15
+
+**Keynote Talk 2**
+
+**Title**: TBD
+
+**Speaker**: Jiayu Zhou, (Michgan State University; confirmed)
+
+11:15-11:25
+
+**Contributed Talk 1**
+
+**Title**: TBD
+
+**Authors**: TBD
+
+11:25-11:35
+
+**Contributed Talk 2**
+
+**Title**: TBD
+
+**Authors**: TBD
+
+11:35-11:45
+
+**Contributed Talk 3**
+
+**Title**: TBD
+
+**Authors**: TBD
+
+11:45-12:45
+
+**Poster session 1 / Coffee break**
+
+11:45-12:45
+
+**12:45-14:30 / Lunch break**
+
+Session 2: No supervision and Cross-domain supervision
+
+14:30-15:30
+
+**Keynote Talk 3**
+
+**Title**: TBD
+
+**Speaker**: Kayhan Batmanghelich, (University of Pittsburgh; confirmed)
+
+15:30-16:30
+
+**Keynote Talk 4**
+
+**Title**: TBD
+
+**Speaker**: Zhangyang Wang, (Texas A&M University; confirmed)
+
+16:30-16:40
+
+**Keynote Talk 5**
+
+**Title**: TBD
+
+**Authors**: Wei-Lun Chao, (Ohio State University; confirmed)
+
+16:40-16:50
+
+**Contributed Talk 4**
+
+**Title**: TBD
+
+**Authors**: TBD
+
+16:50-17:00
+
+**Contributed Talk 5**
+
+**Title**: TBD
+
+**Authors**: TBD
+
+17:00-18:00
+
+**Poster session 2 / Coffee break**
 
 
 # Important Dates
 
-Submission Deadline: 05:00 PM (Pacific Time), Oct 5th, 2019 (2nd Round)
+Submission Deadline: March 8, 2020
 
-Acceptance Notifications: Oct 10th, 2019
+Acceptance Notifications: March 22, 2020
+
+Final camera-ready papers due: April 1, 2020
 
 
 # Organizers
+[Mingming Gong](https://mingming-gong.github.io/), University of Melbourne, Australia.
+
+[Chunyuan Li](http://chunyuan.li/), Microsoft Research, USA.
+
+[Tongliang Liu](https://tongliang-liu.github.io/), University of Sydney, Australia.
 
 [Bo Han](https://bhanml.github.io/), RIKEN AIP, Japan.
 
-[Gang Niu](https://niug1984.github.io/), RIKEN AIP, Japan.
-
 [Quanming Yao](http://www.cse.ust.hk/~qyaoaa/), 4Paradigm Inc., Hong Kong.
 
-[Giorgio Patrini](https://giorgiop.github.io/), DeepTrace Inc., Netherlands.
+[Gang Niu](https://niug1984.github.io/), RIKEN AIP, Japan.
 
-[Aditya Krishna Menon](https://akmenon.github.io/), Google AI, USA.
-
-[Clayton Scott](http://web.eecs.umich.edu/~cscott/), University of Michigan, USA.
+[Kun Zhang](http://www.andrew.cmu.edu/user/kunz1/index.html), Carnegie Mellon University, USA.
 
 [Masashi Sugiyama](http://www.ms.k.u-tokyo.ac.jp/sugi/), RIKEN / University of Tokyo, Japan.
-
-
-# Sponsors
-
-Several awards are kindly sponsored by [4Paradigm](https://www.4paradigm.com/). We have supported best paper awards and travel awards.
