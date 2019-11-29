@@ -53,8 +53,7 @@ The workshop will be combined with invited talks, accepted presentations, and in
 | | **Authors**: TBD |  
 | 11:45-12:45 | **Poster session 1 / Coffee break** |  
  | 11:45-12:45 | **12:45-14:30 / Lunch break** | 
- |
- ||Session 2: No supervision and Cross-domain supervision
+||Session 2: No supervision and Cross-domain supervision
 | 14:30-15:30 | **Keynote Talk 3** |  
 | | **Title**: TBD |  
 | | **Speaker**: Kayhan Batmanghelich, (University of Pittsburgh; confirmed)|  
