@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)https://wsl-workshop.github.io/ -->
+<html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+
+<!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Welcome to ACML2020 Weakly-supervised Representation Learning Workshop | wsl-workshop.github.io</title>
+<meta name="generator" content="Jekyll v3.8.5">
+<meta property="og:title" content="Welcome to SDM2020 Weakly-supervised and Unsupervised Learning Workshop">
+<meta property="og:locale" content="en_US">
+<meta name="description" content="SDM2020 Weakly-supervised and Unsupervised Learning Workshop">
+<meta property="og:description" content="SDM2020 Weakly-supervised and Unsupervised Learning Workshop">
+<link rel="canonical" href="https://wsl-workshop.github.io/">
+<meta property="og:url" content="https://wsl-workshop.github.io/">
+<meta property="og:site_name" content="wsl-workshop.github.io">
+<script type="application/ld+json">
+{"@type":"WebSite","url":"https://wsl-workshop.github.io/","name":"wsl-workshop.github.io","headline":"Welcome to SDM2020 Weakly-supervised and Unsupervised Learning Workshop","description":"ACML19 Weakly-supervised Learning Workshop","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">ACML2020 WSRL Workshop</h1>
+      <h2 class="project-tagline">Weakly-supervised Representation Learning Workshop, Nov 18th, Online
+</h2>
+      
+      
+    </section>
+
+    <section class="main-content">
+<!--       <h2 id="May 9th, Cincinnati, Ohio, United States">May 9th, Cincinnati, Ohio, United States
+</h2> -->
+
+<h1 id="topic-summary">Topic Summary</h1>
+
+<p>UC terminates subscriptions with world’s largest scientific publisher in push for open access to publicly funded research, since “Knowledge should not be accessible only to those who can pay,” said Robert May, chair of UC’s faculty Academic Senate. Similarly, machine learning should not be accessible only to those who can pay. Specifically, modern machine learning is migrating to the era of complex models (e.g., deep neural networks), which emphasizes the data representation highly. This learning paradigm is known as representation learning. Specifically, via deep neural networks, learned representations often result in much better performance than can be obtained with hand-designed representations.
+
+It is noted that representation learning normally requires a plethora of well-annotated data. Giant companies have enough money to collect well-annotated data. Nonetheless, for startups or non-profit organizations, such data is barely acquirable due to the cost of labeling data or the intrinsic scarcity in the given domain. These practical issues motivate us to research and pay attention to <strong>weakly-supervised representation learning (WSRL)</strong>, since WSRL does not require such a huge amount of annotated data. We define WSRL as the collection of representation learning problem settings and algorithms that share the same goals as supervised representation learning but can only access to <strong>less supervised information</strong> than supervised representation learning. In this workshop, we discuss both theoretical and applied aspects of WSRL.</p>
+
+<!-- <p>Meanwhile, we co-organize <a href="https://www.4paradigm.com/competition/autowsl2019">AutoWSL Challenge</a> with 4Paradigm, ChaLearn and Microsoft. Winners in the competition and recived papers in WSL (related with AutoML) will be invited to <a href="http://www.cse.ust.hk/~qyaoaa/papers/TPAMI-SI-AutoML.pdf">TPAMI special issue</a>. -->
+
+<h1 id="topics-of-interest">Topics of Interest</h1>
+
+<p>WSRL workshop includes but not limited to the following topics:</p>
+
+<ul>
+  <li>Theories and applications of <strong>incomplete supervision</strong>, e.g., semi-supervised representation learning, active representation learning and positive-unlabeled representation learning;</li>
+  <li>Theories and applications of <strong>inexact supervision</strong>, e.g., multi-instance representation learning and complementary representation learning;</li>
+  <li>Theories and applications of <strong>inaccurate supervision</strong>, e.g., crowdsourced representation learning and label-noise representation learning;</li>
+  <li>Theories and applications of <strong>cross-domain supervision</strong>, e.g., zero-/one-/few-shot representation learning, transferable representation learning and multi-task representation leaning;</li>
+  <li>Theories and applications of <strong>imperfect demonstration</strong>, e.g., inverse reinforcement representation learning and imitation representation learning with non-expert demonstrations;</li>
+  <li>Broad applications of weakly-supervised representation learning, such as weakly-supervised <strong>object detection</strong>, weakly-supervised <strong>sequence modeling</strong>, weakly-supervised <strong>cross-media retrieval</strong>, and weakly-supervised <strong>medical image segmentation</strong>.</li>
+</ul>
+
+<h1 id="topic-description">Topic Description</h1>
+
+<p>The focus of this workshop is five types of weak supervision: incomplete supervision, inexact supervision, inaccurate supervision, cross-domain supervision and imperfect demonstration. Specifically, incomplete supervision considers a subset of training data given with ground-truth labels while the other data remain unlabeled, such as semi-supervised representation learning and positive-unlabeled representation learning. Inexact supervision considers the situation where some supervision information is given but not as exacted as desired, i.e., only coarse-grained labels are available. For example, if we are considering to classify every pixel of an image, rather than the image itself, then ImageNet becomes a benchmark with inexact supervision. Besides, multi-instance representation learning belongs to inexact supervision, where we do not exactly know which instance in the bag corresponds to the given ground-truth label. Inaccurate supervision considers the situation where the supervision information is not always the ground-truth, such as label-noise representation learning. Cross-domain supervision considers the situation where the supervision information is scarce or even non-existent
+in the current domain but can be possibly derived from other domains. Examples of cross-domain supervision appear in zero-/one-/few-shot representation learning, where external knowledge from other domains is usually used to overcome the problem of too few or even no supervision in the original domain. Imperfect demonstration considers the situation for inverse reinforcement representation learning and imitation representation learning, where the agent learns with imperfect or non-expert demonstrations. For example, AlphaGo learns a policy from a sequence of states and actions (expert demonstration). Even if an expert player wins a game, it is not guaranteed that every action in the sequence is optimal.</p>
+
+<p>This workshop will discuss the fundamental theory of weakly-supervised representation learning. Although theories of weakly-supervised statistical learning already exist, extending these results for weakly-supervised representation learning is still a challenge. Besides, this workshop also discusses on broad applications of weakly-supervised representation learning, such as weakly-supervised object detection (computer vision), weakly-supervised sequence modeling (natural language processing), weakly-supervised cross-media retrieval (information retrieval), and weakly-supervised medical image segmentation (healthcare analysis).</p>
+
+<h1 id="submission-guidelines">Submission Guidelines</h1>
+
+<p>Workshop submissions and camera ready versions will be handled by Gmail. Please E-mail your paper to bhanml@comp.hkbu.edu.hk with subject line ACML20-WSRL-{paper name}. Papers should be formatted according to the ACML20 formatting instructions for the Conference Track. The submissions with 2 pages will be considered for the poster, while the submissions with at least 4 pages will be considered for the oral presentation.</p>
+
+<p>ACML20-WSRL is a non-archival venue and there will be no published proceedings. The papers will be posted on the workshop website. It will be possible to submit to other conferences and journals both in parallel to and after ACML20-WSRL. Besides, we also welcome submissions to ACML20-WSRL that are under review at other conferences and workshops. At least one author from each accepted paper must register for the workshop. Please see the ACML 2020 Website for information about registration.</p>
+
+<h1 id="invited-speakers">List of Invited Speakers</h1>
+
+<p>TBD, TBD (confirmed)</p>
+<p>TBD, TBD (confirmed)</p>
+<p>TBD, TBD (confirmed)</p>
+
+<h1 id="tentative-schedule">Tentative Schedule</h1>
+
+<p>The workshop will be combined with invited talks, accepted presentations, and informal discussions.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Time</th>
+      <th>Event</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>13:30-13:35</td>
+      <td><strong>Opening Ceremony</strong></td>
+    </tr>
+    <tr>
+      <td>13:35-14:05</td>
+      <td><strong>Keynote Talk 1</strong></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td><strong>Title</strong>: TBD</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+        <td><strong>Speaker</strong>: TBD</td>
+    </tr><tr>
+      <td>14:05-14:15</td>
+      <td><strong>Contributed Talk 1</strong></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td><strong>Title</strong>: TBD</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td><strong>Authors</strong>: TBD</td>
+    </tr>
+    <tr>
+      <td>14:15-14:45</td>
+      <td><strong>Keynote Talk 2</strong></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td><strong>Title</strong>: TBD</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+        <td><strong>Speaker</strong>: TBD</td>
+    </tr>
+    <tr>
+      <td>14:45-14:55</td>
+      <td><strong>Contributed Talk 2</strong></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td><strong>Title</strong>: TBD</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td><strong>Authors</strong>: TBD</td>
+    </tr>
+	<tr>
+      <td>14:55-15:25</td>
+      <td><strong>Keynote Talk 3</strong></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td><strong>Title</strong>: TBD</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+        <td><strong>Speaker</strong>: TBD</td>
+    </tr>
+    <tr>
+      <td>15:25-15:35</td>
+      <td><strong>Contributed Talk 3</strong></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td><strong>Title</strong>: TBD</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td><strong>Authors</strong>: TBD</td>
+    </tr>
+	<tr>
+      <td>15:35-16:05</td>
+      <td><strong>AutoWSL Challenge Talk</strong></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td><strong>Title</strong>: TBD</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td><strong>Speaker</strong>: TBD</td>
+    </tr>
+	<tr>
+      <td>16:05-16:30</td>
+      <td><strong>Panel Discussion & Concluding Remark</strong></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td><strong>Host</strong>: Bo Han</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td><strong>Guests</strong>: TBD</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- <h1 id="Best-paper">Best Paper Awards (alphabetic ordering)</h1>
+
+<p>Nan Lu, Tianyi Zhang, Gang Niu, and Masashi Sugiyama. RIKEN AIP & The University of Tokyo, Japan.</p>
+
+<p>Melanie F. Pradier, Weiwei Pan, Jiayu Yao, Soumya Ghosh, and Finale Doshi-Velez. Harvard University, USA.</p>
+
+<p>Hansi Yang, and Quanming Yao. Tsinghua University & 4Paradigm, China.</p> -->
+
+<h1 id="important-dates">Important Dates</h1>
+
+<p>Submission Deadline: 05:00 PM (Pacific Time), Nov 5th, 2020 (1st Round)</p>
+
+<p>Acceptance Notifications: Nov 10th, 2020</p>
+
+<h1 id="organizers">Organizers</h1>
+
+<p><a href="https://bhanml.github.io/">Bo Han</a>, Hong Kong Baptist University / RIKEN, Hong Kong SAR, China.</p>
+
+<p><a href="https://tongliang-liu.github.io/">Tongliang Liu</a>, The University of Sydney, Australia.</p>
+
+<p><a href="https://mingming-gong.github.io/">Mingming Gong</a>, The University of Melbourne, Australia.</p>
+
+<p><a href="http://www.cse.ust.hk/~qyaoaa/">Quanming Yao</a>, Tsinghua University / 4Paradigm Inc., China.</p>
+
+<p><a href="https://niug1984.github.io/">Gang Niu</a>, RIKEN, Japan.</p>
+
+<p><a href="https://www.uts.edu.au/staff/ivor.tsang">Ivor W. Tsang</a>, University of Technology Sydney, Australia.</p>
+
+<p><a href="http://www.ms.k.u-tokyo.ac.jp/sugi/">Masashi Sugiyama</a>, RIKEN / University of Tokyo, Japan.</p>
+
+<h1 id="sponsors">Sponsors</h1>
+
+<p>TBD. We have supported best paper awards and travel awards.</p>
+
+      <footer class="site-footer">
+        
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com/">GitHub Pages</a>.</span>
+      </footer>
+    </section>
+
+    
+  
+
+</body></html>
+
