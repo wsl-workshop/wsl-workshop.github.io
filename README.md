@@ -1,1 +1,1 @@
-## Welcome to Weakly-supervised Learning Workshop
+## Welcome to Weakly-supervised Learning Workshop Series
