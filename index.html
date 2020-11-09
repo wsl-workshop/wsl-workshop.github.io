@@ -4,7 +4,7 @@
     
 
 <!-- Begin Jekyll SEO tag v2.5.0 -->
-<title>Welcome to SDM2020 Weakly-supervised and Unsupervised Learning Workshop | wsl-workshop.github.io</title>
+<title>Welcome to ACML2020 Weakly-supervised Representation Learning Workshop | wsl-workshop.github.io</title>
 <meta name="generator" content="Jekyll v3.8.5">
 <meta property="og:title" content="Welcome to SDM2020 Weakly-supervised and Unsupervised Learning Workshop">
 <meta property="og:locale" content="en_US">
@@ -23,8 +23,8 @@
   </head>
   <body>
     <section class="page-header">
-      <h1 class="project-name">SDM2020 WSUL Workshop</h1>
-      <h2 class="project-tagline">Weakly-supervised and Unsupervised Learning Workshop, May 9th, Cincinnati, Ohio, United States
+      <h1 class="project-name">ACML2020 WSRL Workshop</h1>
+      <h2 class="project-tagline">Weakly-supervised Representation Learning Workshop, Nov 18th, Online
 </h2>
       
       
@@ -36,31 +36,44 @@
 
 <h1 id="topic-summary">Topic Summary</h1>
 
-<p>Modern data mining is migrating to the era of complex models (e.g., deep neural networks), which require a plethora of data to train. However, most existing data mining algorithms rely heavily on supervisory label information. As dataset sizes grow bigger, obtaining labels is becoming more and more laborious and expensive. Giant companies have enough money to collect well-annotated data. However, for startups or non-profit organizations, such data is barely acquirable due to the cost of labeling data or the intrinsic scarcity in the given domain. These practical issues motivate us to research and pay attention to weakly-supervised and unsupervised learning (WSUL), since that it does not require such a huge amount of annotated data and that it is relatively easy to collect a large amount of unannotated data. We therefore propose a workshop for researchers from different fields of data mining that face this problem to discuss this issue and foster further research advances in this direction.</p>
+<p>UC terminates subscriptions with world’s largest scientific publisher in push for open access to publicly funded research, since “Knowledge should not be accessible only to those who can pay,” said Robert May, chair of UC’s faculty Academic Senate. Similarly, machine learning should not be accessible only to those who can pay. Specifically, modern machine learning is migrating to the era of complex models (e.g., deep neural networks), which emphasizes the data representation highly. This learning paradigm is known as representation learning. Specifically, via deep neural networks, learned representations often result in much better performance than can be obtained with hand-designed representations.
+
+It is noted that representation learning normally requires a plethora of well-annotated data. Giant companies have enough money to collect well-annotated data. Nonetheless, for startups or non-profit organizations, such data is barely acquirable due to the cost of labeling data or the intrinsic scarcity in the given domain. These practical issues motivate us to research and pay attention to <strong>weakly-supervised representation learning (WSRL)</strong>, since WSRL does not require such a huge amount of annotated data. We define WSRL as the collection of representation learning problem settings and algorithms that share the same goals as supervised representation learning but can only access to <strong>less supervised information</strong> than supervised representation learning. In this workshop, we discuss both theoretical and applied aspects of WSRL.</p>
+
+<!-- <p>Meanwhile, we co-organize <a href="https://www.4paradigm.com/competition/autowsl2019">AutoWSL Challenge</a> with 4Paradigm, ChaLearn and Microsoft. Winners in the competition and recived papers in WSL (related with AutoML) will be invited to <a href="http://www.cse.ust.hk/~qyaoaa/papers/TPAMI-SI-AutoML.pdf">TPAMI special issue</a>. -->
 
 <h1 id="topics-of-interest">Topics of Interest</h1>
 
-<p>We define WSUL as the collection of learning problem settings and algorithms that share the similar goals as supervised learning but can only access to <strong>less or even no supervised information</strong> than supervised learning.<br>
-In this workshop, we discuss both theoretical and applied aspects of WSUL, which includes but not limited to the following topics:</p>
+<p>WSRL workshop includes but not limited to the following topics:</p>
 
 <ul>
-  <li>Theories, algorithms, and applications of <strong>no supervision</strong>, e.g., clustering, generative adversarial nets, variational autoencoders;</li>
-  <li>Theories, algorithms, and applications of <strong>incomplete supervision</strong>, e.g., dealing with semi-supervised data or positive-unlabeled data;</li>
-  <li>Theories, algorithms, and applications of <strong>inexact supervision</strong>, e.g., dealing with similarity/dissimilarity data and complementary information;</li>
-  <li>Theories, algorithms, and applications of <strong>inaccurate supervision</strong>, e.g., crowdsourcing and dealing with noisy labels;</li>
-  <li>Theories, algorithms, and applications of <strong>cross-domain supervision</strong>, e.g., domain adaptation and zero-/one-/few-shot learning.</li>
+  <li>Theories and applications of <strong>incomplete supervision</strong>, e.g., semi-supervised representation learning, active representation learning and positive-unlabeled representation learning;</li>
+  <li>Theories and applications of <strong>inexact supervision</strong>, e.g., multi-instance representation learning and complementary representation learning;</li>
+  <li>Theories and applications of <strong>inaccurate supervision</strong>, e.g., crowdsourced representation learning and label-noise representation learning;</li>
+  <li>Theories and applications of <strong>cross-domain supervision</strong>, e.g., zero-/one-/few-shot representation learning, transferable representation learning and multi-task representation leaning;</li>
+  <li>Theories and applications of <strong>imperfect demonstration</strong>, e.g., inverse reinforcement representation learning and imitation representation learning with non-expert demonstrations;</li>
+  <li>Broad applications of weakly-supervised representation learning, such as weakly-supervised <strong>object detection</strong>, weakly-supervised <strong>sequence modeling</strong>, weakly-supervised <strong>cross-media retrieval</strong>, and weakly-supervised <strong>medical image segmentation</strong>.</li>
 </ul>
 
 <h1 id="topic-description">Topic Description</h1>
 
-<p>The focus of this workshop is five types of supervision: no supervision, incomplete supervision, inexact supervision, inaccurate supervision, and cross-domain supervision. Specifically, no supervision considers problems in which no data have ground-truth labels. Incomplete supervision considers a subset of training data given with ground-truth labels while the other data remain unlabeled, such as semi-supervised data and positive-unlabeled data. Inexact supervision considers the situation where some supervision information is given but not as exacted as desired, i.e., only coarse-grained labels are available. For example, if we are considering to classify every pixel of an image, rather than the image itself, then ImageNet becomes a benchmark with inexact supervision. Besides, the multi-instance learning setting belongs to inexact supervision, where we do not exactly know which instance in the bag corresponds to the given ground-truth label. Inaccurate supervision considers the situation where the supervision information is not always the ground-truth, such as learning with noisy labels. Cross-domain supervision considers the situation where the supervision information is scarce or even non-existent in the current domain but can be possibly derived from other domains. Examples of cross-domain supervision appear in zero-/one-/few-shot learning, where external knowledge from other domains is usually used to overcome the problem of too few or even no supervision in the original domain.</p>
+<p>The focus of this workshop is five types of weak supervision: incomplete supervision, inexact supervision, inaccurate supervision, cross-domain supervision and imperfect demonstration. Specifically, incomplete supervision considers a subset of training data given with ground-truth labels while the other data remain unlabeled, such as semi-supervised representation learning and positive-unlabeled representation learning. Inexact supervision considers the situation where some supervision information is given but not as exacted as desired, i.e., only coarse-grained labels are available. For example, if we are considering to classify every pixel of an image, rather than the image itself, then ImageNet becomes a benchmark with inexact supervision. Besides, multi-instance representation learning belongs to inexact supervision, where we do not exactly know which instance in the bag corresponds to the given ground-truth label. Inaccurate supervision considers the situation where the supervision information is not always the ground-truth, such as label-noise representation learning.</p>
 
-<p>This workshop will discuss the fundamental theories of weakly-supervised and unsupervised learning. Although theories of statistical weakly-supervised and unsupervised learning already exist, extending these results for deep weakly-supervised and unsupervised learning is still a challenge. Besides, this workshop also discusses on broad applications of weakly-supervised and unsupervised learning, such as mining text, web &amp; social media, analyzing finance data, genomics &amp; bioinformatics, and recommendation.</p>
+<p>Cross-domain supervision considers the situation where the supervision information is scarce or even non-existent
+in the current domain but can be possibly derived from other domains. Examples of cross-domain supervision appear in zero-/one-/few-shot representation learning, where external knowledge from other domains is usually used to overcome the problem of too few or even no supervision in the original domain. Imperfect demonstration considers the situation for inverse reinforcement representation learning and imitation representation learning, where the agent learns with imperfect or non-expert demonstrations. For example, AlphaGo learns a policy from a sequence of states and actions (expert demonstration). Even if an expert player wins a game, it is not guaranteed that every action in the sequence is optimal.</p>
+
+<p>This workshop will discuss the fundamental theory of weakly-supervised representation learning. Although theories of weakly-supervised statistical learning already exist, extending these results for weakly-supervised representation learning is still a challenge. Besides, this workshop also discusses on broad applications of weakly-supervised representation learning, such as weakly-supervised object detection (computer vision), weakly-supervised sequence modeling (natural language processing), weakly-supervised cross-media retrieval (information retrieval), and weakly-supervised medical image segmentation (healthcare analysis).</p>
 
 <h1 id="submission-guidelines">Submission Guidelines</h1>
 
-        <p>Workshop submissions and camera ready versions will be handled by the <a href="https://cmt3.research.microsoft.com/SDMWSLW2020
-">CTM system</a>. We welcome extended-abstract submissions to introduce preliminary works and ideas, as well as recently-published research at the top conferences. The workshop accepts both full papers (4 to 8 pages) and extended abstracts (1 to 2 pages) for published or ongoing work.  Papers should be submitted as PDF, using the SIAM conference proceedings style.</p>
+<p>Workshop submissions and camera ready versions will be handled by email. Please E-mail your paper to bhanml@comp.hkbu.edu.hk with subject line ACML20-WSRL-{paper name}. Papers should be formatted according to the ACML20 formatting instructions for the Conference Track. The submissions with 2 pages will be considered for the poster, while the submissions with at least 4 pages will be considered for the oral presentation.</p>
+
+<p>ACML20-WSRL is a non-archival venue and there will be no published proceedings. The papers will be posted on the workshop website. It will be possible to submit to other conferences and journals both in parallel to and after ACML20-WSRL. Besides, we also welcome submissions to ACML20-WSRL that are under review at other conferences and workshops. At least one author from each accepted paper must register for the workshop. Please see the ACML 2020 Website for information about registration.</p>
+
+<h1 id="invited-speakers">List of Invited Speakers</h1>
+
+<p><p><a href="http://www.andrew.cmu.edu/user/kunz1/index.html">Kun Zhang</a>, Carnegie Mellon University (confirmed)</p>
+<p><a href="https://akmenon.github.io/">Aditya K. Menon</a>, Google Research (confirmed)</p>
 
 <h1 id="tentative-schedule">Tentative Schedule</h1>
 
@@ -69,21 +82,21 @@ In this workshop, we discuss both theoretical and applied aspects of WSUL, which
 <table>
   <thead>
     <tr>
-      <th>Time</th>
+      <th>Time (GMT+7)</th>
       <th>Event</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>09:00-09:15</td>
+      <td>8:30-8:35</td>
       <td><strong>Opening Ceremony</strong></td>
     </tr>
-    <tr>
+	<tr>
       <td>&nbsp;</td>
-      <td>Session 1: Incomplete supervision, inexact supervision and inaccurate supervision</td>
+      <td><strong>Host</strong>: Masashi Sugiyama</td>
     </tr>
     <tr>
-      <td>09:15-10:15</td>
+      <td>8:35-9:20</td>
       <td><strong>Keynote Talk 1</strong></td>
     </tr>
     <tr>
@@ -92,22 +105,9 @@ In this workshop, we discuss both theoretical and applied aspects of WSUL, which
     </tr>
     <tr>
       <td>&nbsp;</td>
-        <td><strong>Speaker</strong>: <a href="https://researcher.watson.ibm.com/researcher/view.php?person=us-wuli">Lingfei Wu</a>, (IBM T. J. Watson Research Center)</td>
-    </tr>
-    <tr>
-      <td>10:15-11:15</td>
-      <td><strong>Keynote Talk 2</strong></td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td><strong>Title</strong>: TBD</td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-        <td><strong>Speaker</strong>: <a href="http://jiayuzhou.github.io/">Jiayu Zhou</a>, (Michgan State University)</td>
-    </tr>
-    <tr>
-      <td>11:15-11:25</td>
+        <td><strong>Speaker</strong>: Kun Zhang (Carnegie Mellon University)</td>
+    </tr><tr>
+      <td>9:20-9:30</td>
       <td><strong>Contributed Talk 1</strong></td>
     </tr>
     <tr>
@@ -119,7 +119,19 @@ In this workshop, we discuss both theoretical and applied aspects of WSUL, which
       <td><strong>Authors</strong>: TBD</td>
     </tr>
     <tr>
-      <td>11:25-11:35</td>
+      <td>9:30-10:15</td>
+      <td><strong>Keynote Talk 2</strong></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td><strong>Title</strong>: TBD</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+        <td><strong>Speaker</strong>: Aditya K. Menon (Google Research)</td>
+    </tr>
+    <tr>
+      <td>10:15-10:25</td>
       <td><strong>Contributed Talk 2</strong></td>
     </tr>
     <tr>
@@ -130,8 +142,8 @@ In this workshop, we discuss both theoretical and applied aspects of WSUL, which
       <td>&nbsp;</td>
       <td><strong>Authors</strong>: TBD</td>
     </tr>
-    <tr>
-      <td>11:35-11:45</td>
+	<tr>
+      <td>10:25-11:10</td>
       <td><strong>Contributed Talk 3</strong></td>
     </tr>
     <tr>
@@ -140,62 +152,10 @@ In this workshop, we discuss both theoretical and applied aspects of WSUL, which
     </tr>
     <tr>
       <td>&nbsp;</td>
-      <td><strong>Authors</strong>: TBD</td>
+        <td><strong>Speaker</strong>: TBD</td>
     </tr>
     <tr>
-      <td>11:45-12:45</td>
-      <td><strong>Poster session 1 / Coffee break</strong></td>
-    </tr>
-    <tr>
-      <td>11:45-12:45</td>
-      <td><strong>12:45-14:30 / Lunch break</strong></td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td>Session 2: No supervision and Cross-domain supervision</td>
-    </tr>
-    <tr>
-      <td>14:30-15:30</td>
-      <td><strong>Keynote Talk 3</strong></td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td><strong>Title</strong>: TBD</td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-        <td><strong>Speaker</strong>:  <a href="https://kayhan.dbmi.pitt.edu/">Kayhan Batmanghelich</a>, (University of Pittsburgh; confirmed)</td>
-    </tr>
-    <tr>
-      <td>15:30-16:30</td>
-      <td><strong>Keynote Talk 4</strong></td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td><strong>Title</strong>: TBD</td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-        <td><strong>Speaker</strong>:  <a href="https://www.atlaswang.com/">Zhangyang Wang</a>, (Texas A&amp;M University; confirmed)</td>
-    </tr>
-    <tr>
-      <td>16:30-16:40</td>
-      <td><strong>Keynote Talk 5</strong></td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td><strong>Title</strong>: TBD</td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-        <td><strong>Speaker</strong>:  <a href="http://www-scf.usc.edu/~weilunc/">Wei-Lun Chao</a>, (Ohio State University; confirmed)</td>
-    </tr>
-    <tr>
-      <td>16:40-16:50</td>
+      <td>11:10-11:20</td>
       <td><strong>Contributed Talk 4</strong></td>
     </tr>
     <tr>
@@ -206,51 +166,58 @@ In this workshop, we discuss both theoretical and applied aspects of WSUL, which
       <td>&nbsp;</td>
       <td><strong>Authors</strong>: TBD</td>
     </tr>
-    <tr>
-      <td>16:50-17:00</td>
-      <td><strong>Contributed Talk 5</strong></td>
+	<tr>
+      <td>11:20-11:50</td>
+      <td><strong>Panel Discussion & Concluding Remark</strong></td>
     </tr>
     <tr>
       <td>&nbsp;</td>
-      <td><strong>Title</strong>: TBD</td>
+      <td><strong>Host</strong>: Bo Han</td>
     </tr>
     <tr>
       <td>&nbsp;</td>
-      <td><strong>Authors</strong>: TBD</td>
-    </tr>
-    <tr>
-      <td>17:00-18:00</td>
-      <td><strong>Poster session 2 / Coffee break</strong></td>
+      <td><strong>Guests</strong>: TBD</td>
     </tr>
   </tbody>
 </table>
 
+<!-- <h1 id="Best-paper">Best Paper Awards (alphabetic ordering)</h1>
+
+<p>Nan Lu, Tianyi Zhang, Gang Niu, and Masashi Sugiyama. RIKEN AIP & The University of Tokyo, Japan.</p>
+
+<p>Melanie F. Pradier, Weiwei Pan, Jiayu Yao, Soumya Ghosh, and Finale Doshi-Velez. Harvard University, USA.</p>
+
+<p>Hansi Yang, and Quanming Yao. Tsinghua University & 4Paradigm, China.</p> -->
+
 <h1 id="important-dates">Important Dates</h1>
 
-<p>Submission Deadline: <strike> March 8, 2020</strike> March 15, 2020</p>
-<p>Acceptance Notifications: March 29, 2020</p>
-<p>SDM pre-registration deadline: April 2, 2020</p>
-<p>Final camera-ready papers due: April 7, 2020</p>
+<p>Submission Deadline: 05:00 PM (Pacific Time), Nov 5th, 2020 (1st Round)</p>
+
+<p>Acceptance Notifications: Nov 10th, 2020</p>
 
 <h1 id="organizers">Organizers</h1>
-<p><a href="https://mingming-gong.github.io/">Mingming Gong</a>, University of Melbourne, Australia.</p>
 
-<p><a href="http://chunyuan.li/">Chunyuan Li</a>, Microsoft Research, USA.</p>
+<p><a href="https://bhanml.github.io/">Bo Han</a>, Hong Kong Baptist University / RIKEN, Hong Kong SAR, China.</p>
 
-<p><a href="https://tongliang-liu.github.io/">Tongliang Liu</a>, University of Sydney, Australia.</p>
+<p><a href="https://tongliang-liu.github.io/">Tongliang Liu</a>, The University of Sydney, Australia.</p>
 
-<p><a href="https://bhanml.github.io/">Bo Han</a>, HKBU & RIKEN AIP, Hong Kong & Japan.</p>
+<p><a href="https://mingming-gong.github.io/">Mingming Gong</a>, The University of Melbourne, Australia.</p>
 
-<p><a href="http://www.cse.ust.hk/~qyaoaa/">Quanming Yao</a>, 4Paradigm Inc., Hong Kong.</p>
+<p><a href="http://www.cse.ust.hk/~qyaoaa/">Quanming Yao</a>, Tsinghua University / 4Paradigm Inc., China.</p>
 
-<p><a href="https://niug1984.github.io/">Gang Niu</a>, RIKEN AIP, Japan.</p>
+<p><a href="https://niug1984.github.io/">Gang Niu</a>, RIKEN, Japan.</p>
 
-<p><a href="http://www.andrew.cmu.edu/user/kunz1/index.html">Kun Zhang</a>, Carnegie Mellon University, USA.</p>
+<p><a href="https://www.uts.edu.au/staff/ivor.tsang">Ivor W. Tsang</a>, University of Technology Sydney, Australia.</p>
 
 <p><a href="http://www.ms.k.u-tokyo.ac.jp/sugi/">Masashi Sugiyama</a>, RIKEN / University of Tokyo, Japan.</p>
 
+<h1 id="sponsors">Sponsors</h1>
+
+<p>4Paradigm Inc.</p>
+
 <h1 id="previous-workshops">Previous Workshops</h1>
 <p><a href="https://wsl-workshop.github.io/acml19.html">ACML2019 WSL Workshop</a>, Nagoya, Japan.</p>
+<p><a href="https://wsl-workshop.github.io/sdm20.html">SDM2020 WSUL Workshop</a>, Ohio, United States.</p>
 
       <footer class="site-footer">
         
@@ -262,3 +229,4 @@ In this workshop, we discuss both theoretical and applied aspects of WSUL, which
   
 
 </body></html>
+
