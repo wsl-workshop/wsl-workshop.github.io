@@ -9,232 +9,199 @@
   <body>
     <section class="page-header">
       <h1 class="project-name">ACML2021 WSL Workshop (under proposal)</h1>
-      <h2 class="project-tagline">Weakly Supervised Learning Workshop, Nov. 18th, 2021 (tentative), Online</h2>  
+      <h2 class="project-tagline">Weakly Supervised Learning Workshop, Nov. 18th, 2021 (tentative), Online</h2>
     </section>
-
     <section class="main-content">
-<h1 id="topic-summary">Topic Summary</h1>
+    <center>[ <a href="#topics">Topics</a>,
+         <a href="#submission">Submission</a>,
+         <a href="#program">Program</a>,
+         <a href="#organizers">Organizers</a>,
+         <a href="#previous-workshops">Previous Workshops</a> ]</center>
+         
+<h1 id="topics">Topics</h1>
 
-<p>Machine learning should not be accessible only to those who can pay. Specifically, modern machine learning is migrating to the era of complex models (e.g., deep neural networks), which require a plethora of well-annotated data. Giant companies have enough money to collect well-annotated data. However, for startups or non-profit organizations, such data is barely acquirable due to the cost of labeling data or the intrinsic scarcity in the given domain. These practical issues motivate us to research and pay attention to <strong>weakly-supervised learning (WSL)</strong>, since WSL does not require such a huge amount of annotated data. We define WSL as the collection of machine learning problem settings and algorithms that share the same goals as supervised learning but can only access to <strong>less supervised information</strong> than supervised learning. In this workshop, we discuss both theoretical and applied aspects of WSL.
+    <h2>Overview</h2>
+        <p>Machine learning should not be accessible only to those who can pay. Specifically, modern machine learning is migrating to the era of complex models (e.g., deep neural networks), which require a plethora of well-annotated data. Giant companies have enough money to collect well-annotated data. However, for startups or non-profit organizations, such data is barely acquirable due to the cost of labeling data or the intrinsic scarcity in the given domain. These practical issues motivate us to research and pay attention to <b>weakly-supervised learning (WSL)</b>, since WSL does not require such a huge amount of annotated data. We define WSL as the collection of machine learning problem settings and algorithms that share the same goals as supervised learning but can only access to <b>less supervised information</b> than supervised learning. In this workshop, we discuss both theoretical and applied aspects of WSL. Meanwhile, we will invite qualified submissions to <b>a special issue in Springer Nature Computer Science</b>.</p>
 
-  Meanwhile, we will invite qualified submissions to <strong>a special issue in Springer Nature Computer Science</strong>.</p>
+        <p>This workshop is a series of our previous workshops at ACML 2019, SDM 2020, ACML 2020, and IJCAI 2021. Our particular emphasis at this workshop is incomplete supervision, inexact supervision, inaccurate supervision, cross-domain supervision, imperfect demonstration, and <font color="#FF0000">weak adversarial supervision (new topic)</font>.</p>
 
-<p>This workshop is a series of our previous workshops at
-IJCAI'21, ACML'19 '20, and SDM'20. <strong>Welcome!</strong>
+    <h2>Topics of Interest</h2>
+        <p>WSRL workshop includes (but not limited to) the following topics:</p>
+        <ul>
+            <li>Algorithms and theories of <b>incomplete supervision</b>, e.g., semi-supervised learning, active learning and positive-unlabeled learning;</li>
+            <li>Algorithms and theories of <b>inexact supervision</b>, e.g., multi-instance learning and complementary learning;</li>
+            <li>Algorithms and theories of <b>inaccurate supervision</b>, e.g., crowdsourced learning and label-noise learning;</li>
+            <li>Algorithms and theories of <b>cross-domain supervision</b>, e.g., zero-/one-/few-shot learning, transferable learning and multi-task leaning;</li>
+            <li>Algorithms and theories of <b>imperfect demonstration</b>, e.g., inverse reinforcement learning and imitation learning with non-expert demonstrations;</li>
+            <li>Algorithms and theories of <b>adversarial</b> weakly-supervised learning, e.g., adversarial semi-supervised learning and adversarial contrastive learning and adversarial label-noisy learning; </li>
+            <li>Broad applications of weakly-supervised learning, such as weakly supervised <b>object detection</b>, weakly supervised <b>sequence modeling</b>, weakly supervised <b>cross-media retrieval</b>, and weakly supervised <b>medical image segmentation</b>.</li>
+        </ul>
 
-Our particular emphasis at this workshop is incomplete supervision, inexact supervision, inaccurate supervision, cross-domain supervision, imperfect demonstration, and <font color="#FF0000">weak adversarial supervision (new topic)</font> . </p>
+    <h2>Further Descriptions</h2>
+        <p>The focus of this workshop is six types of weak supervision: incomplete supervision, inexact supervision, inaccurate supervision, cross-domain supervision, imperfect demonstration, and weak adversarial supervision. 
+        Specifically, incomplete supervision considers a subset of training data given with ground-truth labels while the other data remain unlabeled, such as semi-supervised learning and positive-unlabeled learning. 
+        Inexact supervision considers the situation where some supervision information is given but not as exacted as desired, i.e., only coarse-grained labels are available. For example, if we are considering to classify every pixel of an image, rather than the image itself, then ImageNet becomes a benchmark with inexact supervision. Besides, multi-instance learning belongs to inexact supervision, where we do not exactly know which instance in the bag corresponds to the given ground-truth label. 
+        Inaccurate supervision considers the situation where the supervision information is not always the ground-truth, such as label-noise learning.</p>
 
-<h1 id="topics-of-interest">Topics of Interest</h1>
+        <p>Cross-domain supervision considers the situation where the supervision information is scarce or even non-existent
+        in the current domain but can be possibly derived from other domains. Examples of cross-domain supervision appear in zero-/one-/few-shot learning, where external knowledge from other domains is usually used to overcome the problem of too few or even no supervision in the original domain. 
 
-<p>WSRL workshop includes but not limited to the following topics:</p>
+        Imperfect demonstration considers the situation for inverse reinforcement learning and imitation learning, where the agent learns with imperfect or non-expert demonstrations. For example, AlphaGo learns a policy from a sequence of states and actions (expert demonstration). Even if an expert player wins a game, it is not guaranteed that every action in the sequence is optimal.</p>
 
-<ul>
-  <li>Algorithms and theories of <strong>incomplete supervision</strong>, e.g., semi-supervised learning, active learning and positive-unlabeled learning;</li>
-  <li>Algorithms and theories of <strong>inexact supervision</strong>, e.g., multi-instance learning and complementary learning;</li>
-  <li>Algorithms and theories of <strong>inaccurate supervision</strong>, e.g., crowdsourced learning and label-noise learning;</li>
-  <li>Algorithms and theories of <strong>cross-domain supervision</strong>, e.g., zero-/one-/few-shot learning, transferable learning and multi-task leaning;</li>
-  <li>Algorithms and theories of <strong>imperfect demonstration</strong>, e.g., inverse reinforcement learning and imitation learning with non-expert demonstrations;</li>
-  <li>Algorithms and theories of <strong>adversarial</strong> weakly-supervised learning, e.g., adversarial semi-supervised learning and adversarial contrastive learning and adversarial label-noisy learning; </li>
-  <li>Broad applications of weakly-supervised learning, such as weakly supervised <strong>object detection</strong>, weakly supervised <strong>sequence modeling</strong>, weakly supervised <strong>cross-media retrieval</strong>, and weakly supervised <strong>medical image segmentation</strong>.</li>
-</ul>
+        <p>Weak adversarial supervision considers the situation where weak supervision meets adversarial robustness. 
+        Since ML models are increasingly deployed in real-world applications, AI security attracts more and more attention from both academia and industry. Therefore, many robust learning algorithms aim to prevent various evasion attacks, e.g., adversarial attacks, privacy attacks, model stealing attacks, and so on. 
+        However, almost all those robust algorithms (against evasion attacks) implicitly assume the strong supervision signals, which hardly meets the requirements in practice. For example, almost all adversarial training algorithms assume the labels of training data are clean without any noisy labels, which is not true in practice even in the example of benchmark datasets like CIFAR-10 and MNIST. 
+        Therefore, when we develop evasion-robust algorithms, it is very practical/urgent to consider the supervision signals are imperfect. 
+        </p>
 
-<h1 id="topic-description">Topic Description</h1>
+        <p>This workshop will discuss the fundamental theory of weakly supervised learning. Although theories of weakly supervised statistical learning already exist, extending these results for weakly supervised learning is still a challenge. Besides, this workshop also discusses on broad applications of weakly supervised learning, such as weakly supervised object detection (computer vision), weakly supervised sequence modeling (natural language processing), weakly supervised cross-media retrieval (information retrieval), and weakly supervised medical image segmentation (healthcare analysis).</p>
 
-<p>The focus of this workshop is six types of weak supervision: incomplete supervision, inexact supervision, inaccurate supervision, cross-domain supervision, imperfect demonstration, and weak adversarial supervision. 
-Specifically, incomplete supervision considers a subset of training data given with ground-truth labels while the other data remain unlabeled, such as semi-supervised learning and positive-unlabeled learning. 
+<h1 id="submission">Submission</h1>
 
-Inexact supervision considers the situation where some supervision information is given but not as exacted as desired, i.e., only coarse-grained labels are available. For example, if we are considering to classify every pixel of an image, rather than the image itself, then ImageNet becomes a benchmark with inexact supervision. Besides, multi-instance learning belongs to inexact supervision, where we do not exactly know which instance in the bag corresponds to the given ground-truth label. 
+    <h2>Guidelines</h2>
+        <p>Papers should be formatted according to the ACML2021 formatting instructions for the Conference Track. The submissions with 2 pages will be considered for the poster, while the submissions with at least 4 pages will be considered for the oral presentation. Workshop submissions and camera ready versions will be handled by CMT. 
+        Workshop submissions and camera ready versions will be handled by email. Please E-mail your paper to wsl.workshop@gmail.com (tentative) with subject line ACML21-WSRL-{paper name}.</p>
 
-Inaccurate supervision considers the situation where the supervision information is not always the ground-truth, such as label-noise learning.</p>
+        <p>ACML21-WSRL is a non-archival venue and there will be no published proceedings. The papers will be posted on the workshop website. It will be possible to submit the ACML21-WSRL submissions to other conferences and journals both in parallel to and after
+        ACML21-WSRL, if they accept such submissions. Besides, we also welcome submissions to ACML2021-WSRL that are under review at other conferences and workshops, if they allow concurrent submissions. At least one author from each accepted paper must register for the workshop. Please see the ACML21-WSRL Website for information about registration.</p>
 
-<p>Cross-domain supervision considers the situation where the supervision information is scarce or even non-existent
-in the current domain but can be possibly derived from other domains. Examples of cross-domain supervision appear in zero-/one-/few-shot learning, where external knowledge from other domains is usually used to overcome the problem of too few or even no supervision in the original domain. 
+    <h2>Dates</h2>
+        <p>Submission Deadline: Oct 10th, 2021 (Anywhere on Earth)</p>
+        <p>Acceptance Notifications: Oct 24th, 2021</p>
 
-Imperfect demonstration considers the situation for inverse reinforcement learning and imitation learning, where the agent learns with imperfect or non-expert demonstrations. For example, AlphaGo learns a policy from a sequence of states and actions (expert demonstration). Even if an expert player wins a game, it is not guaranteed that every action in the sequence is optimal.</p>
+<h1 id="program">Program</h1>
+    
+    <h2>Invited Speakers</h2>
+        <p>TBA</p>
+        <!--  
+        <p><a href="https://zhouchenlin.github.io/">Zhouchen Lin</a>, Peking University, China (tentative)</p>
+        <p><a href="http://www.sungjuhwang.com/">Sung Ju Hwang</a>, KAIST, Korea (tentative)</p>
+        <p><a href="https://personal.ntu.edu.sg/hanwangzhang/">Hanwang Zhang</a>, Nanyang Technological University, Singapore (tentative)</p> -->
 
-<p>Weak adversarial supervision considers the situation where weak supervision meets adversarial robustness. 
-Since ML models are increasingly deployed in real-world applications, AI security attracts more and more attention from both academia and industry. Therefore, many robust learning algorithms aim to prevent various evasion attacks, e.g., adversarial attacks, privacy attacks, model stealing attacks, and so on. 
-However, almost all those robust algorithms (against evasion attacks) implicitly assume the strong supervision signals, which hardly meets the requirements in practice. For example, almost all adversarial training algorithms assume the labels of training data are clean without any noisy labels, which is not true in practice even in the example of benchmark datasets like CIFAR-10 and MNIST. 
-Therefore, when we develop evasion-robust algorithms, it is very practical/urgent to consider the supervision signals are imperfect. 
-</p>
+    <h2>Schedule</h1>
+        <p>The workshop will use <a href="https://time.is/GMT+7">GMT+7</a> for scheduling, and it will be combined with keynote talks, contributed talks, and panel discussions.</p>
 
-<p>This workshop will discuss the fundamental theory of weakly supervised learning. Although theories of weakly supervised statistical learning already exist, extending these results for weakly supervised learning is still a challenge. Besides, this workshop also discusses on broad applications of weakly supervised learning, such as weakly supervised object detection (computer vision), weakly supervised sequence modeling (natural language processing), weakly supervised cross-media retrieval (information retrieval), and weakly supervised medical image segmentation (healthcare analysis).</p>
-
-<h1 id="submission-guidelines">Submission Guidelines</h1>
-
-<p>Papers should be formatted according to the ACML2021 formatting instructions for the Conference Track. The submissions with 2 pages will be considered for the poster, while the submissions with at least 4 pages will be considered for the oral presentation. Workshop submissions and camera ready versions will be handled by CMT. 
-Workshop submissions and camera ready versions will be handled by email. Please E-mail your paper to jingfeng.zhang@riken.jp (tentative) with subject line ACML21-WSRL-{paper name} </p>
-
-<p>ACML21-WSRL is a non-archival venue and there will be no published proceedings. The papers will be posted on the workshop website. It will be possible to submit the ACML21-WSRL submissions to other conferences and journals both in parallel to and after
-ACML21-WSRL, if they accept such submissions. Besides, we also welcome submissions to ACML2021-WSRL that are under review at other conferences and workshops, if they allow concurrent submissions. At least one author from each accepted paper must register for the workshop. Please see the ACML21-WSRL Website for information about registration.</p>
-
-<h1 id="invited-speakers">List of Invited Speakers</h1>
-TBA
-  <!--  
-<p><p><a href="https://zhouchenlin.github.io/">Zhouchen Lin</a>, Peking University, China (tentative)</p>
-<p><a href="http://www.sungjuhwang.com/">Sung Ju Hwang</a>, KAIST, Korea (tentative)</p>
-<p><p><a href="https://personal.ntu.edu.sg/hanwangzhang/">Hanwang Zhang</a>, Nanyang Technological University, Singapore (tentative)</p>-->
-
-<h1 id="tentative-schedule">Schedule</h1>
-
-<p>The workshop will use <a href="https://time.is/GMT+7">GMT+7</a> for scheduling, and it will be combined with keynote talks, contributed talks, and panel discussions.</p>
-<!-- <p>The workshop is totally free online. Check our workshop recordings</p> -->
-
-<table>
-  <thead>
-    <tr>
-      <th>Time (UTC)</th>
-      <th>Event</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>9:30-9:35am</td>
-      <td><strong>Opening Ceremony</strong></td>
-    </tr>
-	<tr>
-      <td>&nbsp;</td>
-      <td><strong>Host</strong>: Masashi Sugiyama</td>
-    </tr>
-    <tr>
-      <td>09:35-10:15am</td>
-      <td><strong>Keynote Talk 1</strong></td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td><strong>Title</strong>: TBA</td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-        <td><strong>Speaker</strong>: TBA</td>
-    </tr><tr>
-      <td>10:15-10:25am</td>
-      <td><strong>Contributed Talk 1</strong></td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td><strong>Title</strong>: TBA</td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td><strong>Authors</strong>: TBA</td>
-    </tr>
-    <tr>
-      <td>10:25-11:05am</td>
-      <td><strong>Keynote Talk 2</strong></td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td><strong>Title</strong>: TBA</td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-        <td><strong>Speaker</strong>: TBA</td>
-    </tr>
-    <tr>
-      <td>11:05-11:15am</td>
-      <td><strong>Contributed Talk 2</strong></td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td><strong>Title</strong>: TBA</td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td><strong>Authors</strong>: TBA</td>
-    </tr>
-	    <tr>
-      <td>11:15-11:55am</td>
-      <td><strong>Keynote Talk 3</strong></td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td><strong>Title</strong>: TBA</td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-        <td><strong>Speaker</strong>: TBA</td>
-    </tr>
-	
-	<tr>
-      <td>11:55-12:10am</td>
-      <td><strong>Panel Discussion & Concluding Remark</strong></td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td><strong>Host</strong>: Jingfeng Zhang (Tentative)</td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td><strong>Guests</strong>: TBA</td>
-    </tr>
-  </tbody>
-</table>
-
-<!-- <h1 id="Best-paper">Best Paper Awards (alphabetic ordering)</h1>
-
-<p>Nan Lu, Tianyi Zhang, Gang Niu, and Masashi Sugiyama. RIKEN AIP & The University of Tokyo, Japan.</p>
-
-<p>Melanie F. Pradier, Weiwei Pan, Jiayu Yao, Soumya Ghosh, and Finale Doshi-Velez. Harvard University, USA.</p>
-
-<p>Hansi Yang, and Quanming Yao. Tsinghua University & 4Paradigm, China.</p> -->
-
-<h1 id="important-dates">Important Dates</h1>
-
-<p>Submission Deadline: Oct 10th, 2021 (Anywhere on Earth)</p>
-
-<p>Acceptance Notifications: Oct 24th, 2021</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Time (UTC)</th>
+              <th>Event</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>9:30-9:35am</td>
+              <td><b>Opening Ceremony</b></td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td><b>Host</b>: Masashi Sugiyama</td>
+            </tr>
+            <tr>
+              <td>09:35-10:15am</td>
+              <td><b>Keynote Talk 1</b></td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td><b>Title</b>: TBA</td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+                <td><b>Speaker</b>: TBA</td>
+            </tr><tr>
+              <td>10:15-10:25am</td>
+              <td><b>Contributed Talk 1</b></td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td><b>Title</b>: TBA</td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td><b>Authors</b>: TBA</td>
+            </tr>
+            <tr>
+              <td>10:25-11:05am</td>
+              <td><b>Keynote Talk 2</b></td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td><b>Title</b>: TBA</td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+                <td><b>Speaker</b>: TBA</td>
+            </tr>
+            <tr>
+              <td>11:05-11:15am</td>
+              <td><b>Contributed Talk 2</b></td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td><b>Title</b>: TBA</td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td><b>Authors</b>: TBA</td>
+            </tr>
+                <tr>
+              <td>11:15-11:55am</td>
+              <td><b>Keynote Talk 3</b></td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td><b>Title</b>: TBA</td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+                <td><b>Speaker</b>: TBA</td>
+            </tr>
+            
+            <tr>
+              <td>11:55-12:10am</td>
+              <td><b>Panel Discussion & Concluding Remark</b></td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td><b>Host</b>: Jingfeng Zhang (Tentative)</td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td><b>Guests</b>: TBA</td>
+            </tr>
+          </tbody>
+        </table>
 
 <h1 id="organizers">Organizers</h1>
 
-<p><a href="https://zjfheart.github.io/">Jingfeng Zhang</a>, RIKEN, Japan.</p>
+    <h2>Program Co-chairs</h1>
+        <p><a href="https://zjfheart.github.io/">Jingfeng Zhang</a>, RIKEN, Japan.</p>
+        <p><a href="https://fengliu90.github.io/">Feng Liu</a>, The University of Technology Sydney, Australia.</p>
+        <p><a href="https://scholar.google.co.jp/citations?user=KQUQlG4AAAAJ&hl=en">Nan Lu</a>, The University of Tokyo, Japan.</p>
+        <p><a href="https://lfeng-ntu.github.io/">Lei Feng</a>, Chongqing University, China.</p>
+        <p><a href="https://tongliang-liu.github.io/">Tongliang Liu</a>, The University of Sydney, Australia.</p>
+        <p><a href="https://bhanml.github.io/">Bo Han</a>, Hong Kong Baptist University, Hong Kong SAR, China.</p>
+        <p><a href="https://niug1984.github.io/">Gang Niu</a>, RIKEN, Japan.</p>
+        <p><a href="http://www.ms.k.u-tokyo.ac.jp/sugi/">Masashi Sugiyama</a>, RIKEN / University of Tokyo, Japan.</p>
 
-<p><a href="https://fengliu90.github.io/">Feng Liu</a>, The University of Technology Sydney, Australia.</p>
+    <h2>Advisory Board <span style="font-size: 75%">(alphabetical order by last name)</span></h1>
+        <p><a href="https://gcatnjust.github.io/ChenGong/index.html">Chen Gong</a>, Nanjing University of Science and Technology, China.</p>
+        <p><a href="https://mingming-gong.github.io/">Mingming Gong</a>, The University of Melbourne, Australia.</p>
+        <p><a href="http://www.yliuu.com/">Yang Liu</a>, University of California, Santa Cruz, US.</p>
+        <p><a href="https://www.uts.edu.au/staff/ivor.tsang">Ivor W. Tsang</a>, University of Technology Sydney, Australia.</p>
+        <p><a href="https://sites.google.com/site/csyisenwang/">Yisen Wang</a>, Peking University, China.</p>
+        <p><a href="https://miaoxu-ml.github.io/index.html">Miao Xu</a>, The University of Queensland, Austrilia.</p>
+        <p><a href="http://www.cse.ust.hk/~qyaoaa/">Quanming Yao</a>, Tsinghua University / 4Paradigm Inc., China.</p>
+        <p><a href="http://palm.seu.edu.cn/zhangml/">Min-Ling Zhang</a>, Southeast University, China.</p>
 
-<p><a href="https://scholar.google.co.jp/citations?user=KQUQlG4AAAAJ&hl=en">Nan Lu</a>, The University of Tokyo, Japan.</p>
+<h1 id="previous-workshops">Previous Workshops</h1>
+    <p><a href="https://wsl-workshop.github.io/ijcai21.html">IJCAI2021 WSRL Workshop</a>, Online.</p> 
+    <p><a href="https://wsl-workshop.github.io/acml20.html">ACML2020 WSRL Workshop</a>, Online.</p>
+    <p><a href="https://wsl-workshop.github.io/sdm20.html">SDM2020 WSUL Workshop</a>, Ohio, United States.</p>
+    <p><a href="https://wsl-workshop.github.io/acml19.html">ACML2019 WSL Workshop</a>, Nagoya, Japan.</p>
 
-<p><a href="https://lfeng-ntu.github.io/">Lei Feng</a>, Chongqing University, China.</p>
-
-<p><a href="https://tongliang-liu.github.io/">Tongliang Liu</a>, The University of Sydney, Australia.</p>
-
-<p><a href="https://bhanml.github.io/">Bo Han</a>, Hong Kong Baptist University, Hong Kong SAR, China.</p>
-
-<p><a href="https://niug1984.github.io/">Gang Niu</a>, RIKEN, Japan.</p>
-
-<p><a href="http://www.ms.k.u-tokyo.ac.jp/sugi/">Masashi Sugiyama</a>, RIKEN / University of Tokyo, Japan.</p>
-
-
-
-<h1 id="organizers">Advisory Board</h1>
-
-<p><a href="https://gcatnjust.github.io/ChenGong/index.html">Chen Gong</a>, Nanjing University of Science and Technology, China.</p>
-
-<p><a href="https://mingming-gong.github.io/">Mingming Gong</a>, The University of Melbourne, Australia.</p>
-
-<p><a href="http://www.yliuu.com/">Yang Liu</a>, University of California, Santa Cruz, US.</p>
-
-<p><a href="https://www.uts.edu.au/staff/ivor.tsang">Ivor W. Tsang</a>, University of Technology Sydney, Australia.</p>
-
-<p><a href="https://sites.google.com/site/csyisenwang/">Yisen Wang</a>, Peking University, China.</p>
-
-<p><a href="https://miaoxu-ml.github.io/index.html">Miao Xu</a>, The University of Queensland, Austrilia.</p>
-
-<p><a href="http://www.cse.ust.hk/~qyaoaa/">Quanming Yao</a>, Tsinghua University / 4Paradigm Inc., China.</p>
-
-<p><a href="http://palm.seu.edu.cn/zhangml/">Min-Ling Zhang</a>, Southeast University, China.</p>
-
-
-
-<h1 id="previous-workshops">Previous Workshops</h1><p>
- <a href="https://wsl-workshop.github.io/ijcai21.html">IJCAI2021 WSRL Workshop</a>, Online.</p> 
-<a href="https://wsl-workshop.github.io/acml20.html">ACML2020 WSRL Workshop</a>, Online.</p>
-<p><a href="https://wsl-workshop.github.io/sdm20.html">SDM2020 WSUL Workshop</a>, Ohio, United States.</p>
-<p><a href="https://wsl-workshop.github.io/acml19.html">ACML2019 WSL Workshop</a>, Nagoya, Japan.</p>
-
-      <footer class="site-footer">
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com/">GitHub Pages</a>.</span>
-      </footer>
-    </section>
-
+<footer class="site-footer">
+    <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com/">GitHub Pages</a>.</span>
+</footer>
+</section>
 </body></html>
-
