@@ -67,18 +67,20 @@ function writeTimeRange(startHour, startMin, endHour, endMin) {
         </h2>
     </section>
 
-    <section class="main-content">
+<section class="main-content">
+    <center>[ <a href="#abstract">Abstract,
+         <a href="#schedule">Schedule</a>,
+         <a href="#slides">Slides</a>,
+         <a href="#organizers">Organizers</a>,
+         <a href="#references">References</a> ]</center>
 
-<h1 id="topic-summary">Abstract</h1>
+<h1 id="abstract">Abstract</h1>
+    <p>Machine learning should benefit to the whole world, especially for developing countries in Africa and Asia. When dataset sizes grow bigger, it is laborious and expensive to obtain clean supervision, especially for developing countries. As a result, the volume of noisy supervision becomes enormous, e.g., web-scale image and speech data with noisy labels. However, standard machine learning assumes that the supervised information is fully clean and intact. Therefore, noisy data harms the performance of most of the standard learning algorithms, and sometimes even makes existing algorithms break down. There are a brunch of theories and approaches proposed to deal with noisy data. As far as we know, label-noise learning spans over two important ages in machine learning: statistical learning (i.e., shallow learning) and deep learning. In the age of statistical learning, label-noise learning focused on designing noise-tolerant losses or unbiased risk estimators. Nonetheless, in the age of deep learning, label-noise learning has more options to combat with noisy labels, such as designing biased risk estimators or leveraging memorization effects of deep networks. In this tutorial, we summarize the foundations and go through the most recent noisy-supervision-tolerant techniques. By participating the tutorial, the audience will gain a broad knowledge of label-noise learning from the viewpoint of statistical learning theory, deep learning, detailed analysis of typical algorithms and frameworks, and their real-world applications in industry.</p>
 
-<p>Machine learning should benefit to the whole world, especially for developing countries in Africa and Asia. When dataset sizes grow bigger, it is laborious and expensive to obtain clean supervision, especially for developing countries. As a result, the volume of noisy supervision becomes enormous, e.g., web-scale image and speech data with noisy labels. However, standard machine learning assumes that the supervised information is fully clean and intact. Therefore, noisy data harms the performance of most of the standard learning algorithms, and sometimes even makes existing algorithms break down. There are a brunch of theories and approaches proposed to deal with noisy data. As far as we know, label-noise learning spans over two important ages in machine learning: statistical learning (i.e., shallow learning) and deep learning. In the age of statistical learning, label-noise learning focused on designing noise-tolerant losses or unbiased risk estimators. Nonetheless, in the age of deep learning, label-noise learning has more options to combat with noisy labels, such as designing biased risk estimators or leveraging memorization effects of deep networks. In this tutorial, we summarize the foundations and go through the most recent noisy-supervision-tolerant techniques. By participating the tutorial, the audience will gain a broad knowledge of label-noise learning from the viewpoint of statistical learning theory, deep learning, detailed analysis of typical algorithms and frameworks, and their real-world applications in industry.</p>
-
-<h1 id="tentative-schedule">Schedule</h1>
-
-<p><script>document.write("The following schedule is in <font color='FF0000'>" + getLocalTimezone() + ".</font>");</script>
-<noscript>The following schedule is in <font color='FF0000'>Montreal time (UTC-4, the official time zone).</font></noscript></p>
-
-<!-- <p>The workshop is totally free online. Check our workshop recordings</p> -->
+<h1 id="schedule">Schedule</h1>
+    <p>The following schedule is in <font color='FF0000'>
+    <script>document.write(getLocalTimezone() + "</font>.");</script>
+    <noscript>Montreal time (UTC-4, the official time zone)</font>.</noscript></p>
 
 <table>
   <thead>
@@ -165,24 +167,18 @@ function writeTimeRange(startHour, startMin, endHour, endMin) {
   </tbody>
 </table>
 
-<h1 id="topic-description">Slides</h1>
-
-<p>The slides can be found here.</p>
+<h1 id="slides">Slides</h1>
+    <p>The slides can be found here.</p>
 
 <h1 id="organizers">Organizers</h1>
+    <p><a href="https://bhanml.github.io/" target="_blank">Bo Han</a>, Hong Kong Baptist University, Hong Kong SAR, China.</p>
+    <p><a href="https://tongliang-liu.github.io/" target="_blank">Tongliang Liu</a>, The University of Sydney, Australia.</p>
+    <p><a href="http://www.cse.ust.hk/~qyaoaa/" target="_blank">Quanming Yao</a>, Tsinghua University, China.</p>
+    <p><a href="https://niug1984.github.io/" target="_blank">Gang Niu</a>, RIKEN, Japan.</p>
+    <p><a href="http://www.ms.k.u-tokyo.ac.jp/sugi/" target="_blank">Masashi Sugiyama</a>, RIKEN / University of Tokyo, Japan.</p>
 
-<p><a href="https://bhanml.github.io/" target="_blank">Bo Han</a>, Hong Kong Baptist University, Hong Kong SAR, China.</p>
-
-<p><a href="https://tongliang-liu.github.io/" target="_blank">Tongliang Liu</a>, The University of Sydney, Australia.</p>
-
-<p><a href="http://www.cse.ust.hk/~qyaoaa/" target="_blank">Quanming Yao</a>, Tsinghua University, China.</p>
-
-<p><a href="https://niug1984.github.io/" target="_blank">Gang Niu</a>, RIKEN, Japan.</p>
-
-<p><a href="http://www.ms.k.u-tokyo.ac.jp/sugi/" target="_blank">Masashi Sugiyama</a>, RIKEN / University of Tokyo, Japan.</p>
-
-<h1 id="sponsors">References</h1>
-<p>Due to the space limitation, we only list highly-related papers. The full reference list can be found <a href="https://arxiv.org/abs/2011.04406">here</a>.</p>
+<h1 id="references">References</h1>
+    <p>Due to the space limitation, we only list highly-related papers. The full reference list can be found <a href="https://arxiv.org/abs/2011.04406">here</a>.</p>
 <p>
 1. B. Han, Q. Yao, T. Liu, G. Niu, I.W. Tsang, J.T. Kwok and M. Sugiyama. A Survey of Label-noise Representation Learning: Past, Present and Future. arXiv preprint arXiv:2011.04406, 2020.<br>
 2. N. Natarajan, I.S. Dhillon, P. K. Ravikumar and A. Tewari. Learning with Noisy Labels. In NeurIPS, 2013.<br>
@@ -211,14 +207,9 @@ In NeurIPS, 2020.<br>
 22. H. Cheng, Z. Zhu, X. Li, Y. Gong, X. Sun and Y. Liu. Learning with Instance-dependent Label Noise: A Sample Sieve Approach. In ICLR, 2021.<br>
 </p>
 
-      <footer class="site-footer">
-        
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com/">GitHub Pages</a>.</span>
-      </footer>
-    </section>
-
-    
-  
-
+<footer class="site-footer">
+    <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com/">GitHub Pages</a>.</span>
+</footer>
+</section>
 </body></html>
 
