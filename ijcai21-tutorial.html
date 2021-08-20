@@ -179,33 +179,45 @@ function writeTimeRange(startHour, startMin, endHour, endMin) {
 
 <h1 id="references">References</h1>
     <p>Due to the space limitation, we only list highly-related papers. The full reference list can be found <a href="https://arxiv.org/abs/2011.04406">here</a>.</p>
-<p>
-1. B. Han, Q. Yao, T. Liu, G. Niu, I.W. Tsang, J.T. Kwok and M. Sugiyama. A Survey of Label-noise Representation Learning: Past, Present and Future. arXiv preprint arXiv:2011.04406, 2020.<br>
-2. N. Natarajan, I.S. Dhillon, P. K. Ravikumar and A. Tewari. Learning with Noisy Labels. In NeurIPS, 2013.<br>
-3. S. Reed, H. Lee, D. Anguelov, C. Szegedy, D. Erhan and A. Rabinovich. Training Deep Neural Networks on Noisy Labels with Bootstrapping. In ICLR Workshop, 2015.<br>
-4. T. Liu and D. Tao. Classification with Noisy Labels by Importance Reweighting. IEEE Transactions on Pattern Analysis and MachineIntelligence, 38(3): 447-461, 2015.<br>
-5. G. Patrini, A. Rozza, A. K. Menon, R. Nock and L. Qu. Making Deep Neural Networks Robust to Label Noise: A Loss Correction Approach. In CVPR, 2017.<br>
-6. L. Jiang, Z. Zhou, T. Leung, L.-J. Li and L. Fei-Fei. Mentornet: Learning Data-driven Curriculum for very Deep Neural Networks on Corrupted Labels. In ICML, 2018.<br>
-7. B. Han, Q. Yao, X. Yu, G. Niu, M. Xu, W. Hu, I.W. Tsang and M. Sugiyama. Co-teaching: Robust Training of Deep Neural Networks with Extremely Noisy Labels. In NeurIPS, 2018.<br>
-8. B. Han, J. Yao, G. Niu, M. Zhou, I.W. Tsang, Y. Zhang and M. Sugiyama. Masking: A New Perspective of Noisy Supervision. In NeurIPS, 2018.<br>
-9. Q. Yao, M. Wang. Taking Human out of Learning Applications: A Survey on Automated Machine Learning. 
-arXiv preprint arXiv:1810.13306. 2018<br>
-10. X. Yu, B. Han, J. Yao, G. Niu, I.W. Tsang and M. Sugiyama. How does Disagreement Help Generalization against Label Corruption? In ICML, 2019.<br>
-11. X. Xia, T. Liu, N. Wang, B. Han, C. Gong, G. Niu, and M. Sugiyama. Are Anchor Points Really Indispensable in Label-Noise Learning? In NeurIPS, 2019.<br>
-12. J. Li, R. Socher, S. Hoi. DivideMix: Learning with Noisy Labels as Semi-supervised Learning. In ICLR, 2020.<br>
-13. Y. Yao, T. Liu, B. Han, M. Gong, J. Deng, G. Niu, and M. Sugiyama. Dual T: Reducing Estimation Error for Transition Matrix in Label-noise Learning. In NeurIPS, 2020.<br>
-14. X. Xia, T. Liu, B. Han, N. Wang, M. Gong, H. Liu, G. Niu, D. Tao, and M. Sugiyama. Part-dependent Label Noise: Towards Instance-dependent Label Noise. In NeurIPS, 2020.<br>
-15. J. Cheng, T. Liu, K. Rao, and D. Tao. Learning with Bounded Instance-and Label-dependent Label Noise.
-In ICML, 2020.<br>
-16. B. Han, G. Niu, X. Yu, Q. Yao, X. Miao, I.W. Tsang and M. Sugiyama. SIGUA: Forgetting May Make Learning with Noisy Labels More Robust. In ICML, 2020.<br>
-17. Y. Zhang, Q. Yao, L. Chen. Interstellar: Searching Recurrent Architecture for Knowledge Graph Embedding. 
-In NeurIPS, 2020.<br>
-18. Q. Yao, H. Yang, B. Han, G. Niu, J. Kwok. Searching to Exploit Memorization Effect in Learning from Noisy Labels. In ICML, 2020.<br>
-19. A. K. Menon, A. S. Rawat, S. J. Reddi and S. Kumar. Can Gradient Clipping Mitigate Label Noise? In ICLR, 2020.<br>
-20. X. Ma, H. Huang, Y. Wang, S. Romano, S. Erfani and J. Bailey. Normalized Loss Functions for Deep Learning with Noisy Labels. In ICML, 2020.<br>
-21. Q. Yao, J. Xu, W. Tu, Z. Zhu. Efficient Neural Architecture Search via Proximal Iterations. In AAAI, 2020.<br>
-22. H. Cheng, Z. Zhu, X. Li, Y. Gong, X. Sun and Y. Liu. Learning with Instance-dependent Label Noise: A Sample Sieve Approach. In ICLR, 2021.<br>
-</p>
+<div><ol>
+    <li><p>B. Han, Q. Yao, T. Liu, G. Niu, I. W. Tsang, J. T. Kwok, and M. Sugiyama.
+    A Survey of Label-noise Representation Learning: Past, Present and Future. arXiv preprint arXiv:2011.04406, 2020.</p></li>
+    <li><p>N. Natarajan, I.S. Dhillon, P. K. Ravikumar, and A. Tewari. Learning with Noisy Labels. In NeurIPS, 2013.</p></li>
+    <li><p>T. Liu and D. Tao. Classification with Noisy Labels by Importance Reweighting.
+    IEEE Transactions on Pattern Analysis and MachineIntelligence, 38(3): 447-461, 2015.</p></li>
+    <li><p>G. Patrini, A. Rozza, A. K. Menon, R. Nock, and L. Qu.
+    Making Deep Neural Networks Robust to Label Noise: A Loss Correction Approach. In CVPR, 2017.</p></li>
+    <li><p>L. Jiang, Z. Zhou, T. Leung, L.-J. Li, and L. Fei-Fei.
+    Mentornet: Learning Data-driven Curriculum for very Deep Neural Networks on Corrupted Labels. In ICML, 2018.</p></li>
+    <li><p>B. Han, Q. Yao, X. Yu, G. Niu, M. Xu, W. Hu, I. W. Tsang, and M. Sugiyama.
+    Co-teaching: Robust Training of Deep Neural Networks with Extremely Noisy Labels. In NeurIPS, 2018.</p></li>
+    <li><p>B. Han, J. Yao, G. Niu, M. Zhou, I. W. Tsang, Y. Zhang, and M. Sugiyama.
+    Masking: A New Perspective of Noisy Supervision. In NeurIPS, 2018.</p></li>
+    <li><p>Q. Yao, and M. Wang.
+    Taking Human out of Learning Applications: A Survey on Automated Machine Learning. arXiv preprint arXiv:1810.13306, 2018.</p></li>
+    <li><p>X. Yu, B. Han, J. Yao, G. Niu, I. W. Tsang, and M. Sugiyama.
+    How does Disagreement Help Generalization against Label Corruption? In ICML, 2019.</p></li>
+    <li><p>X. Xia, T. Liu, N. Wang, B. Han, C. Gong, G. Niu, and M. Sugiyama.
+    Are Anchor Points Really Indispensable in Label-Noise Learning? In NeurIPS, 2019.</p></li>
+    <li><p>Y. Yao, T. Liu, B. Han, M. Gong, J. Deng, G. Niu, and M. Sugiyama.
+    Dual T: Reducing Estimation Error for Transition Matrix in Label-noise Learning. In NeurIPS, 2020.</p></li>
+    <li><p>X. Xia, T. Liu, B. Han, N. Wang, M. Gong, H. Liu, G. Niu, D. Tao, and M. Sugiyama.
+    Part-dependent Label Noise: Towards Instance-dependent Label Noise. In NeurIPS, 2020.</p></li>
+    <li><p>J. Cheng, T. Liu, K. Rao, and D. Tao.
+    Learning with Bounded Instance-and Label-dependent Label Noise. In ICML, 2020.</p></li>
+    <li><p>B. Han, G. Niu, X. Yu, Q. Yao, X. Miao, I. W. Tsang, and M. Sugiyama.
+    SIGUA: Forgetting May Make Learning with Noisy Labels More Robust. In ICML, 2020.</p></li>
+    <li><p>Y. Zhang, Q. Yao, and L. Chen.
+    Interstellar: Searching Recurrent Architecture for Knowledge Graph Embedding. In NeurIPS, 2020.</p></li>
+    <li><p>Q. Yao, H. Yang, B. Han, G. Niu, and J. T. Kwok.
+    Searching to Exploit Memorization Effect in Learning from Noisy Labels. In ICML, 2020.</p></li>
+    <li><p>A. K. Menon, A. S. Rawat, S. J. Reddi, and S. Kumar.
+    Can Gradient Clipping Mitigate Label Noise? In ICLR, 2020.</p></li>
+    <li><p>Q. Yao, J. Xu, W. Tu, and Z. Zhu.
+    Efficient Neural Architecture Search via Proximal Iterations. In AAAI, 2020.</p></li>
+    <li><p>H. Cheng, Z. Zhu, X. Li, Y. Gong, X. Sun, and Y. Liu.
+    Learning with Instance-dependent Label Noise: A Sample Sieve Approach. In ICLR, 2021.</p></li>
+</ol></div>
 
 <footer class="site-footer">
     <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com/">GitHub Pages</a>.</span>
