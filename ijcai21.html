@@ -68,479 +68,257 @@ function writeTimeRange(startHour, startMin, endHour, endMin) {
         </h2>
     </section>
 
-    <section class="main-content">
-<h1 id="topic-summary">Topic Summary</h1>
+<section class="main-content">
+    <center>[ <a href="#program">Program</a>,
+         <a href="#topics">Topics</a>,
+         <a href="#submission">Submission</a>,
+         <a href="#organizers">Organizers</a>,
+         <a href="#previous-workshops">Previous Workshops</a> ]</center>
 
-<p>Machine learning should not be accessible only to those who can pay. Specifically, modern machine learning is migrating to the era of complex models (e.g., deep neural networks), which emphasizes the data representation highly. This learning paradigm is known as representation learning. Specifically, via deep neural networks, learned representations often result in much better performance than can be obtained with hand-designed representations.
-
-It is noted that representation learning normally requires a plethora of well-annotated data. Giant companies have enough money to collect well-annotated data. Nonetheless, for startups or non-profit organizations, such data is barely acquirable due to the cost of labeling data or the intrinsic scarcity in the given domain. These practical issues motivate us to research and pay attention to <strong>weakly supervised representation learning (WSRL)</strong>, since WSRL does not require such a huge amount of annotated data. We define WSRL as the collection of representation learning problem settings and algorithms that share the same goals as supervised representation learning but can only access to <strong>less supervised information</strong> than supervised representation learning. In this workshop, we discuss both theoretical and applied aspects of WSRL. Meanwhile, we will invite qualified submissions to <a href="https://www.springer.com/journal/10994">Machine Learning Journal</a> Special Issue on <a href="https://wsl-workshop.github.io/MLJ_WSRL_CFP.pdf">Weakly Supervised Representation Learning</a>.</p>
-
-<h1 id="topics-of-interest">Topics of Interest</h1>
-
-<p>WSRL workshop includes but not limited to the following topics:</p>
-
-<ul>
-  <li>Algorithms and theories of <strong>incomplete supervision</strong>, e.g., semi-supervised representation learning, active representation learning and positive-unlabeled representation learning;</li>
-  <li>Algorithms and theories of <strong>inexact supervision</strong>, e.g., multi-instance representation learning and complementary representation learning;</li>
-  <li>Algorithms and theories of <strong>inaccurate supervision</strong>, e.g., crowdsourced representation learning and label-noise representation learning;</li>
-  <li>Algorithms and theories of <strong>cross-domain supervision</strong>, e.g., zero-/one-/few-shot representation learning, transferable representation learning and multi-task representation leaning;</li>
-  <li>Algorithms and theories of <strong>imperfect demonstration</strong>, e.g., inverse reinforcement representation learning and imitation representation learning with non-expert demonstrations;</li>
-  <li>Broad applications of weakly-supervised representation learning, such as weakly supervised <strong>object detection</strong>, weakly supervised <strong>sequence modeling</strong>, weakly supervised <strong>cross-media retrieval</strong>, and weakly supervised <strong>medical image segmentation</strong>.</li>
-</ul>
-
-<h1 id="topic-description">Topic Description</h1>
-
-<p>The focus of this workshop is five types of weak supervision: incomplete supervision, inexact supervision, inaccurate supervision, cross-domain supervision and imperfect demonstration. Specifically, incomplete supervision considers a subset of training data given with ground-truth labels while the other data remain unlabeled, such as semi-supervised representation learning and positive-unlabeled representation learning. Inexact supervision considers the situation where some supervision information is given but not as exacted as desired, i.e., only coarse-grained labels are available. For example, if we are considering to classify every pixel of an image, rather than the image itself, then ImageNet becomes a benchmark with inexact supervision. Besides, multi-instance representation learning belongs to inexact supervision, where we do not exactly know which instance in the bag corresponds to the given ground-truth label. Inaccurate supervision considers the situation where the supervision information is not always the ground-truth, such as label-noise representation learning.</p>
-
-<p>Cross-domain supervision considers the situation where the supervision information is scarce or even non-existent
-in the current domain but can be possibly derived from other domains. Examples of cross-domain supervision appear in zero-/one-/few-shot representation learning, where external knowledge from other domains is usually used to overcome the problem of too few or even no supervision in the original domain. Imperfect demonstration considers the situation for inverse reinforcement representation learning and imitation representation learning, where the agent learns with imperfect or non-expert demonstrations. For example, AlphaGo learns a policy from a sequence of states and actions (expert demonstration). Even if an expert player wins a game, it is not guaranteed that every action in the sequence is optimal.</p>
-
-<p>This workshop will discuss the fundamental theory of weakly supervised representation learning. Although theories of weakly supervised statistical learning already exist, extending these results for weakly supervised representation learning is still a challenge. Besides, this workshop also discusses on broad applications of weakly supervised representation learning, such as weakly supervised object detection (computer vision), weakly supervised sequence modeling (natural language processing), weakly supervised cross-media retrieval (information retrieval), and weakly supervised medical image segmentation (healthcare analysis).</p>
-
-<h1 id="submission-guidelines">Submission Guidelines</h1>
-
-<p>Papers should be formatted according to the IJCAI2021 formatting instructions for the Conference Track. The submissions with 2 pages will be considered for the poster, while the submissions with at least 4 pages will be considered for the oral presentation. Workshop submissions and camera ready versions will be handled by CMT. Please submit your paper to <a href="https://cmt3.research.microsoft.com/IJCAIWSRL2021">https://cmt3.research.microsoft.com/IJCAIWSRL2021</a></p>
-
-<p>IJCAI2021-WSRL is a non-archival venue and there will be no published proceedings. The papers will be posted on the workshop website. It will be possible to submit the IJCAI2021-WSRL submissions to other conferences and journals both in parallel to and after
-IJCAI2021-WSRL, if they accept such submissions. Besides, we also welcome submissions to IJCAI2021-WSRL that are under review at other conferences and workshops, if they allow concurrent submissions. At least one author from each accepted paper must register for the workshop. Please see the IJCAI 2021 Website for information about registration.</p>
-
-<h1 id="invited-speakers">List of Invited Speakers</h1>
-
-<p><p><a href="http://pages.cs.wisc.edu/~sharonli/">Sharon Li</a>, University of Wisconsin-Madison (confirmed)</p>
-<p><a href="https://www.paroma.xyz/">Paroma Varma</a>, Snorkel AI (confirmed)</p>
-<p><p><a href="https://cs.nju.edu.cn/liyf/">Yu-Feng Li</a>, Nanjing University (confirmed)</p>
-<p><a href="https://ajratner.github.io/">Alex Ratner</a>, University of Washington (confirmed)</p>
-<p><p><a href="http://changxu.xyz/">Chang Xu</a>, University of Sydney (confirmed)</p>
-<p><a href="http://www.yliuu.com/">Yang Liu</a>, University of California Santa Cruz (confirmed)</p>
-<p><a href="http://chunyuan.li/">Chunyuan Li</a>, Microsoft Research, Redmond (confirmed)</p>
-
-<h1 id="tentative-schedule">Schedule and Zoom Recordings</h1>
-
-<p></p>
-
-<p>The workshop will use <font color='FF0000'>
-<script>document.write(getLocalTimezone());</script>
-<noscript>Montreal time (UTC-4, the official time zone)</noscript>
-</font> for scheduling, and it will be combined with invited talks, contributed talks, and panel discussions.</p>
+<h1 id="program">Program</h1>
+    <h2>Schedule</h2>
+        <p>The workshop will use <font color='FF0000'>
+        <script>document.write(getLocalTimezone());</script>
+        <noscript>Montreal time (UTC-4, the official time zone)</noscript>
+        </font> for scheduling, and it will be combined with invited talks, contributed talks, and panel discussions.</p>
 
 <table>
   <thead>
-    <tr>
-      <th style="width:25ex">Time</th>
-      <th>Event</th>
-    </tr>
+    <tr><th style="width:25ex">Time</th><th>Event</th></tr>
   </thead>
   <tbody>
-    <tr>
-      <td><script>writeTimeRange(20, 0, 20, 05);</script>
-      <noscript>20:00 -- 20:05</noscript></td>
-      <td><strong>Opening Ceremony</strong></td>
-    </tr>
-	<tr>
-      <td>&nbsp;</td>
-      <td><strong>Host</strong>: Masashi Sugiyama</td>
-    </tr>
-    <tr>
-      <td><script>writeTimeRange(20, 5, 20, 35);</script>
-      <noscript>20:05 -- 20:35</noscript></td>
-      <td><strong>Invited Talk 1</strong></td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td><strong>Title</strong>: Programmatic Supervision for Data-Centric AI</td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-        <td><strong>Speaker</strong>: Alex Ratner</td>
-    </tr><tr>
-      <td><script>writeTimeRange(20, 35, 20, 45);</script>
-      <noscript>20:35 -- 20:45</noscript></td>
-      <td><strong>Contributed Talk 1</strong></td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td><strong>Title</strong>: Autoencoding Slow Representations for Semi-supervised Data Efficient Regression</td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td><strong>Authors</strong>: Oliver Struckmeier, Kshitij Tiwari, and Ville Kyrki</td>
-    </tr>
-    <tr>
-      <td><script>writeTimeRange(20, 45, 21, 15);</script>
-      <noscript>20:45 -- 21:15</noscript></td>
-      <td><strong>Invited Talk 2</strong></td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td><strong>Title</strong>: Uncovering the Unknowns of Deep Neural Networks: Challenges and Opportunities</td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-        <td><strong>Speaker</strong>: Sharon Li</td>
-    </tr>
-    <tr>
-      <td><script>writeTimeRange(21, 15, 21, 25);</script>
-      <noscript>21:15 -- 21:25</noscript></td>
-      <td><strong>Contributed Talk 2</strong></td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td><strong>Title</strong>: A Weakly-Supervised Depth Estimation Network Using Attention Mechanism</td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td><strong>Authors</strong>: Fang Gao, wang jiabao, Jun Yu, yao xiong wang, and Feng Shuang</td>
-    </tr>
-	    <tr>
-      <td><script>writeTimeRange(21, 25, 21, 55);</script>
-      <noscript>21:25 -- 21:55</noscript></td>
-      <td><strong>Invited Talk 3</strong></td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td><strong>Title</strong>: Automating Weak Supervision to Label Training Data</td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-        <td><strong>Speaker</strong>: Paroma Varma</td>
-    </tr>
-	<tr>
-      <td><script>writeTimeRange(21, 55, 22, 05);</script>
-      <noscript>21:55 -- 22:05</noscript></td>
-      <td><strong>Contributed Talk 3</strong></td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td><strong>Title</strong>: Semi-Supervised Deep Ensembles for Blind Image Quality Assessment</td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-        <td><strong>Authors</strong>: Zhihua Wang, Dingquan Li, and Kede Ma</td>
-    </tr>
-	    <tr>
-      <td><script>writeTimeRange(22, 05, 22, 35);</script>
-      <noscript>22:05 -- 22:35</noscript></td>
-      <td><strong>Invited Talk 4</strong></td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td><strong>Title</strong>: Learning from Noisy Labels: Some Lessons and Challenges</td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-        <td><strong>Speaker</strong>: Yang Liu</td>
-    </tr><tr>
-      <td><script>writeTimeRange(22, 35, 22, 45);</script>
-      <noscript>22:35 -- 22:45</noscript></td>
-      <td><strong>Contributed Talk 4</strong></td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td><strong>Title</strong>: Clusterability as an Alternative to Anchor Points When Learning with Noisy Labels</td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td><strong>Authors</strong>: Zhaowei Zhu, Yiwen Song, and Yang Liu</td>
-    </tr>
-    <tr>
-      <td><script>writeTimeRange(22, 45, 23, 15);</script>
-      <noscript>22:45 -- 23:15</noscript></td>
-      <td><strong>Invited Talk 5</strong></td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td><strong>Title</strong>: Revisiting Proxies for Unsupervised Disentangled Representation Learning</td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-        <td><strong>Speaker</strong>: Chang Xu</td>
-    </tr>
-    <tr>
-      <td><script>writeTimeRange(23, 15, 23, 25);</script>
-      <noscript>23:15 -- 23:25</noscript></td>
-      <td><strong>Contributed Talk 5</strong></td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td><strong>Title</strong>: Learning from Crowds with Sparse and Imbalanced Annotations</td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td><strong>Authors</strong>: Ye Shi, Shao-Yuan Li, and Sheng-Jun Huang</td>
-    </tr>
-	    <tr>
-      <td><script>writeTimeRange(23, 25, 23, 55);</script>
-      <noscript>23:25 -- 23:55</noscript></td>
-      <td><strong>Invited Talk 6</strong></td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td><strong>Title</strong>: OOD Example and New Label under Weakly Supervised Scenario</td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-        <td><strong>Speaker</strong>: Yu-Feng Li</td>
-    </tr>
-	<tr>
-      <td><script>writeTimeRange(23, 55, 24, 05);</script>
-      <noscript>23:55 -- 24:05</noscript></td>
-      <td><strong>Contributed Talk 6</strong></td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td><strong>Title</strong>: Property-aware Adaptive Relation Networks for Molecular Property Prediction</td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-        <td><strong>Authors</strong>: Yaqing Wang, Abulikemu Abuduweili, and Dejing Dou</td>
-    </tr>
-	<td><script>writeTimeRange(24, 05, 24, 25);</script>
-      <noscript>24:05 -- 24:25</noscript></td>
-      <td><strong>Invited Talk 7</strong></td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td><strong>Title</strong>: Efficient Self-supervised Vision Transformers for Representation Learning
-</td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-        <td><strong>Speaker</strong>: Chunyuan Li</td>
-    </tr>
-	<tr>
-      <td><script>writeTimeRange(24, 25, 24, 50);</script>
-      <noscript>24:25 -- 24:50</noscript></td>
-      <td><strong>Panel Discussion & Concluding Remark</strong></td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td><strong>Host</strong>: Bo Han</td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td><strong>Guests</strong>: TBD</td>
-    </tr>
-	    <tr>
-      <td><script>writeTimeRange(24, 50, 25, 50);</script>
-      <noscript>24:50 -- 25:50</noscript></td>
-      <td><strong>Poster Session</strong></td>
-    </tr>
-	  <tr>
-      <td>&nbsp;</td>
-      <td><strong>GatherTown</strong>: The link will be provided during the Zoom meeting</td>
-    </tr>
+    <tr><td><script>writeTimeRange(20, 0, 20, 05);</script><noscript>20:00 -- 20:05</noscript></td>
+        <td><b>Opening Ceremony</b></td></tr>
+    <tr><td></td><td><b>Host</b>: Masashi Sugiyama</td></tr>
+    
+    <tr><td><script>writeTimeRange(20, 5, 20, 35);</script><noscript>20:05 -- 20:35</noscript></td>
+        <td><b>Invited Talk 1</b></td></tr>
+    <tr><td></td><td><b>Title</b>: Programmatic Supervision for Data-Centric AI</td></tr>
+    <tr><td></td><td><b>Speaker</b>: Alex Ratner</td></tr>
+    
+    <tr><td><script>writeTimeRange(20, 35, 20, 45);</script><noscript>20:35 -- 20:45</noscript></td>
+        <td><b>Contributed Talk 1</b></td></tr>
+    <tr><td></td><td><b>Title</b>: Autoencoding Slow Representations for Semi-supervised Data Efficient Regression</td></tr>
+    <tr><td></td><td><b>Authors</b>: Oliver Struckmeier, Kshitij Tiwari, and Ville Kyrki</td></tr>
+    
+    <tr><td><script>writeTimeRange(20, 45, 21, 15);</script><noscript>20:45 -- 21:15</noscript></td>
+        <td><b>Invited Talk 2</b></td></tr>
+    <tr><td></td><td><b>Title</b>: Uncovering the Unknowns of Deep Neural Networks: Challenges and Opportunities</td></tr>
+    <tr><td></td><td><b>Speaker</b>: Sharon Li</td></tr>
+    
+    <tr><td><script>writeTimeRange(21, 15, 21, 25);</script><noscript>21:15 -- 21:25</noscript></td>
+        <td><b>Contributed Talk 2</b></td></tr>
+    <tr><td></td><td><b>Title</b>: A Weakly-Supervised Depth Estimation Network Using Attention Mechanism</td></tr>
+    <tr><td></td><td><b>Authors</b>: Fang Gao, wang jiabao, Jun Yu, yao xiong wang, and Feng Shuang</td></tr>
+
+    <tr><td><script>writeTimeRange(21, 25, 21, 55);</script><noscript>21:25 -- 21:55</noscript></td>
+        <td><b>Invited Talk 3</b></td></tr>
+    <tr><td></td><td><b>Title</b>: Automating Weak Supervision to Label Training Data</td></tr>
+    <tr><td></td><td><b>Speaker</b>: Paroma Varma</td></tr>
+    
+    <tr><td><script>writeTimeRange(21, 55, 22, 05);</script><noscript>21:55 -- 22:05</noscript></td>
+        <td><b>Contributed Talk 3</b></td></tr>
+    <tr><td></td><td><b>Title</b>: Semi-Supervised Deep Ensembles for Blind Image Quality Assessment</td></tr>
+    <tr><td></td><td><b>Authors</b>: Zhihua Wang, Dingquan Li, and Kede Ma</td></tr>
+    
+    <tr><td><script>writeTimeRange(22, 05, 22, 35);</script><noscript>22:05 -- 22:35</noscript></td>
+        <td><b>Invited Talk 4</b></td></tr>
+    <tr><td></td><td><b>Title</b>: Learning from Noisy Labels: Some Lessons and Challenges</td></tr>
+    <tr><td></td><td><b>Speaker</b>: Yang Liu</td></tr>
+    
+    <tr><td><script>writeTimeRange(22, 35, 22, 45);</script><noscript>22:35 -- 22:45</noscript></td>
+        <td><b>Contributed Talk 4</b></td></tr>
+    <tr><td></td><td><b>Title</b>: Clusterability as an Alternative to Anchor Points When Learning with Noisy Labels</td></tr>
+    <tr><td></td><td><b>Authors</b>: Zhaowei Zhu, Yiwen Song, and Yang Liu</td></tr>
+    
+    <tr><td><script>writeTimeRange(22, 45, 23, 15);</script><noscript>22:45 -- 23:15</noscript></td>
+        <td><b>Invited Talk 5</b></td></tr>
+    <tr><td></td><td><b>Title</b>: Revisiting Proxies for Unsupervised Disentangled Representation Learning</td></tr>
+    <tr><td></td><td><b>Speaker</b>: Chang Xu</td></tr>
+    
+    <tr><td><script>writeTimeRange(23, 15, 23, 25);</script><noscript>23:15 -- 23:25</noscript></td>
+        <td><b>Contributed Talk 5</b></td></tr>
+    <tr><td></td><td><b>Title</b>: Learning from Crowds with Sparse and Imbalanced Annotations</td></tr>
+    <tr><td></td><td><b>Authors</b>: Ye Shi, Shao-Yuan Li, and Sheng-Jun Huang</td></tr>
+    
+    <tr><td><script>writeTimeRange(23, 25, 23, 55);</script><noscript>23:25 -- 23:55</noscript></td>
+        <td><b>Invited Talk 6</b></td></tr>
+    <tr><td></td><td><b>Title</b>: OOD Example and New Label under Weakly Supervised Scenario</td></tr>
+    <tr><td></td><td><b>Speaker</b>: Yu-Feng Li</td></tr>
+    
+    <tr><td><script>writeTimeRange(23, 55, 24, 05);</script><noscript>23:55 -- 24:05</noscript></td>
+        <td><b>Contributed Talk 6</b></td></tr>
+    <tr><td></td><td><b>Title</b>: Property-aware Adaptive Relation Networks for Molecular Property Prediction</td></tr>
+    <tr><td></td><td><b>Authors</b>: Yaqing Wang, Abulikemu Abuduweili, and Dejing Dou</td></tr>
+    
+    <td><script>writeTimeRange(24, 05, 24, 25);</script><noscript>24:05 -- 24:25</noscript></td>
+        <td><b>Invited Talk 7</b></td></tr>
+    <tr><td></td><td><b>Title</b>: Efficient Self-supervised Vision Transformers for Representation Learning</td></tr>
+    <tr><td></td><td><b>Speaker</b>: Chunyuan Li</td></tr>
+    
+    <tr><td><script>writeTimeRange(24, 25, 24, 50);</script><noscript>24:25 -- 24:50</noscript></td>
+        <td><b>Panel Discussion & Concluding Remark</b></td></tr>
+    <tr><td></td><td><b>Host</b>: Bo Han</td></tr>
+    <tr><td></td><td><b>Guests</b>: TBD</td></tr>
+    
+    <tr><td><script>writeTimeRange(24, 50, 25, 50);</script><noscript>24:50 -- 25:50</noscript></td>
+        <td><b>Poster Session</b></td></tr>
+    <tr><td></td><td><b>GatherTown</b>: The link will be provided during the Zoom meeting</td></tr>
   </tbody>
 </table>
 
-<!-- <h1 id="Best-paper">Best Paper Awards (alphabetic ordering)</h1>
+    <h2>Invited Speakers</h2>
+        <p><a href="http://pages.cs.wisc.edu/~sharonli/">Sharon Li</a>, University of Wisconsin-Madison (confirmed)</p>
+        <p><a href="https://www.paroma.xyz/">Paroma Varma</a>, Snorkel AI (confirmed)</p>
+        <p><a href="https://cs.nju.edu.cn/liyf/">Yu-Feng Li</a>, Nanjing University (confirmed)</p>
+        <p><a href="https://ajratner.github.io/">Alex Ratner</a>, University of Washington (confirmed)</p>
+        <p><a href="http://changxu.xyz/">Chang Xu</a>, University of Sydney (confirmed)</p>
+        <p><a href="http://www.yliuu.com/">Yang Liu</a>, University of California Santa Cruz (confirmed)</p>
+        <p><a href="http://chunyuan.li/">Chunyuan Li</a>, Microsoft Research, Redmond (confirmed)</p>
 
-<p>Nan Lu, Tianyi Zhang, Gang Niu, and Masashi Sugiyama. RIKEN AIP & The University of Tokyo, Japan.</p>
+    <h2 id="accepted-papers">Accepted Papers</h2>
+<div><ul>
+    <li><p>Clusterability as an Alternative to Anchor Points When Learning with Noisy Labels
+        [<a href="https://arxiv.org/abs/2102.05291">Link</a>] <br>
+        Zhaowei Zhu, Yiwen Song, Yang Liu</p></li>  
+    <li><p>Decoupling Representation and Classifier for Noisy Label Learning
+        [<a href="https://arxiv.org/abs/2011.08145">Link</a>] <br>
+        Hui Zhang, Quanming Yao</p></li>  
+    <li><p>TOHAN: A One-step Approach towards Few-shot Hypothesis Adaptation
+        [<a href="https://arxiv.org/abs/2106.06326">Link</a>] <br>
+        Haoang Chi, Feng Liu, Wenjing Yang, Long Lan, Bo Han</p></li>  
+    <li><p>An Ensemble Noise-Robust K-fold Cross-Validation Selection Method for Noisy Labels
+        [<a href="https://arxiv.org/abs/2107.02347">Link</a>] <br>
+        Yong Wen, Marcus Kalander, Chanfei Su, Lujia Pan</p></li>  
+    <li><p>When Optimizing f-Divergence is Robust with Label Noise
+        [<a href="https://arxiv.org/abs/2011.03687">Link</a>] <br>
+        Jiaheng Wei, Yang Liu</p></li>  
+    <li><p>Semi-Supervised Deep Ensembles for Blind Image Quality Assessment
+        [<a href="https://arxiv.org/abs/2106.14008">Link</a>] <br>
+        Zhihua Wang, Dingquan Li, Kede Ma</p></li>  
+    <li><p>ANOMALYMAXQ: Anomaly-Structured Maximization to Query in Attributed Networks
+        [<a href="https://arxiv.org/abs/2108.07405">Link</a>] <br>
+        Xinyue Zhang, Nannan Wu, Zixu Zhen, Wenjun Wang</p></li>  
+    <li><p>Learning from Self-Discrepancy via Multiple Co-teaching for Cross-Domain Person Re-Identification
+        [<a href="https://arxiv.org/pdf/2104.02265.pdf">Link</a>] <br>
+        Suncheng Xiang, Yuzhuo Fu, Mengyuan Guan, Ting Liu</p></li>  
+    <li><p>Autoencoding Slow Representations for Semi-supervised Data Efficient Regression
+        [<a href="https://arxiv.org/abs/2012.06279">Link</a>] <br>
+        Oliver Struckmeier, Kshitij Tiwari, Ville Kyrki</p></li>  
+    <li><p>Learning from Multiple Annotators by Incorporating Instance Features
+        [<a href="http://arxiv.org/abs/2106.15146">Link</a>] <br>
+        Jingzheng Li, Hailong Sun, Jiyi Li, Zhijun Chen, Renshuai Tao, Yufei Ge</p></li>  
+    <li><p>Automated Label Generation for Time Series Classification with Representation Learning: Reduction of Label Cost for Training
+        [<a href="https://arxiv.org/abs/2107.05458">Link</a>] <br>
+        Soma Bandyopadhyay, Anish Datta, Arpan Pal</p></li>  
+    <li><p>Semi-supervised Learning for Marked Temporal Point Processes
+        [<a href="https://www.semion.io/doc/semi-supervised-learning-for-marked-temporal-point-processes">Link</a>] <br>
+        Shivshankar Mr Reddy, Anand Vir Singh Chauhan, Maneet Singh, Karamjit Singh</p></li>  
+    <li><p>A Weakly-Supervised Depth Estimation Network Using Attention Mechanism
+        [<a href="https://arxiv.org/ftp/arxiv/papers/2107/2107.04819.pdf">Link</a>] <br>
+        Fang Gao, Jiabao Wang, Jun Yu, Yao Xiong Wang, Feng Shuang</p></li>
+    <li><p>Class-Agnostic Segmentation Loss and Its Application to Salient Object Detection and Segmentation
+        [<a href="https://arxiv.org/abs/2010.14793">Link</a>] <br>
+        Angira Sharma, Naeemullah Khan, Muhammad Mubashar, Ganesh Sundaramoorthi, Philip Torr</p></li>  
+    <li><p>Graph Self Supervised Learning: the BT, the HSIC, and the VICReg
+        [<a href="https://arxiv.org/pdf/2105.12247.pdf">Link</a>] <br>
+        Sayan Nag</p></li>  
+    <li><p>BiSTF: Bilateral-Branch Self-Training Framework for Domain-Shifted and Imbalanced Semi-Supervised Large-scale Fine-Grained Recognition
+        [<a href="https://arxiv.org/abs/2107.06768">Link</a>] <br>
+        Hao Chang, Guochen Xie, Jun Yu, Qiang Ling</p></li>  
+    <li><p>Learning from Crowds with Sparse and Imbalanced Annotations
+        [<a href="https://arxiv.org/pdf/2107.05039.pdf">Link</a>] <br>
+        Ye Shi, Shao-Yuan Li, Sheng-Jun Huang</p></li>  
+    <li><p>Positive-Unlabeled Classification under Class-Prior Shift: A Prior-invariant Approach Based on Density Ratio Estimation
+        [<a href="https://arxiv.org/abs/2107.05045">Link</a>] <br>
+        Shota Nakajima, Masashi Sugiyama</p></li>  
+    <li><p>Self Training with Ensemble of Teacher Models
+        [<a href="https://arxiv.org/abs/2107.08211">Link</a>] <br>
+        Soumyadeep Ghosh, Sanjay Kumar, Janu Verma, Awanish Kumar</p></li>  
+    <li><p>Color Variants Identification in Fashion e-commerce via Contrastive Self-Supervised Representation Learning
+        [<a href="https://arxiv.org/abs/2104.08581">Link</a>] <br>
+        Ujjal Kr Dutta, Sandeep Repakula, Maulik Parmar, Abhinav Ravi</p></li>  
+    <li><p>Pseudo-labelling Enhanced Media Bias Detection
+        [<a href="https://arxiv.org/abs/2107.07705">Link</a>] <br>
+        Qin Ruan, Brian Mac Namee, Ruihai Dong</p></li>  
+    <li><p>Property-aware Adaptive Relation Networks for Molecular Property Prediction
+        [<a href="https://arxiv.org/abs/2107.07994">Link</a>] <br>
+        Yaqing Wang, Abulikemu Abuduweili, Dejing Dou</p></li>  
+    <li><p>Context-Conditional Adaptation for Recognizing Unseen Classes in Unseen Domains
+        [<a href="https://arxiv.org/abs/2107.07497">Link</a>] <br>
+         Puneet Mangla, Shivam Chandhok, Vineeth Balasubramanian, Fahad Shahbaz Khan</p></li>  
+    <li><p>Learn from Anywhere: Rethinking Generalized Zero-Shot Learning with Limited Supervision
+        [<a href="https://arxiv.org/abs/2107.04952">Link</a>] <br>
+        Gaurav Bhatt, Shivam Chandhok, Vineeth N Balasubramanian</p></li>  
+    <li><p>Box-Adapt: Domain-Adaptive Medical ImageSegmentation using Bounding Box Supervision  <br>
+        Yanwu Xu, Mingming Gong, Shaoan Xie, Kayhan Batmanghelich</p></li>  
+    <li><p>Towards an Interpretable Latent Space in Structured Models for Video Prediction
+        [<a href="https://arxiv.org/abs/2107.07713">Link</a>] <br>
+        Rushil Gupta, Vishal Sharma, Yash Jain, Yitao Liang, Guy Van den Broeck, Parag Singla</p></li>  
+</ul></div>
 
-<p>Melanie F. Pradier, Weiwei Pan, Jiayu Yao, Soumya Ghosh, and Finale Doshi-Velez. Harvard University, USA.</p>
+    <h2>Awards</h2>
+    TBA
 
-<p>Hansi Yang, and Quanming Yao. Tsinghua University & 4Paradigm, China.</p> -->
+<h1 id="topics">Topics</h1>
 
-<h1 id="accepted-papers">Accepted Papers</h1>	
-<div>
-<ul>
-	   <li><p>
-           Clusterability as an Alternative to Anchor Points When Learning with Noisy Labels [<a href="https://arxiv.org/abs/2102.05291">PDF</a>] <br>
-           Zhaowei Zhu, Yiwen Song, Yang Liu<br>
-           </p></li>  
-	
-		   <li><p>
-           Decoupling Representation and Classifier for Noisy Label Learning [<a href="https://arxiv.org/abs/2011.08145">PDF</a>] <br>
-           Hui Zhang, Quanming Yao<br>
-           </p></li>  
-	
-		   <li><p>
-           TOHAN: A One-step Approach towards Few-shot Hypothesis Adaptation [<a href="https://arxiv.org/abs/2106.06326">PDF</a>] <br>
-           Haoang Chi, Feng Liu, Wenjing Yang, Long Lan, Bo Han <br>
-           </p></li>  
+    <h2>Overview</h2>
+        <p>Machine learning should not be accessible only to those who can pay. Specifically, modern machine learning is migrating to the era of complex models (e.g., deep neural networks), which emphasizes the data representation highly. This learning paradigm is known as representation learning. Specifically, via deep neural networks, learned representations often result in much better performance than can be obtained with hand-designed representations.
 
-		   <li><p>
-           An Ensemble Noise-Robust K-fold Cross-Validation Selection Method for Noisy Labels [<a href="https://arxiv.org/abs/2107.02347">PDF</a>] <br>
-           Yong Wen, Marcus Kalander, Chanfei Su, Lujia Pan<br>
-           </p></li>  
-	
-	
-		   <li><p>
-           When Optimizing f-Divergence is Robust with Label Noise [<a href="https://arxiv.org/abs/2011.03687">PDF</a>] <br>
-           Jiaheng Wei, Yang Liu<br>
-           </p></li>  
-                  
-	
-		   <li><p>
-            Semi-Supervised Deep Ensembles for Blind Image Quality Assessment [<a href="https://arxiv.org/abs/2106.14008">PDF</a>] <br>
-          Zhihua Wang, Dingquan Li, Kede Ma <br>
-           </p></li>  
-                  
-	
-		   <li><p>
-           ANOMALYMAXQ: Anomaly-Structured Maximization to Query in Attributed Networks [<a href="https://arxiv.org/abs/2108.07405">PDF</a>] <br>
-           Xinyue Zhang, Nannan Wu, Zixu Zhen, Wenjun Wang<br>
-           </p></li>  
-                  
-	
-		   <li><p>
-           Learning from Self-Discrepancy via Multiple Co-teaching for Cross-Domain Person Re-Identification [<a href="https://arxiv.org/pdf/2104.02265.pdf">PDF</a>] <br>
-           Suncheng Xiang, Yuzhuo Fu, Mengyuan Guan, Ting Liu<br>
-           </p></li>  
-                  
-	
-		   <li><p>
-           Autoencoding Slow Representations for Semi-supervised Data Efficient Regression [<a href="https://arxiv.org/abs/2012.06279">PDF</a>] <br>
-           Oliver Struckmeier, Kshitij Tiwari, Ville Kyrki<br>
-           </p></li>  
-                  
-	
-		   <li><p>
-           Learning from Multiple Annotators by Incorporating Instance Features [<a href="http://arxiv.org/abs/2106.15146">PDF</a>] <br>
-           Jingzheng Li, Hailong Sun, Jiyi Li, Zhijun Chen, Renshuai Tao, Yufei Ge<br>
-           </p></li>  
-                  
-	
-		   <li><p>
-           Automated Label Generation for Time Series Classification with Representation Learning: Reduction of Label Cost for Training [<a href="https://arxiv.org/abs/2107.05458">PDF</a>] <br>
-           Soma Bandyopadhyay, Anish Datta, Arpan Pal<br>
-           </p></li>  
-                  
-	
-		   <li><p>
-           Semi-supervised Learning for Marked Temporal Point Processes [<a href="https://www.semion.io/doc/semi-supervised-learning-for-marked-temporal-point-processes">PDF</a>] <br>
-           Shivshankar Mr Reddy, Anand Vir Singh Chauhan, Maneet Singh, Karamjit Singh<br>
-           </p></li>  
-                  
-	
-		   <li><p>
-           A Weakly-Supervised Depth Estimation Network Using Attention Mechanism [<a href="https://arxiv.org/ftp/arxiv/papers/2107/2107.04819.pdf">PDF</a>] <br>
-           Fang Gao, Jiabao Wang, Jun Yu, Yao Xiong Wang, Feng Shuang<br>
-           </p></li>  	
+        It is noted that representation learning normally requires a plethora of well-annotated data. Giant companies have enough money to collect well-annotated data. Nonetheless, for startups or non-profit organizations, such data is barely acquirable due to the cost of labeling data or the intrinsic scarcity in the given domain. These practical issues motivate us to research and pay attention to <b>weakly supervised representation learning (WSRL)</b>, since WSRL does not require such a huge amount of annotated data. We define WSRL as the collection of representation learning problem settings and algorithms that share the same goals as supervised representation learning but can only access to <b>less supervised information</b> than supervised representation learning. In this workshop, we discuss both theoretical and applied aspects of WSRL. Meanwhile, we will invite qualified submissions to <a href="https://www.springer.com/journal/10994">Machine Learning Journal</a> Special Issue on <a href="https://wsl-workshop.github.io/MLJ_WSRL_CFP.pdf">Weakly Supervised Representation Learning</a>.</p>
 
-	
-		   <li><p>
-          Class-Agnostic Segmentation Loss and Its Application to Salient Object Detection and Segmentation  [<a href="https://arxiv.org/abs/2010.14793">PDF</a>] <br>
-          Angira Sharma, Naeemullah Khan, Muhammad Mubashar, Ganesh Sundaramoorthi, Philip Torr <br>
-           </p></li>  
-                  
-	
-			   <li><p>
-           Graph Self Supervised Learning: the BT, the HSIC, and the VICReg [<a href="https://arxiv.org/pdf/2105.12247.pdf">PDF</a>] <br>
-           Sayan Nag<br>
-           </p></li>  
-                   
+    <h2>Topics of Interest</h2>
+        <p>WSRL workshop includes but not limited to the following topics:</p>
+        <ul>
+          <li>Algorithms and theories of <b>incomplete supervision</b>, e.g., semi-supervised representation learning, active representation learning and positive-unlabeled representation learning;</li>
+          <li>Algorithms and theories of <b>inexact supervision</b>, e.g., multi-instance representation learning and complementary representation learning;</li>
+          <li>Algorithms and theories of <b>inaccurate supervision</b>, e.g., crowdsourced representation learning and label-noise representation learning;</li>
+          <li>Algorithms and theories of <b>cross-domain supervision</b>, e.g., zero-/one-/few-shot representation learning, transferable representation learning and multi-task representation leaning;</li>
+          <li>Algorithms and theories of <b>imperfect demonstration</b>, e.g., inverse reinforcement representation learning and imitation representation learning with non-expert demonstrations;</li>
+          <li>Broad applications of weakly-supervised representation learning, such as weakly supervised <b>object detection</b>, weakly supervised <b>sequence modeling</b>, weakly supervised <b>cross-media retrieval</b>, and weakly supervised <b>medical image segmentation</b>.</li>
+        </ul>
 
-                  
-	
-		   <li><p>
-           BiSTF: Bilateral-Branch Self-Training Framework for Domain-Shifted and Imbalanced Semi-Supervised Large-scale Fine-Grained Recognition [<a href="https://arxiv.org/abs/2107.06768">PDF</a>] <br>
-           Hao Chang, Guochen Xie, Jun Yu, Qiang Ling<br>
-           </p></li>  
-                  
-	
-		   <li><p>
-           Learning from Crowds with Sparse and Imbalanced Annotations [<a href="https://arxiv.org/pdf/2107.05039.pdf">PDF</a>] <br>
-           Ye Shi, Shao-Yuan Li, Sheng-Jun Huang <br>
-           </p></li>  
-                  
-	
-		   <li><p>
-          Positive-Unlabeled Classification under Class-Prior Shift: A Prior-invariant Approach Based on Density Ratio Estimation [<a href="https://arxiv.org/abs/2107.05045">PDF</a>] <br>
-           Shota Nakajima, Masashi Sugiyama<br>
-           </p></li>  
-                  
-	
-		   <li><p>
-          Self Training with Ensemble of Teacher Models  [<a href="https://arxiv.org/abs/2107.08211">PDF</a>] <br>
-          Soumyadeep Ghosh, Sanjay Kumar, Janu Verma, Awanish Kumar <br>
-           </p></li>  
-                  
-	
-		   <li><p>
-           Color Variants Identification in Fashion e-commerce via Contrastive Self-Supervised Representation Learning [<a href="https://arxiv.org/abs/2104.08581">PDF</a>] <br>
-          Ujjal Kr Dutta, Sandeep Repakula, Maulik Parmar, Abhinav Ravi <br>
-           </p></li>  
-                  
-	
-		   <li><p>
-           Pseudo-labelling Enhanced Media Bias Detection [<a href="https://arxiv.org/abs/2107.07705">PDF</a>] <br>
-          Qin Ruan, Brian Mac Namee, Ruihai Dong <br>
-           </p></li>  
-                  
-	
-		   <li><p>
-          Property-aware Adaptive Relation Networks for Molecular Property Prediction [<a href="https://arxiv.org/abs/2107.07994">PDF</a>] <br>
-          Yaqing Wang, Abulikemu Abuduweili, Dejing Dou  <br>
-           </p></li>  
-                  
-	
-		   <li><p>
-           Context-Conditional Adaptation for Recognizing Unseen Classes in Unseen Domains [<a href="https://arxiv.org/abs/2107.07497">PDF</a>] <br>
-           Puneet Mangla, Shivam Chandhok, Vineeth Balasubramanian, Fahad Shahbaz Khan<br>
-           </p></li>  
-                  
-	
-		   <li><p>
-           Learn from Anywhere: Rethinking Generalized Zero-Shot Learning with Limited Supervision [<a href="https://arxiv.org/abs/2107.04952">PDF</a>] <br>
-          Gaurav Bhatt, Shivam Chandhok, Vineeth N Balasubramanian <br>
-           </p></li>  
-                  
-	
-		   <li><p>
-           Box-Adapt: Domain-Adaptive Medical ImageSegmentation using Bounding Box Supervision  <br>
-          Yanwu Xu, Mingming Gong, Shaoan Xie, Kayhan Batmanghelich  <br>
-           </p></li>  
-                  
-	
-		   <li><p>
-           Towards an Interpretable Latent Space in Structured Models for Video Prediction [<a href="https://arxiv.org/abs/2107.07713">PDF</a>] <br>
-           Rushil Gupta, Vishal Sharma, Yash Jain, Yitao Liang, Guy Van den Broeck, Parag Singla<br>
-           </p></li>  
-                  
-	
+    <h2>Further Descriptions</h2>
+        <p>The focus of this workshop is five types of weak supervision: incomplete supervision, inexact supervision, inaccurate supervision, cross-domain supervision and imperfect demonstration. Specifically, incomplete supervision considers a subset of training data given with ground-truth labels while the other data remain unlabeled, such as semi-supervised representation learning and positive-unlabeled representation learning. Inexact supervision considers the situation where some supervision information is given but not as exacted as desired, i.e., only coarse-grained labels are available. For example, if we are considering to classify every pixel of an image, rather than the image itself, then ImageNet becomes a benchmark with inexact supervision. Besides, multi-instance representation learning belongs to inexact supervision, where we do not exactly know which instance in the bag corresponds to the given ground-truth label. Inaccurate supervision considers the situation where the supervision information is not always the ground-truth, such as label-noise representation learning.</p>
 
-                  
-                  
-</ul>
-</div>
+        <p>Cross-domain supervision considers the situation where the supervision information is scarce or even non-existent
+        in the current domain but can be possibly derived from other domains. Examples of cross-domain supervision appear in zero-/one-/few-shot representation learning, where external knowledge from other domains is usually used to overcome the problem of too few or even no supervision in the original domain. Imperfect demonstration considers the situation for inverse reinforcement representation learning and imitation representation learning, where the agent learns with imperfect or non-expert demonstrations. For example, AlphaGo learns a policy from a sequence of states and actions (expert demonstration). Even if an expert player wins a game, it is not guaranteed that every action in the sequence is optimal.</p>
 
-<h1 id="important-dates">Important Dates</h1>
+        <p>This workshop will discuss the fundamental theory of weakly supervised representation learning. Although theories of weakly supervised statistical learning already exist, extending these results for weakly supervised representation learning is still a challenge. Besides, this workshop also discusses on broad applications of weakly supervised representation learning, such as weakly supervised object detection (computer vision), weakly supervised sequence modeling (natural language processing), weakly supervised cross-media retrieval (information retrieval), and weakly supervised medical image segmentation (healthcare analysis).</p>
 
-<p>Submission Deadline: June 15th, 2021 (2nd Round)</p>
+<h1 id="submission">Submission</h1>
 
-<p>Acceptance Notifications: June 25th, 2021</p>
+    <h2>Guidelines</h2>
+        <p>Papers should be formatted according to the IJCAI2021 formatting instructions for the Conference Track. The submissions with 2 pages will be considered for the poster, while the submissions with at least 4 pages will be considered for the oral presentation. Workshop submissions and camera ready versions will be handled by CMT. Please submit your paper to <a href="https://cmt3.research.microsoft.com/IJCAIWSRL2021">https://cmt3.research.microsoft.com/IJCAIWSRL2021</a></p>
+
+        <p>IJCAI2021-WSRL is a non-archival venue and there will be no published proceedings. The papers will be posted on the workshop website. It will be possible to submit the IJCAI2021-WSRL submissions to other conferences and journals both in parallel to and after IJCAI2021-WSRL, if they accept such submissions. Besides, we also welcome submissions to IJCAI2021-WSRL that are under review at other conferences and workshops, if they allow concurrent submissions. At least one author from each accepted paper must register for the workshop. Please see the IJCAI 2021 Website for information about registration.</p>
+
+    <h2>Dates</h2>
+        <p>Submission Deadline: June 15th, 2021 (2nd Round)</p>
+        <p>Acceptance Notifications: June 25th, 2021</p>
 
 <h1 id="organizers">Organizers</h1>
+    
+    <h2>Program Co-chairs</h2>
+        <p><a href="https://bhanml.github.io/">Bo Han</a>, Hong Kong Baptist University, Hong Kong SAR, China.</p>
+        <p><a href="https://tongliang-liu.github.io/">Tongliang Liu</a>, The University of Sydney, Australia.</p>
+        <p><a href="http://www.cse.ust.hk/~qyaoaa/">Quanming Yao</a>, Tsinghua University / 4Paradigm Inc., China.</p>
+        <p><a href="https://mingming-gong.github.io/">Mingming Gong</a>, The University of Melbourne, Australia.</p>
+        <p><a href="https://gcatnjust.github.io/ChenGong/index.html">Chen Gong</a>, Nanjing University of Science and Technology, China.</p>
+        <p><a href="https://niug1984.github.io/">Gang Niu</a>, RIKEN, Japan.</p>
+        <p><a href="https://www.uts.edu.au/staff/ivor.tsang">Ivor W. Tsang</a>, University of Technology Sydney, Australia.</p>
+        <p><a href="http://www.ms.k.u-tokyo.ac.jp/sugi/">Masashi Sugiyama</a>, RIKEN / University of Tokyo, Japan.</p>
 
-<p><a href="https://bhanml.github.io/">Bo Han</a>, Hong Kong Baptist University, Hong Kong SAR, China.</p>
+    <h2>Sponsors</h2>
+        <p>Several awards are kindly sponsored by 4Paradigm Inc.</p>
 
-<p><a href="https://tongliang-liu.github.io/">Tongliang Liu</a>, The University of Sydney, Australia.</p>
+<h1 id="previous-workshops">Previous Workshops</h1>
+    <p><a href="https://wsl-workshop.github.io/acml20.html">ACML2020 WSRL Workshop</a>, Online.</p>
+    <p><a href="https://wsl-workshop.github.io/sdm20.html">SDM2020 WSUL Workshop</a>, Ohio, United States.</p>
+    <p><a href="https://wsl-workshop.github.io/acml19.html">ACML2019 WSL Workshop</a>, Nagoya, Japan.</p>
 
-<p><a href="http://www.cse.ust.hk/~qyaoaa/">Quanming Yao</a>, Tsinghua University / 4Paradigm Inc., China.</p>
-
-<p><a href="https://mingming-gong.github.io/">Mingming Gong</a>, The University of Melbourne, Australia.</p>
-
-<p><a href="https://gcatnjust.github.io/ChenGong/index.html">Chen Gong</a>, Nanjing University of Science and Technology, China.</p>
-
-<p><a href="https://niug1984.github.io/">Gang Niu</a>, RIKEN, Japan.</p>
-
-<p><a href="https://www.uts.edu.au/staff/ivor.tsang">Ivor W. Tsang</a>, University of Technology Sydney, Australia.</p>
-
-<p><a href="http://www.ms.k.u-tokyo.ac.jp/sugi/">Masashi Sugiyama</a>, RIKEN / University of Tokyo, Japan.</p>
-
-<h1 id="sponsors">Sponsors</h1>
-
-<p>Several awards are kindly sponsored by 4Paradigm Inc.</p>
-
-<h1 id="previous-workshops">Previous Workshops</h1><p>
-<a href="https://wsl-workshop.github.io/acml20.html">ACML2020 WSRL Workshop</a>, Online.</p>
-<p><a href="https://wsl-workshop.github.io/sdm20.html">SDM2020 WSUL Workshop</a>, Ohio, United States.</p>
-<p><a href="https://wsl-workshop.github.io/acml19.html">ACML2019 WSL Workshop</a>, Nagoya, Japan.</p>
-
-      <footer class="site-footer">
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com/">GitHub Pages</a>.</span>
-      </footer>
-    </section>
-
+<footer class="site-footer">
+    <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com/">GitHub Pages</a>.</span>
+</footer>
+</section>
 </body></html>
-
