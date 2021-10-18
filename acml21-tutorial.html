@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>ACML 2021 Tutorial - Learning under Noisy Supervision</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  
+<script type="text/javascript">
+var myDate = "2021-08-20T"
+var myStartTime = "20:00"
+var myTimeZone = "-04:00"
+
+var myStartTime = new Date(myDate + myStartTime + ":00.000" + myTimeZone);
+var myRefTime = new Date(myDate + "00:00:00.000" + myTimeZone);
+
+function getTimezone() {
+  var offset = -(new Date()).getTimezoneOffset()/60;
+  return ("UTC" + (offset >= 0 ? "+" : "") + offset);
+}
+
+function getLocalTimezone() {
+  try {
+    return Intl.DateTimeFormat().resolvedOptions().timeZone + " time (" + getTimezone() + ", your browser's time zone)";
+  }
+  catch(e) {
+    return " (" + getTimezone() + ", i.e., your browser's time zone)";
+  }
+}
+
+function displayTime(dt) {
+  var hour = dt.getHours();
+  var minute = dt.getMinutes();
+  var temp = '' + ((hour < 10) ? '0' : '') + hour;
+  temp += ((minute < 10) ? ':0' : ':') + minute;
+  return temp;
+}
+
+function writeTimeRange(startHour, startMin, endHour, endMin) {
+  var oneMin = 1000 * 60;
+  var oneHour = oneMin * 60;
+  var startTime = new Date(myRefTime.getTime() + startHour * oneHour + startMin * oneMin);
+  var endTime = new Date(myRefTime.getTime() + endHour * oneHour + endMin * oneMin);
+  document.write(displayTime(startTime));
+  document.write(" -- ");
+  document.write(displayTime(endTime));
+  if (endTime.getDay() != myStartTime.getDay()) {
+    document.write(" (next day)");
+  }
+  return;
+}
+</script>
+  
+  <body>
+    <section class="page-header">
+        <h1 class="project-name">ACML 2021 Tutorial</h1>
+        <h1 class="project-name">Learning under Noisy Supervision</h1>
+        <h2 class="project-tagline">Aug 20 20:00 -- 00:10 (next day) Montreal time (UTC-4, the official time zone)<br>
+        <script type="text/javascript">
+        document.write(myStartTime.toLocaleDateString('en-US', {month:'short', day:'numeric'}));
+        document.write(" ");
+        writeTimeRange(20, 0, 24, 10);
+        document.write(" ");
+        document.write(getLocalTimezone())
+        </script>
+        </h2>
+    </section>
+
+<section class="main-content">
+    <center>[ <a href="#abstract">Abstract,
+         <a href="#schedule">Schedule</a>,
+         <a href="#slides">Slides</a>,
+         <a href="#organizers">Organizers</a>,
+         <a href="#references">References</a> ]</center>
+
+<h1 id="abstract">Abstract</h1>
+    <p>Machine learning should benefit to the whole world, especially for developing countries in Africa and Asia. When dataset sizes grow bigger, it is laborious and expensive to obtain clean supervision, especially for developing countries. As a result, the volume of noisy supervision becomes enormous, e.g., web-scale image and speech data with noisy labels. However, standard machine learning assumes that the supervised information is fully clean and intact. Therefore, noisy data harms the performance of most of the standard learning algorithms, and sometimes even makes existing algorithms break down. There are a brunch of theories and approaches proposed to deal with noisy data. As far as we know, label-noise learning spans over two important ages in machine learning: statistical learning (i.e., shallow learning) and deep learning. In the age of statistical learning, label-noise learning focused on designing noise-tolerant losses or unbiased risk estimators. Nonetheless, in the age of deep learning, label-noise learning has more options to combat with noisy labels, such as designing biased risk estimators or leveraging memorization effects of deep networks. In this tutorial, we summarize the foundations and go through the most recent noisy-supervision-tolerant techniques. By participating the tutorial, the audience will gain a broad knowledge of label-noise learning from the viewpoint of statistical learning theory, deep learning, detailed analysis of typical algorithms and frameworks, and their real-world applications in industry.</p>
+
+<h1 id="schedule">Schedule</h1>
+    <p>The following schedule is in <font color='FF0000'>
+    <script>document.write(getLocalTimezone() + "</font>.");</script>
+    <noscript>Montreal time (UTC-4, the official time zone)</font>.</noscript></p>
+
+<table>
+  <thead>
+    <tr><th style="width:25ex">Time</th><th style="width:55ex">Event</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><script>writeTimeRange(20, 0, 20, 15);</script><noscript>20:00 -- 20:15</noscript></td><td><b>Part 1</b></td></tr>
+    <tr><td></td><td><b>Title</b>: Overview of Learning with Noisy Supervision</td></tr>
+    <tr><td></td><td><b>Speaker</b>: Masashi Sugiyama</td></tr>
+    
+    <tr><td><script>writeTimeRange(20, 15, 21, 10);</script><noscript>20:15 -- 21:10</noscript></td><td><b>Part 2</b></td></tr>
+    <tr><td></td><td><b>Title</b>: Statistical Learning with Noisy Supervision</td></tr>
+    <tr><td></td><td><b>Speaker</b>: Tongliang Liu</td></tr>
+    <tr><td><script>writeTimeRange(21, 10, 21, 15);</script><noscript>21:10 -- 21:15</noscript></td><td>Break</td></tr>
+    
+    <tr><td><script>writeTimeRange(21, 15, 22, 10);</script><noscript>21:15 -- 22:10</noscript></td><td><b>Part 3</b></td></tr>
+    <tr><td></td><td><b>Title</b>: Deep Learning with Noisy Supervision</td></tr>
+    <tr><td></td><td><b>Speaker</b>: Bo Han</td></tr>
+    <tr><td><script>writeTimeRange(22, 10, 22, 15);</script><noscript>22:10 -- 22:15</noscript></td><td>Break</td></tr>
+    
+    <tr><td><script>writeTimeRange(22, 15, 23, 10);</script><noscript>22:15 -- 23:10</noscript></td><td><b>Part 4</b></td></tr>
+    <tr><td></td><td><b>Title</b>: Automated Learning from Noisy Supervision</td></tr>
+    <tr><td></td><td><b>Speaker</b>: Quanming Yao</td></tr>
+    <tr><td><script>writeTimeRange(23, 10, 23, 15);</script><noscript>23:10 -- 23:15</noscript></td><td>Break</td></tr>
+      
+    <tr><td><script>writeTimeRange(23, 15, 24, 10);</script><noscript>23:15 -- 24:10</noscript></td><td><b>Part 5</b></td></tr>
+    <tr><td></td><td><b>Title</b>: Beyond Class-Conditional Noise</td></tr>
+    <tr><td></td><td><b>Speaker</b>: Gang Niu</td></tr>
+  </tbody>
+</table>
+
+<h1 id="slides">Slides</h1>
+    <p><a href="ijcai2021tutorial/part1.pdf" target="_blank">Part 1: Overview of Learning with Noisy Supervision</a></p>
+    <p><a href="ijcai2021tutorial/part2.pdf" target="_blank">Part 2: Statistical Learning with Noisy Supervision</a></p>
+    <p><a href="ijcai2021tutorial/part3.pdf" target="_blank">Part 3: Deep Learning with Noisy Supervision</a></p>
+    <p><a href="ijcai2021tutorial/part4.pdf" target="_blank">Part 4: Automated Learning from Noisy Supervision</a></p>
+    <p><a href="ijcai2021tutorial/part5.pdf" target="_blank">Part 5: Beyond Class-Conditional Noise</a></p>
+
+<h1 id="organizers">Organizers</h1>
+    <p><a href="https://bhanml.github.io/" target="_blank">Bo Han</a>, Hong Kong Baptist University, Hong Kong SAR, China.</p>
+    <p><a href="https://tongliang-liu.github.io/" target="_blank">Tongliang Liu</a>, The University of Sydney, Australia.</p>
+    <p><a href="http://www.cse.ust.hk/~qyaoaa/" target="_blank">Quanming Yao</a>, Tsinghua University, China.</p>
+    <p><a href="https://niug1984.github.io/" target="_blank">Gang Niu</a>, RIKEN, Japan.</p>
+    <p><a href="http://www.ms.k.u-tokyo.ac.jp/sugi/" target="_blank">Masashi Sugiyama</a>, RIKEN / University of Tokyo, Japan.</p>
+
+<h1 id="references">References</h1>
+    <p>Due to the space limitation, we only list highly-related papers. The full reference list can be found <a href="https://arxiv.org/abs/2011.04406">here</a>.</p>
+<div><ol>
+    <li><p>B. Han, Q. Yao, T. Liu, G. Niu, I. W. Tsang, J. T. Kwok, and M. Sugiyama.
+    A Survey of Label-noise Representation Learning: Past, Present and Future. arXiv preprint arXiv:2011.04406, 2020.</p></li>
+    <li><p>N. Natarajan, I.S. Dhillon, P. K. Ravikumar, and A. Tewari. Learning with Noisy Labels. In NeurIPS, 2013.</p></li>
+    <li><p>T. Liu and D. Tao. Classification with Noisy Labels by Importance Reweighting.
+    IEEE Transactions on Pattern Analysis and MachineIntelligence, 38(3): 447-461, 2015.</p></li>
+    <li><p>G. Patrini, A. Rozza, A. K. Menon, R. Nock, and L. Qu.
+    Making Deep Neural Networks Robust to Label Noise: A Loss Correction Approach. In CVPR, 2017.</p></li>
+    <li><p>L. Jiang, Z. Zhou, T. Leung, L.-J. Li, and L. Fei-Fei.
+    Mentornet: Learning Data-driven Curriculum for very Deep Neural Networks on Corrupted Labels. In ICML, 2018.</p></li>
+    <li><p>B. Han, Q. Yao, X. Yu, G. Niu, M. Xu, W. Hu, I. W. Tsang, and M. Sugiyama.
+    Co-teaching: Robust Training of Deep Neural Networks with Extremely Noisy Labels. In NeurIPS, 2018.</p></li>
+    <li><p>B. Han, J. Yao, G. Niu, M. Zhou, I. W. Tsang, Y. Zhang, and M. Sugiyama.
+    Masking: A New Perspective of Noisy Supervision. In NeurIPS, 2018.</p></li>
+    <li><p>Q. Yao, and M. Wang.
+    Taking Human out of Learning Applications: A Survey on Automated Machine Learning. arXiv preprint arXiv:1810.13306, 2018.</p></li>
+    <li><p>X. Yu, B. Han, J. Yao, G. Niu, I. W. Tsang, and M. Sugiyama.
+    How does Disagreement Help Generalization against Label Corruption? In ICML, 2019.</p></li>
+    <li><p>X. Xia, T. Liu, N. Wang, B. Han, C. Gong, G. Niu, and M. Sugiyama.
+    Are Anchor Points Really Indispensable in Label-Noise Learning? In NeurIPS, 2019.</p></li>
+    <li><p>Y. Yao, T. Liu, B. Han, M. Gong, J. Deng, G. Niu, and M. Sugiyama.
+    Dual T: Reducing Estimation Error for Transition Matrix in Label-noise Learning. In NeurIPS, 2020.</p></li>
+    <li><p>X. Xia, T. Liu, B. Han, N. Wang, M. Gong, H. Liu, G. Niu, D. Tao, and M. Sugiyama.
+    Part-dependent Label Noise: Towards Instance-dependent Label Noise. In NeurIPS, 2020.</p></li>
+    <li><p>J. Cheng, T. Liu, K. Rao, and D. Tao.
+    Learning with Bounded Instance-and Label-dependent Label Noise. In ICML, 2020.</p></li>
+    <li><p>B. Han, G. Niu, X. Yu, Q. Yao, X. Miao, I. W. Tsang, and M. Sugiyama.
+    SIGUA: Forgetting May Make Learning with Noisy Labels More Robust. In ICML, 2020.</p></li>
+    <li><p>Y. Zhang, Q. Yao, and L. Chen.
+    Interstellar: Searching Recurrent Architecture for Knowledge Graph Embedding. In NeurIPS, 2020.</p></li>
+    <li><p>Q. Yao, H. Yang, B. Han, G. Niu, and J. T. Kwok.
+    Searching to Exploit Memorization Effect in Learning from Noisy Labels. In ICML, 2020.</p></li>
+    <li><p>A. K. Menon, A. S. Rawat, S. J. Reddi, and S. Kumar.
+    Can Gradient Clipping Mitigate Label Noise? In ICLR, 2020.</p></li>
+    <li><p>Q. Yao, J. Xu, W. Tu, and Z. Zhu.
+    Efficient Neural Architecture Search via Proximal Iterations. In AAAI, 2020.</p></li>
+    <li><p>H. Cheng, Z. Zhu, X. Li, Y. Gong, X. Sun, and Y. Liu.
+    Learning with Instance-dependent Label Noise: A Sample Sieve Approach. In ICLR, 2021.</p></li>
+</ol></div>
+
+<footer class="site-footer">
+    <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com/">GitHub Pages</a>.</span>
+</footer>
+</section>
+</body></html>
+
