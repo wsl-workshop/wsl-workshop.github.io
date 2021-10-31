@@ -8,9 +8,9 @@
   </head>
   
 <script type="text/javascript">
-var myDate = "2021-08-20T"
-var myStartTime = "20:00"
-var myTimeZone = "-04:00"
+var myDate = "2021-11-17T"
+var myStartTime = "16:00"
+var myTimeZone = "+09:00"
 
 var myStartTime = new Date(myDate + myStartTime + ":00.000" + myTimeZone);
 var myRefTime = new Date(myDate + "00:00:00.000" + myTimeZone);
@@ -56,11 +56,12 @@ function writeTimeRange(startHour, startMin, endHour, endMin) {
     <section class="page-header">
         <h1 class="project-name">ACML 2021 Tutorial</h1>
         <h1 class="project-name">Learning under Noisy Supervision</h1>
-        <h2 class="project-tagline">Aug 20 20:00 -- 00:10 (next day) Montreal time (UTC-4, the official time zone)<br>
+        <h2 class="project-tagline">
+        <noscript>Nov 17 16:00 -- 18:30 Asia/Tokyo time (UTC+9, the official time zone)</noscript>
         <script type="text/javascript">
         document.write(myStartTime.toLocaleDateString('en-US', {month:'short', day:'numeric'}));
         document.write(" ");
-        writeTimeRange(20, 0, 24, 10);
+        writeTimeRange(16, 0, 18, 30);
         document.write(" ");
         document.write(getLocalTimezone())
         </script>
@@ -80,33 +81,30 @@ function writeTimeRange(startHour, startMin, endHour, endMin) {
 <h1 id="schedule">Schedule</h1>
     <p>The following schedule is in <font color='FF0000'>
     <script>document.write(getLocalTimezone() + "</font>.");</script>
-    <noscript>Montreal time (UTC-4, the official time zone)</font>.</noscript></p>
+    <noscript>Asia/Tokyo time (UTC+9, the official time zone)</font>.</noscript></p>
 
 <table>
   <thead>
     <tr><th style="width:25ex">Time</th><th style="width:55ex">Event</th></tr>
   </thead>
   <tbody>
-    <tr><td><script>writeTimeRange(20, 0, 20, 15);</script><noscript>20:00 -- 20:15</noscript></td><td><b>Part 1</b></td></tr>
+    <tr><td><script>writeTimeRange(16, 0, 16, 15);</script><noscript>20:00 -- 20:15</noscript></td><td><b>Part 1</b></td></tr>
     <tr><td></td><td><b>Title</b>: Overview of Learning with Noisy Supervision</td></tr>
     <tr><td></td><td><b>Speaker</b>: Masashi Sugiyama</td></tr>
     
-    <tr><td><script>writeTimeRange(20, 15, 21, 10);</script><noscript>20:15 -- 21:10</noscript></td><td><b>Part 2</b></td></tr>
+    <tr><td><script>writeTimeRange(16, 15, 16, 50);</script><noscript>20:15 -- 21:10</noscript></td><td><b>Part 2</b></td></tr>
     <tr><td></td><td><b>Title</b>: Statistical Learning with Noisy Supervision</td></tr>
     <tr><td></td><td><b>Speaker</b>: Tongliang Liu</td></tr>
-    <tr><td><script>writeTimeRange(21, 10, 21, 15);</script><noscript>21:10 -- 21:15</noscript></td><td>Break</td></tr>
     
-    <tr><td><script>writeTimeRange(21, 15, 22, 10);</script><noscript>21:15 -- 22:10</noscript></td><td><b>Part 3</b></td></tr>
+    <tr><td><script>writeTimeRange(16, 50, 17, 25);</script><noscript>21:15 -- 22:10</noscript></td><td><b>Part 3</b></td></tr>
     <tr><td></td><td><b>Title</b>: Deep Learning with Noisy Supervision</td></tr>
     <tr><td></td><td><b>Speaker</b>: Bo Han</td></tr>
-    <tr><td><script>writeTimeRange(22, 10, 22, 15);</script><noscript>22:10 -- 22:15</noscript></td><td>Break</td></tr>
     
-    <tr><td><script>writeTimeRange(22, 15, 23, 10);</script><noscript>22:15 -- 23:10</noscript></td><td><b>Part 4</b></td></tr>
+    <tr><td><script>writeTimeRange(17, 25, 18, 00);</script><noscript>22:15 -- 23:10</noscript></td><td><b>Part 4</b></td></tr>
     <tr><td></td><td><b>Title</b>: Automated Learning from Noisy Supervision</td></tr>
     <tr><td></td><td><b>Speaker</b>: Quanming Yao</td></tr>
-    <tr><td><script>writeTimeRange(23, 10, 23, 15);</script><noscript>23:10 -- 23:15</noscript></td><td>Break</td></tr>
       
-    <tr><td><script>writeTimeRange(23, 15, 24, 10);</script><noscript>23:15 -- 24:10</noscript></td><td><b>Part 5</b></td></tr>
+    <tr><td><script>writeTimeRange(18, 00, 18, 30);</script><noscript>23:15 -- 24:10</noscript></td><td><b>Part 5</b></td></tr>
     <tr><td></td><td><b>Title</b>: Beyond Class-Conditional Noise</td></tr>
     <tr><td></td><td><b>Speaker</b>: Gang Niu</td></tr>
   </tbody>
