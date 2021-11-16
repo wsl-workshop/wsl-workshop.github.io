@@ -6,10 +6,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./style.css">
   </head>
-  <body>
+ 
+
+<script type="text/javascript">
+var myDate = "2021-11-17T"
+var myStartTime = "09:00"
+var myTimeZone = "+07:00"
+
+var myStartTime = new Date(myDate + myStartTime + ":00.000" + myTimeZone);
+var myRefTime = new Date(myDate + "00:00:00.000" + myTimeZone);
+
+function getTimezone() {
+  var offset = -(new Date()).getTimezoneOffset()/60;
+  return ("UTC" + (offset >= 0 ? "+" : "") + offset);
+}
+
+function getLocalTimezone() {
+  try {
+    return Intl.DateTimeFormat().resolvedOptions().timeZone + " time (" + getTimezone() + ", your browser's time zone)";
+  }
+  catch(e) {
+    return " (" + getTimezone() + ", i.e., your browser's time zone)";
+  }
+}
+
+function displayTime(dt) {
+  var hour = dt.getHours();
+  var minute = dt.getMinutes();
+  var temp = '' + ((hour < 10) ? '0' : '') + hour;
+  temp += ((minute < 10) ? ':0' : ':') + minute;
+  return temp;
+}
+
+function writeTimeRange(startHour, startMin, endHour, endMin) {
+  var oneMin = 1000 * 60;
+  var oneHour = oneMin * 60;
+  var startTime = new Date(myRefTime.getTime() + startHour * oneHour + startMin * oneMin);
+  var endTime = new Date(myRefTime.getTime() + endHour * oneHour + endMin * oneMin);
+  document.write(displayTime(startTime));
+  document.write(" -- ");
+  document.write(displayTime(endTime));
+  if (endTime.getDay() != myStartTime.getDay()) {
+    document.write(" (next day)");
+  }
+  return;
+}
+</script>
+
+
+ <body>
     <section class="page-header">
       <h1 class="project-name">ACML2021 WSL Workshop</h1>
-      <h2 class="project-tagline">Weakly Supervised Learning Workshop, Nov. 17th, 2021, Online</h2>
+      <h2 class="project-tagline">Weakly Supervised Learning Workshop, 9:30 -- 12:10 Nov. 17th, 2021 (Bangkok Time), Online <br/>
+
+      <script type="text/javascript">
+        document.write("*");
+        document.write(myStartTime.toLocaleDateString('en-US', {month:'short', day:'numeric'}));
+        document.write(" ");
+        writeTimeRange(09, 30, 12, 10);
+        document.write(" ");
+        document.write(getLocalTimezone())
+        </script>
+      </h2>
     </section>
 
 <section class="main-content">
