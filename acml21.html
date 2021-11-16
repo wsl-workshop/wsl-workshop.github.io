@@ -9,7 +9,7 @@
 
 <script type="text/javascript">
 var myDate = "2021-11-17T"
-var myStartTime = "09:00"
+var myStartTime = "09:30"
 var myTimeZone = "+07:00"
 
 var myStartTime = new Date(myDate + myStartTime + ":00.000" + myTimeZone);
@@ -58,7 +58,7 @@ function writeTimeRange(startHour, startMin, endHour, endMin) {
       <h1 class="project-name">ACML 2021 Workshop</h1>
       <h1 class="project-name">Weakly Supervised Learning</h1>
       <h2 class="project-tagline">
-      <noscript>Nov 17 9:30 -- 12:10 Singapore time (UTC+7, the official time zone)</noscript>
+      <noscript>Nov 17 9:30 -- 12:10 UTC+7 (the official time zone)</noscript>
       <script type="text/javascript">
         document.write(myStartTime.toLocaleDateString('en-US', {month:'short', day:'numeric'}));
         document.write(" ");
@@ -117,11 +117,6 @@ function writeTimeRange(startHour, startMin, endHour, endMin) {
 <h1 id="submission">Participation</h1>
     <p>There are no paper submissions in this workshop. We sincerely welcome anyone to participate in this workshop.</p>
 
-    <P>Topic: ACML2021 Weakly Supervised Learning Workshop </p>
-    <p>Time: Nov 17, 2021 09:30 AM Bangkok (Online) </p>
-
-
-
 <h1 id="program">Program</h1>
     
     <h2>Invited Speakers</h2>
@@ -131,7 +126,10 @@ function writeTimeRange(startHour, startMin, endHour, endMin) {
         <p><a href="http://boqinggong.info"> Boqing Gong</a>, Research Scientist Google, US</p>
 
     <h2>Schedule</h1>
-        <p>The workshop will use <a href="https://time.is/GMT+7">GMT+7</a> for scheduling, and it will be combined with keynote talks, contributed talks, and panel discussions. *Corresponds to Beijing/Singapore Time from 10:30am - 1:10pm; Corresponds to Tokyo Time from 11:30am - 2:10pm; Corresponds to Los Angeles Time (previous day) from 7:30pm-10:10pm</p>
+        <p>The workshop will use <font color='FF0000'>
+        <script>document.write(getLocalTimezone());</script>
+        <noscript>UTC+7 (the official time zone)</noscript>
+        </font> for scheduling, and it will be combined with invited talks and contributed talks.</p>
 
         <table>
           <thead>
