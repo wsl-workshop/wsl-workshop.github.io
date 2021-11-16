@@ -131,98 +131,38 @@ function writeTimeRange(startHour, startMin, endHour, endMin) {
         <noscript>UTC+7 (the official time zone)</noscript>
         </font> for scheduling, and it will be combined with invited talks and contributed talks.</p>
 
-        <table>
-          <thead>
-            <tr>
-              <th>Time (GMT+7)</th>
-              <th>Event</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>9:30-9:35am</td>
-              <td><b>Opening Ceremony</b></td>
-            </tr>
-            <tr>
-              <td>&nbsp;</td>
-              <td><b>Host</b>: <a href="http://www.ms.k.u-tokyo.ac.jp/sugi/">Masashi Sugiyama</a></td>
-            </tr>
-            <tr>
-              <td>09:35-10:10am</td>
-              <td><b>Keynote Talk 1</b></td>
-            </tr>
-
-            <tr>
-              <td>&nbsp;</td>
-              <td><b>Title</b>: Self-Supervised Learning Disentangled Group Representation as Feature</td>
-            </tr>
-            <tr>
-              <td>&nbsp;</td>
-                <td><b>Speaker</b>: <a href="https://personal.ntu.edu.sg/hanwangzhang/">Hanwang Zhang</a></td>
-            </tr>
-
-
-            <tr>
-              <td>10:10-10:50am</td>
-              <td><b>Contributed talks</b></td>
-            </tr>
-            <tr>
-              <td>&nbsp;</td>
-              <td><b>Title</b>: Is Complementary Label Learning a Very Difficult Task? (by <a href="https://dengbaowang.github.io">Deng-Bao Wang</a>)</td>
-            </tr>
-           <tr>
-              <td>&nbsp;</td>
-              <td><b>Title</b>: Graph Poisson Networks: Semi-Supervised Learning with Extremely Limited Labels (by <a href="https://ieeexplore.ieee.org/author/37088382481">Sheng Wan</a>)</td>
-            </tr>
-           <tr>
-              <td>&nbsp;</td>
-              <td><b>Title</b>: Learning with Noisy Labels Revisited: A Study Using Real-world Human Annotations (by <a href="https://sites.google.com/brown.edu/jiahengwei97">Jiaheng Wei</a>)</td>
-            </tr>
-           <tr>
-            <tr>
-              <td>&nbsp;</td>
-              <td><b>Title</b>: Taming Overconfident Predictions on Unlabelled data from Hindsight (by <a href="https://kylejingli.github.io">Jing Li</a>)</td>
-            </tr>
-           <tr>
-
-            <tr>
-              <td>10:50-11:30am</td>
-              <td><b>Keynote Talk 2</b></td>
-            </tr>
-
-            <tr>
-              <td>&nbsp;</td>
-              <td><b>Title</b>: Label-Efficient Learning of Vision Transformer</td>
-            </tr>
-            <tr>
-              <td>&nbsp;</td>
-                <td><b>Speaker</b>: <a href="http://boqinggong.info"> Boqing Gong</a></td>
-            </tr>
-           
-            <tr>
-              <td>11:30-12:10pm</td>
-              <td><b>Keynote Talk 3</b></td>
-            </tr>
-
-            <tr>
-              <td>&nbsp;</td>
-              <td><b>Title</b>: Leveraged Weighted Loss for Partial Label Learning</td>
-            </tr>
-            <tr>
-              <td>&nbsp;</td>
-                <td><b>Speaker</b>: <a href="https://zhouchenlin.github.io/">Zhouchen Lin</a></td>
-            </tr>
-            
-            <tr>
-              <td>12:10pm</td>
-              <td><b>Concluding Remark</b></td>
-            </tr>
-            <tr>
-              <td>&nbsp;</td>
-              <td><b>Host</b>: <a href="https://zjfheart.github.io/">Jingfeng Zhang</a></td>
-            </tr>
-          </tbody>
-        </table>
+<table>
+  <thead>
+    <tr><th style="width:25ex">Time</th><th>Event</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><script>writeTimeRange(9, 30, 9, 35);</script><noscript>9:30 -- 9:35</noscript></td>
+        <td><b>Opening Ceremony</b></td></tr>
+    <tr><td></td><td><b>Host</b>: Masashi Sugiyama</td></tr>
+    
+    <tr><td><script>writeTimeRange(9, 35, 10, 10);</script><noscript>9:35 -- 10:10</noscript></td>
+        <td><b>Invited Talk 1</b></td></tr>
+    <tr><td></td><td><b>Title</b>: Self-Supervised Learning Disentangled Group Representation as Feature</td></tr>
+    <tr><td></td><td><b>Speaker</b>: Hanwang Zhang</td></tr>
+    
+    <tr><td><script>writeTimeRange(10, 10, 10, 50);</script><noscript>10:10 -- 10:50</noscript></td>
+        <td><b>Contributed talks</b></td></tr>
+    <tr><td></td><td><b>Title</b>: Is Complementary Label Learning a Very Difficult Task? (by Deng-Bao Wang)</td></tr>
+    <tr><td></td><td><b>Title</b>: Graph Poisson Networks: Semi-Supervised Learning with Extremely Limited Labels (by Sheng Wan)</td></tr>
+    <tr><td></td><td><b>Title</b>: Learning with Noisy Labels Revisited: A Study Using Real-world Human Annotations (by Jiaheng Wei)</td></tr>
+    <tr><td></td><td><b>Title</b>: Taming Overconfident Predictions on Unlabelled data from Hindsight (by Jing Li)</td></tr>
+    
+    <tr><td><script>writeTimeRange(10, 50, 11, 30);</script><noscript>10:50 -- 11:30</noscript></td>
+        <td><b>Invited Talk 2</b></td></tr>
+    <tr><td></td><td><b>Title</b>: Label-Efficient Learning of Vision Transformer</td></tr>
+    <tr><td></td><td><b>Speaker</b>: Boqing Gong</td></tr>
+    
+    <tr><td><script>writeTimeRange(11, 30, 12, 10);</script><noscript>11:30 -- 12:10</noscript></td>
+        <td><b>Invited Talk 3</b></td></tr>
+    <tr><td></td><td><b>Title</b>: Leveraged Weighted Loss for Partial Label Learning</td></tr>
+    <tr><td></td><td><b>Speaker</b>: Zhouchen Lin</td></tr>
+  </tbody>
+</table>
 
 <h1 id="organizers">Organizers</h1>
 
