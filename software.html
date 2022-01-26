@@ -241,8 +241,11 @@
     </p>
     
     <h2>Algorithm perspective</h2>
-    
-    
+        <p>
+            From the algorithm perspective, we would like to design <i>smarter loss/objective functions</i> for training standard models.
+            Specifically, given the knowledge that the test data may be adversarial, we carefully <i>simulate some adversarial attack</i> during training.
+            Thus, the model has already seen many adversarial training data in the past, and hopefully it can generalize to adversarial test data in the future.
+        </p>
     <ul>
         <li><p><a href="https://github.com/zjfheart/Friendly-Adversarial-Training" target="_blank">
         Attacks which do not kill training make adversarial learning stronger</a> (ICML 2020)</p></li>
