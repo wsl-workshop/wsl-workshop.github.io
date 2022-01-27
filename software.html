@@ -176,9 +176,10 @@
 
 <h1 id="labelnoise"><hr>Label-noise learning</h1>
     <p>
-        
-        
-        <i>Label-noise learning</i> is aimed at solving a learning task from possibly mislabeled data (i.e., the dataset for training a standard classifier is a mixture of correctly and incorrectly labeled data)
+        Standard supervised learning relies on high-quality <i>clean labels</i>, which means that instances are with labels drawn from the <i>clean class-posterior probability</i>.
+        Nevertheless, if we require every instance to be associated with a label, our collected labels would probably come from non-expert annotators or be automatically annotated based on logs in practice.
+        Such lower-quality labels are called <i>noisy labels</i> and regarded as drawn from some <i>noisy/corrupted class-posterior probability</i>, resulting in a mixture of correctly and incorrectly labeled data.
+        <i>Label-noise learning</i> is aimed at solving a learning task from such possibly mislabeled data, where our models trained with noisy labels still try to <i>predict the true label</i> of any instance exactly the same as models trained with clean labels.
     </p>
     
     <h2>Loss correction for class-conditional noise</h2>
