@@ -62,7 +62,7 @@ function writeTimeRange(startHour, startMin, endHour, endMin) {
       <script type="text/javascript">
         document.write(myStartTime.toLocaleDateString('en-US', {month:'short', day:'numeric'}));
         document.write(" ");
-        writeTimeRange(09, 30, 12, 10);
+        writeTimeRange(09, 50, 13, 00);
         document.write(" ");
         document.write(getLocalTimezone())
       </script>
@@ -90,45 +90,48 @@ function writeTimeRange(startHour, startMin, endHour, endMin) {
     <tr><th style="width:25ex">Time</th><th>Event</th></tr>
   </thead>
   <tbody>
-    <tr><td><script>writeTimeRange(9, 30, 9, 35);</script><noscript>9:30 -- 9:35</noscript></td>
+    <tr><td><script>writeTimeRange(9, 50, 9, 55);</script><noscript>9:50 -- 9:55</noscript></td>
         <td><b>Opening Ceremony</b></td></tr>
     <tr><td></td><td><b>Host</b>: Masashi Sugiyama</td></tr>
     
-    <tr><td><script>writeTimeRange(9, 35, 10, 15);</script><noscript>9:35 -- 10:15</noscript></td>
+    <tr><td><script>writeTimeRange(9, 55, 10, 35);</script><noscript>9:55 -- 10:35</noscript></td>
         <td><b>Invited Talk 1</b></td></tr>
     <tr><td></td><td><b>Title</b>: TBA</td></tr>
     <tr><td></td><td><b>Speaker</b>: TBA</td></tr>
     
-    <tr><td><script>writeTimeRange(10, 15, 10, 35);</script><noscript>10:15 -- 10:35</noscript></td>
+    <tr><td><script>writeTimeRange(10, 35, 10, 55);</script><noscript>10:35 -- 10:55</noscript></td>
         <td><b>Contributed talks (Part I)</b></td></tr>
-    <tr><td></td><td><b>Title</b>: TBA<br>
-        <b>Speaker</b>: TBA</td></tr>
-    <tr><td></td><td><b>Title</b>: TBA<br>
-        <b>Speaker</b>: TBA</td></tr>
+    <tr><td></td><td><b>Title</b>: MissDAG: Causal Discovery in the Presence of Missing Data with Continuous Additive Noise Models<br>
+        <b>Speaker</b>: Erdun Gao</td></tr>
+    <tr><td></td><td><b>Title</b>: Robust Semi-Supervised Learning for Open Environments<br>
+        <b>Speaker</b>: Lan-Zhe Guo</td></tr>
+
+    <tr><td><script>writeTimeRange(10, 55, 11, 30);</script><noscript>10:55 -- 11:30</noscript></td>
+        <td><b>Bio Breaks and Social</b></td></tr>
     
-    <tr><td><script>writeTimeRange(10, 35, 11, 15);</script><noscript>10:35 -- 11:15</noscript></td>
+    <tr><td><script>writeTimeRange(11, 30, 12, 00);</script><noscript>11:30 -- 12:00</noscript></td>
+        <td><b>Contributed talks (Part II)</b></td></tr>
+    <tr><td></td><td><b>Title</b>: Escaping Saddle Points for Effective Generalization on Class-Imbalanced Data<br>
+        <b>Speaker</b>: Sumukh Aithal</td></tr>
+    <tr><td></td><td><b>Title</b>: Simplified Graph Learning for Inductive Short Text Classification<br>
+        <b>Speaker</b>: Yaqing Wang</td></tr>
+    <tr><td></td><td><b>Title</b>: TBA<br>
+        <b>Speaker</b>: Yawen Zhao</td></tr>
+
+    <tr><td><script>writeTimeRange(12, 00, 12, 40);</script><noscript>12:00 -- 12:40</noscript></td>
         <td><b>Invited Talk 2</b></td></tr>
     <tr><td></td><td><b>Title</b>: TBA</td></tr>
     <tr><td></td><td><b>Speaker</b>: TBA</td></tr>
-    
-    <tr><td><script>writeTimeRange(11, 15, 11, 45);</script><noscript>11:15 -- 11:45</noscript></td>
-        <td><b>Contributed talks (Part II)</b></td></tr>
-    <tr><td></td><td><b>Title</b>: TBA<br>
-        <b>Speaker</b>: TBA</td></tr>
-    <tr><td></td><td><b>Title</b>: TBA<br>
-        <b>Speaker</b>: TBA</td></tr>
-    <tr><td></td><td><b>Title</b>: TBA<br>
-        <b>Speaker</b>: TBA</td></tr>
 
-    <tr><td><script>writeTimeRange(11, 45, 12, 00);</script><noscript>11:45 -- 12:00</noscript></td>
+    <tr><td><script>writeTimeRange(12, 40, 13, 00);</script><noscript>12:40 -- 13:00</noscript></td>
         <td><b>Panel Discussion and Concluding Remark</b></td></tr>
     <tr><td></td><td><b>Host</b>: Feng Liu</td></tr>
   </tbody>
 </table>
 
     <h2>Invited Speakers</h2>
-        <p><a href="https://wsl-workshop.github.io/acml22.html" target="_blank">TBA</a>, TBA </p>
-        <p><a href="https://wsl-workshop.github.io/acml22.html" target="_blank">TBA</a>, TBA </p>
+        <p><a href="http://www.cs.toronto.edu/~eleni/" target="_blank">Eleni Triantafillou</a>, Google Brain</p>
+        <p><a href="https://www.andrew.cmu.edu/user/kunz1/index.html" target="_blank">Kun Zhang</a>, MBZUAI and CMU</p>
 
 <h1 id="topics">Topics</h1>
 
@@ -168,7 +171,7 @@ function writeTimeRange(startHour, startMin, endHour, endMin) {
 
         <p>Meanwhile, this workshop will <b>continue discussing broad applications of weakly supervised learning in the field of computer science</b>, such as weakly supervised object detection (computer vision), weakly supervised sequence modeling (natural language processing), weakly supervised cross-media retrieval (information retrieval).</p>
 
-        <p>More importantly, this workshop will focus on <b>how our society benefits from WSL methodologies, i.e., WSL for science and social good</b>. In many scientific scenarios, we will face 1) the data-shortage issue, e.g., medical records at the very beginning of COVID-19, and 2) inaccurate observations, e.g., noisy labels of medical images, and 3) non-stationary data, e.g., meteorology records. Thus, how to learn from imperfect information is critical in science and should be noticed in the field of WSL. Studying these scientific scenarios will also boost the development of real-world datasets regarding the WSL methodologies, making researchers propose more algorithms to be used in natural science. </p>
+        <p>More importantly, this workshop will focus on <b>how our society benefits from WSL methodologies, i.e., WSL for science and social good</b>. In many scientific scenarios, we will face 1) the data-shortage issue, e.g., medical records at the very beginning of the appearance of COVID-19, and 2) inaccurate observations, e.g., noisy labels of medical images, and 3) non-stationary data, e.g., meteorology records. Thus, how to learn from imperfect information is critical in science and should be noticed in the field of WSL. Studying these scientific scenarios will also boost the development of real-world datasets regarding the WSL methodologies, making researchers propose more algorithms that can make contributions to natural science. </p>
 
 
 <h1 id="organizers">Organizers</h1>
@@ -189,8 +192,8 @@ function writeTimeRange(startHour, startMin, endHour, endMin) {
         <p><a href="https://cs.nju.edu.cn/liyf/index.htm" target="_blank">Yu-Feng Li</a>, Nanjing University, China.</p>
         <p><a href="http://www.yliuu.com/" target="_blank">Yang Liu</a>, University of California, Santa Cruz, US.</p>
         <p><a href="https://www.a-star.edu.sg/cfar/about-cfar/management/prof-ivor-tsang" target="_blank">Ivor W. Tsang</a>, A*STAR Centre for Frontier AI Research (CFAR), Singapore.</p>
-        <p><a href="https://researchers.uq.edu.au/researcher/26509" target="_blank">Miao Xu</a>, The University of Queensland, Australia.</p>
-        <p><a href="https://lars-group.github.io/" target="_blank">Quanming Yao</a>, Tsinghua University / 4Paradigm Inc., China.</p>
+        <p><a href="https://miaoxu-ml.github.io/index.html" target="_blank">Miao Xu</a>, The University of Queensland, Australia.</p>
+        <p><a href="http://www.cse.ust.hk/~qyaoaa/" target="_blank">Quanming Yao</a>, Tsinghua University / 4Paradigm Inc., China.</p>
         <p><a href="http://palm.seu.edu.cn/zhangml/" target="_blank">Min-Ling Zhang</a>, Southeast University, China.</p>
 
 <h1 id="previous-workshops">Previous Workshops</h1>
