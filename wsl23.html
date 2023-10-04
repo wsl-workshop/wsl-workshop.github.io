@@ -222,7 +222,7 @@ function writeTimeRange(startHour, startMin, endHour, endMin) {
     <h2>Further Descriptions</h2>
         <p>The focus of this workshop is six types of weak supervision: incomplete supervision, inexact supervision, inaccurate supervision, cross-domain supervision, imperfect demonstration, and weak adversarial supervision, which are briefly introduced below. </p>
 
-
+	 <ul>
         <li><b>Incomplete supervision</b> considers a subset of training data given with ground-truth labels while the other data remain unlabeled, such as semi-supervised learning and positive-unlabeled learning. </li>
 
         <li><b>Inexact supervision</b> considers the situation where some supervision information is given but not as exacted as desired, i.e., only coarse-grained labels are available. For example, if we are considering to classify every pixel of an image, rather than the image itself, then ImageNet becomes a benchmark with inexact supervision. Besides, multi-instance learning belongs to inexact supervision, where we do not exactly know which instance in the bag corresponds to the given ground-truth label. </li>
@@ -235,7 +235,8 @@ function writeTimeRange(startHour, startMin, endHour, endMin) {
 
         <li><b>Weak adversarial supervision</b> considers the situation where weak supervision meets adversarial robustness. Since machine learning models are increasingly deployed in real-world applications, their security attracts more and more attention from both academia and industry. Therefore, many robust learning algorithms aim to prevent various evasion attacks, e.g., adversarial attacks, privacy attacks, model stealing attacks, and so on. However, almost all those robust algorithms (against evasion attacks) implicitly assume the strong supervision signals (no noisy labels in the training data), which hardly meets the requirements in practice. Therefore, when we develop evasion-robust algorithms, it is very practical/urgent to consider the supervision signals are imperfect.</li>
 
-		<li><b>Self-supervision</b> considers the unsupervised situation, and it pre-trains a generic feature representation by autonomously building the pseudo supervision (e.g., the similarity contrast and sample reconstruction) from the raw data, the learned representation can be applied in various downstream tasks such as classification, retrieval, and clustering.</li>
+	<li><b>Self-supervision</b> considers the unsupervised situation, and it pre-trains a generic feature representation by autonomously building the pseudo supervision (e.g., the similarity contrast and sample reconstruction) from the raw data, the learned representation can be applied in various downstream tasks such as classification, retrieval, and clustering.</li>
+	 </ul>
 		
         <p>Meanwhile, this workshop will <b>continue discussing broad applications of weakly supervised learning in the field of computer science</b>, such as weakly supervised object detection (computer vision), weakly supervised sequence modeling (natural language processing), weakly supervised cross-media retrieval (information retrieval).</p>
 
@@ -244,7 +245,7 @@ function writeTimeRange(startHour, startMin, endHour, endMin) {
 
 <h1 id="organizers">Organizers</h1>
 
-    <h2>Program Co-chairs</h1>
+    <h2>Program Chairs</h1>
         <p><a href="https://sites.google.com/view/shuochen/" target="_blank">Shuo Chen</a>, RIKEN, Japan.</p>
 	<p><a href="http://www.yliuu.com/" target="_blank">Yang Liu</a>, University of California, Santa Cruz, USA.</p>
         <p><a href="https://fengliu90.github.io/" target="_blank">Feng Liu</a>, The University of Melbourne, Australia.</p>
