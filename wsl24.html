@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>WSL Workshop 2024</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+
+<script type="text/javascript">
+var myStartDate = "2023-11-23T"
+var myEndDate = "2023-11-24T"
+var myStartTime = "09:30"
+var myEndTime = "17:00"
+var myTimeZone = "+09:00"
+
+var myStartTime = new Date(myStartDate + myStartTime + ":00.000" + myTimeZone);
+var myEndTime = new Date(myEndDate + myEndTime + ":00.000" + myTimeZone);
+var myRefTime = new Date(myStartDate + "00:00:00.000" + myTimeZone);
+
+function getTimezone() {
+  var offset = -(new Date()).getTimezoneOffset()/60;
+  return ("UTC" + (offset >= 0 ? "+" : "") + offset);
+}
+
+function getLocalTimezone() {
+  try {
+    return Intl.DateTimeFormat().resolvedOptions().timeZone + " time (" + getTimezone() + ", your browser's time zone)";
+  }
+  catch(e) {
+    return " (" + getTimezone() + ", i.e., your browser's time zone)";
+  }
+}
+
+function displayTime(dt) {
+  var hour = dt.getHours();
+  var minute = dt.getMinutes();
+  var temp = '' + ((hour < 10) ? '0' : '') + hour;
+  temp += ((minute < 10) ? ':0' : ':') + minute;
+  return temp;
+}
+
+function writeTimeRange(startHour, startMin, endHour, endMin) {
+  var oneMin = 1000 * 60;
+  var oneHour = oneMin * 60;
+  var startTime = new Date(myRefTime.getTime() + startHour * oneHour + startMin * oneMin);
+  var endTime = new Date(myRefTime.getTime() + endHour * oneHour + endMin * oneMin);
+  document.write(displayTime(startTime));
+  document.write(" -- ");
+  if (endTime.getDay() != myStartTime.getDay()) {
+    document.write(myEndTime.toLocaleDateString('en-US', {month:'short', day:'numeric'}));
+	document.write(" ");
+  }
+  document.write(displayTime(endTime));
+  return;
+}
+</script>
+
+
+ <body>
+    <section class="page-header">
+      <h1 class="project-name">International Workshop on</h1>
+      <h1 class="project-name">Weakly Supervised Learning 2024</h1>
+      <h2 class="project-tagline">
+      <noscript>Nov 26 9:00 -- Nov 28 17:00 GMT+10 (the official time zone)</noscript>
+      <script type="text/javascript">
+		document.write("Unverisity of Queensland; Nov 26 -- Nov 28, Brisbane time (GMT+10)");
+      </script>
+      </h2>
+    </section>
+
+<section class="main-content">
+    <center>[ <a href="#program">Program</a>,
+			<a href="#registration">Registration</a>,
+              <a href="#topics">Topics</a>,
+              <a href="#organizers">Organizers</a>,
+			  <a href="#accommodation">Accommodation</a>,
+              <a href="#previous-workshops">Previous Workshops</a> ]</center>
+
+<p>This is an international workshop on weakly supervised learning. The main goal of this workshop is to discuss challenging research topics in weakly supervised learning areas such as semi-supervised learning, positive-unlabeled learning, label noise learning, partial label learning, and self-supervised learning, as well as the foster collaborations among universities and institutes.</p>
+
+ 
+
+<h1 id="program">Program</h1>
+
+	<h2>Venue & Date</h2>
+        <p><b>Venue:</b> Teaching Suite 223  of <a href="https://about.uq.edu.au/campuses-facilities/brisbane-city" target="_blank">University of Queensland, Brisbane City Campus</a>, Brisbane, Australia. </p>
+		<p><b>Date:</b> November 26 09:00--17:30, November 27 09:00--17:30 and November 28 09:00--17:30 (Brisbane time (GMT+10)).</p>
+		<p><b>URL for Online Attending:</b> <a href="" target="_blank">TBA</a></p>
+
+    <h2>Schedule (TBA)</h1>
+        <p>The workshop will use <font color='FF0000'>
+        Brisbane time (GMT+10)
+        </font> for scheduling, and it will be combined with invited talks and contributed talks.</p>
+	
+<!-- <table>
+  <thead>
+    <tr><th style="width:25ex">Time</th><th>Event</th></tr>
+  </thead>
+  <tbody>
+  <tr><td><b>November 23</b></td></tr>
+    <tr><td>09:30 -- 09:35<noscript>09:30 -- 09:35</noscript></td>
+        <td><b>Opening Ceremony</b></td></tr>
+    <tr><td></td><td><b>Host</b>: <a href="http://www.ms.k.u-tokyo.ac.jp/sugi/" target="_blank">Masashi Sugiyama</a> (RIKEN / The University of Tokyo)</td></tr>
+    
+     <tr><td>09:35 -- 10:35<noscript>09:35 -- 10:35</noscript></td>
+        <td><b>Session 1 (25min talk + 5min Q&A for each speaker)</b></td></tr>
+    <tr><td></td><td><b>Title</b>: Enhancing Language Models through Improved Pre-Training and Fine-Tuning<br>
+        <b>Speaker</b>: <a href="https://www.cse.ust.hk/~jamesk/" target="_blank">James Tin Yau Kwok</a> (Hong Kong University of Science and Technology)</td></tr>
+    <tr><td></td><td><b>Title</b>: The "Gene" of Machine Learning: Make Machines Learn Like Humans<br>
+        <b>Speaker</b>: <a href="http://palm.seu.edu.cn/xgeng/" target="_blank">Xin Geng</a> (Southeast University)</td></tr>
+
+    <tr><td>10:35 -- 10:55<noscript>10:35 -- 10:55</noscript></td>
+        <td><b>Bio Breaks and Social</b></td></tr>
+    
+     <tr><td>10:55 -- 11:55<noscript>10:55 -- 11:55</noscript></td>
+        <td><b>Session 2 (25min talk + 5min Q&A for each speaker)</b></td></tr>
+    <tr><td></td><td><b>Title</b>: Towards Safe Abductive Learning with Weak Label and Weak Rules<br>
+        <b>Speaker</b>: <a href="https://cs.nju.edu.cn/liyf/index.htm" target="_blank">Yu-Feng Li</a> (Nanjing University)</td></tr>
+    <tr><td></td><td><b>Title</b>: Visual Recovery towards Understanding<br>
+        <b>Speaker</b>: <a href="http://changxu.xyz/" target="_blank">Chang Xu</a> (The University of Sydney)</td></tr>
+		
+	<tr><td>12:00 -- 13:00<noscript>12:00 -- 13:00</noscript></td>
+        <td><b>Lunch Time</b></td></tr>
+    
+     <tr><td>13:00 -- 14:00<noscript>13:00 -- 14:00</noscript></td>
+        <td><b>Session 3 (25min talk + 5min Q&A for each speaker)</b></td></tr>
+    <tr><td></td><td><b>Title</b>: Late stopping for weakly supervised learning<br>
+        <b>Speaker</b>: <a href="https://tongliang-liu.github.io/" target="_blank">Tongliang Liu</a> (The University of Sydney)</td></tr>
+    <tr><td></td><td><b>Title</b>: Open-World Learning: Challenges and Solutions<br>
+        <b>Speaker</b>: <a href="https://gcatnjust.github.io/ChenGong/index.html" target="_blank">Chen Gong</a> (Nanjing University of Science and Technology)</td></tr>
+		
+	<tr><td>14:00 -- 14:20<noscript>14:00 -- 14:20</noscript></td>
+        <td><b>Bio Breaks and Social</b></td></tr>
+    
+     <tr><td>14:20 -- 15:50<noscript>14:20 -- 15:50</noscript></td>
+        <td><b>Session 4 (25min talk + 5min Q&A for each speaker)</b></td></tr>
+    <tr><td></td><td><b>Title</b>: Exploring Trustworthy Machine Learning under Imperfect Data<br>
+        <b>Speaker</b>: <a href="https://bhanml.github.io/" target="_blank">Bo Han</a> (Hong Kong Baptist University)</td></tr>
+    <tr><td></td><td><b>Title</b>: Label-Agnostic Unlearning in Deep Models<br>
+        <b>Speaker</b>: <a href="https://researchers.uq.edu.au/researcher/26509" target="_blank">Miao Xu</a> (The University of Queensland)</td></tr>
+    <tr><td></td><td><b>Title</b>: An Information-Theoretic Analysis of Learning under General Data Corruption<br>
+        <b>Speaker</b>: <a href="https://scholar.google.com/citations?user=KQUQlG4AAAAJ&hl=en" target="_blank">Nan Lu</a> (The University of Tübingen)</td></tr>
+		
+	<tr><td>15:50 -- 16:10<noscript>15:50 -- 16:10</noscript></td>
+        <td><b>Bio Breaks and Social</b></td></tr>
+    
+     <tr><td>16:10 -- 17:10<noscript>16:10 -- 17:10</noscript></td>
+        <td><b>Session 5 (25min talk + 5min Q&A for each speaker)</b></td></tr>
+    <tr><td></td><td><b>Title</b>: Robust Contrastive Learning and Its Applications<br>
+        <b>Speaker</b>: <a href="https://sites.google.com/view/shuochen/" target="_blank">Shuo Chen</a> (RIKEN)</td></tr>
+	<tr><td></td><td><b>Title</b>: Is the Performance of My Deep Network Too Good to Be True? A Direct Approach to Estimating the Bayes Error in Binary Classification<br>
+        <b>Speaker</b>: <a href="https://takashiishida.github.io/" target="_blank">Takashi Ishida</a> (RIKEN / The University of Tokyo)</td></tr>
+	<tr><td>17:10 -- 18:00<noscript>17:10 -- 18:00</noscript></td>
+        <td><b>Open Discussion</b></td></tr>
+	<tr><td>18:00 -- 20:30<noscript>18:00 -- 20:00</noscript></td>
+        <td><b>Closed Discussion / Dinner</b></td></tr>
+		
+		
+	<tr><td><b>November 24</b></td></tr>
+	<tr><td>09:30 -- 10:30<noscript>09:30 -- 10:30</noscript></td>
+        <td><b>Session 1 (25min talk + 5min Q&A for each speaker)</b></td></tr>
+    <tr><td></td><td><b>Title</b>: Emerging Drug Interaction Prediction from Biomedical Network<br>
+        <b>Speaker</b>: <a href="https://lars-group.github.io/" target="_blank">Quanming Yao</a> (Tsinghua University)</td></tr>
+    <tr><td></td><td><b>Title</b>: Domain Generalization via Content Factors Isolation: A Two-level Latent Variable Modelling Approach<br>
+        <b>Speaker</b>: <a href="https://mingming-gong.github.io/" target="_blank">Mingming Gong</a> (The University of Melbourne)</td></tr>
+		
+	<tr><td>10:30 -- 10:50<noscript>10:30 -- 10:50</noscript></td>
+        <td><b>Bio Breaks and Social</b></td></tr>
+    
+     <tr><td>10:50 -- 11:50<noscript>10:50 -- 11:50</noscript></td>
+        <td><b>Session 2 (25min talk + 5min Q&A for each speaker)</b></td></tr>
+    <tr><td></td><td><b>Title</b>: Unmasking and Improving Data Credibility: A Study with Datasets for Training Harmless Language Models<br>
+        <b>Speaker</b>: <a href="http://www.yliuu.com/" target="_blank">Yang Liu</a> (University of California, Santa Cruz)</td></tr>
+    <tr><td></td><td><b>Title</b>: Towards Robust Foundation Models: Adversarial Contrastive Learning<br>
+        <b>Speaker</b>: <a href="https://zjfheart.github.io/" target="_blank">Jingfeng Zhang</a> (The University of Auckland)</td></tr>
+		
+	<tr><td>11:50 -- 13:00<noscript>11:50 -- 13:00</noscript></td>
+        <td><b>Lunch Time</b></td></tr>
+    
+     <tr><td>13:00 -- 14:00<noscript>13:00 -- 14:00</noscript></td>
+        <td><b>Session 3 (25min talk + 5min Q&A for each speaker)</b></td></tr>
+    <tr><td></td><td><b>Title</b>: Towards Continuous Adaptation in Non-stationary Environments<br>
+        <b>Speaker</b>: <a href="https://zhangzy07.github.io/" target="_blank">Zhen-Yu Zhang</a> (RIKEN)</td></tr>
+    <tr><td></td><td><b>Title</b>: Towards Robust Deep Learning under Distribution Shift: an Importance Weighting Approach<br>
+        <b>Speaker</b>: <a href="https://scholar.google.com/citations?user=XZIPnxIAAAAJ&hl=en" target="_blank">Tongtong Fang</a> (The University of Tokyo)</td></tr>
+		
+	<tr><td>14:00 -- 14:20<noscript>14:00 -- 14:20</noscript></td>
+        <td><b>Bio Breaks and Social</b></td></tr>
+    
+     <tr><td>14:20 -- 15:20<noscript>14:20 -- 15:20</noscript></td>
+        <td><b>Session 4 (25min talk + 5min Q&A for each speaker)</b></td></tr>
+    <tr><td></td><td><b>Title</b>: Weakly Supervised Disentanglement<br>
+        <b>Speaker</b>: <a href="https://yivan.xyz/about" target="_blank">Yivan Zhang</a> (The University of Tokyo)</td></tr>
+    <tr><td></td><td><b>Title</b>: On the Relation between Complementary-Label Learning and Negative-Unlabeled Learning<br>
+        <b>Speaker</b>: <a href="https://wwangwitsel.github.io/" target="_blank">Wei Wang</a>  (The University of Tokyo)</td></tr>
+		
+	 <tr><td>15:20 -- 16:00<noscript>15:20 -- 16:00</noscript></td>
+        <td><b>Closing Ceremony</b></td></tr>
+    <tr><td></td><td><b>Host</b>: <a href="http://www.ms.k.u-tokyo.ac.jp/sugi/" target="_blank">Masashi Sugiyama</a> (RIKEN / The University of Tokyo)</td></tr>
+		
+  </tbody>
+</table>-->
+
+<h1 id="registration">Registration (TBA)</h1>
+
+<h1 id="topics">Topics</h1>
+
+    <h2>Overview</h2>
+        <p>Machine learning should not be accessible only to those who can pay. Specifically, modern machine learning is migrating to the era of complex models (e.g., deep neural networks), which require a plethora of well-annotated data. Giant companies have enough money to collect well-annotated data. However, for startups or non-profit organizations, such data is barely acquirable due to the cost of labeling data or the intrinsic scarcity in the given domain. These practical issues motivate us to research and pay attention to <b>weakly supervised learning (WSL)</b>, since WSL does not require such a huge amount of annotated data. We define WSL as the collection of machine learning problem settings and algorithms that share the same goals as supervised learning but can only access to <b>less supervised information</b> than supervised learning. In this workshop, we discuss both theoretical and applied aspects of WSL.</p>
+
+        <p>This workshop is a series of our previous workshops at ACML 2019, SDM 2020, ACML 2020, IJCAI 2021, and ACML 2021. Our particular technical emphasis at this workshop is incomplete supervision, inexact supervision, inaccurate supervision, cross-domain supervision, imperfect demonstration, and weak adversarial supervision. Meanwhile, this workshop will also focus on <b>WSL for Science and Social Good</b>, such as WSL for COVID-19, WSL for healthcare, WSL for climate change, WSL for remote sensing, and new public WSL datasets regarding the scientific scenarios. </p>
+
+    <h2>Topics of Interest</h2>
+        <p>WSL workshop includes (but not limited to) the following topics:</p>
+        <ul>
+            <li>Algorithms and theories of <b>incomplete supervision</b>, e.g., semi-supervised learning, active learning, and positive-unlabeled learning;</li>
+            <li>Algorithms and theories of <b>inexact supervision</b>, e.g., multi-instance learning, complementary learning, and open-set learning;</li>
+            <li>Algorithms and theories of <b>inaccurate supervision</b>, e.g., crowdsourced learning and label-noise learning;</li>
+            <li>Algorithms and theories of <b>cross-domain supervision</b>, e.g., zero-/one-/few-shot learning, transferable learning, and multi-task learning;</li>
+            <li>Algorithms and theories of <b>imperfect demonstration</b>, e.g., inverse reinforcement learning and imitation learning with non-expert demonstrations;</li>
+            <li>Algorithms and theories of <b>adversarial</b> weakly-supervised learning, e.g., adversarial semi-supervised learning and adversarial label-noisy learning; </li>
+			<li>Algorithms and theories of <b>self-supervision</b>, e.g., contrastive learning and autoencoder learning; </li>
+            <li>Broad applications of weakly supervised learning in the field of computer science, such as weakly supervised object detection <b>(computer vision)</b>, weakly supervised sequence modeling <b>(natural language processing)</b>, and weakly supervised cross-media retrieval <b>(information retrieval)</b>.</li>
+            <li><b>WSL for science and social good</b>, such as WSL for COVID-19, WSL for healthcare, WSL for climate change, and WSL for remote sensing, meanwhile, new public datasets regarding the above WSL research directions (new focus).</li>
+        </ul>
+
+    <h2>Further Descriptions</h2>
+        <p>The focus of this workshop is six types of weak supervision: incomplete supervision, inexact supervision, inaccurate supervision, cross-domain supervision, imperfect demonstration, and weak adversarial supervision, which are briefly introduced below. </p>
+
+	 <ul>
+        <li><b>Incomplete supervision</b> considers a subset of training data given with ground-truth labels while the other data remain unlabeled, such as semi-supervised learning and positive-unlabeled learning. </li>
+
+        <li><b>Inexact supervision</b> considers the situation where some supervision information is given but not as exacted as desired, i.e., only coarse-grained labels are available. For example, if we are considering to classify every pixel of an image, rather than the image itself, then ImageNet becomes a benchmark with inexact supervision. Besides, multi-instance learning belongs to inexact supervision, where we do not exactly know which instance in the bag corresponds to the given ground-truth label. </li>
+        
+        <li><b>Inaccurate supervision</b> considers the situation where the supervision information is not always the ground-truth, such as label-noise learning.</li>
+
+        <li><b>Cross-domain supervision</b> considers the situation where the supervision information is scarce or even non-existent in the current domain but can be possibly derived from other domains. Examples of cross-domain supervision appear in zero-/one-/few-shot learning, where external knowledge from other domains is usually used to overcome the problem of too few or even no supervision in the original domain. </li>
+
+        <li><b>Imperfect demonstration</b> considers the situation for inverse reinforcement learning and imitation learning, where the agent learns with imperfect or non-expert demonstrations. For example, AlphaGo learns a policy from a sequence of states and actions (expert demonstration). Even if an expert player wins a game, it is not guaranteed that every action in the sequence is optimal.</li>
+
+        <li><b>Weak adversarial supervision</b> considers the situation where weak supervision meets adversarial robustness. Since machine learning models are increasingly deployed in real-world applications, their security attracts more and more attention from both academia and industry. Therefore, many robust learning algorithms aim to prevent various evasion attacks, e.g., adversarial attacks, privacy attacks, model stealing attacks, and so on. However, almost all those robust algorithms (against evasion attacks) implicitly assume the strong supervision signals (no noisy labels in the training data), which hardly meets the requirements in practice. Therefore, when we develop evasion-robust algorithms, it is very practical/urgent to consider the supervision signals are imperfect.</li>
+
+	<li><b>Self-supervision</b> considers the unsupervised situation, and it pre-trains a generic feature representation by autonomously building the pseudo supervision (e.g., the similarity contrast and sample reconstruction) from the raw data, the learned representation can be applied in various downstream tasks such as classification, retrieval, and clustering.</li>
+	 </ul>
+		
+        <p>Meanwhile, this workshop will <b>continue discussing broad applications of weakly supervised learning in the field of computer science</b>, such as weakly supervised object detection (computer vision), weakly supervised sequence modeling (natural language processing), and weakly supervised cross-media retrieval (information retrieval).</p>
+
+
+<h1 id="organizers">Organizers</h1>
+	<h2>Conference Chair</h1>
+		<p><a href="http://www.ms.k.u-tokyo.ac.jp/sugi/" target="_blank">Masashi Sugiyama</a>, RIKEN / The University of Tokyo, Japan.</p>
+
+    <h2>Program Chairs</h1>
+        <p><a href="https://miaoxu-ml.github.io/index.html" target="_blank">Miao Xu</a>, The University of Queensland, Australia.</p>
+		<p><a href="https://bhanml.github.io/" target="_blank">Bo Han</a>, Hong Kong Baptist University, Hong Kong SAR, China.</p>
+        <p><a href="https://tongliang-liu.github.io/" target="_blank">Tongliang Liu</a>, The University of Sydney, Australia.</p>
+        <p><a href="https://niug1984.github.io/" target="_blank">Gang Niu</a>, RIKEN, Japan.</p>
+        
+
+    <!--<h2>Advisory Board <span style="font-size: 75%">(alphabetical order by last name)</span></h1>
+        <p><a href="https://gcatnjust.github.io/ChenGong/index.html" target="_blank">Chen Gong</a>, Nanjing University of Science and Technology, China.</p>
+        <p><a href="https://mingming-gong.github.io/" target="_blank">Mingming Gong</a>, The University of Melbourne, Australia.</p>
+        <p><a href="https://cs.nju.edu.cn/liyf/index.htm" target="_blank">Yu-Feng Li</a>, Nanjing University, China.</p>  
+        <p><a href="http://www.cse.ust.hk/~qyaoaa/" target="_blank">Quanming Yao</a>, Tsinghua University / 4Paradigm Inc., China.</p>
+		<p><a href="https://zjfheart.github.io/" target="_blank">Jingfeng Zhang</a>, The University of Auckland, New Zealand.</p>
+        <p><a href="http://palm.seu.edu.cn/zhangml/" target="_blank">Min-Ling Zhang</a>, Southeast University, China.</p>
+		<p><a href="https://sites.google.com/view/shuochen/" target="_blank">Shuo Chen</a>, RIKEN, Japan.</p>
+		<p><a href="http://www.yliuu.com/" target="_blank">Yang Liu</a>, University of California, Santa Cruz, USA.</p>
+		<p><a href="https://fengliu90.github.io/" target="_blank">Feng Liu</a>, The University of Melbourne, Australia.</p>-->
+
+
+<h1 id="accommodation">Accommodations (TBA)</h1>
+	<!--<h2>TBA</h1>
+		<p><a href="http://www.ms.k.u-tokyo.ac.jp/sugi/" target="_blank">Masashi Sugiyama</a>, RIKEN / The University of Tokyo, Japan.</p>-->
+
+
+
+<h1 id="previous-workshops">Previous Workshops</h1>
+	<p><a href="https://wsl-workshop.github.io/wsl24.html" target="_blank">WSL 2023 Workshop</a>, Tokyo Japan & Online.</p> 
+	<p><a href="https://wsl-workshop.github.io/acml22.html" target="_blank">ACML2022 WSL Workshop</a>, Online.</p> 
+    <p><a href="https://wsl-workshop.github.io/acml21.html" target="_blank">ACML2021 WSL Workshop</a>, Online.</p> 
+    <p><a href="https://wsl-workshop.github.io/ijcai21.html" target="_blank">IJCAI2021 WSRL Workshop</a>, Online.</p> 
+    <p><a href="https://wsl-workshop.github.io/acml20.html" target="_blank">ACML2020 WSRL Workshop</a>, Online.</p>
+    <p><a href="https://wsl-workshop.github.io/sdm20.html" target="_blank">SDM2020 WSUL Workshop</a>, Ohio, United States.</p>
+    <p><a href="https://wsl-workshop.github.io/acml19.html" target="_blank">ACML2019 WSL Workshop</a>, Nagoya, Japan.</p>
+
+<footer class="site-footer">
+    <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com/">GitHub Pages</a>.</span>
+</footer>
+</section>
+</body></html>
