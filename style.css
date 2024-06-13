@@ -578,8 +578,7 @@ a:hover {
 
 .project-tagline {
     margin-bottom: 2rem;
-    font-weight: normal;
-    opacity: 0.7
+    font-weight: bold;
 }
 
 @media screen and (min-width: 64em) {
