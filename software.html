@@ -374,11 +374,6 @@
     </p>
     
     <h2>Algorithm perspective</h2>
-    <p>
-        From the algorithm perspective, we would like to design <i>smarter loss/objective functions</i> for training standard models.
-        Specifically, given the knowledge that the test data may be adversarial, we carefully <i>simulate some adversarial attack during training</i>.
-        Thus, the model has already seen many adversarial training data in the past, and hopefully it can generalize to adversarial test data in the future.
-    </p>
     <ul>
         <li><p><a href="https://github.com/zjfheart/Friendly-Adversarial-Training" target="_blank">
         Attacks which do not kill training make adversarial learning stronger</a> (ICML 2020)</p></li>
@@ -406,10 +401,6 @@
     </ul>
     
     <h2>Model perspective</h2>
-    <p>
-        From the model perspective, we would like to design <i>smarter models</i> that can be robust even when they are trained by standard supervised learning.
-        Indeed, some models are <i>born to be more robust</i> than other models, because they possess special layers and components designed for removing or reducing the negative effects of adversarial attacks.
-    </p>
     <ul>
         <li><p><a href="https://github.com/HanshuYAN/CIFS" target="_blank">
         CIFS: Improving adversarial robustness of CNNs via channel-wise importance-based feature selection</a> (ICML 2021)</p></li>
@@ -422,23 +413,12 @@
     </ul>
     
     <h2>Detection perspective</h2>
-    <p>
-        From the detection perspective, we would like to check whether a set of data has been attacked;
-        if the given data have been attacked, we want to know further which one has been attacked and which one has not.
-        For the data coming from the attacker but not the nature, we can <i>make more careful predictions</i> or even <i>abstain from giving predictions</i>.
-    </p>
     <ul>
         <li><p><a href="https://github.com/fengliu90/SAMMD" target="_blank">
         Maximum mean discrepancy test is aware of adversarial attacks</a> (ICML 2021)</p></li>
     </ul>
     
     <h2>Application perspective</h2>
-    <p>
-    From the application perspective, we would like to apply the adversarial robustness to case studies.
-    In particular, adversarial attacks are the ways of evaluating the vulnerabilities of machine learning models; adversarial training is the way of making the machine learning models robust against such vulnerabilities.
-    Given a method empowered by machine learning approaches, we can leverage the adversarial attacks/training to evaluate/enhance the method's robustness.
-        
-    </p>
     <ul>
         <li><p><a href="https://github.com/GodXuxilie/Robust-TST" target="_blank">
             Adversarial attacks and defense for non-parametric two sample tests</a> (ICML 2022)</p></li>
