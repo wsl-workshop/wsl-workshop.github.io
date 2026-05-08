@@ -17,7 +17,7 @@
 
 <h1>Overview</h1>
     <p>
-      At <a href="https://aip.riken.jp/labs/generic_tech/imperfect_inf_learn/" target="_blank"><b>Imperfect Information Learning Team</b></a>,
+      At <a href="https://aip.riken.jp/labs/generic_tech/imperfect_inf_learn/?lang=en" target="_blank"><b>Imperfect Information Learning Team</b></a>,
       <a href="https://aip.riken.jp/?lang=en" target="_blank"><b>Center for Advanced Intelligence Project (AIP)</b></a>,
       <a href="https://www.riken.jp/en/" target="_blank"><b>RIKEN</b></a>,
       we are developing reliable and robust <b>machine learning</b> methods/algorithms that can cope with various factors
@@ -63,211 +63,221 @@
         In practice, however, collecting such data is often <i>expensive</i> in terms of budget and/or time window for labeling or sampling big enough data, or even <i>impossible</i> since it may cause privacy and/or fairness issues.
         <i>Weakly supervised learning</i> is aimed at solving a learning task from only weakly supervised or weakly labeled data, e.g., the positive class is present while the negative class is absent.
         Our weakly supervised trained models still try to <i>capture the underlying map</i> from an instance to its label and to <i>predict the true label</i> of any instance exactly the same as fully supervised trained models.
-    </p>  
-    <h2>Positive-unlabeled learning</h2>
-    <p>
-      Positive-unlabeled learning is aimed as solving a binary classification problem only from positive and unlabeled data, without negative data.
     </p>
-    <ul>
-        <li><p><a href="https://github.com/kiryor/nnPUlearning" target="_blank">
-        Analysis of learning from positive and unlabeled data</a> (NeurIPS 2014)</p></li>
-        
-        <li><p><a href="https://github.com/kiryor/nnPUlearning" target="_blank">
-        Convex formulation for learning from positive and unlabeled data</a> (ICML 2015)</p></li>
-        
-        <li><p><a href="https://github.com/kiryor/nnPUlearning" target="_blank">
-        Theoretical comparisons of positive-unlabeled learning against positive-negative learning</a> (NeurIPS 2016)</p></li>
-        
-        <li><p><a href="https://github.com/t-sakai-kure/pywsl" target="_blank">
-        Semi-supervised classification based on classification from positive and unlabeled data</a> (ICML 2017)</p></li>
-        
-        <li><p><a href="https://github.com/kiryor/nnPUlearning" target="_blank">
-        Positive-unlabeled learning with non-negative risk estimator</a> (NeurIPS 2017)</p></li>
-        
-        <li><p><a href="https://github.com/t-sakai-kure/pywsl" target="_blank">
-        Semi-supervised AUC optimization based on positive-unlabeled learning</a> (Machine Learning v107, 2018)</p></li>
-        
-        <li><p><a href="https://github.com/cyber-meow/PUbiasedN" target="_blank">
-        Classification from positive, unlabeled and biased negative data</a> (ICML 2019)</p></li>
-        
-        <li><p><a href="https://github.com/alonjacovi/document-set-expansion-pu" target="_blank">
-        Scalable evaluation and improvement of document set expansion via neural positive-unlabeled learning</a> (EACL 2021)</p></li>
-        
-        <li><p>
-        Information-theoretic representation learning for positive-unlabeled classification (Neural Computation v33, 2021)</p></li>
-        
-        <li><p><a href="https://github.com/a5507203/Rethinking-Class-Prior-Estimation-for-Positive-Unlabeled-Learning" target="_blank">
-        Rethinking class-prior estimation for positive-unlabeled learning</a> (ICLR 2022)</p></li>
-    </ul>
-    
-    <h2>Unlabeled-unlabeled learning</h2>
-    <p>
-      Unlabeled-unlabeled learning is aimed as solving a binary classification problem only from two sets of unlabeled data with different class priors.
-    </p>
-    <ul>
-        <li><p><a href="https://github.com/lunanbit/UUlearning" target="_blank">
-        On the minimal supervision for training any binary classifier from only unlabeled data</a> (ICLR 2019)</p></li>
-        
-        <li><p>Mitigating overfitting in supervised classification from two unlabeled datasets: A consistent risk correction approach (AISTATS 2020)</p></li>
-        
-        <li><p><a href="https://github.com/nolfwin/symloss-ber-auc" target="_blank">
-        On symmetric losses for learning from corrupted labels</a> (ICML 2020)</p></li>
-                
-        <li><p><a href="https://github.com/leishida/Um-Classification" target="_blank">
-        Binary Classification from multiple unlabeled datasets via surrogate set classification</a> (ICML 2021)</p></li>
-        
-        <li><p><a href="https://github.com/lunanbit/FedUL" target="_blank">
-        Federated learning from only unlabeled data with class-conditional-sharing clients</a> (ICLR 2022)</p></li>
-    </ul>
-    
-    <h2>Complementary-label learning</h2>
-    <p>
-      Complementary-label learning is aimed at training a multi-class classifier only from complementarily labeled data
-      (a complementary label incidates a class which a patter does NOT belong to).
-    </p>
-    <ul>
-        <li><p><a href="https://github.com/takashiishida/comp" target="_blank">
-        Learning from complementary labels</a> (NeurIPS 2017)</p></li>
-        
-        <li><p><a href="https://github.com/takashiishida/comp" target="_blank">
-        Complementary-label learning for arbitrary losses and models</a> (ICML 2019)</p></li>
-        
-        <li><p><a href="https://lfeng-ntu.github.io/Codes/LMCL.rar" target="_blank">
-        Learning with multiple complementary labels</a> (ICML 2020)</p></li>
-        
-        <li><p>Unbiased risk estimators can mislead: A case study of learning with complementary labels (ICML 2020)</p></li>
-        
-        <li><p><a href="https://github.com/wwangwitsel/SCARCE" target="_blank">
-        Learning with complementary labels revisited: The selected-completely-at-random setting is more practical</a> (ICML 2024)</p></li>
-    </ul>
-    
-    <h2>Partial-label learning</h2>
-    <p>
-      Partial-label learning is aimed at training a multi-class classifier only from partially labeled data
-      (a partial label incidates a set of class labels one of which is the true one).
-    </p>
-    <ul>
-        <li><p><a href="https://lfeng-ntu.github.io/Codes/LMCL.rar" target="_blank">
-        Learning with multiple complementary labels</a> (ICML 2020)</p></li>
-        
-        <li><p><a href="https://github.com/Lvcrezia77/PRODEN" target="_blank">
-        Progressive identification of true labels for partial-label learning</a> (ICML 2020)</p></li>
-        
-        <li><p><a href="https://lfeng-ntu.github.io/Codes/RCCC.rar" target="_blank">
-        Provably consistent partial-label learning</a> (NeurIPS 2020)</p></li>
-        
-        <li><p><a href="https://github.com/hbzju/PiCO" target="_blank">
-        PiCO: Contrastive label disambiguation for partial label learning</a> (ICLR 2022)</p></li>
-        
-        <li><p><a href="https://github.com/Ferenas/CAVL" target="_blank">
-        Exploiting class activation value for partial-label learning</a> (ICLR 2022)</p></li>
-        
-        <li><p><a href="https://github.com/AlphaXia/ABLE" target="_blank">
-        Ambiguity-induced contrastive learning for instance-dependent partial label learning</a> (IJCAI 2022)</p></li>
-        
-        <li><p><a href="https://github.com/AlphaXia/PaPi" target="_blank">
-        Towards effective visual representations for partial-label learning</a> (CVPR 2023)</p></li>
-    </ul>
-    
-    <h2>Pairwise learning</h2>
-    <p>
-      Pairwise learning is aimed at solving a classification problem from pairwise similarities/dissimilarities.
-    </p>
-    <ul>
-        <li><p><a href="https://github.com/levelfour/SU_Classification" target="_blank">
-        Classification from pairwise similarity and unlabeled data</a> (ICML 2018)</p></li>
-        
-        <li><p>Uncoupled regression from pairwise comparison data (NeurIPS 2019)</p></li>
-        
-        <li><p>Learning from similarity-confidence data (ICML 2021)</p></li>
-        
-        <li><p><a href="https://lfeng-ntu.github.io/Codes/Pcomp.zip" target="_blank">
-        Pointwise binary classification with pairwise confidence comparisons</a> (ICML 2021)</p></li>
-        
-        <li><p><a href="https://lfeng-ntu.github.io/Codes/SDMIL.zip" target="_blank">
-        Multiple-instance learning from similar and dissimilar bags</a> (KDD 2021)<br>
-        => Multiple-instance learning from unlabeled bags with pairwise similarity (TKDE v35, 2023)</p></li>
-        
-        <li><p><a href="https://github.com/scifancier/Learning-from-Noisy-Pairwise-Similarity-and-Unlabeled-Data" target="_blank">
-        Learning from noisy pairwise similarity and unlabeled data</a> (JMLR v23, 2022)</p></li>
-        
-        <li><p><a href="https://github.com/wwangwitsel/ConfDiff" target="_blank">
-        Binary classification with confidence difference</a> (NeurIPS 2023)</p></li>
-    </ul>
-    
-    <h2>Learning under distribution shift</h2>
-    <p>
-      Learning under distribution shift is aimed at addressing the issue that the training and test data come from different distributions.
-    </p>
-    <ul>
-        <li><p><a href="https://github.com/TongtongFANG/DIW" target="_blank">
-        Rethinking importance weighting for deep learning under distribution shift</a> (NeurIPS 2020)</p></li>
-        
-        <li><p><a href="https://github.com/Haoang97/MEDI" target="_blank">
-        Meta discovery: Learning to discover novel classes given very limited data</a> (ICLR 2022)</p></li>
-        
-        <li><p><a href="https://github.com/tangjialiang97/KD3" target="_blank">
-        Distribution shift matters for knowledge distillation with webly collected images</a> (ICCV 2023)</p></li>
-        
-        <li><p><a href="https://github.com/TongtongFANG/GIW" target="_blank">
-        Generalizing importance weighting to a universal solver for distribution shift problems</a> (NeurIPS 2023)</p></li>
-        
-        <li><p><a href="https://github.com/ZFancy/DivOE" target="_blank">
-        Diversified outlier exposure for out-of-distribution detection via informative extrapolation</a> (NeurIPS 2023)</p></li>
 
-        <li><p><a href="https://zhangzy07.github.io/code/AdaReAlign.zip" target="_blank">
-        Test-time Adaptation in Non-stationary Environments via Adaptive Representation Alignment</a> (NeurIPS 2024)</p></li>
-    </ul>
+    <details>
+        <summary style="cursor: pointer;">
+            <h2 style="display: inline;">Positive-unlabeled learning</h2>
+        </summary>
+        <ul>
+            <li><p><a href="https://github.com/kiryor/nnPUlearning" target="_blank">
+            Analysis of learning from positive and unlabeled data</a> (NeurIPS 2014)</p></li>
+            
+            <li><p><a href="https://github.com/kiryor/nnPUlearning" target="_blank">
+            Convex formulation for learning from positive and unlabeled data</a> (ICML 2015)</p></li>
+            
+            <li><p><a href="https://github.com/kiryor/nnPUlearning" target="_blank">
+            Theoretical comparisons of positive-unlabeled learning against positive-negative learning</a> (NeurIPS 2016)</p></li>
+            
+            <li><p><a href="https://github.com/t-sakai-kure/pywsl" target="_blank">
+            Semi-supervised classification based on classification from positive and unlabeled data</a> (ICML 2017)</p></li>
+            
+            <li><p><a href="https://github.com/kiryor/nnPUlearning" target="_blank">
+            Positive-unlabeled learning with non-negative risk estimator</a> (NeurIPS 2017)</p></li>
+            
+            <li><p><a href="https://github.com/t-sakai-kure/pywsl" target="_blank">
+            Semi-supervised AUC optimization based on positive-unlabeled learning</a> (Machine Learning v107, 2018)</p></li>
+            
+            <li><p><a href="https://github.com/cyber-meow/PUbiasedN" target="_blank">
+            Classification from positive, unlabeled and biased negative data</a> (ICML 2019)</p></li>
+            
+            <li><p><a href="https://github.com/alonjacovi/document-set-expansion-pu" target="_blank">
+            Scalable evaluation and improvement of document set expansion via neural positive-unlabeled learning</a> (EACL 2021)</p></li>
+            
+            <li><p>
+            Information-theoretic representation learning for positive-unlabeled classification (Neural Computation v33, 2021)</p></li>
+            
+            <li><p><a href="https://github.com/a5507203/Rethinking-Class-Prior-Estimation-for-Positive-Unlabeled-Learning" target="_blank">
+            Rethinking class-prior estimation for positive-unlabeled learning</a> (ICLR 2022)</p></li>
+        </ul>
+    </details>
     
-    <h2>Self-supervised learning</h2>
-    <h3>(together with contrastive learning and metric learning)</h3>
-    <p>
-      Self-supervised learning is aimed at learning a representation from unlabeled data with various priors and pesuodo supervisions.
-    </p>
-    <ul>
-        <li><p><a href="https://github.com/Hanzy1996/CE-GZSL" target="_blank">
-        Contrastive embedding for generalized zero-shot learning</a> (CVPR 2021)</p></li>
-
-        <li><p>Large-margin contrastive learning with distance polarization regularizer (ICML 2021)</p></li>
-
-        <li><p><a href="https://github.com/functioncs/LASC" target="_blank">
-        Linearity-aware subspace clustering</a> (AAAI 2022)</p></li>
-
-        <li><p>Robust audio-visual instance discrimination via active contrastive set mining (IJCAI 2022)</p></li>
-        
-        <li><p><a href="https://github.com/functioncs/CLLR" target="_blank">
-        Learning contrastive embedding in low-dimensional space</a> (NeurIPS 2022)</p></li>
-        
-        <li><p><a href="https://github.com/SubmissionsIn/SEM" target="_blank">
-        Self-weighted contrastive learning among multiple views for mitigating representation degeneration</a> (NeurIPS 2023)</p></li>
-        
-        <li><p><a href="" target="_blank">
-        Boundary-restricted metric learning</a> (Machine Learning v112, 2023)</p></li>
-        
-        <li><p><a href="https://github.com/SubmissionsIn/MVCAN" target="_blank">
-        Investigating and mitigating the side effects of noisy views for self-supervised clustering algorithms in practical multi-view scenarios</a> (CVPR 2024)</p></li>
-    </ul>
+    <details>
+        <summary style="cursor: pointer;">
+            <h2 style="display: inline;">Unlabeled-unlabeled learning</h2>
+        </summary>
+        <ul>
+            <li><p><a href="https://github.com/lunanbit/UUlearning" target="_blank">
+            On the minimal supervision for training any binary classifier from only unlabeled data</a> (ICLR 2019)</p></li>
+            
+            <li><p>Mitigating overfitting in supervised classification from two unlabeled datasets: A consistent risk correction approach (AISTATS 2020)</p></li>
+            
+            <li><p><a href="https://github.com/nolfwin/symloss-ber-auc" target="_blank">
+            On symmetric losses for learning from corrupted labels</a> (ICML 2020)</p></li>
+                    
+            <li><p><a href="https://github.com/leishida/Um-Classification" target="_blank">
+            Binary Classification from multiple unlabeled datasets via surrogate set classification</a> (ICML 2021)</p></li>
+            
+            <li><p><a href="https://github.com/lunanbit/FedUL" target="_blank">
+            Federated learning from only unlabeled data with class-conditional-sharing clients</a> (ICLR 2022)</p></li>
+        </ul>
+    </details>
     
-    <h2>Other</h2>
-    <ul>
-        <li><p><a href="https://github.com/takashiishida/pconf" target="_blank">
-        Binary classification from positive-confidence data</a> (NeurIPS 2018)</p></li>
-        
-        <li><p><a href="https://github.com/palm-ml/smile" target="_blank">
-        One positive label is sufficient: Single-positive multi-label learning with label enhancement</a> (NeurIPS 2022)</p></li>
-        
-        <li><p><a href="https://github.com/Ruijiang97/DEG-Net" target="_blank">
-        Diversity-enhancing generative network for few-shot hypothesis adaptation</a> (ICML 2023)</p></li>
-        
-        <li><p><a href="https://lfeng-ntu.github.io/Code/UUM.zip" target="_blank">
-        A universal unbiased method for classification from aggregate observations</a> (ICML 2023)</p></li>
-        
-        <li><p><a href="https://github.com/milkxie/SSMLL-CAP" target="_blank">
-        Class-distribution-aware pseudo-labeling for semi-supervised multi-label learning</a> (NeurIPS 2023)</p></li>
-        
-        <li><p><a href="https://github.com/Hhhhhhao/General-Framework-Weak-Supervision" target="_blank">
-        A general framework for learning from weak supervision</a> (ICLR 2024)</p></li>
-    </ul>
+    <details>
+        <summary style="cursor: pointer;">
+            <h2 style="display: inline;">Complementary-label learning</h2>
+        </summary>
+        <ul>
+            <li><p><a href="https://github.com/takashiishida/comp" target="_blank">
+            Learning from complementary labels</a> (NeurIPS 2017)</p></li>
+            
+            <li><p><a href="https://github.com/takashiishida/comp" target="_blank">
+            Complementary-label learning for arbitrary losses and models</a> (ICML 2019)</p></li>
+            
+            <li><p><a href="https://lfeng-ntu.github.io/Codes/LMCL.rar" target="_blank">
+            Learning with multiple complementary labels</a> (ICML 2020)</p></li>
+            
+            <li><p>Unbiased risk estimators can mislead: A case study of learning with complementary labels (ICML 2020)</p></li>
+            
+            <li><p><a href="https://github.com/wwangwitsel/SCARCE" target="_blank">
+            Learning with complementary labels revisited: The selected-completely-at-random setting is more practical</a> (ICML 2024)</p></li>
+        </ul>
+    </details>
+    
+    <details>
+        <summary style="cursor: pointer;">
+            <h2 style="display: inline;">Partial-label learning</h2>
+        </summary>
+        <ul>
+            <li><p><a href="https://lfeng-ntu.github.io/Codes/LMCL.rar" target="_blank">
+            Learning with multiple complementary labels</a> (ICML 2020)</p></li>
+            
+            <li><p><a href="https://github.com/Lvcrezia77/PRODEN" target="_blank">
+            Progressive identification of true labels for partial-label learning</a> (ICML 2020)</p></li>
+            
+            <li><p><a href="https://lfeng-ntu.github.io/Codes/RCCC.rar" target="_blank">
+            Provably consistent partial-label learning</a> (NeurIPS 2020)</p></li>
+            
+            <li><p><a href="https://github.com/hbzju/PiCO" target="_blank">
+            PiCO: Contrastive label disambiguation for partial label learning</a> (ICLR 2022)</p></li>
+            
+            <li><p><a href="https://github.com/Ferenas/CAVL" target="_blank">
+            Exploiting class activation value for partial-label learning</a> (ICLR 2022)</p></li>
+            
+            <li><p><a href="https://github.com/AlphaXia/ABLE" target="_blank">
+            Ambiguity-induced contrastive learning for instance-dependent partial label learning</a> (IJCAI 2022)</p></li>
+            
+            <li><p><a href="https://github.com/AlphaXia/PaPi" target="_blank">
+            Towards effective visual representations for partial-label learning</a> (CVPR 2023)</p></li>
+        </ul>
+    </details>
+    
+    <details>
+        <summary style="cursor: pointer;">
+            <h2 style="display: inline;">Pairwise learning</h2>
+        </summary>
+        <ul>
+            <li><p><a href="https://github.com/levelfour/SU_Classification" target="_blank">
+            Classification from pairwise similarity and unlabeled data</a> (ICML 2018)</p></li>
+            
+            <li><p>Uncoupled regression from pairwise comparison data (NeurIPS 2019)</p></li>
+            
+            <li><p>Learning from similarity-confidence data (ICML 2021)</p></li>
+            
+            <li><p><a href="https://lfeng-ntu.github.io/Codes/Pcomp.zip" target="_blank">
+            Pointwise binary classification with pairwise confidence comparisons</a> (ICML 2021)</p></li>
+            
+            <li><p><a href="https://lfeng-ntu.github.io/Codes/SDMIL.zip" target="_blank">
+            Multiple-instance learning from similar and dissimilar bags</a> (KDD 2021)<br>
+            => Multiple-instance learning from unlabeled bags with pairwise similarity (TKDE v35, 2023)</p></li>
+            
+            <li><p><a href="https://github.com/scifancier/Learning-from-Noisy-Pairwise-Similarity-and-Unlabeled-Data" target="_blank">
+            Learning from noisy pairwise similarity and unlabeled data</a> (JMLR v23, 2022)</p></li>
+            
+            <li><p><a href="https://github.com/wwangwitsel/ConfDiff" target="_blank">
+            Binary classification with confidence difference</a> (NeurIPS 2023)</p></li>
+        </ul>
+    </details>
+    
+    <details>
+        <summary style="cursor: pointer;">
+            <h2 style="display: inline;">Learning under distribution shift</h2>
+        </summary>
+        <ul>
+            <li><p><a href="https://github.com/TongtongFANG/DIW" target="_blank">
+            Rethinking importance weighting for deep learning under distribution shift</a> (NeurIPS 2020)</p></li>
+            
+            <li><p><a href="https://github.com/Haoang97/MEDI" target="_blank">
+            Meta discovery: Learning to discover novel classes given very limited data</a> (ICLR 2022)</p></li>
+            
+            <li><p><a href="https://github.com/tangjialiang97/KD3" target="_blank">
+            Distribution shift matters for knowledge distillation with webly collected images</a> (ICCV 2023)</p></li>
+            
+            <li><p><a href="https://github.com/TongtongFANG/GIW" target="_blank">
+            Generalizing importance weighting to a universal solver for distribution shift problems</a> (NeurIPS 2023)</p></li>
+            
+            <li><p><a href="https://github.com/ZFancy/DivOE" target="_blank">
+            Diversified outlier exposure for out-of-distribution detection via informative extrapolation</a> (NeurIPS 2023)</p></li>
+
+            <li><p><a href="https://zhangzy07.github.io/code/AdaReAlign.zip" target="_blank">
+            Test-time Adaptation in Non-stationary Environments via Adaptive Representation Alignment</a> (NeurIPS 2024)</p></li>
+        </ul>
+    </details>
+    
+    <details>
+        <summary style="cursor: pointer;">
+            <h2 style="display: inline;">Self-supervised learning</h2>
+            <h3 style="display: inline;">&nbsp;(&amp; contrastive and metric learning)</h3>
+        </summary>
+        <ul>
+            <li><p><a href="https://github.com/Hanzy1996/CE-GZSL" target="_blank">
+            Contrastive embedding for generalized zero-shot learning</a> (CVPR 2021)</p></li>
+
+            <li><p>Large-margin contrastive learning with distance polarization regularizer (ICML 2021)</p></li>
+
+            <li><p><a href="https://github.com/functioncs/LASC" target="_blank">
+            Linearity-aware subspace clustering</a> (AAAI 2022)</p></li>
+
+            <li><p>Robust audio-visual instance discrimination via active contrastive set mining (IJCAI 2022)</p></li>
+            
+            <li><p><a href="https://github.com/functioncs/CLLR" target="_blank">
+            Learning contrastive embedding in low-dimensional space</a> (NeurIPS 2022)</p></li>
+            
+            <li><p><a href="https://github.com/SubmissionsIn/SEM" target="_blank">
+            Self-weighted contrastive learning among multiple views for mitigating representation degeneration</a> (NeurIPS 2023)</p></li>
+            
+            <li><p><a href="" target="_blank">
+            Boundary-restricted metric learning</a> (Machine Learning v112, 2023)</p></li>
+            
+            <li><p><a href="https://github.com/SubmissionsIn/MVCAN" target="_blank">
+            Investigating and mitigating the side effects of noisy views for self-supervised clustering algorithms in practical multi-view scenarios</a> (CVPR 2024)</p></li>
+        </ul>
+    </details>
+    
+    <details>
+        <summary style="cursor: pointer;">
+            <h2 style="display: inline;">Other weakly supervised learning</h2>
+        </summary>
+        <ul>
+            <li><p><a href="https://github.com/takashiishida/pconf" target="_blank">
+            Binary classification from positive-confidence data</a> (NeurIPS 2018)</p></li>
+            
+            <li><p><a href="https://github.com/palm-ml/smile" target="_blank">
+            One positive label is sufficient: Single-positive multi-label learning with label enhancement</a> (NeurIPS 2022)</p></li>
+            
+            <li><p><a href="https://github.com/Ruijiang97/DEG-Net" target="_blank">
+            Diversity-enhancing generative network for few-shot hypothesis adaptation</a> (ICML 2023)</p></li>
+            
+            <li><p><a href="https://lfeng-ntu.github.io/Code/UUM.zip" target="_blank">
+            A universal unbiased method for classification from aggregate observations</a> (ICML 2023)</p></li>
+            
+            <li><p><a href="https://github.com/milkxie/SSMLL-CAP" target="_blank">
+            Class-distribution-aware pseudo-labeling for semi-supervised multi-label learning</a> (NeurIPS 2023)</p></li>
+            
+            <li><p><a href="https://github.com/Hhhhhhao/General-Framework-Weak-Supervision" target="_blank">
+            A general framework for learning from weak supervision</a> (ICLR 2024)</p></li>
+        </ul>
+    </details>
 
 
 <h1 id="labelnoise"><hr>Label-noise learning</h1>
@@ -278,94 +288,109 @@
         <i>Label-noise learning</i> is aimed at solving a learning task from such possibly mislabeled data, where our models trained with noisy labels still try to <i>predict the true label</i> of any instance exactly the same as models trained with clean labels.
     </p>
     
-    <h2>Loss correction for class-conditional noise</h2>
-    <ul>
-        <li><p><a href="https://github.com/bhanML/Masking" target="_blank">
-        Masking: A new perspective of noisy supervision</a> (NeurIPS 2018)</p></li>
-        
-        <li><p><a href="https://github.com/xiaoboxia/T-Revision" target="_blank">
-        Are anchor points really indispensable in label-noise learning?</a> (NeurIPS 2019)</p></li>
-        
-        <li><p><a href="https://github.com/a5507203/Dual-T" target="_blank">
-        Dual T: Reducing estimation error for transition matrix in label-noise learning</a> (NeurIPS 2020)</p></li>
-        
-        <li><p><a href="https://github.com/YivanZhang/lio" target="_blank">
-        Learning noise transition matrix from only noisy labels via total variation regularization</a> (ICML 2021)</p></li>
-        
-        <li><p><a href="https://github.com/xuefeng-li1/Provably-end-to-end-label-noise-learning-without-anchor-points" target="_blank">
-        Provably end-to-end label-noise learning without anchor points</a> (ICML 2021)</p></li>
-
-    </ul>
+    <details>
+        <summary style="cursor: pointer;">
+            <h2 style="display: inline;">Loss correction for class-conditional noise</h2>
+        </summary>
+        <ul>
+            <li><p><a href="https://github.com/bhanML/Masking" target="_blank">
+            Masking: A new perspective of noisy supervision</a> (NeurIPS 2018)</p></li>
+            
+            <li><p><a href="https://github.com/xiaoboxia/T-Revision" target="_blank">
+            Are anchor points really indispensable in label-noise learning?</a> (NeurIPS 2019)</p></li>
+            
+            <li><p><a href="https://github.com/a5507203/Dual-T" target="_blank">
+            Dual T: Reducing estimation error for transition matrix in label-noise learning</a> (NeurIPS 2020)</p></li>
+            
+            <li><p><a href="https://github.com/YivanZhang/lio" target="_blank">
+            Learning noise transition matrix from only noisy labels via total variation regularization</a> (ICML 2021)</p></li>
+            
+            <li><p><a href="https://github.com/xuefeng-li1/Provably-end-to-end-label-noise-learning-without-anchor-points" target="_blank">
+            Provably end-to-end label-noise learning without anchor points</a> (ICML 2021)</p></li>
+        </ul>
+    </details>
+ 
+    <details>
+        <summary style="cursor: pointer;">
+            <h2 style="display: inline;">Sample selection/reweighting for class-conditional noise</h2>
+        </summary>
+        <ul>
+            <li><p><a href="https://github.com/bhanML/Co-teaching" target="_blank">
+            Co-teaching: Robust training of deep neural networks with extremely noisy labels</a> (NeurIPS 2018)</p></li>
+            
+            <li><p><a href="https://github.com/xingruiyu/coteaching_plus" target="_blank">
+            How does disagreement help generalization against label corruption?</a> (ICML 2019)</p></li>
+            
+            <li><p><a href="https://github.com/AutoML-Research/S2E" target="_blank">
+            Searching to exploit memorization effect in learning with noisy labels</a> (ICML 2020)</p></li>
+            
+            <li><p><a href="https://github.com/TongtongFANG/DIW" target="_blank">
+            Rethinking importance weighting for deep learning under distribution shift</a> (NeurIPS 2020)</p></li>
+            
+            <li><p><a href="https://github.com/xiaoboxia/CNLCU" target="_blank">
+            Sample selection with uncertainty of losses for learning with noisy labels</a> (ICLR 2022)</p></li>
+        </ul>
+    </details>
     
-    <h2>Sample selection/reweighting for class-conditional noise</h2>
-    <ul>
-        <li><p><a href="https://github.com/bhanML/Co-teaching" target="_blank">
-        Co-teaching: Robust training of deep neural networks with extremely noisy labels</a> (NeurIPS 2018)</p></li>
-        
-        <li><p><a href="https://github.com/xingruiyu/coteaching_plus" target="_blank">
-        How does disagreement help generalization against label corruption?</a> (ICML 2019)</p></li>
-        
-        <li><p><a href="https://github.com/AutoML-Research/S2E" target="_blank">
-        Searching to exploit memorization effect in learning with noisy labels</a> (ICML 2020)</p></li>
-        
-        <li><p><a href="https://github.com/TongtongFANG/DIW" target="_blank">
-        Rethinking importance weighting for deep learning under distribution shift</a> (NeurIPS 2020)</p></li>
-        
-        <li><p><a href="https://github.com/xiaoboxia/CNLCU" target="_blank">
-        Sample selection with uncertainty of losses for learning with noisy labels</a> (ICLR 2022)</p></li>
-    </ul>
+    <details>
+        <summary style="cursor: pointer;">
+            <h2 style="display: inline;">Other techniques for class-conditional noise</h2>
+        </summary>
+        <ul>
+            <li><p><a href="https://github.com/bhanML/SIGUA" target="_blank">
+            SIGUA: Forgetting may make learning with noisy labels more robust</a> (ICML 2020)</p></li>
+            
+            <li><p><a href="https://github.com/scifancier/Class2Simi" target="_blank">
+            Class2Simi: A noise reduction perspective on learning with noisy labels</a> (ICML 2021)</p></li>
+            
+            <li><p><a href="https://github.com/tmllab/PES" target="_blank">
+            Understanding and improving early stopping for learning with noisy labels</a> (NeurIPS 2021)</p></li>
+            
+            <li><p><a href="https://github.com/UCSC-REAL/negative-label-smoothing" target="_blank">
+            To smooth or not? When label smoothing meets noisy labels</a> (ICML 2022)</p></li>
+            
+            <li><p><a href="https://github.com/Wongcheukwai/SemiNLL" target="_blank">
+            SemiNLL: A framework of noisy-label learning by semi-supervised learning</a> (TMLR, 2022)</p></li>
+            
+            <li><p><a href="https://github.com/hongxin001/LogitClip" target="_blank">
+            Mitigating memorization of noisy labels by clipping the model prediction</a> (ICML 2023)</p></li>
+            
+            <li><p>
+            Class-wise denoising for robust learning under label noise (TPAMI v45, 2023)</p></li>
+            
+            <li><p><a href="https://github.com/Hhhhhhao/Noisy-Model-Learning" target="_blank">
+            Understanding and mitigating the label noise in pre-training on downstream tasks</a> (ICLR 2024)</p></li>
+        </ul>
+    </details>
     
-    <h2>Other techniques for class-conditional noise</h2>
-    <ul>
-        <li><p><a href="https://github.com/bhanML/SIGUA" target="_blank">
-        SIGUA: Forgetting may make learning with noisy labels more robust</a> (ICML 2020)</p></li>
-        
-        <li><p><a href="https://github.com/scifancier/Class2Simi" target="_blank">
-        Class2Simi: A noise reduction perspective on learning with noisy labels</a> (ICML 2021)</p></li>
-        
-        <li><p><a href="https://github.com/tmllab/PES" target="_blank">
-        Understanding and improving early stopping for learning with noisy labels</a> (NeurIPS 2021)</p></li>
-        
-        <li><p><a href="https://github.com/UCSC-REAL/negative-label-smoothing" target="_blank">
-        To smooth or not? When label smoothing meets noisy labels</a> (ICML 2022)</p></li>
-        
-        <li><p><a href="https://github.com/Wongcheukwai/SemiNLL" target="_blank">
-        SemiNLL: A framework of noisy-label learning by semi-supervised learning</a> (TMLR, 2022)</p></li>
-        
-        <li><p><a href="https://github.com/hongxin001/LogitClip" target="_blank">
-        Mitigating memorization of noisy labels by clipping the model prediction</a> (ICML 2023)</p></li>
-        
-        <li><p>
-        Class-wise denoising for robust learning under label noise (TPAMI v45, 2023)</p></li>
-        
-        <li><p><a href="https://github.com/Hhhhhhao/Noisy-Model-Learning" target="_blank">
-        Understanding and mitigating the label noise in pre-training on downstream tasks</a> (ICLR 2024)</p></li>
-    </ul>
-    
-    <h2>Instance-dependent noise</h2>
-    <ul>
-        <li><p><a href="https://github.com/xiaoboxia/Part-dependent-label-noise" target="_blank">
-        Part-dependent label noise: Towards instance-dependent label noise</a> (NeurIPS 2020)</p></li>
-        
-        <li><p><a href="https://github.com/QizhouWang/instance-dependent-label-noise" target="_blank">
-        Tackling instance-dependent label noise via a universal probabilistic model</a> (AAAI 2021)</p></li>
-        
-        <li><p><a href="https://github.com/antoninbrthn/CSIDN" target="_blank">
-        Confidence scores make instance-dependent label-noise learning possible</a> (ICML 2021)</p></li>
-        
-        <li><p><a href="https://github.com/a5507203/IDLN" target="_blank">
-        Instance-dependent label-noise learning under a structural causal model</a> (NeurIPS 2021)</p></li>
-        
-        <li><p><a href="https://github.com/UCSC-REAL/cifar-10-100n" target="_blank">
-        Learning with noisy labels revisited: A study using real-world human annotations</a> (ICLR 2022)</p></li>
-        
-        <li><p><a href="https://github.com/Hao-Ning/MEIDTM-Instance-Dependent-Label-Noise-Learning-with-Manifold-Regularized-Transition-Matrix-Estimatio" target="_blank">
-        Instance-dependent label-noise learning with manifold-regularized transition matrix estimation</a> (CVPR 2022)</p></li>
-        
-        <li><p><a href="https://github.com/ShuoYang-1998/BLTM" target="_blank">
-        Estimating instance-dependent Bayes-label transition matrix using a deep neural network</a> (ICML 2022)<br>
-        => A parametrical model for instance-dependent label noise (TPAMI v45, 2023)</p></li>
-    </ul>
+    <details>
+        <summary style="cursor: pointer;">
+            <h2 style="display: inline;">Instance-dependent noise</h2>
+        </summary>
+        <ul>
+            <li><p><a href="https://github.com/xiaoboxia/Part-dependent-label-noise" target="_blank">
+            Part-dependent label noise: Towards instance-dependent label noise</a> (NeurIPS 2020)</p></li>
+            
+            <li><p><a href="https://github.com/QizhouWang/instance-dependent-label-noise" target="_blank">
+            Tackling instance-dependent label noise via a universal probabilistic model</a> (AAAI 2021)</p></li>
+            
+            <li><p><a href="https://github.com/antoninbrthn/CSIDN" target="_blank">
+            Confidence scores make instance-dependent label-noise learning possible</a> (ICML 2021)</p></li>
+            
+            <li><p><a href="https://github.com/a5507203/IDLN" target="_blank">
+            Instance-dependent label-noise learning under a structural causal model</a> (NeurIPS 2021)</p></li>
+            
+            <li><p><a href="https://github.com/UCSC-REAL/cifar-10-100n" target="_blank">
+            Learning with noisy labels revisited: A study using real-world human annotations</a> (ICLR 2022)</p></li>
+            
+            <li><p><a href="https://github.com/Hao-Ning/MEIDTM-Instance-Dependent-Label-Noise-Learning-with-Manifold-Regularized-Transition-Matrix-Estimatio" target="_blank">
+            Instance-dependent label-noise learning with manifold-regularized transition matrix estimation</a> (CVPR 2022)</p></li>
+            
+            <li><p><a href="https://github.com/ShuoYang-1998/BLTM" target="_blank">
+            Estimating instance-dependent Bayes-label transition matrix using a deep neural network</a> (ICML 2022)<br>
+            => A parametrical model for instance-dependent label noise (TPAMI v45, 2023)</p></li>
+        </ul>
+    </details>
 
 
 <h1 id="adversarial"><hr>Adversarial robustness</h1>
@@ -375,103 +400,133 @@
         An adversarial attack is an algorithm which applies specially designed <i>tiny perturbations</i> on natural data to transform them into adversarial data, in order to mislead a trained model and let it give wrong predictions.
         <i>Adversarial robustness</i> is aimed at improving the robust accuracy of trained models against adversarial attacks.
     </p>
-    
-    <ul>
-        <li><p><a href="https://github.com/zjfheart/Friendly-Adversarial-Training" target="_blank">
-        Attacks which do not kill training make adversarial learning stronger</a> (ICML 2020)</p></li>
-        
-        <li><p><a href="https://github.com/zjfheart/Geometry-aware-Instance-reweighted-Adversarial-Training" target="_blank">
-        Geometry-aware instance-reweighted adversarial training</a> (ICLR 2021)</p></li>
-        
-        <li><p><a href="https://github.com/HanshuYAN/CIFS" target="_blank">
-        CIFS: Improving adversarial robustness of CNNs via channel-wise importance-based feature selection</a> (ICML 2021)</p></li>
-        
-        <li><p><a href="https://github.com/d12306/dsnet" target="_blank">
-        Learning diverse-structured networks for adversarial robustness</a> (ICML 2021)</p></li>
-        
-        <li><p><a href="https://github.com/fengliu90/SAMMD" target="_blank">
-        Maximum mean discrepancy test is aware of adversarial attacks</a> (ICML 2021)</p></li>
-        
-        <li><p><a href="https://github.com/QizhouWang/MAIL" target="_blank">
-        Probabilistic margins for instance reweighting in adversarial training</a> (NeurIPS 2021)</p></li>
-        
-        <li><p><a href="https://github.com/ZFancy/IAD" target="_blank">
-        Reliable adversarial distillation with unreliable teachers</a> (ICLR 2022)</p></li>
-        
-        <li><p><a href="https://github.com/YonggangZhangUSTC/CausalAdv" target="_blank">
-        Adversarial robustness through the lens of causality</a> (ICLR 2022)</p></li>
-        
-        <li><p><a href="https://github.com/sjtubrian/mm-attack" target="_blank">
-        Fast and reliable evaluation of adversarial robustness with minimum-margin attack</a> (ICML 2022)</p></li>
-        
-        <li><p><a href="https://github.com/GodXuxilie/Robust-TST" target="_blank">
-        Adversarial attacks and defense for non-parametric two sample tests</a> (ICML 2022)</p></li>
-        
-        <li><p><a href="https://github.com/HanshuYAN/ObsAtk" target="_blank">
-        Towards adversarially robust image denoising</a> (IJCAI 2022)</p></li>
-        
-        <li><p><a href="https://github.com/RoyalSkye/ATCL" target="_blank">
-        Adversarial training with complementary labels: On the benefit of gradually informative attacks</a> (NeurIPS 2022)</p></li>
-        
-        <li><p><a href="https://github.com/cuis15/synergy-of-experts" target="_blank">
-        Synergy-of-experts: Collaborate to improve adversarial robustness</a> (NeurIPS 2022)</p></li>
-        
-        <li><p><a href="https://github.com/zjfheart/NoiLIn" target="_blank">
-        NoiLin: Improving adversarial training and correcting stereotype of noisy labels</a> (TMLR, 2022)</p></li>
-    </ul>
 
+    <details>
+        <summary style="cursor: pointer;">
+            <h2 style="display: inline;">Codes</h2>
+        </summary>
+        <ul>
+            <li><p><a href="https://github.com/zjfheart/Friendly-Adversarial-Training" target="_blank">
+            Attacks which do not kill training make adversarial learning stronger</a> (ICML 2020)</p></li>
+        
+            <li><p><a href="https://github.com/zjfheart/Geometry-aware-Instance-reweighted-Adversarial-Training" target="_blank">
+            Geometry-aware instance-reweighted adversarial training</a> (ICLR 2021)</p></li>
+            
+            <li><p><a href="https://github.com/HanshuYAN/CIFS" target="_blank">
+            CIFS: Improving adversarial robustness of CNNs via channel-wise importance-based feature selection</a> (ICML 2021)</p></li>
+            
+            <li><p><a href="https://github.com/d12306/dsnet" target="_blank">
+            Learning diverse-structured networks for adversarial robustness</a> (ICML 2021)</p></li>
+            
+            <li><p><a href="https://github.com/fengliu90/SAMMD" target="_blank">
+            Maximum mean discrepancy test is aware of adversarial attacks</a> (ICML 2021)</p></li>
+            
+            <li><p><a href="https://github.com/QizhouWang/MAIL" target="_blank">
+            Probabilistic margins for instance reweighting in adversarial training</a> (NeurIPS 2021)</p></li>
+            
+            <li><p><a href="https://github.com/ZFancy/IAD" target="_blank">
+            Reliable adversarial distillation with unreliable teachers</a> (ICLR 2022)</p></li>
+            
+            <li><p><a href="https://github.com/YonggangZhangUSTC/CausalAdv" target="_blank">
+            Adversarial robustness through the lens of causality</a> (ICLR 2022)</p></li>
+            
+            <li><p><a href="https://github.com/sjtubrian/mm-attack" target="_blank">
+            Fast and reliable evaluation of adversarial robustness with minimum-margin attack</a> (ICML 2022)</p></li>
+            
+            <li><p><a href="https://github.com/GodXuxilie/Robust-TST" target="_blank">
+            Adversarial attacks and defense for non-parametric two sample tests</a> (ICML 2022)</p></li>
+            
+            <li><p><a href="https://github.com/HanshuYAN/ObsAtk" target="_blank">
+            Towards adversarially robust image denoising</a> (IJCAI 2022)</p></li>
+            
+            <li><p><a href="https://github.com/RoyalSkye/ATCL" target="_blank">
+            Adversarial training with complementary labels: On the benefit of gradually informative attacks</a> (NeurIPS 2022)</p></li>
+            
+            <li><p><a href="https://github.com/cuis15/synergy-of-experts" target="_blank">
+            Synergy-of-experts: Collaborate to improve adversarial robustness</a> (NeurIPS 2022)</p></li>
+            
+            <li><p><a href="https://github.com/zjfheart/NoiLIn" target="_blank">
+            NoiLin: Improving adversarial training and correcting stereotype of noisy labels</a> (TMLR, 2022)</p></li>
+        </ul>
+    </details>
 
-<h1 id="other"><hr>Other</h1>
-    <ul>
-        <li><p><a href="http://parnec.nuaa.edu.cn/huangsj/alipy/" target="_blank">
-        Active feature acquisition with supervised matrix completion</a> (KDD 2018)</p></li>
+<h1 id="other"><hr>Other learning problems</h1>
+    <details>
+        <summary style="cursor: pointer;">
+            <h2 style="display: inline;">Codes</h2>
+        </summary>
+        <ul>
+            <li><p><a href="http://parnec.nuaa.edu.cn/huangsj/alipy/" target="_blank">
+            Active feature acquisition with supervised matrix completion</a> (KDD 2018)</p></li>
 
-        <li><p><a href="https://github.com/voot-t/guide-actor-critic" target="_blank">
-        Guide actor-critic for continuous control</a> (ICLR 2018)</p></li>
+            <li><p><a href="https://github.com/voot-t/guide-actor-critic" target="_blank">
+            Guide actor-critic for continuous control</a> (ICLR 2018)</p></li>
 
-        <li><p><a href="https://github.com/takashiishida/flooding" target="_blank">
-        Do we need zero training loss after achieving zero training error?</a> (ICML 2020)</p></li>
+            <li><p><a href="https://github.com/takashiishida/flooding" target="_blank">
+            Do we need zero training loss after achieving zero training error?</a> (ICML 2020)</p></li>
 
-        <li><p><a href="https://github.com/diadochos/few-shot-domain-adaptation-by-causal-mechanism-transfer" target="_blank">
-        Few-shot domain adaptation by causal mechanism transfer</a> (ICML 2020)</p></li>
+            <li><p><a href="https://github.com/diadochos/few-shot-domain-adaptation-by-causal-mechanism-transfer" target="_blank">
+            Few-shot domain adaptation by causal mechanism transfer</a> (ICML 2020)</p></li>
 
-        <li><p><a href="https://github.com/voot-t/vild_code" target="_blank">
-        Variational imitation learning with diverse-quality demonstrations</a> (ICML 2020)</p></li>
+            <li><p><a href="https://github.com/voot-t/vild_code" target="_blank">
+            Variational imitation learning with diverse-quality demonstrations</a> (ICML 2020)</p></li>
 
-        <li><p><a href="https://github.com/voot-t/ril_co" target="_blank">
-        Robust imitation learning from noisy demonstrations</a> (AISTATS 2021)</p></li>
-      
-        <li><p><a href="https://github.com/diadochos/incorporating-causal-graphical-prior-knowledge-into-predictive-modeling-via-simple-data-augmentation" target="_blank">
-        Incorporating causal graphical prior knowledge into predictive modeling via simple data augmentation</a> (UAI 2021)</p></li>
+            <li><p><a href="https://github.com/voot-t/ril_co" target="_blank">
+            Robust imitation learning from noisy demonstrations</a> (AISTATS 2021)</p></li>
         
-        <li><p><a href="https://lfeng-ntu.github.io/Code/CwR.zip" target="_blank">
-        Generalizing consistent multi-class classification with rejection to be compatible with arbitrary losses</a> (NeurIPS 2022)</p></li>
-        
-        <li><p><a href="http://www.optimal-group.org/Resources/Code/CoarsenRank.html" target="_blank">
-        Fast and robust rank aggregation against model misspecification</a> (JMLR v23, 2022)</p></li>
-        
-        <li><p><a href="https://github.com/takashiishida/irreducible" target="_blank">
-        Is the performance of my deep network too good to be true? A direct approach to estimating the Bayes error in binary classification</a> (ICLR 2023)</p></li>
-        
-        <li><p><a href="https://github.com/penghui-yang/L2D" target="_blank">
-        Multi-label knowledge distillation</a> (ICCV 2023)</p></li>
-        
-        <li><p><a href="https://github.com/zaocan666/AF-FCL" target="_blank">
-        Accurate forgetting for heterogeneous federated continual learning</a> (ICLR 2024)</p></li>
-        
-        <li><p><a href="https://github.com/MediaBrain-SJTU/FedLESAM" target="_blank">
-        Locally estimated global perturbations are better than local perturbations for federated sharpness-aware minimization</a> (ICML 2024)</p></li>
-        
-        <li><p><a href="https://github.com/yankd22/FedSaC" target="_blank">
-        Balancing similarity and complementarity for federated learning</a> (ICML 2024)</p></li>
-        
-        <li><p><a href="https://github.com/xiemk/MLC-PAT" target="_blank">
-        Counterfactual reasoning for multi-label image classification via patching-based training</a> (ICML 2024)</p></li>
+            <li><p><a href="https://github.com/diadochos/incorporating-causal-graphical-prior-knowledge-into-predictive-modeling-via-simple-data-augmentation" target="_blank">
+            Incorporating causal graphical prior knowledge into predictive modeling via simple data augmentation</a> (UAI 2021)</p></li>
+            
+            <li><p><a href="https://lfeng-ntu.github.io/Code/CwR.zip" target="_blank">
+            Generalizing consistent multi-class classification with rejection to be compatible with arbitrary losses</a> (NeurIPS 2022)</p></li>
+            
+            <li><p><a href="http://www.optimal-group.org/Resources/Code/CoarsenRank.html" target="_blank">
+            Fast and robust rank aggregation against model misspecification</a> (JMLR v23, 2022)</p></li>
+            
+            <li><p><a href="https://github.com/takashiishida/irreducible" target="_blank">
+            Is the performance of my deep network too good to be true? A direct approach to estimating the Bayes error in binary classification</a> (ICLR 2023)</p></li>
+            
+            <li><p><a href="https://github.com/penghui-yang/L2D" target="_blank">
+            Multi-label knowledge distillation</a> (ICCV 2023)</p></li>
+            
+            <li><p><a href="https://github.com/zaocan666/AF-FCL" target="_blank">
+            Accurate forgetting for heterogeneous federated continual learning</a> (ICLR 2024)</p></li>
+            
+            <li><p><a href="https://github.com/MediaBrain-SJTU/FedLESAM" target="_blank">
+            Locally estimated global perturbations are better than local perturbations for federated sharpness-aware minimization</a> (ICML 2024)</p></li>
+            
+            <li><p><a href="https://github.com/yankd22/FedSaC" target="_blank">
+            Balancing similarity and complementarity for federated learning</a> (ICML 2024)</p></li>
+            
+            <li><p><a href="https://github.com/xiemk/MLC-PAT" target="_blank">
+            Counterfactual reasoning for multi-label image classification via patching-based training</a> (ICML 2024)</p></li>
 
-        <li><p><a href="https://github.com/Lillianwei-h/CToT" target="_blank">
-        Generating Chain-of-Thoughts with a Pairwise-Comparison Approach to Searching for the Most Promising Intermediate Thought</a> (ICML 2024)</p></li>
-    </ul>
+            <li><p><a href="https://github.com/Lillianwei-h/CToT" target="_blank">
+            Generating Chain-of-Thoughts with a Pairwise-Comparison Approach to Searching for the Most Promising Intermediate Thought</a> (ICML 2024)</p></li>
+        </ul>
+    </details>
 
 </section>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        document.querySelectorAll("details summary").forEach(function (summary) {
+            var marker = document.createElement("span");
+            
+            marker.textContent = "\u002B";
+            marker.style.color = "#159957";
+            marker.style.display = "inline-block";
+            marker.style.width = "1em";
+            marker.style.fontSize = "1.5em";
+            marker.style.lineHeight = "1";
+
+            summary.prepend(marker);
+
+            summary.parentElement.addEventListener("toggle", function () {
+                marker.textContent = summary.parentElement.open ? "\u2212" : "\u002B";
+            });
+        });
+    });
+</script>
 
 </body></html>
