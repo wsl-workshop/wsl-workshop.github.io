@@ -4,7 +4,865 @@
         <title>Imperfect Information Learning Software</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./style.css">
+        <style>
+/* ===== Inlined from style.css (Cayman theme + normalize.css) ===== */
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+}
+
+body {
+    margin: 0
+}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary {
+    display: block
+}
+
+audio,canvas,progress,video {
+    display: inline-block;
+    vertical-align: baseline
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0
+}
+
+[hidden],template {
+    display: none
+}
+
+a {
+    background-color: transparent
+}
+
+a:active,a:hover {
+    outline: 0
+}
+
+abbr[title] {
+    border-bottom: 1px dotted
+}
+
+b,strong {
+    font-weight: bold
+}
+
+dfn {
+    font-style: italic
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0
+}
+
+mark {
+    background: #ff0;
+    color: #000
+}
+
+small {
+    font-size: 80%
+}
+
+sub,sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline
+}
+
+sup {
+    top: -0.5em
+}
+
+sub {
+    bottom: -0.25em
+}
+
+img {
+    border: 0
+}
+
+svg:not(:root) {
+    overflow: hidden
+}
+
+figure {
+    margin: 1em 40px
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0
+}
+
+pre {
+    overflow: auto
+}
+
+code,kbd,pre,samp {
+    font-family: monospace, monospace;
+    font-size: 1em
+}
+
+button,input,optgroup,select,textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0
+}
+
+button {
+    overflow: visible
+}
+
+button,select {
+    text-transform: none
+}
+
+button,html input[type="button"],input[type="reset"],input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer
+}
+
+button[disabled],html input[disabled] {
+    cursor: default
+}
+
+button::-moz-focus-inner,input::-moz-focus-inner {
+    border: 0;
+    padding: 0
+}
+
+input {
+    line-height: normal
+}
+
+input[type="checkbox"],input[type="radio"] {
+    box-sizing: border-box;
+    padding: 0
+}
+
+input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button {
+    height: auto
+}
+
+input[type="search"] {
+    -webkit-appearance: textfield;
+    box-sizing: content-box
+}
+
+input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em
+}
+
+legend {
+    border: 0;
+    padding: 0
+}
+
+textarea {
+    overflow: auto
+}
+
+optgroup {
+    font-weight: bold
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+td,th {
+    padding: 0
+}
+
+.highlight table td {
+    padding: 5px
+}
+
+.highlight table pre {
+    margin: 0
+}
+
+.highlight .cm {
+    color: #999988;
+    font-style: italic
+}
+
+.highlight .cp {
+    color: #999999;
+    font-weight: bold
+}
+
+.highlight .c1 {
+    color: #999988;
+    font-style: italic
+}
+
+.highlight .cs {
+    color: #999999;
+    font-weight: bold;
+    font-style: italic
+}
+
+.highlight .c,.highlight .cd {
+    color: #999988;
+    font-style: italic
+}
+
+.highlight .err {
+    color: #a61717;
+    background-color: #e3d2d2
+}
+
+.highlight .gd {
+    color: #000000;
+    background-color: #ffdddd
+}
+
+.highlight .ge {
+    color: #000000;
+    font-style: italic
+}
+
+.highlight .gr {
+    color: #aa0000
+}
+
+.highlight .gh {
+    color: #999999
+}
+
+.highlight .gi {
+    color: #000000;
+    background-color: #ddffdd
+}
+
+.highlight .go {
+    color: #888888
+}
+
+.highlight .gp {
+    color: #555555
+}
+
+.highlight .gs {
+    font-weight: bold
+}
+
+.highlight .gu {
+    color: #aaaaaa
+}
+
+.highlight .gt {
+    color: #aa0000
+}
+
+.highlight .kc {
+    color: #000000;
+    font-weight: bold
+}
+
+.highlight .kd {
+    color: #000000;
+    font-weight: bold
+}
+
+.highlight .kn {
+    color: #000000;
+    font-weight: bold
+}
+
+.highlight .kp {
+    color: #000000;
+    font-weight: bold
+}
+
+.highlight .kr {
+    color: #000000;
+    font-weight: bold
+}
+
+.highlight .kt {
+    color: #445588;
+    font-weight: bold
+}
+
+.highlight .k,.highlight .kv {
+    color: #000000;
+    font-weight: bold
+}
+
+.highlight .mf {
+    color: #009999
+}
+
+.highlight .mh {
+    color: #009999
+}
+
+.highlight .il {
+    color: #009999
+}
+
+.highlight .mi {
+    color: #009999
+}
+
+.highlight .mo {
+    color: #009999
+}
+
+.highlight .m,.highlight .mb,.highlight .mx {
+    color: #009999
+}
+
+.highlight .sb {
+    color: #d14
+}
+
+.highlight .sc {
+    color: #d14
+}
+
+.highlight .sd {
+    color: #d14
+}
+
+.highlight .s2 {
+    color: #d14
+}
+
+.highlight .se {
+    color: #d14
+}
+
+.highlight .sh {
+    color: #d14
+}
+
+.highlight .si {
+    color: #d14
+}
+
+.highlight .sx {
+    color: #d14
+}
+
+.highlight .sr {
+    color: #009926
+}
+
+.highlight .s1 {
+    color: #d14
+}
+
+.highlight .ss {
+    color: #990073
+}
+
+.highlight .s {
+    color: #d14
+}
+
+.highlight .na {
+    color: #008080
+}
+
+.highlight .bp {
+    color: #999999
+}
+
+.highlight .nb {
+    color: #0086B3
+}
+
+.highlight .nc {
+    color: #445588;
+    font-weight: bold
+}
+
+.highlight .no {
+    color: #008080
+}
+
+.highlight .nd {
+    color: #3c5d5d;
+    font-weight: bold
+}
+
+.highlight .ni {
+    color: #800080
+}
+
+.highlight .ne {
+    color: #990000;
+    font-weight: bold
+}
+
+.highlight .nf {
+    color: #990000;
+    font-weight: bold
+}
+
+.highlight .nl {
+    color: #990000;
+    font-weight: bold
+}
+
+.highlight .nn {
+    color: #555555
+}
+
+.highlight .nt {
+    color: #000080
+}
+
+.highlight .vc {
+    color: #008080
+}
+
+.highlight .vg {
+    color: #008080
+}
+
+.highlight .vi {
+    color: #008080
+}
+
+.highlight .nv {
+    color: #008080
+}
+
+.highlight .ow {
+    color: #000000;
+    font-weight: bold
+}
+
+.highlight .o {
+    color: #000000;
+    font-weight: bold
+}
+
+.highlight .w {
+    color: #bbbbbb
+}
+
+.highlight {
+    background-color: #f8f8f8
+}
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #606c71
+}
+
+a {
+    color: #1e6bb8;
+    text-decoration: none
+}
+
+a:hover {
+    text-decoration: underline
+}
+
+.btn {
+    display: inline-block;
+    margin-bottom: 1rem;
+    color: rgba(255,255,255,0.7);
+    background-color: rgba(255,255,255,0.08);
+    border-color: rgba(255,255,255,0.2);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 0.3rem;
+    transition: color 0.2s, background-color 0.2s, border-color 0.2s
+}
+
+.btn:hover {
+    color: rgba(255,255,255,0.8);
+    text-decoration: none;
+    background-color: rgba(255,255,255,0.2);
+    border-color: rgba(255,255,255,0.3)
+}
+
+.btn+.btn {
+    margin-left: 1rem
+}
+
+@media screen and (min-width: 64em) {
+    .btn {
+        padding:0.75rem 1rem
+    }
+}
+
+@media screen and (min-width: 42em) and (max-width: 64em) {
+    .btn {
+        padding:0.6rem 0.9rem;
+        font-size: 0.9rem
+    }
+}
+
+@media screen and (max-width: 42em) {
+    .btn {
+        display:block;
+        width: 100%;
+        padding: 0.75rem;
+        font-size: 0.9rem
+    }
+
+    .btn+.btn {
+        margin-top: 1rem;
+        margin-left: 0
+    }
+}
+
+.page-header {
+    color: #fff;
+    text-align: center;
+    background-color: #159957;
+    background-image: linear-gradient(120deg, #155799, #159957)
+}
+
+@media screen and (min-width: 64em) {
+    .page-header {
+        padding:5rem 6rem
+    }
+}
+
+@media screen and (min-width: 42em) and (max-width: 64em) {
+    .page-header {
+        padding:3rem 4rem
+    }
+}
+
+@media screen and (max-width: 42em) {
+    .page-header {
+        padding:2rem 1rem
+    }
+}
+
+.project-name {
+    margin-top: 0;
+    margin-bottom: 0.1rem
+}
+
+@media screen and (min-width: 64em) {
+    .project-name {
+        font-size:3.25rem
+    }
+}
+
+@media screen and (min-width: 42em) and (max-width: 64em) {
+    .project-name {
+        font-size:2.25rem
+    }
+}
+
+@media screen and (max-width: 42em) {
+    .project-name {
+        font-size:1.75rem
+    }
+}
+
+.project-tagline {
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 64em) {
+    .project-tagline {
+        font-size:1.25rem
+    }
+}
+
+@media screen and (min-width: 42em) and (max-width: 64em) {
+    .project-tagline {
+        font-size:1.15rem
+    }
+}
+
+@media screen and (max-width: 42em) {
+    .project-tagline {
+        font-size:1rem
+    }
+}
+
+.main-content {
+    word-wrap: break-word
+}
+
+.main-content :first-child {
+    margin-top: 0
+}
+
+@media screen and (min-width: 64em) {
+    .main-content {
+        max-width:64rem;
+        padding: 2rem 6rem;
+        margin: 0 auto;
+        font-size: 1.1rem
+    }
+}
+
+@media screen and (min-width: 42em) and (max-width: 64em) {
+    .main-content {
+        padding:2rem 4rem;
+        font-size: 1.1rem
+    }
+}
+
+@media screen and (max-width: 42em) {
+    .main-content {
+        padding:2rem 1rem;
+        font-size: 1rem
+    }
+}
+
+.main-content img {
+    max-width: 100%
+}
+
+.main-content h1,.main-content h2,.main-content h3,.main-content h4,.main-content h5,.main-content h6 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: normal;
+    color: #159957
+}
+
+.main-content p {
+    margin-bottom: 1em
+}
+
+.main-content code {
+    padding: 2px 4px;
+    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font-size: 0.9rem;
+    color: #567482;
+    background-color: #f3f6fa;
+    border-radius: 0.3rem
+}
+
+.main-content pre {
+    padding: 0.8rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font: 1rem Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    color: #567482;
+    word-wrap: normal;
+    background-color: #f3f6fa;
+    border: solid 1px #dce6f0;
+    border-radius: 0.3rem
+}
+
+.main-content pre>code {
+    padding: 0;
+    margin: 0;
+    font-size: 0.9rem;
+    color: #567482;
+    word-break: normal;
+    white-space: pre;
+    background: transparent;
+    border: 0
+}
+
+.main-content .highlight {
+    margin-bottom: 1rem
+}
+
+.main-content .highlight pre {
+    margin-bottom: 0;
+    word-break: normal
+}
+
+.main-content .highlight pre,.main-content pre {
+    padding: 0.8rem;
+    overflow: auto;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    border-radius: 0.3rem;
+    -webkit-overflow-scrolling: touch
+}
+
+.main-content pre code,.main-content pre tt {
+    display: inline;
+    max-width: initial;
+    padding: 0;
+    margin: 0;
+    overflow: initial;
+    line-height: inherit;
+    word-wrap: normal;
+    background-color: transparent;
+    border: 0
+}
+
+.main-content pre code:before,.main-content pre code:after,.main-content pre tt:before,.main-content pre tt:after {
+    content: normal
+}
+
+.main-content ul,.main-content ol {
+    margin-top: 0
+}
+
+.main-content blockquote {
+    padding: 0 1rem;
+    margin-left: 0;
+    color: #819198;
+    border-left: 0.3rem solid #dce6f0
+}
+
+.main-content blockquote>:first-child {
+    margin-top: 0
+}
+
+.main-content blockquote>:last-child {
+    margin-bottom: 0
+}
+
+.main-content table {
+    display: block;
+    width: 100%;
+    overflow: auto;
+    word-break: normal;
+    word-break: keep-all;
+    -webkit-overflow-scrolling: touch
+}
+
+.main-content table th {
+    font-weight: bold
+}
+
+.main-content table th,.main-content table td {
+    padding: 0.5rem 1rem;
+    border: 1px solid #e9ebec
+}
+
+.main-content dl {
+    padding: 0
+}
+
+.main-content dl dt {
+    padding: 0;
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: bold
+}
+
+.main-content dl dd {
+    padding: 0;
+    margin-bottom: 1rem
+}
+
+.main-content hr {
+    height: 2px;
+    padding: 0;
+    margin: 1rem 0;
+    background-color: #eff0f1;
+    border: 0
+}
+
+.site-footer {
+    padding-top: 2rem;
+    margin-top: 2rem;
+    border-top: solid 1px #eff0f1
+}
+
+@media screen and (min-width: 64em) {
+    .site-footer {
+        font-size:1rem
+    }
+}
+
+@media screen and (min-width: 42em) and (max-width: 64em) {
+    .site-footer {
+        font-size:1rem
+    }
+}
+
+@media screen and (max-width: 42em) {
+    .site-footer {
+        font-size:0.9rem
+    }
+}
+
+.site-footer-owner {
+    display: block;
+    font-weight: bold
+}
+
+.site-footer-credits {
+    color: #819198
+}
+
+        </style>
+        <style>
+            /* ---- Filtering UI (specific to this page) ---- */
+            .filterbar {
+                position: sticky; top: 0; z-index: 5;
+                background: #fff; padding: 0.75rem 0 0.6rem;
+                border-bottom: 1px solid #eff0f1; margin-bottom: 1.5rem;
+            }
+            .filter-row { display: flex; flex-wrap: wrap; gap: 0.4rem; align-items: center; }
+            .pchip, .subchip, .chip, .btn-more, .btn-clear {
+                cursor: pointer; font-family: inherit;
+                border: 1px solid #d0d7de; border-radius: 999px;
+                background: #fff; color: #30363d; line-height: 1.4;
+            }
+            .pchip { padding: 0.25rem 0.75rem; font-size: 0.82rem; font-weight: 600; }
+            .subchip { padding: 0.15rem 0.6rem; font-size: 0.74rem; }
+            .subchip.on { box-shadow: 0 0 0 2px rgba(21,153,87,0.55) inset; font-weight: 600; }
+            .btn-more, .btn-clear { border-radius: 0.4rem; padding: 0.25rem 0.7rem; font-size: 0.78rem; }
+            .btn-more[aria-expanded="true"] { background: #eef6f1; border-color: #159957; color: #159957; }
+            .filter-tools { display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; margin-top: 0.6rem; }
+            #search {
+                padding: 0.3rem 0.65rem; border: 1px solid #d0d7de;
+                border-radius: 0.4rem; font-size: 0.85rem; min-width: 15rem; font-family: inherit;
+            }
+            .count { color: #819198; font-size: 0.83rem; }
+            .subpanel { margin-top: 0.7rem; padding: 0.75rem; background: #f6f8fa; border-radius: 0.5rem; }
+            .subpanel[hidden] { display: none; }
+            .subgroup { margin-bottom: 0.6rem; }
+            .subgroup:last-child { margin-bottom: 0; }
+            .subgroup-title {
+                font-size: 0.72rem; font-weight: 700; color: #159957;
+                text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 0.35rem;
+            }
+            .subgroup-chips { display: flex; flex-wrap: wrap; gap: 0.3rem; }
+            /* ---- Paper list ---- */
+            #paper-list summary { cursor: pointer; }
+            .marker { color: #159957; display: inline-block; width: 1em; font-size: 1.5em; line-height: 1; }
+            .cnt { color: #b0b8bf; font-size: 0.85rem; font-weight: normal; }
+            .intro { color: #606c71; }
+            .paper p { margin-bottom: 0.55em; }
+            .venue { color: #819198; font-size: 0.85em; }
+            .note { color: #606c71; font-size: 0.95em; }
+            .chips { display: inline; }
+            .chip {
+                font-size: 0.68rem; padding: 0.03rem 0.5rem; margin: 0 0 0 0.3rem;
+                vertical-align: middle; white-space: nowrap;
+            }
+            .chip.chip-on { box-shadow: 0 0 0 2px rgba(0,0,0,0.3) inset; font-weight: 600; }
+            .results-head { color: #159957; }
+        </style>
     </head>
 
 <body>
@@ -24,28 +882,28 @@
       such as <b>weak supervision</b>, <b>noisy supervision</b>, and <b>adversarial attacks</b>.
       This page hosts our program codes used in our published papers.
     </p>
-    
-    <p>The page contains 4 top-level research topics:
-        <ul>
-            <li><a href="#weaklysupervised"><i>Weakly supervised learning</i></a> is aimed at solving a learning task from only weakly supervised data (e.g., positive and unlabeled data, data with complementary labels, and data with partial labels);</li>
-            <li><a href="#labelnoise"><i>Label-noise learning</i></a> is aimed at solving a learning task from possibly mislabeled data (i.e., the dataset for training a standard classifier is a mixture of correctly and incorrectly labeled data);</li>
-            <li><a href="#adversarial"><i>Adversarial robustness</i></a> is aimed at improving the robust accuracy of trained models against adversarial attacks (i.e., tiny perturbations applied on the data to flip the model predictions).</li>
-            <li>Our published papers that do not fall into the above 3 topics are included in <a href="#other"><i>other topics</i></a>.</li>
-        </ul>
+
+    <p>
+      <b>Browse by topic.</b> Use the filters below to focus on the areas you care about &mdash; pick one or more
+      <i>research areas</i> (e.g., <i>LLMs &amp; foundation models</i>, <i>Distribution shift &amp; domain adaptation</i>)
+      or finer <i>tags</i> (e.g., <i>positive-unlabeled</i>, <i>instance-dependent noise</i>). Papers are
+      <i>multi-labeled</i>, so a single paper can appear under several topics. With nothing selected you get the
+      full list grouped by area, as before. You can also search by title, and any filtered view is shareable via
+      the page URL.
     </p>
-    
+
     <p>For more related machine learning methods/algorithms, please check the following pages of our strategic partners:
         <ul>
             <li><a href="http://www.ms.k.u-tokyo.ac.jp/sugi/software.html" target="_blank">
-            Sugiyama-Yokoya-Ishida Lab</a> @ The University of Tokyo, led by Prof. 
+            Sugiyama-Yokoya-Ishida Lab</a> @ The University of Tokyo, led by Prof.
             <a href="http://www.ms.k.u-tokyo.ac.jp/sugi/" target="_blank">Masashi Sugiyama</a></li>
-            
+
             <li><a href="https://bhanml.github.io/codedata.html" target="_blank">
-            Trustworthy Machine Learning Group</a> @ Hong Kong Baptist University, led by Prof. 
+            Trustworthy Machine Learning Group</a> @ Hong Kong Baptist University, led by Prof.
             <a href="https://bhanml.github.io/" target="_blank">Bo Han</a></li>
-            
+
             <li><a href="https://tongliang-liu.github.io/code.html" target="_blank">
-            Trustworthy Machine Learning Lab</a> @ The University of Sydney, led by Prof. 
+            Trustworthy Machine Learning Lab</a> @ The University of Sydney, led by Prof.
             <a href="https://tongliang-liu.github.io/" target="_blank">Tongliang Liu</a></li>
         </ul>
     </p>
@@ -55,499 +913,507 @@
     <p><font color="#FF0000">The software is supplied "as is" without warranty of any kind, and the author(s) disclaim any and all warranties, including but not limited to any implied warranties of merchantability and fitness for a particular purpose, and any warranties or non infringement. The user assumes all liability and responsibility for use of the software and in no event shall the author(s) be liable for damages of any kind resulting from its use.</font></p>
 
 
-<h1 id="weaklysupervised"><hr>Weakly supervised learning</h1>
-    <p>
-        <i>Standard supervised learning</i> relies on fully supervised or fully labeled data, which means that every instance is associated with a label, in order to teach a model how to map an instance to its label.
-        In practice, however, collecting such data is often <i>expensive</i> in terms of budget and/or time window for labeling or sampling big enough data, or even <i>impossible</i> since it may cause privacy and/or fairness issues.
-        <i>Weakly supervised learning</i> is aimed at solving a learning task from only weakly supervised or weakly labeled data, e.g., the positive class is present while the negative class is absent.
-        Our weakly supervised trained models still try to <i>capture the underlying map</i> from an instance to its label and to <i>predict the true label</i> of any instance exactly the same as fully supervised trained models.
-    </p>
+<h1><hr>Code by topic</h1>
 
-    <details>
-        <summary style="cursor: pointer;">
-            <h2 style="display: inline;">Positive-unlabeled learning</h2>
-        </summary>
-        <ul>
-            <li><p><a href="https://github.com/kiryor/nnPUlearning" target="_blank">
-            Analysis of learning from positive and unlabeled data</a> (NeurIPS 2014)</p></li>
-            
-            <li><p><a href="https://github.com/kiryor/nnPUlearning" target="_blank">
-            Convex formulation for learning from positive and unlabeled data</a> (ICML 2015)</p></li>
-            
-            <li><p><a href="https://github.com/kiryor/nnPUlearning" target="_blank">
-            Theoretical comparisons of positive-unlabeled learning against positive-negative learning</a> (NeurIPS 2016)</p></li>
-            
-            <li><p><a href="https://github.com/t-sakai-kure/pywsl" target="_blank">
-            Semi-supervised classification based on classification from positive and unlabeled data</a> (ICML 2017)</p></li>
-            
-            <li><p><a href="https://github.com/kiryor/nnPUlearning" target="_blank">
-            Positive-unlabeled learning with non-negative risk estimator</a> (NeurIPS 2017)</p></li>
-            
-            <li><p><a href="https://github.com/t-sakai-kure/pywsl" target="_blank">
-            Semi-supervised AUC optimization based on positive-unlabeled learning</a> (Machine Learning v107, 2018)</p></li>
-            
-            <li><p><a href="https://github.com/cyber-meow/PUbiasedN" target="_blank">
-            Classification from positive, unlabeled and biased negative data</a> (ICML 2019)</p></li>
-            
-            <li><p><a href="https://github.com/alonjacovi/document-set-expansion-pu" target="_blank">
-            Scalable evaluation and improvement of document set expansion via neural positive-unlabeled learning</a> (EACL 2021)</p></li>
-            
-            <li><p>
-            Information-theoretic representation learning for positive-unlabeled classification (Neural Computation v33, 2021)</p></li>
-            
-            <li><p><a href="https://github.com/a5507203/Rethinking-Class-Prior-Estimation-for-Positive-Unlabeled-Learning" target="_blank">
-            Rethinking class-prior estimation for positive-unlabeled learning</a> (ICLR 2022)</p></li>
+    <div class="filterbar" id="filterbar">
+        <div class="filter-row" id="primary-row" aria-label="Research areas"></div>
+        <div class="filter-tools">
+            <button type="button" class="btn-more" id="more-btn" aria-expanded="false">More tags &#9662;</button>
+            <button type="button" class="btn-clear" id="clear-btn">Clear all</button>
+            <input type="search" id="search" placeholder="Search paper titles&hellip;" aria-label="Search paper titles">
+            <span class="count" id="count"></span>
+        </div>
+        <div class="subpanel" id="subpanel" hidden></div>
+    </div>
 
-            <li><p><a href="https://github.com/Hengwei-Zhao96/NcPU" target="_blank">
-            Noisy-pair robust representation alignment for positive-unlabeled learning</a> (ICLR 2026)</p></li>
+    <div id="paper-list"></div>
 
-            <li><p><a href="https://github.com/wu-dd/PUBench" target="_blank">
-            Accessible, realistic, and fair evaluation of positive-unlabeled learning algorithms</a> (ICLR 2026)</p></li>
-        </ul>
-    </details>
-    
-    <details>
-        <summary style="cursor: pointer;">
-            <h2 style="display: inline;">Unlabeled-unlabeled learning</h2>
-        </summary>
-        <ul>
-            <li><p><a href="https://github.com/lunanbit/UUlearning" target="_blank">
-            On the minimal supervision for training any binary classifier from only unlabeled data</a> (ICLR 2019)</p></li>
-            
-            <li><p>Mitigating overfitting in supervised classification from two unlabeled datasets: A consistent risk correction approach (AISTATS 2020)</p></li>
-            
-            <li><p><a href="https://github.com/nolfwin/symloss-ber-auc" target="_blank">
-            On symmetric losses for learning from corrupted labels</a> (ICML 2020)</p></li>
-                    
-            <li><p><a href="https://github.com/leishida/Um-Classification" target="_blank">
-            Binary Classification from multiple unlabeled datasets via surrogate set classification</a> (ICML 2021)</p></li>
-            
-            <li><p><a href="https://github.com/lunanbit/FedUL" target="_blank">
-            Federated learning from only unlabeled data with class-conditional-sharing clients</a> (ICLR 2022)</p></li>
-        </ul>
-    </details>
-    
-    <details>
-        <summary style="cursor: pointer;">
-            <h2 style="display: inline;">Complementary-label learning</h2>
-        </summary>
-        <ul>
-            <li><p><a href="https://github.com/takashiishida/comp" target="_blank">
-            Learning from complementary labels</a> (NeurIPS 2017)</p></li>
-            
-            <li><p><a href="https://github.com/takashiishida/comp" target="_blank">
-            Complementary-label learning for arbitrary losses and models</a> (ICML 2019)</p></li>
-            
-            <li><p><a href="https://lfeng-ntu.github.io/Codes/LMCL.rar" target="_blank">
-            Learning with multiple complementary labels</a> (ICML 2020)</p></li>
-            
-            <li><p>Unbiased risk estimators can mislead: A case study of learning with complementary labels (ICML 2020)</p></li>
-            
-            <li><p><a href="https://github.com/wwangwitsel/SCARCE" target="_blank">
-            Learning with complementary labels revisited: The selected-completely-at-random setting is more practical</a> (ICML 2024)</p></li>
-        </ul>
-    </details>
-    
-    <details>
-        <summary style="cursor: pointer;">
-            <h2 style="display: inline;">Partial-label learning</h2>
-        </summary>
-        <ul>
-            <li><p><a href="https://lfeng-ntu.github.io/Codes/LMCL.rar" target="_blank">
-            Learning with multiple complementary labels</a> (ICML 2020)</p></li>
-            
-            <li><p><a href="https://github.com/Lvcrezia77/PRODEN" target="_blank">
-            Progressive identification of true labels for partial-label learning</a> (ICML 2020)</p></li>
-            
-            <li><p><a href="https://lfeng-ntu.github.io/Codes/RCCC.rar" target="_blank">
-            Provably consistent partial-label learning</a> (NeurIPS 2020)</p></li>
-            
-            <li><p><a href="https://github.com/hbzju/PiCO" target="_blank">
-            PiCO: Contrastive label disambiguation for partial label learning</a> (ICLR 2022)</p></li>
-            
-            <li><p><a href="https://github.com/Ferenas/CAVL" target="_blank">
-            Exploiting class activation value for partial-label learning</a> (ICLR 2022)</p></li>
-            
-            <li><p><a href="https://github.com/AlphaXia/ABLE" target="_blank">
-            Ambiguity-induced contrastive learning for instance-dependent partial label learning</a> (IJCAI 2022)</p></li>
-            
-            <li><p><a href="https://github.com/AlphaXia/PaPi" target="_blank">
-            Towards effective visual representations for partial-label learning</a> (CVPR 2023)</p></li>
-
-            <li><p><a href="https://github.com/wwangwitsel/PLENCH" target="_blank">
-            Realistic evaluation of deep partial-label learning algorithms</a> (ICLR 2025)</p></li>
-        </ul>
-    </details>
-    
-    <details>
-        <summary style="cursor: pointer;">
-            <h2 style="display: inline;">Pairwise learning</h2>
-        </summary>
-        <ul>
-            <li><p><a href="https://github.com/levelfour/SU_Classification" target="_blank">
-            Classification from pairwise similarity and unlabeled data</a> (ICML 2018)</p></li>
-            
-            <li><p>Uncoupled regression from pairwise comparison data (NeurIPS 2019)</p></li>
-            
-            <li><p>Learning from similarity-confidence data (ICML 2021)</p></li>
-            
-            <li><p><a href="https://lfeng-ntu.github.io/Codes/Pcomp.zip" target="_blank">
-            Pointwise binary classification with pairwise confidence comparisons</a> (ICML 2021)</p></li>
-            
-            <li><p><a href="https://lfeng-ntu.github.io/Codes/SDMIL.zip" target="_blank">
-            Multiple-instance learning from similar and dissimilar bags</a> (KDD 2021)<br>
-            => Multiple-instance learning from unlabeled bags with pairwise similarity (TKDE v35, 2023)</p></li>
-            
-            <li><p><a href="https://github.com/scifancier/Learning-from-Noisy-Pairwise-Similarity-and-Unlabeled-Data" target="_blank">
-            Learning from noisy pairwise similarity and unlabeled data</a> (JMLR v23, 2022)</p></li>
-            
-            <li><p><a href="https://github.com/wwangwitsel/ConfDiff" target="_blank">
-            Binary classification with confidence difference</a> (NeurIPS 2023)</p></li>
-        </ul>
-    </details>
-    
-    <details>
-        <summary style="cursor: pointer;">
-            <h2 style="display: inline;">Learning under distribution shift</h2>
-        </summary>
-        <ul>
-            <li><p><a href="https://github.com/TongtongFANG/DIW" target="_blank">
-            Rethinking importance weighting for deep learning under distribution shift</a> (NeurIPS 2020)</p></li>
-            
-            <li><p><a href="https://github.com/Haoang97/MEDI" target="_blank">
-            Meta discovery: Learning to discover novel classes given very limited data</a> (ICLR 2022)</p></li>
-            
-            <li><p><a href="https://github.com/tangjialiang97/KD3" target="_blank">
-            Distribution shift matters for knowledge distillation with webly collected images</a> (ICCV 2023)</p></li>
-            
-            <li><p><a href="https://github.com/TongtongFANG/GIW" target="_blank">
-            Generalizing importance weighting to a universal solver for distribution shift problems</a> (NeurIPS 2023)</p></li>
-            
-            <li><p><a href="https://github.com/ZFancy/DivOE" target="_blank">
-            Diversified outlier exposure for out-of-distribution detection via informative extrapolation</a> (NeurIPS 2023)</p></li>
-
-            <li><p><a href="https://zhangzy07.github.io/code/AdaReAlign.zip" target="_blank">
-            Test-time Adaptation in Non-stationary Environments via Adaptive Representation Alignment</a> (NeurIPS 2024)</p></li>
-        </ul>
-    </details>
-    
-    <details>
-        <summary style="cursor: pointer;">
-            <h2 style="display: inline;">Self-supervised learning</h2>
-            <h3 style="display: inline;">&nbsp;(&amp; contrastive and metric learning)</h3>
-        </summary>
-        <ul>
-            <li><p><a href="https://github.com/Hanzy1996/CE-GZSL" target="_blank">
-            Contrastive embedding for generalized zero-shot learning</a> (CVPR 2021)</p></li>
-
-            <li><p>Large-margin contrastive learning with distance polarization regularizer (ICML 2021)</p></li>
-
-            <li><p><a href="https://github.com/functioncs/LASC" target="_blank">
-            Linearity-aware subspace clustering</a> (AAAI 2022)</p></li>
-
-            <li><p>Robust audio-visual instance discrimination via active contrastive set mining (IJCAI 2022)</p></li>
-            
-            <li><p><a href="https://github.com/functioncs/CLLR" target="_blank">
-            Learning contrastive embedding in low-dimensional space</a> (NeurIPS 2022)</p></li>
-            
-            <li><p><a href="https://github.com/SubmissionsIn/SEM" target="_blank">
-            Self-weighted contrastive learning among multiple views for mitigating representation degeneration</a> (NeurIPS 2023)</p></li>
-            
-            <li><p><a href="" target="_blank">
-            Boundary-restricted metric learning</a> (Machine Learning v112, 2023)</p></li>
-            
-            <li><p><a href="https://github.com/SubmissionsIn/MVCAN" target="_blank">
-            Investigating and mitigating the side effects of noisy views for self-supervised clustering algorithms in practical multi-view scenarios</a> (CVPR 2024)</p></li>
-        </ul>
-    </details>
-    
-    <details>
-        <summary style="cursor: pointer;">
-            <h2 style="display: inline;">Other weakly supervised learning</h2>
-        </summary>
-        <ul>
-            <li><p><a href="https://github.com/takashiishida/pconf" target="_blank">
-            Binary classification from positive-confidence data</a> (NeurIPS 2018)</p></li>
-            
-            <li><p><a href="https://github.com/palm-ml/smile" target="_blank">
-            One positive label is sufficient: Single-positive multi-label learning with label enhancement</a> (NeurIPS 2022)</p></li>
-            
-            <li><p><a href="https://github.com/Ruijiang97/DEG-Net" target="_blank">
-            Diversity-enhancing generative network for few-shot hypothesis adaptation</a> (ICML 2023)</p></li>
-            
-            <li><p><a href="https://lfeng-ntu.github.io/Code/UUM.zip" target="_blank">
-            A universal unbiased method for classification from aggregate observations</a> (ICML 2023)</p></li>
-            
-            <li><p><a href="https://github.com/milkxie/SSMLL-CAP" target="_blank">
-            Class-distribution-aware pseudo-labeling for semi-supervised multi-label learning</a> (NeurIPS 2023)</p></li>
-            
-            <li><p><a href="https://github.com/Hhhhhhao/General-Framework-Weak-Supervision" target="_blank">
-            A general framework for learning from weak supervision</a> (ICLR 2024)</p></li>
-
-            <li><p><a href="https://github.com/TianhaoMa5/ICLR2026_LLP-PVC" target="_blank">
-            Learning from Label Proportions via Proportional Value Classification</a> (ICLR 2026)</p></li>
-
-            <li><p><a href="https://github.com/minglllli/ROUTE" target="_blank">
-            Weakly supervised classification with pre-trained models: A robust fine-tuning approach</a> (Machine Learning v115, 2026)</p></li>
-        </ul>
-    </details>
-
-
-<h1 id="labelnoise"><hr>Label-noise learning</h1>
-    <p>
-        Standard supervised learning relies on high-quality <i>clean labels</i>, which means that instances are with labels drawn from the <i>clean class-posterior probability</i>.
-        Nevertheless, if we require every instance to be associated with a label, our collected labels would probably come from non-expert annotators or be automatically annotated based on logs in practice.
-        Such lower-quality labels are called <i>noisy labels</i> and regarded as drawn from some <i>noisy/corrupted class-posterior probability</i>, resulting in a mixture of correctly and incorrectly labeled data.
-        <i>Label-noise learning</i> is aimed at solving a learning task from such possibly mislabeled data, where our models trained with noisy labels still try to <i>predict the true label</i> of any instance exactly the same as models trained with clean labels.
-    </p>
-    
-    <details>
-        <summary style="cursor: pointer;">
-            <h2 style="display: inline;">Loss correction for class-conditional noise</h2>
-        </summary>
-        <ul>
-            <li><p><a href="https://github.com/bhanML/Masking" target="_blank">
-            Masking: A new perspective of noisy supervision</a> (NeurIPS 2018)</p></li>
-            
-            <li><p><a href="https://github.com/xiaoboxia/T-Revision" target="_blank">
-            Are anchor points really indispensable in label-noise learning?</a> (NeurIPS 2019)</p></li>
-            
-            <li><p><a href="https://github.com/a5507203/Dual-T" target="_blank">
-            Dual T: Reducing estimation error for transition matrix in label-noise learning</a> (NeurIPS 2020)</p></li>
-            
-            <li><p><a href="https://github.com/YivanZhang/lio" target="_blank">
-            Learning noise transition matrix from only noisy labels via total variation regularization</a> (ICML 2021)</p></li>
-            
-            <li><p><a href="https://github.com/xuefeng-li1/Provably-end-to-end-label-noise-learning-without-anchor-points" target="_blank">
-            Provably end-to-end label-noise learning without anchor points</a> (ICML 2021)</p></li>
-        </ul>
-    </details>
- 
-    <details>
-        <summary style="cursor: pointer;">
-            <h2 style="display: inline;">Sample selection/reweighting for class-conditional noise</h2>
-        </summary>
-        <ul>
-            <li><p><a href="https://github.com/bhanML/Co-teaching" target="_blank">
-            Co-teaching: Robust training of deep neural networks with extremely noisy labels</a> (NeurIPS 2018)</p></li>
-            
-            <li><p><a href="https://github.com/xingruiyu/coteaching_plus" target="_blank">
-            How does disagreement help generalization against label corruption?</a> (ICML 2019)</p></li>
-            
-            <li><p><a href="https://github.com/AutoML-Research/S2E" target="_blank">
-            Searching to exploit memorization effect in learning with noisy labels</a> (ICML 2020)</p></li>
-            
-            <li><p><a href="https://github.com/TongtongFANG/DIW" target="_blank">
-            Rethinking importance weighting for deep learning under distribution shift</a> (NeurIPS 2020)</p></li>
-            
-            <li><p><a href="https://github.com/xiaoboxia/CNLCU" target="_blank">
-            Sample selection with uncertainty of losses for learning with noisy labels</a> (ICLR 2022)</p></li>
-        </ul>
-    </details>
-    
-    <details>
-        <summary style="cursor: pointer;">
-            <h2 style="display: inline;">Other techniques for class-conditional noise</h2>
-        </summary>
-        <ul>
-            <li><p><a href="https://github.com/bhanML/SIGUA" target="_blank">
-            SIGUA: Forgetting may make learning with noisy labels more robust</a> (ICML 2020)</p></li>
-            
-            <li><p><a href="https://github.com/scifancier/Class2Simi" target="_blank">
-            Class2Simi: A noise reduction perspective on learning with noisy labels</a> (ICML 2021)</p></li>
-            
-            <li><p><a href="https://github.com/tmllab/PES" target="_blank">
-            Understanding and improving early stopping for learning with noisy labels</a> (NeurIPS 2021)</p></li>
-            
-            <li><p><a href="https://github.com/UCSC-REAL/negative-label-smoothing" target="_blank">
-            To smooth or not? When label smoothing meets noisy labels</a> (ICML 2022)</p></li>
-            
-            <li><p><a href="https://github.com/Wongcheukwai/SemiNLL" target="_blank">
-            SemiNLL: A framework of noisy-label learning by semi-supervised learning</a> (TMLR, 2022)</p></li>
-            
-            <li><p><a href="https://github.com/hongxin001/LogitClip" target="_blank">
-            Mitigating memorization of noisy labels by clipping the model prediction</a> (ICML 2023)</p></li>
-            
-            <li><p>
-            Class-wise denoising for robust learning under label noise (TPAMI v45, 2023)</p></li>
-            
-            <li><p><a href="https://github.com/Hhhhhhao/Noisy-Model-Learning" target="_blank">
-            Understanding and mitigating the label noise in pre-training on downstream tasks</a> (ICLR 2024)</p></li>
-        </ul>
-    </details>
-    
-    <details>
-        <summary style="cursor: pointer;">
-            <h2 style="display: inline;">Instance-dependent noise</h2>
-        </summary>
-        <ul>
-            <li><p><a href="https://github.com/xiaoboxia/Part-dependent-label-noise" target="_blank">
-            Part-dependent label noise: Towards instance-dependent label noise</a> (NeurIPS 2020)</p></li>
-            
-            <li><p><a href="https://github.com/QizhouWang/instance-dependent-label-noise" target="_blank">
-            Tackling instance-dependent label noise via a universal probabilistic model</a> (AAAI 2021)</p></li>
-            
-            <li><p><a href="https://github.com/antoninbrthn/CSIDN" target="_blank">
-            Confidence scores make instance-dependent label-noise learning possible</a> (ICML 2021)</p></li>
-            
-            <li><p><a href="https://github.com/a5507203/IDLN" target="_blank">
-            Instance-dependent label-noise learning under a structural causal model</a> (NeurIPS 2021)</p></li>
-            
-            <li><p><a href="https://github.com/UCSC-REAL/cifar-10-100n" target="_blank">
-            Learning with noisy labels revisited: A study using real-world human annotations</a> (ICLR 2022)</p></li>
-            
-            <li><p><a href="https://github.com/Hao-Ning/MEIDTM-Instance-Dependent-Label-Noise-Learning-with-Manifold-Regularized-Transition-Matrix-Estimatio" target="_blank">
-            Instance-dependent label-noise learning with manifold-regularized transition matrix estimation</a> (CVPR 2022)</p></li>
-            
-            <li><p><a href="https://github.com/ShuoYang-1998/BLTM" target="_blank">
-            Estimating instance-dependent Bayes-label transition matrix using a deep neural network</a> (ICML 2022)<br>
-            => A parametrical model for instance-dependent label noise (TPAMI v45, 2023)</p></li>
-        </ul>
-    </details>
-
-
-<h1 id="adversarial"><hr>Adversarial robustness</h1>
-    <p>
-        When we deploy models trained by standard supervised learning, they work well on <i>natural</i> test data.
-        However, those models cannot handle <i>adversarial</i> test data (also known as <i>adversarial examples</i>) that are algorithmically generated by <i>adversarial attacks</i>.
-        An adversarial attack is an algorithm which applies specially designed <i>tiny perturbations</i> on natural data to transform them into adversarial data, in order to mislead a trained model and let it give wrong predictions.
-        <i>Adversarial robustness</i> is aimed at improving the robust accuracy of trained models against adversarial attacks.
-    </p>
-
-    <details>
-        <summary style="cursor: pointer;">
-            <h2 style="display: inline;">Codes</h2>
-        </summary>
-        <ul>
-            <li><p><a href="https://github.com/zjfheart/Friendly-Adversarial-Training" target="_blank">
-            Attacks which do not kill training make adversarial learning stronger</a> (ICML 2020)</p></li>
-        
-            <li><p><a href="https://github.com/zjfheart/Geometry-aware-Instance-reweighted-Adversarial-Training" target="_blank">
-            Geometry-aware instance-reweighted adversarial training</a> (ICLR 2021)</p></li>
-            
-            <li><p><a href="https://github.com/HanshuYAN/CIFS" target="_blank">
-            CIFS: Improving adversarial robustness of CNNs via channel-wise importance-based feature selection</a> (ICML 2021)</p></li>
-            
-            <li><p><a href="https://github.com/d12306/dsnet" target="_blank">
-            Learning diverse-structured networks for adversarial robustness</a> (ICML 2021)</p></li>
-            
-            <li><p><a href="https://github.com/fengliu90/SAMMD" target="_blank">
-            Maximum mean discrepancy test is aware of adversarial attacks</a> (ICML 2021)</p></li>
-            
-            <li><p><a href="https://github.com/QizhouWang/MAIL" target="_blank">
-            Probabilistic margins for instance reweighting in adversarial training</a> (NeurIPS 2021)</p></li>
-            
-            <li><p><a href="https://github.com/ZFancy/IAD" target="_blank">
-            Reliable adversarial distillation with unreliable teachers</a> (ICLR 2022)</p></li>
-            
-            <li><p><a href="https://github.com/YonggangZhangUSTC/CausalAdv" target="_blank">
-            Adversarial robustness through the lens of causality</a> (ICLR 2022)</p></li>
-            
-            <li><p><a href="https://github.com/sjtubrian/mm-attack" target="_blank">
-            Fast and reliable evaluation of adversarial robustness with minimum-margin attack</a> (ICML 2022)</p></li>
-            
-            <li><p><a href="https://github.com/GodXuxilie/Robust-TST" target="_blank">
-            Adversarial attacks and defense for non-parametric two sample tests</a> (ICML 2022)</p></li>
-            
-            <li><p><a href="https://github.com/HanshuYAN/ObsAtk" target="_blank">
-            Towards adversarially robust image denoising</a> (IJCAI 2022)</p></li>
-            
-            <li><p><a href="https://github.com/RoyalSkye/ATCL" target="_blank">
-            Adversarial training with complementary labels: On the benefit of gradually informative attacks</a> (NeurIPS 2022)</p></li>
-            
-            <li><p><a href="https://github.com/cuis15/synergy-of-experts" target="_blank">
-            Synergy-of-experts: Collaborate to improve adversarial robustness</a> (NeurIPS 2022)</p></li>
-            
-            <li><p><a href="https://github.com/zjfheart/NoiLIn" target="_blank">
-            NoiLin: Improving adversarial training and correcting stereotype of noisy labels</a> (TMLR, 2022)</p></li>
-        </ul>
-    </details>
-
-<h1 id="other"><hr>Other learning problems</h1>
-    <details>
-        <summary style="cursor: pointer;">
-            <h2 style="display: inline;">Codes</h2>
-        </summary>
-        <ul>
-            <li><p><a href="http://parnec.nuaa.edu.cn/huangsj/alipy/" target="_blank">
-            Active feature acquisition with supervised matrix completion</a> (KDD 2018)</p></li>
-
-            <li><p><a href="https://github.com/voot-t/guide-actor-critic" target="_blank">
-            Guide actor-critic for continuous control</a> (ICLR 2018)</p></li>
-
-            <li><p><a href="https://github.com/takashiishida/flooding" target="_blank">
-            Do we need zero training loss after achieving zero training error?</a> (ICML 2020)</p></li>
-
-            <li><p><a href="https://github.com/diadochos/few-shot-domain-adaptation-by-causal-mechanism-transfer" target="_blank">
-            Few-shot domain adaptation by causal mechanism transfer</a> (ICML 2020)</p></li>
-
-            <li><p><a href="https://github.com/voot-t/vild_code" target="_blank">
-            Variational imitation learning with diverse-quality demonstrations</a> (ICML 2020)</p></li>
-
-            <li><p><a href="https://github.com/voot-t/ril_co" target="_blank">
-            Robust imitation learning from noisy demonstrations</a> (AISTATS 2021)</p></li>
-        
-            <li><p><a href="https://github.com/diadochos/incorporating-causal-graphical-prior-knowledge-into-predictive-modeling-via-simple-data-augmentation" target="_blank">
-            Incorporating causal graphical prior knowledge into predictive modeling via simple data augmentation</a> (UAI 2021)</p></li>
-            
-            <li><p><a href="https://lfeng-ntu.github.io/Code/CwR.zip" target="_blank">
-            Generalizing consistent multi-class classification with rejection to be compatible with arbitrary losses</a> (NeurIPS 2022)</p></li>
-            
-            <li><p><a href="http://www.optimal-group.org/Resources/Code/CoarsenRank.html" target="_blank">
-            Fast and robust rank aggregation against model misspecification</a> (JMLR v23, 2022)</p></li>
-            
-            <li><p><a href="https://github.com/takashiishida/irreducible" target="_blank">
-            Is the performance of my deep network too good to be true? A direct approach to estimating the Bayes error in binary classification</a> (ICLR 2023)</p></li>
-            
-            <li><p><a href="https://github.com/penghui-yang/L2D" target="_blank">
-            Multi-label knowledge distillation</a> (ICCV 2023)</p></li>
-            
-            <li><p><a href="https://github.com/zaocan666/AF-FCL" target="_blank">
-            Accurate forgetting for heterogeneous federated continual learning</a> (ICLR 2024)</p></li>
-            
-            <li><p><a href="https://github.com/MediaBrain-SJTU/FedLESAM" target="_blank">
-            Locally estimated global perturbations are better than local perturbations for federated sharpness-aware minimization</a> (ICML 2024)</p></li>
-            
-            <li><p><a href="https://github.com/yankd22/FedSaC" target="_blank">
-            Balancing similarity and complementarity for federated learning</a> (ICML 2024)</p></li>
-            
-            <li><p><a href="https://github.com/xiemk/MLC-PAT" target="_blank">
-            Counterfactual reasoning for multi-label image classification via patching-based training</a> (ICML 2024)</p></li>
-
-            <li><p><a href="https://github.com/Lillianwei-h/CToT" target="_blank">
-            Generating Chain-of-Thoughts with a Pairwise-Comparison Approach to Searching for the Most Promising Intermediate Thought</a> (ICML 2024)</p></li>
-
-            <li><p><a href="https://github.com/okankoc/Domain-Adaptation-and-Entanglement" target="_blank">
-            Domain Adaptation and Entanglement: An Optimal Transport Perspective</a> (AISTATS 2025) </p></li>
-
-            <li><p><a href="https://github.com/okankoc/incorporating_iw_in_ot_da" target="_blank">
-            Incorporating Importance Weighting in Optimal Transport based Domain Alignment</a> (ICML 2026) </p></li>
-                
-            </p></li>
-        </ul>
-    </details>
+    <noscript>
+        <p><b>This page uses JavaScript to filter and display the paper list.</b>
+        Please enable JavaScript to browse the codes.</p>
+    </noscript>
 
 </section>
 
+<!-- ===== Paper data: edit the PAPERS array below to add or retag papers ===== -->
 <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        document.querySelectorAll("details summary").forEach(function (summary) {
-            var marker = document.createElement("span");
-            
-            marker.textContent = "\u002B";
-            marker.style.color = "#159957";
-            marker.style.display = "inline-block";
-            marker.style.width = "1em";
-            marker.style.fontSize = "1.5em";
-            marker.style.lineHeight = "1";
+/*
+ * Data for software.html — single source of truth for the paper list.
+ *
+ * HOW TO ADD A PAPER
+ *   Add one entry to the PAPERS array below:
+ *     { title: "Paper title",
+ *       url:   "https://github.com/...",   // optional; omit for "code not released"
+ *       venue: "NeurIPS 2024",             // shown verbatim inside the parentheses
+ *       year:  2024,                       // number, used for sorting (newest first)
+ *       tags:  ["pu-learning", "benchmark"], // one or more SUB-tag keys (see TAXONOMY.subs)
+ *       note:  "=> follow-up ..." }          // optional extra line under the title
+ *
+ *   A paper appears under every primary area that any of its sub-tags belongs to,
+ *   so multi-labeling is automatic — list it once, tag it with everything it fits.
+ *
+ * HOW TO ADD A CATEGORY
+ *   Add a primary to TAXONOMY.primaries and/or a sub-tag to TAXONOMY.subs
+ *   (a sub-tag's `parent` must match a primary `key`). The filter UI and the
+ *   grouped view are generated from this taxonomy automatically.
+ */
 
-            summary.prepend(marker);
+const TAXONOMY = {
+  // Top-level areas, in display order. `id` keeps old in-page anchors working.
+  primaries: [
+    { key: "weak-supervision", label: "Weak supervision", id: "weaklysupervised",
+      color: { bg: "#e8f0fe", border: "#4285f4" },
+      intro: "Standard supervised learning relies on fully labeled data, which is often expensive or impossible to collect. <i>Weakly supervised learning</i> tackles a learning task from only weakly labeled data (e.g., positive-unlabeled, complementary, or partial labels) while still trying to predict the true label as well as a fully supervised model." },
+    { key: "noisy-labels", label: "Noisy labels", id: "labelnoise",
+      color: { bg: "#fdecea", border: "#db4437" },
+      intro: "In practice, collected labels often come from non-expert annotators or automatic logs, yielding a mixture of correctly and incorrectly labeled data. <i>Label-noise learning</i> trains on such possibly mislabeled data while still trying to predict the true label as well as a model trained on clean labels." },
+    { key: "adversarial", label: "Adversarial robustness", id: "adversarial",
+      color: { bg: "#fff4e5", border: "#f4a000" },
+      intro: "Models trained by standard supervised learning work well on natural test data but fail on <i>adversarial examples</i> — data with specially designed tiny perturbations that flip predictions. <i>Adversarial robustness</i> aims to improve the robust accuracy of trained models against such attacks." },
+    { key: "distribution-shift", label: "Distribution shift &amp; domain adaptation", id: "distshift",
+      color: { bg: "#e6f4ea", border: "#0f9d58" },
+      intro: "When training and deployment distributions differ, standard models degrade. This area covers importance weighting, optimal-transport domain adaptation, test-time adaptation, and out-of-distribution detection." },
+    { key: "representation", label: "Representation learning", id: "representation",
+      color: { bg: "#f3e8fd", border: "#a142f4" },
+      intro: "Learning useful representations without (or with limited) labels — self-supervised, contrastive, and metric learning, as well as clustering and multi-view methods." },
+    { key: "llms", label: "LLMs &amp; foundation models", id: "llms",
+      color: { bg: "#e0f7fa", border: "#00acc1" },
+      intro: "Research on large language models and pre-trained foundation models — reasoning and chain-of-thought, plus pre-training and robust fine-tuning." },
+    { key: "rl-imitation", label: "RL &amp; imitation learning", id: "rl",
+      color: { bg: "#fce4ec", border: "#e91e63" },
+      intro: "Sequential decision making — reinforcement learning and imitation learning, including learning from imperfect or noisy demonstrations." },
+    { key: "theory-eval", label: "Theory &amp; evaluation", id: "theory",
+      color: { bg: "#eceff1", border: "#607d8b" },
+      intro: "Learning theory and the realistic, fair evaluation of algorithms — including benchmarks and estimates of fundamental quantities such as the Bayes error." },
+    { key: "other", label: "Other", id: "other",
+      color: { bg: "#f1f3f4", border: "#9e9e9e" },
+      intro: "Published work that does not fall under the areas above — federated and continual learning, active learning, multi-label classification, and more." },
+  ],
 
-            summary.parentElement.addEventListener("toggle", function () {
-                marker.textContent = summary.parentElement.open ? "\u2212" : "\u002B";
+  // Finer sub-categories. Each belongs to exactly one primary via `parent`.
+  subs: [
+    // Weak supervision
+    { key: "pu-learning",         label: "Positive-unlabeled",        parent: "weak-supervision" },
+    { key: "uu-learning",         label: "Unlabeled-unlabeled",       parent: "weak-supervision" },
+    { key: "complementary-label", label: "Complementary-label",       parent: "weak-supervision" },
+    { key: "partial-label",       label: "Partial-label",             parent: "weak-supervision" },
+    { key: "pairwise",            label: "Pairwise &amp; similarity", parent: "weak-supervision" },
+    { key: "weak-other",          label: "Other weak supervision",    parent: "weak-supervision" },
+    // Noisy labels
+    { key: "noise-loss-correction",   label: "Loss correction &amp; transition matrix", parent: "noisy-labels" },
+    { key: "noise-sample-selection",  label: "Sample selection &amp; reweighting",      parent: "noisy-labels" },
+    { key: "noise-instance-dependent",label: "Instance-dependent noise",                parent: "noisy-labels" },
+    { key: "noise-other",             label: "Other noise-robust techniques",           parent: "noisy-labels" },
+    // Adversarial robustness
+    { key: "adv-training", label: "Attacks, defenses &amp; robust training", parent: "adversarial" },
+    // Distribution shift & domain adaptation
+    { key: "domain-adaptation",    label: "Domain adaptation &amp; transfer", parent: "distribution-shift" },
+    { key: "importance-weighting", label: "Importance weighting",             parent: "distribution-shift" },
+    { key: "optimal-transport",    label: "Optimal transport",                parent: "distribution-shift" },
+    { key: "test-time-adaptation", label: "Test-time adaptation",             parent: "distribution-shift" },
+    { key: "ood-detection",        label: "Out-of-distribution detection",    parent: "distribution-shift" },
+    // Representation learning
+    { key: "contrastive", label: "Contrastive &amp; metric learning", parent: "representation" },
+    { key: "clustering",  label: "Clustering &amp; multi-view",       parent: "representation" },
+    // LLMs & foundation models
+    { key: "llm-reasoning",   label: "Reasoning &amp; chain-of-thought", parent: "llms" },
+    { key: "llm-pretraining", label: "Pre-training &amp; fine-tuning",   parent: "llms" },
+    // RL & imitation learning
+    { key: "imitation-learning", label: "Imitation learning",     parent: "rl-imitation" },
+    { key: "rl",                 label: "Reinforcement learning",  parent: "rl-imitation" },
+    // Theory & evaluation
+    { key: "learning-theory", label: "Learning theory",                  parent: "theory-eval" },
+    { key: "benchmark",       label: "Benchmarks &amp; realistic evaluation", parent: "theory-eval" },
+    // Other
+    { key: "federated",      label: "Federated &amp; continual learning", parent: "other" },
+    { key: "active-learning",label: "Active learning",                    parent: "other" },
+    { key: "multilabel-cls", label: "Multi-label classification",         parent: "other" },
+    { key: "misc",           label: "Other",                              parent: "other" },
+  ],
+};
+
+const PAPERS = [
+  // ---------- Weak supervision: Positive-unlabeled ----------
+  { title: "Analysis of learning from positive and unlabeled data", url: "https://github.com/kiryor/nnPUlearning", venue: "NeurIPS 2014", year: 2014, tags: ["pu-learning"] },
+  { title: "Convex formulation for learning from positive and unlabeled data", url: "https://github.com/kiryor/nnPUlearning", venue: "ICML 2015", year: 2015, tags: ["pu-learning"] },
+  { title: "Theoretical comparisons of positive-unlabeled learning against positive-negative learning", url: "https://github.com/kiryor/nnPUlearning", venue: "NeurIPS 2016", year: 2016, tags: ["pu-learning", "learning-theory"] },
+  { title: "Semi-supervised classification based on classification from positive and unlabeled data", url: "https://github.com/t-sakai-kure/pywsl", venue: "ICML 2017", year: 2017, tags: ["pu-learning"] },
+  { title: "Positive-unlabeled learning with non-negative risk estimator", url: "https://github.com/kiryor/nnPUlearning", venue: "NeurIPS 2017", year: 2017, tags: ["pu-learning"] },
+  { title: "Semi-supervised AUC optimization based on positive-unlabeled learning", url: "https://github.com/t-sakai-kure/pywsl", venue: "Machine Learning v107, 2018", year: 2018, tags: ["pu-learning"] },
+  { title: "Classification from positive, unlabeled and biased negative data", url: "https://github.com/cyber-meow/PUbiasedN", venue: "ICML 2019", year: 2019, tags: ["pu-learning"] },
+  { title: "Scalable evaluation and improvement of document set expansion via neural positive-unlabeled learning", url: "https://github.com/alonjacovi/document-set-expansion-pu", venue: "EACL 2021", year: 2021, tags: ["pu-learning"] },
+  { title: "Information-theoretic representation learning for positive-unlabeled classification", venue: "Neural Computation v33, 2021", year: 2021, tags: ["pu-learning"] },
+  { title: "Rethinking class-prior estimation for positive-unlabeled learning", url: "https://github.com/a5507203/Rethinking-Class-Prior-Estimation-for-Positive-Unlabeled-Learning", venue: "ICLR 2022", year: 2022, tags: ["pu-learning"] },
+  { title: "Noisy-pair robust representation alignment for positive-unlabeled learning", url: "https://github.com/Hengwei-Zhao96/NcPU", venue: "ICLR 2026", year: 2026, tags: ["pu-learning"] },
+  { title: "Accessible, realistic, and fair evaluation of positive-unlabeled learning algorithms", url: "https://github.com/wu-dd/PUBench", venue: "ICLR 2026", year: 2026, tags: ["pu-learning", "benchmark"] },
+
+  // ---------- Weak supervision: Unlabeled-unlabeled ----------
+  { title: "On the minimal supervision for training any binary classifier from only unlabeled data", url: "https://github.com/lunanbit/UUlearning", venue: "ICLR 2019", year: 2019, tags: ["uu-learning"] },
+  { title: "Mitigating overfitting in supervised classification from two unlabeled datasets: A consistent risk correction approach", venue: "AISTATS 2020", year: 2020, tags: ["uu-learning"] },
+  { title: "On symmetric losses for learning from corrupted labels", url: "https://github.com/nolfwin/symloss-ber-auc", venue: "ICML 2020", year: 2020, tags: ["uu-learning", "noise-other"] },
+  { title: "Binary Classification from multiple unlabeled datasets via surrogate set classification", url: "https://github.com/leishida/Um-Classification", venue: "ICML 2021", year: 2021, tags: ["uu-learning"] },
+  { title: "Federated learning from only unlabeled data with class-conditional-sharing clients", url: "https://github.com/lunanbit/FedUL", venue: "ICLR 2022", year: 2022, tags: ["uu-learning", "federated"] },
+
+  // ---------- Weak supervision: Complementary-label ----------
+  { title: "Learning from complementary labels", url: "https://github.com/takashiishida/comp", venue: "NeurIPS 2017", year: 2017, tags: ["complementary-label"] },
+  { title: "Complementary-label learning for arbitrary losses and models", url: "https://github.com/takashiishida/comp", venue: "ICML 2019", year: 2019, tags: ["complementary-label"] },
+  { title: "Learning with multiple complementary labels", url: "https://lfeng-ntu.github.io/Codes/LMCL.rar", venue: "ICML 2020", year: 2020, tags: ["complementary-label", "partial-label"] },
+  { title: "Unbiased risk estimators can mislead: A case study of learning with complementary labels", venue: "ICML 2020", year: 2020, tags: ["complementary-label"] },
+  { title: "Learning with complementary labels revisited: The selected-completely-at-random setting is more practical", url: "https://github.com/wwangwitsel/SCARCE", venue: "ICML 2024", year: 2024, tags: ["complementary-label"] },
+
+  // ---------- Weak supervision: Partial-label ----------
+  { title: "Progressive identification of true labels for partial-label learning", url: "https://github.com/Lvcrezia77/PRODEN", venue: "ICML 2020", year: 2020, tags: ["partial-label"] },
+  { title: "Provably consistent partial-label learning", url: "https://lfeng-ntu.github.io/Codes/RCCC.rar", venue: "NeurIPS 2020", year: 2020, tags: ["partial-label"] },
+  { title: "PiCO: Contrastive label disambiguation for partial label learning", url: "https://github.com/hbzju/PiCO", venue: "ICLR 2022", year: 2022, tags: ["partial-label", "contrastive"] },
+  { title: "Exploiting class activation value for partial-label learning", url: "https://github.com/Ferenas/CAVL", venue: "ICLR 2022", year: 2022, tags: ["partial-label"] },
+  { title: "Ambiguity-induced contrastive learning for instance-dependent partial label learning", url: "https://github.com/AlphaXia/ABLE", venue: "IJCAI 2022", year: 2022, tags: ["partial-label", "contrastive"] },
+  { title: "Towards effective visual representations for partial-label learning", url: "https://github.com/AlphaXia/PaPi", venue: "CVPR 2023", year: 2023, tags: ["partial-label", "contrastive"] },
+  { title: "Realistic evaluation of deep partial-label learning algorithms", url: "https://github.com/wwangwitsel/PLENCH", venue: "ICLR 2025", year: 2025, tags: ["partial-label", "benchmark"] },
+
+  // ---------- Weak supervision: Pairwise & similarity ----------
+  { title: "Classification from pairwise similarity and unlabeled data", url: "https://github.com/levelfour/SU_Classification", venue: "ICML 2018", year: 2018, tags: ["pairwise"] },
+  { title: "Uncoupled regression from pairwise comparison data", venue: "NeurIPS 2019", year: 2019, tags: ["pairwise"] },
+  { title: "Learning from similarity-confidence data", venue: "ICML 2021", year: 2021, tags: ["pairwise"] },
+  { title: "Pointwise binary classification with pairwise confidence comparisons", url: "https://lfeng-ntu.github.io/Codes/Pcomp.zip", venue: "ICML 2021", year: 2021, tags: ["pairwise"] },
+  { title: "Multiple-instance learning from similar and dissimilar bags", url: "https://lfeng-ntu.github.io/Codes/SDMIL.zip", venue: "KDD 2021", year: 2021, tags: ["pairwise"], note: "=> Multiple-instance learning from unlabeled bags with pairwise similarity (TKDE v35, 2023)" },
+  { title: "Learning from noisy pairwise similarity and unlabeled data", url: "https://github.com/scifancier/Learning-from-Noisy-Pairwise-Similarity-and-Unlabeled-Data", venue: "JMLR v23, 2022", year: 2022, tags: ["pairwise", "noise-other"] },
+  { title: "Binary classification with confidence difference", url: "https://github.com/wwangwitsel/ConfDiff", venue: "NeurIPS 2023", year: 2023, tags: ["pairwise"] },
+
+  // ---------- Weak supervision: Other ----------
+  { title: "Binary classification from positive-confidence data", url: "https://github.com/takashiishida/pconf", venue: "NeurIPS 2018", year: 2018, tags: ["weak-other"] },
+  { title: "One positive label is sufficient: Single-positive multi-label learning with label enhancement", url: "https://github.com/palm-ml/smile", venue: "NeurIPS 2022", year: 2022, tags: ["weak-other", "multilabel-cls"] },
+  { title: "Diversity-enhancing generative network for few-shot hypothesis adaptation", url: "https://github.com/Ruijiang97/DEG-Net", venue: "ICML 2023", year: 2023, tags: ["weak-other", "domain-adaptation"] },
+  { title: "A universal unbiased method for classification from aggregate observations", url: "https://lfeng-ntu.github.io/Code/UUM.zip", venue: "ICML 2023", year: 2023, tags: ["weak-other"] },
+  { title: "Class-distribution-aware pseudo-labeling for semi-supervised multi-label learning", url: "https://github.com/milkxie/SSMLL-CAP", venue: "NeurIPS 2023", year: 2023, tags: ["weak-other", "multilabel-cls"] },
+  { title: "A general framework for learning from weak supervision", url: "https://github.com/Hhhhhhao/General-Framework-Weak-Supervision", venue: "ICLR 2024", year: 2024, tags: ["weak-other"] },
+  { title: "Learning from Label Proportions via Proportional Value Classification", url: "https://github.com/TianhaoMa5/ICLR2026_LLP-PVC", venue: "ICLR 2026", year: 2026, tags: ["weak-other"] },
+  { title: "Weakly supervised classification with pre-trained models: A robust fine-tuning approach", url: "https://github.com/minglllli/ROUTE", venue: "Machine Learning v115, 2026", year: 2026, tags: ["weak-other", "llm-pretraining"] },
+
+  // ---------- Noisy labels: Loss correction & transition matrix ----------
+  { title: "Masking: A new perspective of noisy supervision", url: "https://github.com/bhanML/Masking", venue: "NeurIPS 2018", year: 2018, tags: ["noise-loss-correction"] },
+  { title: "Are anchor points really indispensable in label-noise learning?", url: "https://github.com/xiaoboxia/T-Revision", venue: "NeurIPS 2019", year: 2019, tags: ["noise-loss-correction"] },
+  { title: "Dual T: Reducing estimation error for transition matrix in label-noise learning", url: "https://github.com/a5507203/Dual-T", venue: "NeurIPS 2020", year: 2020, tags: ["noise-loss-correction"] },
+  { title: "Learning noise transition matrix from only noisy labels via total variation regularization", url: "https://github.com/YivanZhang/lio", venue: "ICML 2021", year: 2021, tags: ["noise-loss-correction"] },
+  { title: "Provably end-to-end label-noise learning without anchor points", url: "https://github.com/xuefeng-li1/Provably-end-to-end-label-noise-learning-without-anchor-points", venue: "ICML 2021", year: 2021, tags: ["noise-loss-correction"] },
+
+  // ---------- Noisy labels: Sample selection & reweighting ----------
+  { title: "Co-teaching: Robust training of deep neural networks with extremely noisy labels", url: "https://github.com/bhanML/Co-teaching", venue: "NeurIPS 2018", year: 2018, tags: ["noise-sample-selection"] },
+  { title: "How does disagreement help generalization against label corruption?", url: "https://github.com/xingruiyu/coteaching_plus", venue: "ICML 2019", year: 2019, tags: ["noise-sample-selection"] },
+  { title: "Searching to exploit memorization effect in learning with noisy labels", url: "https://github.com/AutoML-Research/S2E", venue: "ICML 2020", year: 2020, tags: ["noise-sample-selection"] },
+  { title: "Rethinking importance weighting for deep learning under distribution shift", url: "https://github.com/TongtongFANG/DIW", venue: "NeurIPS 2020", year: 2020, tags: ["importance-weighting", "noise-sample-selection"] },
+  { title: "Sample selection with uncertainty of losses for learning with noisy labels", url: "https://github.com/xiaoboxia/CNLCU", venue: "ICLR 2022", year: 2022, tags: ["noise-sample-selection"] },
+
+  // ---------- Noisy labels: Other techniques ----------
+  { title: "SIGUA: Forgetting may make learning with noisy labels more robust", url: "https://github.com/bhanML/SIGUA", venue: "ICML 2020", year: 2020, tags: ["noise-other"] },
+  { title: "Class2Simi: A noise reduction perspective on learning with noisy labels", url: "https://github.com/scifancier/Class2Simi", venue: "ICML 2021", year: 2021, tags: ["noise-other"] },
+  { title: "Understanding and improving early stopping for learning with noisy labels", url: "https://github.com/tmllab/PES", venue: "NeurIPS 2021", year: 2021, tags: ["noise-other"] },
+  { title: "To smooth or not? When label smoothing meets noisy labels", url: "https://github.com/UCSC-REAL/negative-label-smoothing", venue: "ICML 2022", year: 2022, tags: ["noise-other"] },
+  { title: "SemiNLL: A framework of noisy-label learning by semi-supervised learning", url: "https://github.com/Wongcheukwai/SemiNLL", venue: "TMLR, 2022", year: 2022, tags: ["noise-other"] },
+  { title: "Mitigating memorization of noisy labels by clipping the model prediction", url: "https://github.com/hongxin001/LogitClip", venue: "ICML 2023", year: 2023, tags: ["noise-other"] },
+  { title: "Class-wise denoising for robust learning under label noise", venue: "TPAMI v45, 2023", year: 2023, tags: ["noise-other"] },
+  { title: "Understanding and mitigating the label noise in pre-training on downstream tasks", url: "https://github.com/Hhhhhhao/Noisy-Model-Learning", venue: "ICLR 2024", year: 2024, tags: ["noise-other", "llm-pretraining"] },
+
+  // ---------- Noisy labels: Instance-dependent ----------
+  { title: "Part-dependent label noise: Towards instance-dependent label noise", url: "https://github.com/xiaoboxia/Part-dependent-label-noise", venue: "NeurIPS 2020", year: 2020, tags: ["noise-instance-dependent"] },
+  { title: "Tackling instance-dependent label noise via a universal probabilistic model", url: "https://github.com/QizhouWang/instance-dependent-label-noise", venue: "AAAI 2021", year: 2021, tags: ["noise-instance-dependent"] },
+  { title: "Confidence scores make instance-dependent label-noise learning possible", url: "https://github.com/antoninbrthn/CSIDN", venue: "ICML 2021", year: 2021, tags: ["noise-instance-dependent"] },
+  { title: "Instance-dependent label-noise learning under a structural causal model", url: "https://github.com/a5507203/IDLN", venue: "NeurIPS 2021", year: 2021, tags: ["noise-instance-dependent"] },
+  { title: "Learning with noisy labels revisited: A study using real-world human annotations", url: "https://github.com/UCSC-REAL/cifar-10-100n", venue: "ICLR 2022", year: 2022, tags: ["noise-instance-dependent", "benchmark"] },
+  { title: "Instance-dependent label-noise learning with manifold-regularized transition matrix estimation", url: "https://github.com/Hao-Ning/MEIDTM-Instance-Dependent-Label-Noise-Learning-with-Manifold-Regularized-Transition-Matrix-Estimatio", venue: "CVPR 2022", year: 2022, tags: ["noise-instance-dependent", "noise-loss-correction"] },
+  { title: "Estimating instance-dependent Bayes-label transition matrix using a deep neural network", url: "https://github.com/ShuoYang-1998/BLTM", venue: "ICML 2022", year: 2022, tags: ["noise-instance-dependent", "noise-loss-correction"], note: "=> A parametrical model for instance-dependent label noise (TPAMI v45, 2023)" },
+
+  // ---------- Adversarial robustness ----------
+  { title: "Attacks which do not kill training make adversarial learning stronger", url: "https://github.com/zjfheart/Friendly-Adversarial-Training", venue: "ICML 2020", year: 2020, tags: ["adv-training"] },
+  { title: "Geometry-aware instance-reweighted adversarial training", url: "https://github.com/zjfheart/Geometry-aware-Instance-reweighted-Adversarial-Training", venue: "ICLR 2021", year: 2021, tags: ["adv-training"] },
+  { title: "CIFS: Improving adversarial robustness of CNNs via channel-wise importance-based feature selection", url: "https://github.com/HanshuYAN/CIFS", venue: "ICML 2021", year: 2021, tags: ["adv-training"] },
+  { title: "Learning diverse-structured networks for adversarial robustness", url: "https://github.com/d12306/dsnet", venue: "ICML 2021", year: 2021, tags: ["adv-training"] },
+  { title: "Maximum mean discrepancy test is aware of adversarial attacks", url: "https://github.com/fengliu90/SAMMD", venue: "ICML 2021", year: 2021, tags: ["adv-training"] },
+  { title: "Probabilistic margins for instance reweighting in adversarial training", url: "https://github.com/QizhouWang/MAIL", venue: "NeurIPS 2021", year: 2021, tags: ["adv-training"] },
+  { title: "Reliable adversarial distillation with unreliable teachers", url: "https://github.com/ZFancy/IAD", venue: "ICLR 2022", year: 2022, tags: ["adv-training"] },
+  { title: "Adversarial robustness through the lens of causality", url: "https://github.com/YonggangZhangUSTC/CausalAdv", venue: "ICLR 2022", year: 2022, tags: ["adv-training"] },
+  { title: "Fast and reliable evaluation of adversarial robustness with minimum-margin attack", url: "https://github.com/sjtubrian/mm-attack", venue: "ICML 2022", year: 2022, tags: ["adv-training"] },
+  { title: "Adversarial attacks and defense for non-parametric two sample tests", url: "https://github.com/GodXuxilie/Robust-TST", venue: "ICML 2022", year: 2022, tags: ["adv-training"] },
+  { title: "Towards adversarially robust image denoising", url: "https://github.com/HanshuYAN/ObsAtk", venue: "IJCAI 2022", year: 2022, tags: ["adv-training"] },
+  { title: "Adversarial training with complementary labels: On the benefit of gradually informative attacks", url: "https://github.com/RoyalSkye/ATCL", venue: "NeurIPS 2022", year: 2022, tags: ["adv-training", "complementary-label"] },
+  { title: "Synergy-of-experts: Collaborate to improve adversarial robustness", url: "https://github.com/cuis15/synergy-of-experts", venue: "NeurIPS 2022", year: 2022, tags: ["adv-training"] },
+  { title: "NoiLin: Improving adversarial training and correcting stereotype of noisy labels", url: "https://github.com/zjfheart/NoiLIn", venue: "TMLR, 2022", year: 2022, tags: ["adv-training", "noise-other"] },
+
+  // ---------- Distribution shift & domain adaptation ----------
+  { title: "Few-shot domain adaptation by causal mechanism transfer", url: "https://github.com/diadochos/few-shot-domain-adaptation-by-causal-mechanism-transfer", venue: "ICML 2020", year: 2020, tags: ["domain-adaptation"] },
+  { title: "Meta discovery: Learning to discover novel classes given very limited data", url: "https://github.com/Haoang97/MEDI", venue: "ICLR 2022", year: 2022, tags: ["domain-adaptation"] },
+  { title: "Distribution shift matters for knowledge distillation with webly collected images", url: "https://github.com/tangjialiang97/KD3", venue: "ICCV 2023", year: 2023, tags: ["domain-adaptation"] },
+  { title: "Generalizing importance weighting to a universal solver for distribution shift problems", url: "https://github.com/TongtongFANG/GIW", venue: "NeurIPS 2023", year: 2023, tags: ["importance-weighting"] },
+  { title: "Diversified outlier exposure for out-of-distribution detection via informative extrapolation", url: "https://github.com/ZFancy/DivOE", venue: "NeurIPS 2023", year: 2023, tags: ["ood-detection"] },
+  { title: "Test-time Adaptation in Non-stationary Environments via Adaptive Representation Alignment", url: "https://zhangzy07.github.io/code/AdaReAlign.zip", venue: "NeurIPS 2024", year: 2024, tags: ["test-time-adaptation"] },
+  { title: "Domain Adaptation and Entanglement: An Optimal Transport Perspective", url: "https://github.com/okankoc/Domain-Adaptation-and-Entanglement", venue: "AISTATS 2025", year: 2025, tags: ["domain-adaptation", "optimal-transport"] },
+  { title: "Incorporating Importance Weighting in Optimal Transport based Domain Alignment", url: "https://github.com/okankoc/incorporating_iw_in_ot_da", venue: "ICML 2026", year: 2026, tags: ["domain-adaptation", "optimal-transport", "importance-weighting"] },
+
+  // ---------- Representation learning ----------
+  { title: "Contrastive embedding for generalized zero-shot learning", url: "https://github.com/Hanzy1996/CE-GZSL", venue: "CVPR 2021", year: 2021, tags: ["contrastive"] },
+  { title: "Large-margin contrastive learning with distance polarization regularizer", venue: "ICML 2021", year: 2021, tags: ["contrastive"] },
+  { title: "Linearity-aware subspace clustering", url: "https://github.com/functioncs/LASC", venue: "AAAI 2022", year: 2022, tags: ["clustering"] },
+  { title: "Robust audio-visual instance discrimination via active contrastive set mining", venue: "IJCAI 2022", year: 2022, tags: ["contrastive"] },
+  { title: "Learning contrastive embedding in low-dimensional space", url: "https://github.com/functioncs/CLLR", venue: "NeurIPS 2022", year: 2022, tags: ["contrastive"] },
+  { title: "Self-weighted contrastive learning among multiple views for mitigating representation degeneration", url: "https://github.com/SubmissionsIn/SEM", venue: "NeurIPS 2023", year: 2023, tags: ["contrastive", "clustering"] },
+  { title: "Boundary-restricted metric learning", venue: "Machine Learning v112, 2023", year: 2023, tags: ["contrastive"] },
+  { title: "Investigating and mitigating the side effects of noisy views for self-supervised clustering algorithms in practical multi-view scenarios", url: "https://github.com/SubmissionsIn/MVCAN", venue: "CVPR 2024", year: 2024, tags: ["clustering"] },
+
+  // ---------- LLMs & foundation models ----------
+  { title: "Generating Chain-of-Thoughts with a Pairwise-Comparison Approach to Searching for the Most Promising Intermediate Thought", url: "https://github.com/Lillianwei-h/CToT", venue: "ICML 2024", year: 2024, tags: ["llm-reasoning"] },
+
+  // ---------- RL & imitation learning ----------
+  { title: "Guide actor-critic for continuous control", url: "https://github.com/voot-t/guide-actor-critic", venue: "ICLR 2018", year: 2018, tags: ["rl"] },
+  { title: "Variational imitation learning with diverse-quality demonstrations", url: "https://github.com/voot-t/vild_code", venue: "ICML 2020", year: 2020, tags: ["imitation-learning"] },
+  { title: "Robust imitation learning from noisy demonstrations", url: "https://github.com/voot-t/ril_co", venue: "AISTATS 2021", year: 2021, tags: ["imitation-learning"] },
+
+  // ---------- Theory & evaluation ----------
+  { title: "Do we need zero training loss after achieving zero training error?", url: "https://github.com/takashiishida/flooding", venue: "ICML 2020", year: 2020, tags: ["learning-theory"] },
+  { title: "Generalizing consistent multi-class classification with rejection to be compatible with arbitrary losses", url: "https://lfeng-ntu.github.io/Code/CwR.zip", venue: "NeurIPS 2022", year: 2022, tags: ["learning-theory"] },
+  { title: "Fast and robust rank aggregation against model misspecification", url: "http://www.optimal-group.org/Resources/Code/CoarsenRank.html", venue: "JMLR v23, 2022", year: 2022, tags: ["learning-theory"] },
+  { title: "Is the performance of my deep network too good to be true? A direct approach to estimating the Bayes error in binary classification", url: "https://github.com/takashiishida/irreducible", venue: "ICLR 2023", year: 2023, tags: ["learning-theory"] },
+
+  // ---------- Other ----------
+  { title: "Active feature acquisition with supervised matrix completion", url: "http://parnec.nuaa.edu.cn/huangsj/alipy/", venue: "KDD 2018", year: 2018, tags: ["active-learning"] },
+  { title: "Incorporating causal graphical prior knowledge into predictive modeling via simple data augmentation", url: "https://github.com/diadochos/incorporating-causal-graphical-prior-knowledge-into-predictive-modeling-via-simple-data-augmentation", venue: "UAI 2021", year: 2021, tags: ["misc"] },
+  { title: "Multi-label knowledge distillation", url: "https://github.com/penghui-yang/L2D", venue: "ICCV 2023", year: 2023, tags: ["multilabel-cls"] },
+  { title: "Accurate forgetting for heterogeneous federated continual learning", url: "https://github.com/zaocan666/AF-FCL", venue: "ICLR 2024", year: 2024, tags: ["federated"] },
+  { title: "Locally estimated global perturbations are better than local perturbations for federated sharpness-aware minimization", url: "https://github.com/MediaBrain-SJTU/FedLESAM", venue: "ICML 2024", year: 2024, tags: ["federated"] },
+  { title: "Balancing similarity and complementarity for federated learning", url: "https://github.com/yankd22/FedSaC", venue: "ICML 2024", year: 2024, tags: ["federated"] },
+  { title: "Counterfactual reasoning for multi-label image classification via patching-based training", url: "https://github.com/xiemk/MLC-PAT", venue: "ICML 2024", year: 2024, tags: ["multilabel-cls"] },
+];
+
+</script>
+<script>
+(function () {
+    "use strict";
+
+    var PRIM = TAXONOMY.primaries;
+    var SUBS = TAXONOMY.subs;
+    var primByKey = {}, subByKey = {};
+    PRIM.forEach(function (p) { primByKey[p.key] = p; });
+    SUBS.forEach(function (s) { subByKey[s.key] = s; });
+
+    function subsOf(primKey) { return SUBS.filter(function (s) { return s.parent === primKey; }); }
+    function isPrimary(key) { return !!primByKey[key]; }
+    function primariesOf(paper) {
+        var set = {};
+        paper.tags.forEach(function (t) { var s = subByKey[t]; if (s) set[s.parent] = true; });
+        return set;
+    }
+    function byYear(a, b) { return (b.year - a.year) || a.title.localeCompare(b.title); }
+
+    var selected = {};   // set of selected tag keys (primary or sub)
+    var query = "";
+    function selectedCount() { return Object.keys(selected).length; }
+    function isFiltering() { return selectedCount() > 0 || query.length > 0; }
+
+    // ---------- URL hash <-> state ----------
+    function readHash() {
+        selected = {}; query = "";
+        var h = location.hash.replace(/^#/, "");
+        if (!h) return;
+        h.split("&").forEach(function (part) {
+            var i = part.indexOf("=");
+            if (i < 0) return;
+            var k = part.slice(0, i), v = decodeURIComponent(part.slice(i + 1));
+            if (k === "tags") {
+                v.split(",").forEach(function (t) {
+                    t = t.trim();
+                    if (t && (primByKey[t] || subByKey[t])) selected[t] = true;
+                });
+            } else if (k === "q") {
+                query = v;
+            }
+        });
+    }
+    function writeHash() {
+        var parts = [];
+        var keys = Object.keys(selected);
+        if (keys.length) parts.push("tags=" + keys.join(","));
+        if (query) parts.push("q=" + encodeURIComponent(query));
+        var s = parts.join("&");
+        history.replaceState(null, "", s ? "#" + s : location.pathname + location.search);
+    }
+
+    // ---------- matching ----------
+    function matches(paper) {
+        var keys = Object.keys(selected);
+        if (keys.length) {
+            var hit = false, prim = primariesOf(paper), i;
+            for (i = 0; i < keys.length; i++) {
+                var k = keys[i];
+                if (isPrimary(k)) { if (prim[k]) { hit = true; break; } }
+                else if (paper.tags.indexOf(k) >= 0) { hit = true; break; }
+            }
+            if (!hit) return false;
+        }
+        if (query && paper.title.toLowerCase().indexOf(query.toLowerCase()) < 0) return false;
+        return true;
+    }
+
+    // ---------- DOM helpers ----------
+    function el(tag, cls, html) {
+        var e = document.createElement(tag);
+        if (cls) e.className = cls;
+        if (html != null) e.innerHTML = html;
+        return e;
+    }
+    function paintPrimaryChip(btn, prim, on) {
+        btn.style.borderColor = prim.color.border;
+        if (on) { btn.style.background = prim.color.border; btn.style.color = "#fff"; }
+        else { btn.style.background = prim.color.bg; btn.style.color = "#1b1b1b"; }
+    }
+    function toggle(key) {
+        if (selected[key]) delete selected[key]; else selected[key] = true;
+        writeHash(); rebuild();
+    }
+
+    // ---------- paper rendering ----------
+    function paperLine(paper) {
+        var li = el("li", "paper"), p = el("p");
+        if (paper.url) {
+            var a = el("a"); a.href = paper.url; a.target = "_blank"; a.rel = "noopener";
+            a.innerHTML = paper.title; p.appendChild(a);
+        } else {
+            p.appendChild(el("span", null, paper.title));
+        }
+        p.appendChild(document.createTextNode(" "));
+        p.appendChild(el("span", "venue", "(" + paper.venue + ")"));
+        if (paper.note) { p.appendChild(el("br")); p.appendChild(el("span", "note", paper.note)); }
+        var chips = el("span", "chips");
+        paper.tags.forEach(function (t) {
+            var s = subByKey[t]; if (!s) return;
+            var prim = primByKey[s.parent];
+            var c = el("button", "chip"); c.type = "button"; c.innerHTML = s.label;
+            c.style.background = prim.color.bg; c.style.borderColor = prim.color.border;
+            c.title = stripEntities(prim.label) + " › " + stripEntities(s.label);
+            if (selected[t]) c.className = "chip chip-on";
+            c.addEventListener("click", function () { toggle(t); });
+            chips.appendChild(c);
+        });
+        p.appendChild(chips);
+        li.appendChild(p);
+        return li;
+    }
+    function stripEntities(s) { return s.replace(/&amp;/g, "&"); }
+
+    function buildDetails(label, list, open) {
+        var d = el("details"); if (open) d.open = true;
+        var sum = el("summary");
+        var marker = el("span", "marker", open ? "−" : "+");
+        var h2 = el("h2"); h2.style.display = "inline";
+        h2.innerHTML = label + ' <span class="cnt">(' + list.length + ')</span>';
+        sum.appendChild(marker); sum.appendChild(h2);
+        d.appendChild(sum);
+        var ul = el("ul");
+        list.slice().sort(byYear).forEach(function (p) { ul.appendChild(paperLine(p)); });
+        d.appendChild(ul);
+        d.addEventListener("toggle", function () { marker.textContent = d.open ? "−" : "+"; });
+        return d;
+    }
+
+    function renderGrouped(host) {
+        PRIM.forEach(function (prim) {
+            var h1 = el("h1"); h1.id = prim.id; h1.innerHTML = "<hr>" + prim.label;
+            host.appendChild(h1);
+            if (prim.intro) host.appendChild(el("p", "intro", prim.intro));
+            subsOf(prim.key).forEach(function (sub) {
+                var list = PAPERS.filter(function (p) { return p.tags.indexOf(sub.key) >= 0; });
+                if (list.length) host.appendChild(buildDetails(sub.label, list, false));
             });
         });
-    });
+    }
+
+    function renderFlat(host, list) {
+        var head = el("p", "results-head");
+        head.innerHTML = "<b>" + list.length + "</b> result" + (list.length === 1 ? "" : "s") + " (newest first)";
+        host.appendChild(head);
+        if (!list.length) {
+            host.appendChild(el("p", null, "No papers match. Try removing a filter or clearing the search."));
+            return;
+        }
+        var ul = el("ul");
+        list.slice().sort(byYear).forEach(function (p) { ul.appendChild(paperLine(p)); });
+        host.appendChild(ul);
+    }
+
+    // ---------- filter bar ----------
+    var primChipEls = [], subChipEls = [];
+    function buildFilterBar() {
+        var row = document.getElementById("primary-row");
+        PRIM.forEach(function (prim) {
+            var btn = el("button", "pchip"); btn.type = "button"; btn.innerHTML = prim.label;
+            btn.addEventListener("click", function () { toggle(prim.key); });
+            row.appendChild(btn);
+            primChipEls.push({ btn: btn, prim: prim });
+        });
+        var panel = document.getElementById("subpanel");
+        PRIM.forEach(function (prim) {
+            var subs = subsOf(prim.key); if (!subs.length) return;
+            var g = el("div", "subgroup");
+            g.appendChild(el("div", "subgroup-title", prim.label));
+            var wrap = el("div", "subgroup-chips");
+            subs.forEach(function (sub) {
+                var btn = el("button", "subchip"); btn.type = "button"; btn.innerHTML = sub.label;
+                btn.style.borderColor = prim.color.border;
+                btn.addEventListener("click", function () { toggle(sub.key); });
+                wrap.appendChild(btn);
+                subChipEls.push({ btn: btn, sub: sub });
+            });
+            g.appendChild(wrap);
+            panel.appendChild(g);
+        });
+        var moreBtn = document.getElementById("more-btn");
+        moreBtn.addEventListener("click", function () {
+            var open = panel.hasAttribute("hidden");
+            if (open) panel.removeAttribute("hidden"); else panel.setAttribute("hidden", "");
+            moreBtn.setAttribute("aria-expanded", String(open));
+        });
+        document.getElementById("clear-btn").addEventListener("click", function () {
+            selected = {}; query = "";
+            document.getElementById("search").value = "";
+            writeHash(); rebuild();
+        });
+        var search = document.getElementById("search");
+        search.addEventListener("input", function () {
+            query = search.value.trim();
+            writeHash(); rebuild();
+        });
+    }
+
+    function rebuild() {
+        primChipEls.forEach(function (o) { paintPrimaryChip(o.btn, o.prim, !!selected[o.prim.key]); });
+        subChipEls.forEach(function (o) {
+            if (selected[o.sub.key]) o.btn.classList.add("on"); else o.btn.classList.remove("on");
+        });
+        var host = document.getElementById("paper-list");
+        host.innerHTML = "";
+        var countEl = document.getElementById("count");
+        if (isFiltering()) {
+            var list = PAPERS.filter(matches);
+            renderFlat(host, list);
+            countEl.textContent = "Showing " + list.length + " of " + PAPERS.length + " papers";
+        } else {
+            renderGrouped(host);
+            countEl.textContent = PAPERS.length + " papers · pick an area or tag, or search by title";
+        }
+    }
+
+    function init() {
+        readHash();
+        buildFilterBar();
+        document.getElementById("search").value = query;
+        rebuild();
+        window.addEventListener("hashchange", function () {
+            readHash();
+            document.getElementById("search").value = query;
+            rebuild();
+        });
+    }
+
+    if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);
+    else init();
+})();
 </script>
 
 </body></html>
