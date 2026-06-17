@@ -817,12 +817,10 @@ a:hover {
         <style>
             /* ---- Filtering UI (specific to this page) ---- */
             .filterbar {
-                position: sticky; top: 0; z-index: 5;
                 background: #fff; padding: 0.75rem 0 0.6rem;
                 border-bottom: 1px solid #eff0f1; margin-bottom: 1.5rem;
             }
-            .filter-row { display: flex; flex-wrap: wrap; gap: 0.4rem; align-items: center; }
-            .pchip, .subchip, .chip, .btn-more, .btn-clear {
+            .pchip, .subchip, .chip, .btn-expand, .btn-clear {
                 cursor: pointer; font-family: inherit;
                 border: 1px solid #d0d7de; border-radius: 999px;
                 background: #fff; color: #30363d; line-height: 1.4;
@@ -830,23 +828,29 @@ a:hover {
             .pchip { padding: 0.25rem 0.75rem; font-size: 0.82rem; font-weight: 600; }
             .subchip { padding: 0.15rem 0.6rem; font-size: 0.74rem; }
             .subchip.on { box-shadow: 0 0 0 2px rgba(21,153,87,0.55) inset; font-weight: 600; }
-            .btn-more, .btn-clear { border-radius: 0.4rem; padding: 0.25rem 0.7rem; font-size: 0.78rem; }
-            .btn-more[aria-expanded="true"] { background: #eef6f1; border-color: #159957; color: #159957; }
-            .filter-tools { display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; margin-top: 0.6rem; }
+            .btn-expand, .btn-clear { border-radius: 0.4rem; padding: 0.25rem 0.7rem; font-size: 0.78rem; }
+            .filter-tools { display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; margin-bottom: 0.7rem; }
             #search {
                 padding: 0.3rem 0.65rem; border: 1px solid #d0d7de;
                 border-radius: 0.4rem; font-size: 0.85rem; min-width: 15rem; font-family: inherit;
             }
             .count { color: #819198; font-size: 0.83rem; }
-            .subpanel { margin-top: 0.7rem; padding: 0.75rem; background: #f6f8fa; border-radius: 0.5rem; }
-            .subpanel[hidden] { display: none; }
-            .subgroup { margin-bottom: 0.6rem; }
-            .subgroup:last-child { margin-bottom: 0; }
-            .subgroup-title {
-                font-size: 0.72rem; font-weight: 700; color: #159957;
-                text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 0.35rem;
+            /* ---- Area tree (two-level filter) ---- */
+            .area-tree { display: flex; flex-direction: column; gap: 0.1rem; }
+            .area-head { display: flex; align-items: center; gap: 0.35rem; }
+            .area-toggle {
+                cursor: pointer; font-family: inherit; font-size: 0.95rem; line-height: 1;
+                width: 1.6rem; height: 1.6rem; padding: 0; color: #57606a;
+                background: none; border: none; border-radius: 0.3rem;
             }
-            .subgroup-chips { display: flex; flex-wrap: wrap; gap: 0.3rem; }
+            .area-toggle:hover { background: #eff2f5; }
+            .area-toggle-empty { visibility: hidden; cursor: default; }
+            .area-children {
+                display: flex; flex-wrap: wrap; gap: 0.3rem;
+                margin: 0.3rem 0 0.55rem 1.75rem; padding-left: 0.75rem;
+                border-left: 2px solid #e4e8eb;
+            }
+            .area-children[hidden] { display: none; }
             /* ---- Paper list ---- */
             #paper-list summary { cursor: pointer; }
             .marker { color: #159957; display: inline-block; width: 1em; font-size: 1.5em; line-height: 1; }
@@ -883,15 +887,6 @@ a:hover {
       This page hosts our program codes used in our published papers.
     </p>
 
-    <p>
-      <b>Browse by topic.</b> Use the filters below to focus on the areas you care about &mdash; pick one or more
-      <i>research areas</i> (e.g., <i>LLMs &amp; foundation models</i>, <i>Distribution shift &amp; domain adaptation</i>)
-      or finer <i>tags</i> (e.g., <i>positive-unlabeled</i>, <i>instance-dependent noise</i>). Papers are
-      <i>multi-labeled</i>, so a single paper can appear under several topics. With nothing selected you get the
-      full list grouped by area, as before. You can also search by title, and any filtered view is shareable via
-      the page URL.
-    </p>
-
     <p>For more related machine learning methods/algorithms, please check the following pages of our strategic partners:
         <ul>
             <li><a href="http://www.ms.k.u-tokyo.ac.jp/sugi/software.html" target="_blank">
@@ -916,14 +911,13 @@ a:hover {
 <h1><hr>Code by topic</h1>
 
     <div class="filterbar" id="filterbar">
-        <div class="filter-row" id="primary-row" aria-label="Research areas"></div>
         <div class="filter-tools">
-            <button type="button" class="btn-more" id="more-btn" aria-expanded="false">More tags &#9662;</button>
             <button type="button" class="btn-clear" id="clear-btn">Clear all</button>
+            <button type="button" class="btn-expand" id="expand-btn">Expand all</button>
             <input type="search" id="search" placeholder="Search paper titles&hellip;" aria-label="Search paper titles">
             <span class="count" id="count"></span>
         </div>
-        <div class="subpanel" id="subpanel" hidden></div>
+        <div class="area-tree" id="area-tree" aria-label="Research areas"></div>
     </div>
 
     <div id="paper-list"></div>
@@ -1170,7 +1164,7 @@ const PAPERS = [
   { title: "Do we need zero training loss after achieving zero training error?", url: "https://github.com/takashiishida/flooding", venue: "ICML 2020", year: 2020, tags: ["learning-theory"] },
   { title: "Generalizing consistent multi-class classification with rejection to be compatible with arbitrary losses", url: "https://lfeng-ntu.github.io/Code/CwR.zip", venue: "NeurIPS 2022", year: 2022, tags: ["learning-theory"] },
   { title: "Fast and robust rank aggregation against model misspecification", url: "http://www.optimal-group.org/Resources/Code/CoarsenRank.html", venue: "JMLR v23, 2022", year: 2022, tags: ["learning-theory"] },
-  { title: "Is the performance of my deep network too good to be true? A direct approach to estimating the Bayes error in binary classification", url: "https://github.com/takashiishida/irreducible", venue: "ICLR 2023", year: 2023, tags: ["learning-theory"] },
+  { title: "Is the performance of my deep network too good to be true? A direct approach to estimating the Bayes error in binary classification", url: "https://github.com/takashiishida/irreducible", venue: "ICLR 2023", year: 2023, tags: ["benchmark"] },
 
   // ---------- Other ----------
   { title: "Active feature acquisition with supervised matrix completion", url: "http://parnec.nuaa.edu.cn/huangsj/alipy/", venue: "KDD 2018", year: 2018, tags: ["active-learning"] },
@@ -1239,13 +1233,27 @@ const PAPERS = [
     function matches(paper) {
         var keys = Object.keys(selected);
         if (keys.length) {
-            var hit = false, prim = primariesOf(paper), i;
+            // OR within an area, AND across areas. Group the selected buttons by
+            // area (a sub-tag's area is its parent; an area chip's area is itself):
+            // adding tags inside ONE area broadens the list, spanning areas narrows
+            // it. A key matches a paper if it's that paper's area (primary) or an
+            // exact tag (sub).
+            var groups = {}, i;
             for (i = 0; i < keys.length; i++) {
                 var k = keys[i];
-                if (isPrimary(k)) { if (prim[k]) { hit = true; break; } }
-                else if (paper.tags.indexOf(k) >= 0) { hit = true; break; }
+                var area = isPrimary(k) ? k : (subByKey[k] ? subByKey[k].parent : k);
+                (groups[area] || (groups[area] = [])).push(k);
             }
-            if (!hit) return false;
+            var prim = primariesOf(paper), areaKeys = Object.keys(groups), g, j;
+            for (g = 0; g < areaKeys.length; g++) {
+                var grp = groups[areaKeys[g]], hit = false;
+                for (j = 0; j < grp.length; j++) {
+                    var key = grp[j];
+                    if (isPrimary(key)) { if (prim[key]) { hit = true; break; } }
+                    else if (paper.tags.indexOf(key) >= 0) { hit = true; break; }
+                }
+                if (!hit) return false;   // every area-group must match (AND across)
+            }
         }
         if (query && paper.title.toLowerCase().indexOf(query.toLowerCase()) < 0) return false;
         return true;
@@ -1297,33 +1305,6 @@ const PAPERS = [
     }
     function stripEntities(s) { return s.replace(/&amp;/g, "&"); }
 
-    function buildDetails(label, list, open) {
-        var d = el("details"); if (open) d.open = true;
-        var sum = el("summary");
-        var marker = el("span", "marker", open ? "−" : "+");
-        var h2 = el("h2"); h2.style.display = "inline";
-        h2.innerHTML = label + ' <span class="cnt">(' + list.length + ')</span>';
-        sum.appendChild(marker); sum.appendChild(h2);
-        d.appendChild(sum);
-        var ul = el("ul");
-        list.slice().sort(byYear).forEach(function (p) { ul.appendChild(paperLine(p)); });
-        d.appendChild(ul);
-        d.addEventListener("toggle", function () { marker.textContent = d.open ? "−" : "+"; });
-        return d;
-    }
-
-    function renderGrouped(host) {
-        PRIM.forEach(function (prim) {
-            var h1 = el("h1"); h1.id = prim.id; h1.innerHTML = "<hr>" + prim.label;
-            host.appendChild(h1);
-            if (prim.intro) host.appendChild(el("p", "intro", prim.intro));
-            subsOf(prim.key).forEach(function (sub) {
-                var list = PAPERS.filter(function (p) { return p.tags.indexOf(sub.key) >= 0; });
-                if (list.length) host.appendChild(buildDetails(sub.label, list, false));
-            });
-        });
-    }
-
     function renderFlat(host, list) {
         var head = el("p", "results-head");
         head.innerHTML = "<b>" + list.length + "</b> result" + (list.length === 1 ? "" : "s") + " (newest first)";
@@ -1338,37 +1319,63 @@ const PAPERS = [
     }
 
     // ---------- filter bar ----------
-    var primChipEls = [], subChipEls = [];
+    var primChipEls = [], subChipEls = [], areaNodes = [];
     function buildFilterBar() {
-        var row = document.getElementById("primary-row");
+        var tree = document.getElementById("area-tree");
         PRIM.forEach(function (prim) {
+            var subs = subsOf(prim.key);
+            var node = el("div", "area-node");
+            var head = el("div", "area-head");
+
+            // disclosure triangle: collapsed (right) / expanded (down); hidden when no children
+            var tri = el("button", subs.length ? "area-toggle" : "area-toggle area-toggle-empty");
+            tri.type = "button"; tri.innerHTML = "&#9656;";
+            tri.setAttribute("aria-label", "Expand or collapse subtopics");
+            tri.setAttribute("aria-expanded", "false");
+            head.appendChild(tri);
+
+            // area label = filter toggle (independent of expand/collapse)
             var btn = el("button", "pchip"); btn.type = "button"; btn.innerHTML = prim.label;
             btn.addEventListener("click", function () { toggle(prim.key); });
-            row.appendChild(btn);
+            head.appendChild(btn);
             primChipEls.push({ btn: btn, prim: prim });
-        });
-        var panel = document.getElementById("subpanel");
-        PRIM.forEach(function (prim) {
-            var subs = subsOf(prim.key); if (!subs.length) return;
-            var g = el("div", "subgroup");
-            g.appendChild(el("div", "subgroup-title", prim.label));
-            var wrap = el("div", "subgroup-chips");
+            node.appendChild(head);
+
+            // indented children (sub-tags) under this area
+            var kids = el("div", "area-children"); kids.setAttribute("hidden", "");
             subs.forEach(function (sub) {
-                var btn = el("button", "subchip"); btn.type = "button"; btn.innerHTML = sub.label;
-                btn.style.borderColor = prim.color.border;
-                btn.addEventListener("click", function () { toggle(sub.key); });
-                wrap.appendChild(btn);
-                subChipEls.push({ btn: btn, sub: sub });
+                var sb = el("button", "subchip"); sb.type = "button"; sb.innerHTML = sub.label;
+                sb.style.borderColor = prim.color.border;
+                sb.addEventListener("click", function () { toggle(sub.key); });
+                kids.appendChild(sb);
+                subChipEls.push({ btn: sb, sub: sub });
             });
-            g.appendChild(wrap);
-            panel.appendChild(g);
+            node.appendChild(kids);
+
+            function setOpen(open) {
+                if (!subs.length) return;
+                if (open) kids.removeAttribute("hidden"); else kids.setAttribute("hidden", "");
+                node.classList.toggle("open", open);
+                tri.setAttribute("aria-expanded", String(open));
+                tri.innerHTML = open ? "&#9662;" : "&#9656;";
+            }
+            tri.addEventListener("click", function () { setOpen(!node.classList.contains("open")); });
+            node._setOpen = setOpen;
+
+            // open on load if this area or one of its children is already active (e.g. deep link)
+            if (selected[prim.key] || subs.some(function (s) { return selected[s.key]; })) setOpen(true);
+
+            tree.appendChild(node);
+            areaNodes.push(node);
         });
-        var moreBtn = document.getElementById("more-btn");
-        moreBtn.addEventListener("click", function () {
-            var open = panel.hasAttribute("hidden");
-            if (open) panel.removeAttribute("hidden"); else panel.setAttribute("hidden", "");
-            moreBtn.setAttribute("aria-expanded", String(open));
+
+        var expandBtn = document.getElementById("expand-btn");
+        expandBtn.addEventListener("click", function () {
+            var anyClosed = areaNodes.some(function (n) { return !n.classList.contains("open"); });
+            areaNodes.forEach(function (n) { n._setOpen(anyClosed); });
+            expandBtn.textContent = anyClosed ? "Collapse all" : "Expand all";
         });
+
         document.getElementById("clear-btn").addEventListener("click", function () {
             selected = {}; query = "";
             document.getElementById("search").value = "";
@@ -1389,14 +1396,13 @@ const PAPERS = [
         var host = document.getElementById("paper-list");
         host.innerHTML = "";
         var countEl = document.getElementById("count");
-        if (isFiltering()) {
-            var list = PAPERS.filter(matches);
-            renderFlat(host, list);
-            countEl.textContent = "Showing " + list.length + " of " + PAPERS.length + " papers";
-        } else {
-            renderGrouped(host);
-            countEl.textContent = PAPERS.length + " papers · pick an area or tag, or search by title";
-        }
+        var filtering = isFiltering();
+        // No filter/search active -> show every paper, newest first (no category grouping).
+        var list = filtering ? PAPERS.filter(matches) : PAPERS;
+        renderFlat(host, list);
+        countEl.textContent = filtering
+            ? "Showing " + list.length + " of " + PAPERS.length + " papers"
+            : PAPERS.length + " papers · pick an area or tag to filter, or search by title";
     }
 
     function init() {
