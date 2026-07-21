@@ -14,6 +14,31 @@
         .page-header h1, .page-header h2 {
             text-shadow: 0 2px 6px rgba(0,0,0,0.6);
         }
+        details.talk {
+            margin-top: 6px;
+        }
+        details.talk > summary {
+            cursor: pointer;
+            color: #1e6bb8;
+            font-size: 90%;
+            font-weight: bold;
+            outline: none;
+            list-style-position: inside;
+        }
+        details.talk[open] > summary {
+            margin-bottom: 6px;
+        }
+        details.talk .talk-body {
+            font-weight: normal;
+            font-size: 95%;
+            background: #f6f8fa;
+            border-left: 3px solid #1e6bb8;
+            padding: 6px 12px;
+            border-radius: 4px;
+        }
+        details.talk .talk-body p {
+            margin: 6px 0;
+        }
     </style>
   </head>
 
@@ -94,7 +119,73 @@ function writeTimeRange(startHour, startMin, endHour, endMin) {
 		<iframe src="https://www.google.com/maps?q=37.5558437,127.0494412(Hanyang+University+IT%2FBT+Building)&z=18&output=embed" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
     <h2>Schedule</h2>
-        <p>The detailed schedule will be announced soon.</p>
+        <p>The workshop uses Korea Standard Time (UTC+9). Each oral session consists of three 30-minute talks. Talk titles will be announced soon.</p>
+
+<table>
+  <thead>
+    <tr><th style="width:25ex">Time</th><th>Event</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><b>August 28 (Day 1)</b></td></tr>
+    <tr><td>09:30 -- 09:45</td><td><b>Opening Remarks</b><br><b>Hosts</b>: <a href="https://www.ms.k.u-tokyo.ac.jp/sugi/index.html" target="_blank">Masashi Sugiyama</a> (RIKEN / The University of Tokyo) and <a href="https://cv.snu.ac.kr/index.php/bhhan/" target="_blank">Bohyung Han</a> (Seoul National University)</td></tr>
+    <tr><td>09:45 -- 10:45</td><td><b>Keynote 1</b><br><b>Title</b>: TBD<br><b>Speaker</b>: <a href="https://www.a-star.edu.sg/cfar/about-cfar/management/prof-ivor-tsang" target="_blank">Ivor W. Tsang</a> (A*STAR Centre for Frontier AI Research, Singapore)</td></tr>
+    <tr><td>10:45 -- 11:00</td><td><b>Coffee Break</b></td></tr>
+    <tr><td></td><td><b>Session 1</b></td></tr>
+    <tr><td>11:00 -- 11:30</td><td><b>Title</b>: Recent Advances in Data-Adaptive Hypothesis Testing<br><b>Speaker</b>: <a href="https://fengliu90.github.io/" target="_blank">Feng Liu</a> (The University of Melbourne)
+      <details class="talk"><summary>Abstract &amp; Bio</summary><div class="talk-body">
+        <p><b>Abstract</b>: Hypothesis testing is a fundamental tool for assessing whether observed data provide statistically significant evidence of distributional differences. While classical two-sample testing asks whether two distributions are identical, many modern machine learning applications require a more nuanced question: are two distributions sufficiently close, and to what extent does their difference matter? In this talk, I will discuss recent advances in data-adaptive hypothesis testing through the lens of distribution closeness testing for complex data. Specifically, I will focus on a recent kernel-based approach that extends distribution closeness testing beyond discrete one-dimensional settings. The key idea is to use maximum mean discrepancy (MMD) to compare distributions in a reproducing kernel Hilbert space, while introducing norm-adaptive MMD (NAMMD) to better account for distributional norms and obtain a more informative notion of closeness. Building on its asymptotic behavior, the resulting test provides theoretical guarantees on type-I error and test power. I will also present experiments showing how closeness testing can be used in weakly supervised learning scenarios, including distribution shift detection and adversarial machine learning. The talk will highlight how data-adaptive testing can offer flexible and practically meaningful tools for assessing model reliability under changing and potentially corrupted data conditions.</p>
+        <p><b>Bio</b>: Feng is a Senior Lecturer (equivalent to an Associate Professor in the United States academic ranking) in Machine Learning and an ARC DECRA Fellow at the School of Computing and Information Systems, The University of Melbourne, where he directs the Trustworthy Machine Learning and Reasoning (TMLR) Lab. His research develops rigorous statistical foundations and practical methods for trustworthy machine learning, with representative publications in JMLR, TPAMI, TNNLS, NeurIPS, ICML, ICLR, Nature Plants, and Nature Communications. He is a communication chair of NeurIPS 2026 and has received the Outstanding Paper Award from NeurIPS 2022.</p>
+      </div></details>
+    </td></tr>
+    <tr><td>11:30 -- 12:00</td><td><b>Title</b>: TBD<br><b>Speaker</b>: <a href="https://mindlab-snu.notion.site/taesup-moon" target="_blank">Taesup Moon</a> (Seoul National University)</td></tr>
+    <tr><td>12:00 -- 12:30</td><td><b>Title</b>: Exploring Trustworthy Foundation Models: Benchmarking, Finetuning and Reasoning<br><b>Speaker</b>: <a href="https://bhanml.github.io/" target="_blank">Bo Han</a> (Hong Kong Baptist University)
+      <details class="talk"><summary>Abstract &amp; Bio</summary><div class="talk-body">
+        <p><b>Abstract</b>: In the current landscape of machine learning, where foundation models must navigate imperfect real-world conditions such as noisy data and unexpected inputs, ensuring their trustworthiness through rigorous benchmarking, safety-focused finetuning, and active reasoning is more critical than ever. In this talk, I will focus on three recent research advancements that collectively advance these dimensions, offering a comprehensive approach to building trustworthy foundation models. For benchmarking, I will introduce CounterAnimal, a dataset designed to systematically evaluate CLIP&rsquo;s vulnerability to realistic spurious correlations, revealing that scaling models or data quality can mitigate these biases, yet scaling data alone does not effectively address them. Transitioning to finetuning, we delve deep into the process of unlearning undesirable model behaviors. We propose a general framework to examine and understand the limitations of current unlearning methods and suggest enhanced revisions for more effective unlearning. Furthermore, addressing reasoning, we study active reasoning under incomplete information through AR-Bench, a benchmark that evaluates whether models can ask effective questions, acquire missing evidence, and solve multi-round agentic tasks. AR-Bench reveals a clear gap between passive and active reasoning, showing that even strong models still struggle to seek out and use missing information effectively. I will also briefly introduce AlphaApollo, our reasoning system for deep agentic reasoning.</p>
+        <p><b>Bio</b>: Bo Han is currently an Associate Professor in Machine Learning at Hong Kong Baptist University and a BAIHO Visiting Scientist at RIKEN AIP. He has served as Senior Area Chair of NeurIPS and ICML, and Area Chair of ICLR, UAI and AISTATS. He has also served as Associate Editor of IEEE TPAMI, MLJ and JAIR, and Editorial Board Member of JMLR and MLJ. He received paper awards, including Outstanding Paper Award at NeurIPS and Most Influential Paper at NeurIPS. He received the RGC Early CAREER Scheme, IEEE AI&rsquo;s 10 to Watch Award, IJCAI Early Career Spotlight, INNS Aharon Katzir Young Investigator Award, IEEE Computing&rsquo;s Top 30 Early Career Professional Award, RIKEN BAIHO Award, Dean&rsquo;s Award for Outstanding Achievement, and Microsoft Research StarTrack Scholars Program. He is an ACM Distinguished Speaker and IEEE Senior Member. See his full bio at: <a href="https://bhanml.github.io/" target="_blank">https://bhanml.github.io/</a>.</p>
+      </div></details>
+    </td></tr>
+    <tr><td>12:30 -- 14:00</td><td><b>Lunch Break</b></td></tr>
+    <tr><td>14:00 -- 15:30</td><td><b>Poster Session 1</b></td></tr>
+    <tr><td>15:30 -- 16:00</td><td><b>Coffee Break</b></td></tr>
+    <tr><td></td><td><b>Session 3</b></td></tr>
+    <tr><td>16:00 -- 16:30</td><td><b>Title</b>: Recent Advances on Importance Weighting for Classification under Distribution Shift<br><b>Speaker</b>: <a href="https://niug1984.github.io/" target="_blank">Gang Niu</a> (RIKEN)
+      <details class="talk"><summary>Abstract &amp; Bio</summary><div class="talk-body">
+        <p><b>Abstract</b>: Distribution shift, where the training and test distributions differ, remains a central challenge in modern classification. Importance weighting offers a principled way to correct such shifts by reweighting training losses using test-to-training density ratios. However, when combined with deep learning, classical importance weighting faces substantial difficulties, including the circular dependency between representation learning, density-ratio estimation, and weighted classification, as well as restrictive assumptions on distributional support.</p>
+        <p>In this talk, I will present a line of work that modernizes importance weighting for classification under distribution shift. I will begin with dynamic importance weighting, a NeurIPS 2020 spotlight paper that serves as the foundation of this line of research. DIW addresses the incompatibility between fixed density-ratio estimation and learned deep representations by jointly and iteratively updating the classifier and the importance weights. I will then briefly discuss generalized importance weighting, a NeurIPS 2023 spotlight paper that extends DIW to distribution-shift scenarios where the test support is wider than or only partially overlaps with the training support.</p>
+        <p>The final part of this talk will focus on accelerated dynamic importance weighting, our latest preprint. ADIW revisits DIW from both computational and methodological perspectives. On the computational side, it significantly reduces the cost of repeatedly estimating importance weights during deep training: rather than solving the weight-estimation subproblem to convergence in every mini-batch, ADIW performs only a few warm-started projected gradient updates, turning DIW into an efficient, fully GPU-based end-to-end approach, more suitable for modern large-scale classification tasks. On the methodological side, it provides a unified divergence-minimization framework that accommodates multiple weight estimators, allowing DIW-style methods to be instantiated with different statistical divergence measures. Together, DIW, GIW, and ADIW show how importance weighting can evolve from a classical risk-correction tool into a scalable and flexible framework for robust classification under increasingly realistic distribution-shift settings.</p>
+        <p><b>Bio</b>: Gang Niu is currently an indefinite-term senior research scientist at RIKEN Center for Advanced Intelligence Project. He received the PhD degree in computer science from Tokyo Institute of Technology in 2013. He joined RIKEN as a research scientist in 2018, and he was tenured in 2020 and promoted to senior research scientist in 2023. He co-authored the book &ldquo;Machine Learning from Weak Supervision: An Empirical Risk Minimization Approach&rdquo; (the MIT Press).</p>
+      </div></details>
+    </td></tr>
+    <tr><td>16:30 -- 17:00</td><td><b>Title</b>: TBD<br><b>Speaker</b>: <a href="https://medicalai.postech.ac.kr/members/principal-investigator" target="_blank">Sang Hyun Park</a> (POSTECH)</td></tr>
+    <tr><td>17:00 -- 17:30</td><td><b>Title</b>: TBD<br><b>Speaker</b>: <a href="https://sites.google.com/site/kibok90" target="_blank">Kibok Lee</a> (Yonsei University)</td></tr>
+
+    <tr><td><b>August 29 (Day 2)</b></td></tr>
+    <tr><td>09:30 -- 10:30</td><td><b>Keynote 2</b><br><b>Title</b>: TBD<br><b>Speaker</b>: <a href="https://suhakwak.github.io/" target="_blank">Suha Kwak</a> (POSTECH)</td></tr>
+    <tr><td>10:30 -- 11:00</td><td><b>Coffee Break</b></td></tr>
+    <tr><td></td><td><b>Session 4</b></td></tr>
+    <tr><td>11:00 -- 11:30</td><td><b>Title</b>: TBD<br><b>Speaker</b>: <a href="https://zhangzy07.github.io/" target="_blank">Zhen-Yu Zhang</a> (RIKEN AIP)</td></tr>
+    <tr><td>11:30 -- 12:00</td><td><b>Title</b>: TBD<br><b>Speaker</b>: <a href="https://sites.google.com/view/jungseulok" target="_blank">Jungseul Ok</a> (POSTECH)</td></tr>
+    <tr><td>12:00 -- 12:30</td><td><b>Title</b>: Privacy-Preserving Adaptation against Membership Inference Attacks for Latent Diffusion Models<br><b>Speaker</b>: <a href="https://scholar.google.com/citations?user=NS0P1FkAAAAJ&hl=en" target="_blank">Jingfeng Zhang</a> (Fudan University)
+      <details class="talk"><summary>Abstract &amp; Bio</summary><div class="talk-body">
+        <p><b>Abstract</b>: Foundation models have become the dominant paradigm in modern AI, enabling rapid adaptation to diverse downstream tasks through parameter-efficient fine-tuning techniques such as Low-Rank Adaptation (LoRA). While LoRA allows personalized generative models to be trained and shared efficiently, it also raises important privacy concerns, as adapted models may inadvertently leak sensitive information from the underlying training data through privacy attacks. In this talk, I will first provide a brief overview of foundation model adaptation and discuss the emerging privacy challenges in personalized generative AI. I will then present our recent work on Stable Membership Privacy-Preserving LoRA (SMP-LoRA), a framework that enhances the privacy of adapting the latent diffusion models while preserving generation quality. SMP-LoRA formulates privacy-preserving adaptation as a stable optimization problem, supported by theoretical analysis and extensive empirical evaluation. Experimental results demonstrate that the proposed method substantially reduces membership inference attacks while maintaining high image fidelity, offering a practical approach toward secure and trustworthy adaptation of foundation models.</p>
+        <p><b>Bio</b>: Prof. Jingfeng Zhang is an Associate Professor at the Institute of Trustworthy Embodied Intelligence, Fudan University. He received his Ph.D. from the National University of Singapore. Before joining Fudan University in 2026, he was a Postdoctoral Research Scientist at the RIKEN Center for Advanced Intelligence Project (AIP), Japan, and a tenured Lecturer and Ph.D. Supervisor at the University of Auckland, New Zealand. His research focuses on trustworthy machine learning and embodied intelligence, with an emphasis on adversarial machine learning, and safe embodied AI systems. He has published more than 30 papers in leading AI venues, including ICML, NeurIPS, ICLR, and IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI). His work has been recognized with distinctions such as ICLR Oral and NeurIPS Spotlight presentations. He also serves as an Area Chair for leading AI conferences, including ICML, NeurIPS, and ICLR.</p>
+      </div></details>
+    </td></tr>
+    <tr><td>12:30 -- 14:00</td><td><b>Lunch Break</b></td></tr>
+    <tr><td>14:00 -- 15:30</td><td><b>Poster Session 2</b></td></tr>
+    <tr><td>15:30 -- 16:00</td><td><b>Coffee Break</b></td></tr>
+    <tr><td></td><td><b>Session 6</b></td></tr>
+    <tr><td>16:00 -- 16:30</td><td><b>Title</b>: Towards Reliable Self-Supervised Learning<br><b>Speaker</b>: <a href="https://shuochenya.github.io/" target="_blank">Shuo Chen</a> (Nanjing University)
+      <details class="talk"><summary>Abstract &amp; Bio</summary><div class="talk-body">
+        <p><b>Abstract</b>: The rapid advancement of self-supervised learning, particularly contrastive learning, has enabled remarkable progress in visual representation learning without relying on manual annotations. However, existing contrastive learning frameworks face critical challenges such as overfitting in high-dimensional spaces, false negative pairs, and the difficulty of capturing consistent relational structures across data. These issues limit the robustness and generalization capability of contrastive models, especially when applied to complex real-world tasks. To address these challenges, this talk presents a series of methodological innovations aimed at improving the reliability of contrastive learning. Specifically, we will introduce low-dimensional contrastive learning to mitigate the curse of dimensionality, a large-margin contrastive learning approach with distance polarization regularization to enhance discrimination, and a high-order difference regularization technique based on cross total variation to capture consistent relational patterns. Building on these advances, we will further demonstrate their practical impact across multiple application domains, including zero-shot recognition, multi-view learning, and few-shot learning with long-tailed labels. Together, these contributions pave the way toward more robust, generalizable, and application-ready self-supervised learning systems.</p>
+        <p><b>Bio</b>: Shuo Chen is currently an Associate Professor in the School of Intelligence Science and Technology at Nanjing University. Before that, he was a Postdoctoral Researcher and Research Scientist at RIKEN Center for Advanced Intelligence Project (RIKEN-AIP) Japan from 2020 to 2024. His research interests mainly include machine learning and pattern recognition, in particular, self-supervised learning and metric learning. He has served as the Area Chair (AC) or Senior Area Chair (SAC) of NeurIPS, ICML, ICLR, and CVPR over 20 times, and also served as the Action Editor (AE) for several journals such as Neural Network. He won the Excellent Achievement Award of RIKEN, the Excellent Doctoral Dissertation Award of Chinese Institute of Electronics (CIE), and the Excellent Doctoral Dissertation Nomination of Chinese Association for Artificial Intelligence (CAAI).</p>
+      </div></details>
+    </td></tr>
+    <tr><td>16:30 -- 17:00</td><td><b>Title</b>: TBD<br><b>Speaker</b>: <a href="https://aigs.unist.ac.kr/%EA%B9%80%EC%A7%80%EC%88%98/" target="_blank">Jisu Kim</a> (UNIST)</td></tr>
+    <tr><td>17:00 -- 17:30</td><td><b>Title</b>: TBD<br><b>Speaker</b>: <a href="https://junsukchoe.github.io/" target="_blank">Junsuk Choe</a> (Sogang University)</td></tr>
+    <tr><td>17:30 -- 17:40</td><td><b>Closing Remarks</b></td></tr>
+  </tbody>
+</table>
 
 
 <h1 id="registration">Registration</h1>
